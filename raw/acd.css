@@ -1,0 +1,1301 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: linen; 
+	margin-top: 0px;
+	font-size: 11pt;
+	background-image: url(ocean2.jpg);
+	background-attachment: fixed;
+}
+h1,h2,h3 {
+	text-align: center;
+	color: darkred;
+}
+p.setword {
+   font-weight: bold;
+   color: darkred;
+   margin-bottom: 0;
+}
+p.setnote {
+	margin-left: 65px;
+	margin-right: 65px;
+	text-align: justify;
+	font-family: Times;
+	font-size: 1.1em;
+}
+p.pnote {
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
+	font-family: Times;
+}
+p.pLines {
+	font-size: 1.4em;
+	color: steelblue;
+	font-weight: bold;
+}
+p.pLoanLines {
+	font-size: 1.4em;
+	color: darkgrey;
+	font-weight: bold;
+	/*background-color: gainsboro;*/
+}
+.form {
+	color: darkblue;
+	font-weight: bold;
+	font-style: italic;
+	background-color: yellow;
+}
+.phoneme {
+	color: darkblue;
+}
+.proto {
+	color: darkred;
+	font-weight: bold;
+	font-style: italic;
+	background-color: yellow;
+}
+.proto1 {
+	color: darkslategray;
+}
+.proto2 {
+	color: darkolivegreen;
+}
+.pwd {
+	color: darkred;
+	font-weight: bold;
+	/*font-style: italic;*/
+}
+.setline {
+	font-size: 1.3em;
+	font-family: Times;
+	font-weight: bold;
+	color: black;
+}
+.setlineF {
+	font-size: 1 em;
+	font-family: Times;
+	font-weight: bold;
+	color: black;
+}
+
+.setlineLoan {
+	font-size: 1.3em;
+	font-family: Times;
+	font-weight: bold;
+	color: dimgray;
+}
+
+.lineform {
+	color: darkred;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.lineform1 {
+	color: darkblue;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: -35px;
+}
+.setword1 {
+	color: darkblue;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-left: -35px;
+}
+.setword2 {
+	color: darkred;
+	font-size: .9em;
+	font-weight: bold;
+}
+a.setword1:link {
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: -35px;
+}
+a.setword1:visited {
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: -35px;
+}
+a.setword:link {
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: bold;
+	/*margin-left: -35px;*/
+}
+a.setword:visited {
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: bold;
+	/*margin-left: -35px;*/
+}
+.setword2 {
+	color: darkred;
+	font-size: 1.0em;
+	font-weight: bold;
+	/*margin-left: -35px;*/
+}
+a.setword2:link {
+	color: darkred;
+	font-size: 1.0em;
+	font-weight: bold;
+	/*margin-left: -35px;*/
+}
+a.setword2:visited {
+	color: darkred;
+	font-size: 1.0em;
+	font-weight: bold;
+	/*margin-left: -35px;*/
+}
+.linegloss {
+	font-weight: bold;
+	font-family: Times;
+	color: black;
+	font-size: 1.5em;
+	font-style: italic;
+	padding-left: 20px;
+}
+
+.lineloanform {
+	font-size: 1.1em;
+	color: dimgray;
+}
+.lineloangloss {
+		font-style: italic;
+	padding-left: 20px;
+	}
+td.formuni {
+	color: darkblue;
+	/*font-weight: bold;*/
+	text-align: left;
+	/*padding-left: 20px;
+	padding-right: 20px;*/
+	/*font-size: 1.2em;*/
+	font-size: 1em;
+	padding-left: 6px;
+}
+td.formuniloan {
+	color: darkblue;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1em;
+	width: 20%;
+}
+.indexline {
+	text-align: center;
+	color: darkred;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.indexlinePL {
+	text-align: center;
+	color: darkred;
+	font-weight: bold;
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.updated {
+	text-align: right;
+	font-size: .8em;
+	font-style: italic;
+}
+
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: navy;
+	text-decoration: none;
+  font-size: 11pt;
+}
+a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: teal;
+	text-decoration: none;
+  font-size: 11pt;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	--font-style: italic;
+	font-weight: bold;
+	color: maroon;
+	text-decoration: none;
+  font-size: 11pt;
+  background-color: yellow;
+}
+a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: olive;
+  font-size: 11pt;
+}
+.titleline {
+	font-family: "Times New Roman";
+	font-size: 20pt;
+	font-weight: bold;
+	color: steelblue;
+	text-align: center;
+}
+.subtitleline {
+	font-family: "Times New Roman";
+	font-size: 1.5em;
+	font-weight: bold;
+	color: darkred;
+	text-align: center;
+}
+
+.pLang {
+	margin-left:20px;
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-bottom: 0;
+}
+p.plang {
+	margin-top: 10px;
+}
+
+.loanwd {
+	color: darkgreen;
+	font-size: 9pt;
+}
+.pLangLoan {
+		margin-left:30px;
+	/*font-weight: bold;*/
+	font-size: 1.1em;
+	/*background-color: gainsboro;*/
+}
+/*table.loantable {
+	background-color: gainsboro;
+	border: black dotted 1px;
+	width: 100%;
+}*/
+table.entrytable {
+	width: 100%;
+	border: darkred solid 1px;
+	background-color: floralwhite;
+	}
+table.entryloantable {
+	width: 100%;
+	border: dimgray solid 1px;
+	/*background-color: lilac;*/
+	}
+table.maintable {
+ 	background-color: floralwhite;
+ 	width: 85%;
+ }
+ table.innertable {
+ 	background-color: floralwhite;
+ 	width: 80%;
+ }
+td.innertable {
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15
+}
+
+td.entrytable {
+		padding: 25px;
+	}
+.langcount {
+	font-weight: bold;
+}
+.topline {
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+	color: steelblue;
+}
+
+
+p.indexline2 {
+	margin-top: 1em;
+	font-size: .8em;
+	text-align: center;
+	/*font-family: Arial;*/
+	}
+	p.indexline3 {
+	padding-top: 2em;
+	font-size: .8em;
+	text-align: center;
+	/*font-family: Arial;*/
+	}
+
+p.charline2 {
+	/*text-transform: lowercase;*/
+	text-align: center;
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.4em;
+  /*margin-top: .5em;*/
+}
+
+table.formsR {
+	border: darkred solid 1px;
+	margin-top: 0;
+	padding: 40px;
+	background-color: white;
+}
+td.formuni {
+	width: 25%;
+}
+td.lg {
+	font-size: .9em;
+	color: green;
+	/*padding-left: 30px;*/
+	width: 20%;
+}
+td.lgloan {
+	font-size: .9em;
+	color: green;
+	padding-left: 30px;
+	width: 20%;
+}
+
+tdloan {
+	font-size: .9em;
+	color: green;
+	padding-left: 30px;
+	width: 20%;
+}
+td.group {
+	color: darkolivegreen;
+	font-weight: bold;
+	font-size: .9em;
+}
+td.grouploan {
+	color: black;
+	font-weight: bold;
+	font-size: .9em;
+}
+.work {
+	background-color: yellow;
+}
+.dbl {
+ 	font-size: .9em;
+ 	color: dimgray;
+}
+p.pidno {
+	text-align: right;
+	font-size: .6em;
+	/*margin-top: -20px;*/
+	margin-bottom: 0;
+	color: rosybrown;
+}
+
+.pidnoP {
+		font-size: .6em;
+		color: darkgray;
+	}
+.lineglossP {
+	color: black;
+	font-size: 1em;
+	font-style: normal;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.lineloanglossP {
+	color: dimgray;
+	font-size: 1em;
+	font-style: normal;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-style: italic;
+}
+.lineformP {
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: normal;
+	padding-right: 0;
+	margin-left: 30px;
+	}
+	.lineformS {
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-right: 0;
+	margin-left: 30px;
+	/*background-color: white;
+	border: solid darkred 1px;*/
+	}
+.lineformF {
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding-right: 10;
+	padding-left: 20px;
+		/*background-color: white;
+	border: solid darkred1px;*/
+	}	
+	p.FormosanIndex {
+		margin-bottom: -10;
+		padding-left: 30px;
+	}
+	
+.lineloanformP {
+	font-size: 1em;
+	color: dimgray;
+	padding-right: 0;
+	margin-left: 25px;
+	font-style: italic;
+	}
+.lineproto {
+	font-size: .8em;
+	color: dimgray;
+	padding-right: 5px;
+	}
+.lineprotoloan {
+	font-size: .9em;
+	padding-right: 5px;
+	color: dimgray;
+	font-style: italic;
+}
+.GroupP {
+	font-size: .9em;
+	color: darkolivegreen;
+	padding-right: 5px;
+}
+.GroupPLoan {
+	font-size: .9em;
+	color: dimgray;
+	padding-right: 5px;
+	font-style: italic;
+}
+table.settable {
+	background-color: white;
+	border: solid darkred 1px;
+	width: 90%;
+}
+table.SettableF {
+	background-color: ghostwhite;
+	border: solid darkred 1px;
+	width: 90%;
+}
+table.entrytable {
+	width: 100%;
+	border: darkred solid 1px;
+	background-color: floralwhite;
+	}
+
+td.settable {
+	padding: 40px;
+}
+table.settableR {
+	background-color: honeydew;
+	border: solid darkred 1px;
+	width: 80%;
+}
+td.settableR {
+	border: darkred solid 1px;
+}
+
+table.settableLoan {
+	background-color: aliceblue;
+	border: solid dimgray 1px;
+	width: 80%;
+	}
+	table.settableNear {
+	background-color: cornsilk;
+	border: solid dimgray 1px;
+	width: 80%;
+	}
+.key {
+	color: darkred;
+	font-size: 1.2em;
+	padding-right: 30px;
+	font-family: Arial;
+}
+.keyLoan {
+	color: dimgray;
+	font-size: 1.4em;
+	padding-right: 30px;
+}
+
+p.setline {
+	text-align: center;
+	/*font-family: Arial;*/
+}
+
+div.xdic {
+	font-size: .9em;
+	font-weight: bold;
+	text-align: center;
+	color: darkred;
+	margin-top: -15px;
+}
+div.xdic1 {
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	color: darkred;
+}
+a.xdic1:link {
+	font-size: 1.0em;
+}
+a.xdic1:visited {
+	font-size: 1.0em;
+}
+a.xdic2:link {
+	font-size: .9em;
+}
+a.xdic2:visited {
+	font-size: .9em;
+}
+a.xdic3:link {
+	font-size: .8em;
+}
+a.xdic3:visited {
+	font-size: .8em;
+}
+
+div.xdic2 {
+	font-size: .8em;
+	font-weight: bold;
+	text-align: center;
+	color: darkred;
+}
+p.clickHint {
+	font-size: .9em;
+	margin-top: -12px;
+	margin-bottom: -20px;
+	text-align: center;
+}
+.langname {
+	font-weight: bold;
+	color: darkgreen;
+	font-size: 1.1em;
+}
+a.langname {
+	font-weight: bold;
+	color: darkgreen;
+	font-size: 1.1em;
+}
+.langgroup {
+	color: darkblue;
+	font-size: .85em;
+}
+p.noteline {
+	text-align: center;
+	font-size: .9em;
+	margin-top: -1em;
+}
+a.grouplink:link {
+	text-decoration: none;
+	color: darkblue;
+	font-size: .8em;
+}
+a.grouplink:visited {
+	text-decoration: none;
+  color: darkblue;
+  font-size: .8em;
+}
+.langcount {
+	font-size: .9em;
+}
+table.langtable {
+	width: 80%;
+	background-color: floralwhite;
+}
+.lg {
+	font-size: 1em;
+	color: green;
+	font-weight: normal;
+}
+a.lg { 
+	font-size: .9em;
+	color: green;
+}
+.lgP {
+	color: chocolate;
+	font-size: 1em;
+}
+.wd { 
+	color: darkblue;
+	font-weight: bold;
+	font-style: italic;
+}
+.plg {
+   color: darkslategray;
+   font-family: Arial;
+   font-size: .9em;
+ }
+.fam {
+   color: darkolivegreen;
+ }
+.bib {
+ 	text-decoration: underline;
+}
+table.findertable {
+	width: 75%;
+	background-color: white;
+}
+.keyword {
+	font-weight: bold;
+	color: steelblue;
+	font-size: 1.1em;
+}
+p.keyword2 {
+	font-weight: bold;
+	color: darkred;
+	font-size: 1.1em;
+	padding-left: 30px;
+}
+.kdef{
+	font-weight: normal;
+	color: black;
+	font-size: .9em;
+	padding:left: 30px;
+}
+p.keysource {
+	font-size: .9em;
+	padding-left: 60px;
+}
+.keyplang {
+	color: darkred;
+}
+.keypformuni {
+	color: darkred;
+	font-weight: bold;
+	font-style: italic;
+}
+a.keyword2:link {
+	font-size: 1em;
+}
+a.keyword2:visited {
+	font-size: 1em;
+}
+a.findlink:visited {
+	font-size: 1em;
+	font-weight: normal;
+	color: black;
+  border-bottom: 1px dotted darkred;
+}
+a.findlink:link {
+	font-size: 1em;
+	font-weight: normal;
+	color: black;
+	border-bottom: 1px dotted black;
+}
+
+.Met {
+	/*background-color: lightblue;*/
+	font-family: Arial;
+	color: steelblue;
+	font-size: .6em;
+	/*border: 1px dotted darkred;*/
+	padding-left: 1px;
+	padding-right: 1px;
+		/*padding-bottom: 1px;*/
+	/*text-transform: lowercase;*/
+}
+.Ass {
+	/*background-color: lightblue;*/
+	font-family: Arial;
+	color: steelblue;
+	font-size: .6em;
+	/*border: 1px dotted darkred;*/
+	padding-left: 1px;
+	padding-right: 1px;
+	text-align: top;
+		/*padding-bottom: 1px;*/
+	/*text-transform: lowercase;*/
+}
+.hwnote {
+	/*background-color: lightblue;*/
+	font-family: Arial;
+	color: steelblue;
+	font-size: .7em;
+	/*border: 1px dotted darkred;*/
+	padding-left: 1px;
+	padding-right: 1px;
+	text-align: top;
+		/*padding-bottom: 1px;*/
+	/*text-transform: lowercase;*/
+}
+p.formline {
+	font-size: .9em;
+	margin-left: 25px;
+	margin-top: 0;
+	margin-bottom: 0;
+	/*font-weight: bold;*/
+}
+p.langline {
+	margin-bottom: 0;
+}
+p.dialpara {
+	margin-bottom: 0;
+	padding-left: 0;
+}
+div.dialline {
+	padding-left: 35px;
+}
+a.dialname {
+	font-size: .9em;
+}
+p.langlinex {
+	margin-bottom: 0;
+	padding-left: 25px;
+}
+.formdef {
+	color: black;
+	padding-left: 10px;
+	font-weight: normal;
+}
+a.pform:link {
+	font-weight: normal;
+	color: darkred;
+}
+a.pform:visited {
+	font-weight: normal;
+	color: darkred;
+}
+a.pformL {
+	background-color: aliceblue;
+	font-weight: normal
+	font-size: .7em;
+		}
+a.pformN {
+		background-color: lightblue;
+		font-weight: normal
+	font-size: .7em;
+	}
+a.pformR {
+		background-color: palegreen;
+		font-weight: normal
+	font-size: .7em;
+	}
+
+a.pformL:hover {
+	background-color: yellow;
+}
+a.pformN:hover {
+	background-color: yellow;
+}
+a.pformR:hover {
+	background-color: yellow;
+}
+a.pformL:link {
+	font-weight: normal;
+	color: dimgray;
+	font-size: .7em;
+}
+a.pformN:link {
+	font-weight: normal;
+	color: dimgray;
+	font-size: .7em;
+		}
+a.pformR:link {
+	font-weight: normal;
+	color: dimgray;
+	font-size: .7em;
+}
+a.pformR:visited {
+	font-weight: normal;
+	color: dimgray;
+	font-size: .7em;
+}
+a.setkey:link {
+	font-weight: normal;
+	color: darkred;
+}
+a.setkey:visited {
+	font-weight: normal;
+	color: darkred;
+}
+
+a.pform:visited {
+	font-weight: normal;
+
+}
+a.pformL:visited {
+	font-weight: normal;
+	font-size: .7em;
+}
+a.pformN:visited {
+	font-weight: normal;
+	font-size: .7em;
+}
+a.setkey:visited {
+	font-weight: normal;
+}
+.doubt {
+	background-color: yellow;
+}
+a.xdic2:link {
+	font-size: .8em;
+}
+p.pNoiseLines {
+	font-size: 1.4em;
+	color: darkgrey;
+	font-weight: bold;
+	/*background-color: gainsboro;*/
+}
+.setlineNoise {
+	font-size: 1.3em;
+	font-family: Times;
+	font-weight: bold;
+	color: dimgray;
+}
+.linenoiseform {
+	font-size: 1.4em;
+	color: dimgray;
+}
+.linenoisegloss {
+		font-style: italic;
+	padding-left: 20px;
+	}
+td.formuninoise {
+	color: darkblue;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1em;
+	width: 20%;
+}
+.pLangNoise {
+		margin-left:30px;
+	/*font-weight: bold;*/
+	font-size: 1.1em;
+	/*background-color: gainsboro;*/
+}
+td.lgnoise {
+	font-size: .9em;
+	color: green;
+	padding-left: 30px;
+	width: 20%;
+}
+table.settableNoise {
+	background-color: lightblue;
+	border: solid dimgray 1px;
+	width: 80%;
+	}
+table.settableR {
+	background-color: honeydew;
+	border: solid dimgray 1px;
+	width: 80%;
+	}
+	p.lbreak {
+		font-size: .7em;
+		color: green;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 10px;
+	}
+
+.root { color: darkred; font-weight: bold; }
+a.root { color: darkred; font-weight: bold; }
+	
+a.root:link {
+	border-bottom: dotted darkred 1px;
+}
+
+a.root:visited {
+	border-bottom: dotted darkred 1px;
+	color: darkred;
+}
+
+p.engword {
+	font-weight: bold;
+	color: steelblue;
+	margin-bottom: 0;
+}
+p.engline {
+	margin-left: 20px;
+	font-size: .8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.setword {
+	color: darkblue;
+	font-weight: bold;
+}
+.setword1 {
+	color: darkblue;
+	font-weight: bold;
+}
+.rootsymbol {
+	font-size: .8em;
+	color: darkred;
+}
+.loansymbol {
+	font-size: .8em;
+	color: darkred;
+}
+table.bibtable {
+	background-color: white;
+	width: 75%;
+}
+p.bibLetter {
+	color: darkred;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+}
+p.Author {
+	font-weight: bold;
+	color: darkred;
+	font-size: 1.1em;
+	margin-bottom: 0;
+}
+p.PubYear {
+	margin-left: 15px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.EntryForm {
+	color: darkblue;
+	font-size: 1em;
+	font-weight: normal;
+}
+a.bib {
+	font-weight: normal;
+	color: black;
+	font-size: 1em;
+	text-decoration: underline;
+	/*border-bottom: 1px black solid;*/
+	font-family: Times;
+}
+
+/*p.BibLine {
+	margin-left:50px;
+	text-indent: -40;
+}
+p.Bibline2 {
+	margin-left:50px;
+	text-indent: -40;
+/*	margin-left: 160px;
+	text-indent: -140;*/
+}
+/*.Author {
+	font-size: 1em;
+	font-weight: bold;
+	color: darkred;
+}*/
+p.Bibline {
+	padding-left: 70px;
+	text-indent: -60px;
+}
+p.Bibline2 {
+	padding-left: 70px;
+	text-indent: -70px;
+}
+.Author {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: darkred;
+}
+.Bibline:first-letter { 
+	margin-left: -15px; 
+	}
+.Bibline2:first-letter { 
+	margin-left: -15px; 
+	}
+.PubYear {
+	font-weight: bold;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.RefTitle {
+	color: darkslategray;
+	font-weight: bold;
+}
+.RefText {
+}
+.mForm {
+	color: darkblue;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.mGlossForm {
+	color: darkblue;
+	font-size: 1em;
+	font-style: italic;
+}
+.lx {
+	color: darkblue;
+	font-weight: bold;
+	font-size: 1.2em;
+	}
+.lx2 {
+	margin-left: 30px;
+	color: darkblue;
+	font-weight: normal;
+	font-size: 1em;
+	}
+.plus {
+	font-size: .8em;
+	color: black;
+	font
+}
+.oi {
+	color: darkblue;
+	font-weight: bold;
+	font-size: 1em;
+}
+.code {
+	font-size: .6em;
+	padding-left: 2px;
+	}
+.var {
+		color: darkblue;
+	}
+.ps {
+		font-size: .9em;
+		font-weight: bold;
+		color: darkred;
+		padding-left: 10px;
+	}
+.sem {
+		font-size: .7em;
+		text-transform: uppercase;
+			}
+.hwnum {
+		font-size: .7em;
+	}
+.examp {
+	color: darkblue;
+	font-size: .9em;
+}
+.examptr {
+	color: steelblue;
+	font-size: .9em;
+}
+p.sub {
+	margin-left: 20px;
+}
+p.sub1 {
+	margin-top: 0;
+	margin-left: 50px;
+	margin-bottom: 0;
+}
+p.sub2 {
+	margin-top: 0;
+	margin-left: 50px;
+	margin-bottom: 0;
+}
+p.subsub {
+	margin-left: 80px;
+	margin-top: 0;
+}
+.dq {
+	font-size: .8em;
+	color: black;
+	padding-left: 10px;
+}
+.remains {
+  font-size: .8em;
+  color: saddlebrown;
+  padding-left: 10px;
+}
+.showcode {
+	color: blueviolet;
+}
+.gl {
+	font-style: italic;
+	padding-left: 10px;
+}
+.err {
+	background-color: yellow;
+}
+p.dicline {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.pcode {
+	color: darkslategray;
+	font-size: 1.2em;
+}
+.note {
+	Font-Family: Arial;
+	font-size: .9em;
+	text-transform: uppercase;
+	font-style: italic;
+}
+.notepara {
+	padding-left: 100px;
+	font-family: Times;
+}
+p.formline {
+	
+}
+.FormHw {
+	padding-right: 10px;
+	color: darkblue;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: -35px;
+}
+.FormLg {
+	padding-right: 5px;
+	color: darkgreen;
+	font-size: .9 em;
+	font-weight: bold;
+}
+.FormPw {
+	padding-right: 10px;
+	color: darkred;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-left: -35px;
+}
+.FormPlg {
+	padding-right: 5px;
+	color: darkslategray;
+	font-size: .9 em;
+}
+
+.FormGloss {
+	color: black;
+	font-size: 1em;
+}
+.pForm {
+	color: darkred;
+	font-size: .9em;
+	font-weight: bold;
+}
+.pLang {
+	font-size: .8em;
+	color: darkslategray;
+}
+.formGroup {
+	padding-right: 10px;
+	font-size: .8em;
+	color: darkolivegreen;
+}
+p.SetIdno {
+	text-align: right;
+	font-size: .7em;
+}
+.double {
+	padding-left: 5px;
+	background-color: yellow;
+}
+.bibref {
+	font-size: .9em;
+}
+p.setnum {
+	font-size: .7em;
+	text-align: right;
+	padding-right: 50px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	color: rosybrown;
+}
+.subline {
+	font-size: .5em;
+}
+p.authorline {
+	margin-top: -20px;
+	font-size: .7em;
+	text-align: center;
+	color: steelblue;
+	font-weight: bold;
+}
+p.citedic {
+	font-size: .8em;
+	text-align: center;
+	color: steelblue;
+	font-weight: bold;
+	margin-bottom: -7;
+}
+a.citedic:link {
+	color: darkblue;
+	font-size: .9em;
+	border-bottom: darkblue dotted 1px;
+	
+}
+a.citedic:visited {
+	color: darkblue;
+	font-size: .9em;
+	font-weight: bold;
+	border-bottom: darkblue dotted 1px;
+}
+.acd {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+a.footerwww:link {
+	color: steelblue;
+	font-size: .9em;
+	
+}
+a.footerwww:visited {
+	color: steelblue;
+	font-size: .9em;
+
+}
+.plgindex {
+	color: darkred;
+	font-weight: bold;
+}
+a.findline:hover {  background-color: yellow; }
+a.findline { text-decoration: none; 
+	font-size: 1.3em;
+	font-family: Times;
+	font-weight: bold;
+	color: black;
+	}
+a.setline {
+	font-size: 1.0em;
+	font-family: Times;
+	font-weight: bold;
+	color: black;
+}
+p.updatenote {
+	text-align: center;
+	font-size: .8em;
+	color: dimgray;
+}
+
+.ISOline {
+	font-size: .8em;
+}
+.ISOname {
+	color: darkgreen;
+}
+.Loc {
+	color: rosybrown;
+	font-size: .9em;
+	}
+.ISO {
+	font-size: .8em;
+}
+a.rootproto {
+		border-bottom: darkred dotted 1px;
+		color: darkred;
+		font-size: 1em;
+	}
+td.rootproto {
+		color: darkred;
+		font-size: 1em;
+		font-weight: normal;
+	}
+a.mainlink {
+		border-bottom: darkred dotted 1px;
+	}
+.showdial {
+	color: darkblue;
+	font-size: .9em;
+	font-style: italic;
+}
+Div.DialDiv {
+	padding-left: 25px;
+}
+.aka {
+	font-size: .85em;
+	color: steelblue;
+}
+.brax {
+	color: black;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+p.index2list { text-align: center; }
