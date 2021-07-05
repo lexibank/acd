@@ -32,6 +32,7 @@ class Parser:
             (r'<pkg>', '<span>'),
             ('t<m>alam', '<span class="wd">talam</span>'),
             ('</span><a> ', '</span></a> '),
+            ('<p class="pnote"><hr><p class="pnote">', '<p class="pnote"'),
         ]:
             s = s.replace(src, t)
         return s
@@ -119,7 +120,7 @@ class Gloss(Item):
                         or c.name in ('i', 'xlg', 'wd', 'ha', 'in'):
                     self.plain += c.text
                     self.markdown += '_{}_'.format(c.text)
-        self.plain = re.sub('\s+\(\)', '', self.plain)
+        self.plain = re.sub('\s+\(\)', '', self.plain.strip())
 
 
 @attr.s
@@ -300,6 +301,17 @@ class Note(Item):
         self.markdown = self.markdown.strip()
 
 
+def next_tag(e):
+    n = e.next_sibling
+    if n is None:
+        return
+    while not isinstance(n, Tag):
+        n = n.next_sibling
+        if n is None:
+            return
+    return n
+
+
 @attr.s
 class Set(Item):
     """
@@ -310,7 +322,10 @@ class Set(Item):
             <span class="pcode">POC</span> &nbsp; &nbsp;
             <span class="lineform">*saku₃ </span>
             <span class="linegloss"><a class="setline" href="acd-ak_k.htm#kind">kind </a> of  <a class="setline" href="acd-ak_b.htm#banana">banana</a> </span>
+            #FIXME#
+            <span class="dbl">[doublet: <a href="acd-s_t.htm#5496">*tabuRiq</a>]<span>
         </p>
+
         <table class="forms" width="90%" align="center">
             <tbody>
                 <tr valign="top">
@@ -320,7 +335,7 @@ class Set(Item):
                 </tr>
                 <tr valign="top">
                     <td class="lg"><a href="acd-l_P.htm#Paamese"><span class="lg">Paamese</span></a></td>
-                    <td class="formuni">sou-sou</td>
+                    <td class="formuni">sou-sou <span class="Met"><sup>&lt;M</sup></span></td>
                     <td class="gloss">kind of banana</td>
                 </tr>
                 <tr valign="top">
@@ -329,8 +344,16 @@ class Set(Item):
             </tbody>
         </table>
     </td>
+    <p class="pidno">8060</p>
+    <a name="tanoq"></a>
+    <p class="pLang">
+        <span class="pcode">POC</span> &nbsp; &nbsp;
+        <span class="lineform">*tanoq </span>
+        <span class="linegloss"><a class="setline" href="acd-ak_e.htm#earth">earth, </a> <a class="setline" href="acd-ak_s.htm#soil">soil, </a> <a class="setline" href="acd-ak_l.htm#land">land; </a> <a class="setline" href="acd-ak_d.htm#down">down; </a> <a class="setline" href="acd-ak_w.htm#westward">westward</a> </span>
+    </p>
+    <table class="forms" width="90%" align="center">
     """
-    id = attr.ib(default=None)  # module, letter, pidno
+    id = attr.ib(default=None)  # pidno
     key = attr.ib(default=None)
     gloss = attr.ib(default=None)
     lookup = attr.ib(default=attr.Factory(list))
@@ -339,21 +362,79 @@ class Set(Item):
     note = attr.ib(default=None)
 
     def __attrs_post_init__(self):
-        self.id = int(self.html.find('p', class_='pidno').text)
-        self.key = self.html.find('span', class_='lineform').text.strip()
-        self.gloss = self.html.find('span', class_='linegloss').get_text()
+        name = next_tag(self.html)
+        assert name.name == 'a'
+        lang = next_tag(name)
+        assert lang.name == 'p'
+        forms = lang.find('table', class_='forms') or next_tag(lang)
+        if forms and forms.name == 'p':
+            forms = None
+        assert name.name == 'a' and lang.name == 'p' and ((forms is None) or forms.name == 'table'), str(self.html.parent)
 
-        # FIXME: self.lookup = self.html.find().find_all('a')
+        self.id = int(self.html.text)
+        assert self.id
+        self.key = lang.find('span', class_='lineform').text.strip()
+        self.gloss = lang.find('span', class_='linegloss').get_text()
+        pcode = lang.find('span', class_='pcode')
+        if pcode:
+            self.proto_language = pcode.get_text()
 
-        for tr in self.html.find('table', class_='forms').find_all('tr'):
-            if tr.find('td', class_='formuni'):
-                self.forms.append(Form(tr))
+
+        name = None
+        if forms:
+            pnote = forms.find('p', class_='pnote')
+            if pnote:
+                self.note = Note.from_html(pnote)
+            for tr in forms.find_all('tr'):
+                if tr.find('td', class_='formuni'):
+                    form = Form(html=tr, language=name)
+                    self.forms.append(form)
+                    name = form.language
+        else:
+            print('{} - no forms'.format(self.id))
 
 
-class SetParser(Parser):
-    __glob__ = ['acd-f_*.htm', 'acd-s_*.htm']
-    __cls__ = Set
-    __tag__ = ('table', 'settable')  # tables class=entrytable + p class=setnote
+@attr.s
+class Etymon(Item):
+    """
+    <a name=ma-₁></a>
+    <p class="setline">
+        <span class="key">*ma-₁</span>
+        <span class = "setline">
+            <a class = "setline" href="acd-ak_s.htm#stative">stative </a>
+            <a class = "setline" href="acd-ak_p.htm#prefix">prefix</a>
+        </span>
+    </p>
+    """
+    id = attr.ib(default=None)
+    key = attr.ib(default=None)
+    gloss = attr.ib(default=None)
+    sets = attr.ib(default=attr.Factory(list))
+    note = attr.ib(default=None)
+    formosan_only = attr.ib(default=False)
+
+    def __attrs_post_init__(self):
+        self.formosan_only = self.html['class'][0] == 'SettableF'
+        prev = self.html.previous_sibling
+        while not isinstance(prev, Tag):
+            prev = prev.previous_sibling
+        if prev.name == 'p' and prev['class'][0] == 'setnum':
+            self.id = int(prev.text)
+        assert self.id
+        self.key = self.html.find('span', class_='key').text.strip()
+        self.gloss = self.html.find('span', class_='setline').get_text().strip()
+        self.note = Note.from_html(self.html.find('p', class_='setnote'))
+
+        for e in self.html.find_all('p', class_='pidno'):
+            self.sets.append(Set.from_html(e))
+        #if self.formosan_only:
+        #    print('F', self.id)
+
+
+class EtymonParser(Parser):
+    __glob__ = 'acd-s_*.htm'
+    __cls__ = Etymon
+    __tag__ = ('table', ('settable', 'SettableF'))  # tables class=entrytable + p class=setnote
     """
     <p class="setline">
       <span class="key">*tektek₁</span>
@@ -397,10 +478,43 @@ class SetParser(Parser):
     def __iter__(self):
         for html in self.iter_html():
             for e in html.find_all(self.__tag__[0], class_=self.__tag__[1]):
-                # Parse the note:
-                note = Note.from_html(e.find('p', class_='setnote'))
-                for ee in e.find_all('table', class_='entrytable'):
-                    yield self.__cls__(html=ee, note=note)
+                yield self.__cls__.from_html(e)
+
+
+def set_from_href(a):
+    f, _, pid = a['href'].partition('#')
+    return f.replace('acd-', '').replace('.htm', '').split('_')[0], pid
+
+
+@attr.s(auto_detect=True)
+class LForm(Item):
+    """
+    <p class="formline"><a href="acd-s_t.htm#7351">tood</a><span class="formdef">knee</span>
+    (PMP: *<a class="pform" href="acd-s_t.htm#7351">tuhud</a>)
+    *<a class="setkey" href="acd-s_t.htm#30356">tuduS</a>
+    <span class="showdial"><a class="dialname" href="#Yami_(Iraralay)">Iraralay</a></span>
+    </p>
+
+    <p class="formline"><a href="acd-n_f.htm#2376">labaih</a>
+    <span class="formdef">careless, without worries <span class="bib"><a class="bib" href="acd-bib.htm#(Ferrell">(Ferrell 1969)</a></span></span>
+    (<a class="pformN" href="acd-n_f.htm#2376">NOISE</a>)
+    </p>
+    """
+    href = attr.ib(default=None)
+    form = attr.ib(default=None)
+    gloss = attr.ib(default=None)
+    sets = attr.ib(default=attr.Factory(set))
+
+    def __attrs_post_init__(self):
+        link = self.html.find('a', href=True)
+        self.href = link['href']
+        self.form = link.text.strip()
+
+        self.gloss = Gloss(self.html.find('span', class_='formdef'))
+
+        for a in self.html.find_all('a', class_=True, href=True):
+            if a['class'][0] == 'setkey' or a['class'][0].startswith('pform'):
+                self.sets.add(set_from_href(a))
 
 
 @attr.s
@@ -431,6 +545,18 @@ class Language(Item):
             <span class="Loc">Philippines</span>
         </span>
     </p>
+
+    <p class="formline"><a href="acd-s_t.htm#7351">tood</a><span class="formdef">knee</span>
+    (PMP: *<a class="pform" href="acd-s_t.htm#7351">tuhud</a>)
+    *<a class="setkey" href="acd-s_t.htm#30356">tuduS</a>
+    <span class="showdial"><a class="dialname" href="#Yami_(Iraralay)">Iraralay</a></span>
+    </p>
+    <p class="formline"><a href="acd-s_w.htm#5954">wa-wawo</a><span class="formdef">eight (of humans)</span>
+    (PAN: *<a class="pform" href="acd-s_w.htm#5954">wa-walu</a>)
+    *<a class="setkey" href="acd-s_w.htm#28735">walu</a>
+     <span class="showdial"><a class="dialname" href="#Yami_(Iraralay)">Iraralay</a>
+
+    <p class="lbreak">
     """
     id = attr.ib(default=None)
     name = attr.ib(default=None)
@@ -443,6 +569,7 @@ class Language(Item):
     refs = attr.ib(default=attr.Factory(list))
     parent_language = attr.ib(default=None)
     is_dialect = attr.ib(default=False)
+    forms = attr.ib(default=attr.Factory(list))
 
     def __attrs_post_init__(self):
         self.name = self.html.find('span', class_='langname').get_text()
@@ -454,9 +581,7 @@ class Language(Item):
                 pass
         self.id = int(self.html.find('a')['name'])
         self.group = self.html.find('span', class_='langgroup').get_text()
-        e = self.html.find('span', class_='langcount')
-        if e:
-            self.nwords = int(e.text.replace('(', '').replace(')', ''))
+        self.nwords = int(self.html.find('span', class_='langcount').text.replace('(', '').replace(')', ''))
 
         bibref = self.html.find('span', class_='bibref')
         if bibref:
@@ -475,6 +600,39 @@ class Language(Item):
             if e:
                 setattr(self, attrib, e.get_text())
 
+        assert (self.isocode is None) or re.fullmatch('[a-z]{3}', self.isocode), self.isocode
+
+        form = next_tag(self.html)
+        while (len(self.forms) < self.nwords) or (form and form.name == 'p' and form['class'][0] == 'formline'):
+            if form is None or form.name != 'p':
+                break
+            if form['class'][0] == 'lbreak':
+                form = next_tag(form)
+            if form.name != 'p':
+                break
+            try:
+                assert form['class'][0] == 'formline'
+            except:
+                print(form['class'])
+                raise
+            self.forms.append(LForm.from_html(form))
+            form = next_tag(form)
+
+        assert len(self.forms) >= self.nwords
+        if len(self.forms) > self.nwords:
+            print('+++', self.name)
+        # Merge forms:
+        dedup = []
+        for _, forms in itertools.groupby(
+            sorted(self.forms, key=lambda f: (f.form, f.gloss.plain)), lambda f: (f.form, f.gloss.plain)
+        ):
+            form = next(forms)
+            for f in forms:
+                form.sets = form.sets.union(f.sets)
+            dedup.append(form)
+
+        self.forms = dedup
+
 
 class LanguageParser(Parser):
     __glob__ = 'acd-l_*.htm'
@@ -482,7 +640,7 @@ class LanguageParser(Parser):
     __tag__ = ('p', ('langline', 'dialpara'))
 
     def include(self, p):
-        return (not p.stem.endswith('2')) and p.stem[-1].islower() and ('plg' not in p.stem)
+        return (not p.stem.endswith('2')) and p.stem[-1].islower() #and ('plg' not in p.stem)
 
 
 @attr.s
@@ -499,26 +657,45 @@ class Form(Item):
     # form in language
     <tr valign="top"><td class="lg">Yamdena</td>
     <td class="formuni">ambak</td><td class="gloss">pound into the ground; stamp with the feet</td></tr>
+
+    <tr valign="top"><td class="lg"><span class="brax">[</span><a href="acd-l_A.htm#'Āre'āre"><span class="lg">'Āre'āre</span></a></td>
+    <td class="formuni">mā ni ʔaʔe</td><td class="gloss">core of a boil<span class="brax">]</span></td></tr>
     """
     form = attr.ib(default=None)
     gloss = attr.ib(default=None)
     language = attr.ib(default=None)
     is_proto = attr.ib(default=False)
     set = attr.ib(default=None)
+    bracketed = attr.ib(default=False)
+    ass = attr.ib(default=False)
+    met = attr.ib(default=False)
 
     def __attrs_post_init__(self):
+        for e in self.html.find_all('span', class_='brax'):
+            e.extract()
+            self.bracketed = True
         self.gloss = Gloss(html=self.html.find('td', class_='gloss'))
         pform = self.html.find('td', class_='rootproto')
         if pform:
+            lgcls = 'lgP'
             self.is_proto = True
-            self.language = self.html.find('td', class_='lgP').text
             self.form = pform.get_text()
             slink = pform.find('a', class_='rootproto')
             if slink:
                 self.set = slink['href']
         else:
-            self.language = self.html.find('td', class_='lg').text
-            self.form = self.html.find('td', class_='formuni').get_text()
+            lgcls = 'lg'
+            formuni = self.html.find('td', class_='formuni')
+            for cls in ['Met', 'Ass']:
+                o = formuni.find('span', class_=cls)
+                if o:
+                    setattr(self, cls.lower(), True)
+                    o.extract()
+
+            self.form = formuni.get_text().strip()
+        lg = re.sub(r'\s+', ' ', self.html.find('td', class_=lgcls).text.strip())
+        if lg:
+            self.language = lg
 
 
 @attr.s
@@ -547,9 +724,12 @@ class Root(Item):
         self.key = self.html.find('span', class_='key').text
         self.gloss = self.html.find('span', class_='key').get_text()
 
+        name = None
         for tr in self.html.find('table', class_='formsR').find_all('tr'):
             if tr.find('td'):
-                self.forms.append(Form(tr))
+                form = Form(html=tr, language=name)
+                self.forms.append(form)
+                name = form.language
 
 
 class RootParser(Parser):
@@ -559,36 +739,58 @@ class RootParser(Parser):
 
 
 def main():
-    langs = list(LanguageParser())
+    langs = collections.OrderedDict()
+    for lang in LanguageParser():
+        if lang.id in langs:
+            # Proto-Western Micronesian is listed twice ...
+            assert int(lang.id) == 19629
+            assert lang.nwords == langs[lang.id].nwords
+            continue
+        langs[lang.id] = lang
+    assert len(langs) == len(set(l.name for l in langs.values())), 'duplicate language name'
 
-    assert len(langs) == len(set(l.id for l in langs))
-    assert len(langs) == len(set(l.name for l in langs))
-    langs = {l.name: l for l in langs}
-    for lang in langs.values():
-        if lang.isocode:
-            assert re.fullmatch('[a-z]{3}', lang.isocode), lang.isocode
+    forms, sets = set(), set()
+    for l in langs.values():
+        for form in l.forms:
+            forms.add((l.name, form.form))
+            for cat, no in form.sets:
+                if cat in ['f', 's']:
+                    sets.add(int(no))
 
-    missing = collections.Counter()
+    langs = {l.name: set((f.form, f.gloss.plain) for f in l.forms) for l in langs.values()}
+
+    c = 0
     existing = collections.Counter()
+    seen = set()
+    for e in EtymonParser():
+        seen.add(e.id)
+        for s in e.sets:
+            if s.id in seen:
+                raise ValueError(s.id)
+            seen.add(s.id)
+            for f in s.forms:
+                if f.language == 'Kaniet (Thilenius)':
+                    continue
+                assert f.language in langs, f.language
+                if (f.form, f.gloss.plain) not in langs[f.language]:
+                    c += 1
+                    print(f.language, f.form, f.gloss.plain)
+                existing.update([(False, f.language)])
 
-    for s in SetParser():
-        for f in s.forms:
-            if f.language in langs:
-                existing.update([False, f.language])
+    assert len(sets - seen) < 30
+    print(len(seen - sets), 'sets not linked from language forms')
+    print(len(seen.intersection(sets)), 'sets linked from language forms')
+    print(list(seen - sets)[:30])
+    print(c)
 
     #for w in WordParser():
     #    if (w.language not in langs) and not w.is_proto:
     #        missing.update([w.language])
     #    else:
     #        existing.update([(w.is_proto, w.language)])
-    #for k, v in missing.most_common():
-    #    print(k, v)
-    print(sum(1 for p, l in existing if not p), len(existing))
-    print(sum(v for k, v in existing.items() if not k[0]), sum(existing.values()))
+    #print(sum(1 for p, l in existing if not p), len(existing))
+    #print(sum(v for k, v in existing.items() if not k[0]), sum(existing.values()))
 
-    for k, v in existing.items():
-        if (k[1] in langs) and v != langs[k[1]].nwords:
-            print('{}: {} expected, {} found'.format(k[1], langs[k[1]].nwords, v))
     return
 
     for s in RootParser():
@@ -636,15 +838,4 @@ def main():
 
 
 if __name__ == '__main__':
-    from clldutils.path import md5
-
-    d = pathlib.Path('raw')
-    seen = {}
-    for p in sorted(d.iterdir(), key=lambda pp: pp.name, reverse=True):
-        cs = md5(p)
-        if cs in seen:
-            print('{} -> {}'.format(p, seen[cs]))
-            p.unlink()
-        else:
-            seen[cs] = p
-    #main()
+    main()
