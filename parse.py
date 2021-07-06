@@ -3,10 +3,46 @@ import pathlib
 import itertools
 import collections
 
+from nameparser import HumanName
 import attr
 import lxml
 import cchardet
 from bs4 import BeautifulSoup as bs, NavigableString, Tag
+
+
+def normalize_years(ref):
+    ref = re.sub(r'\-([0-9]{4})', lambda m: '/' + m.groups()[0][2:], ref)
+    return re.sub(r'\-([0-9]{2})', lambda m: '/' + m.groups()[0], ref)
+
+
+def form_and_note(s):
+    return re.sub(r'\s+', ' ', s), None
+    note = None
+    if '(' in s and s.endswith(')'):
+        s, _, note = s[:-1].partition('(')
+    return s.strip(), note.strip() if note else None
+
+
+def previous_tag(e):
+    n = e.previous_sibling
+    if n is None:
+        return
+    while not isinstance(n, Tag):
+        n = n.previous_sibling
+        if n is None:
+            return
+    return n
+
+
+def next_tag(e):
+    n = e.next_sibling
+    if n is None:
+        return
+    while not isinstance(n, Tag):
+        n = n.next_sibling
+        if n is None:
+            return
+    return n
 
 
 class Parser:
@@ -28,19 +64,25 @@ class Parser:
             ('</wd?', '</span>'),
             ('</wad>', '</span>'),
             ('>/wd>', '</span>'),
+            ('>wd>', '<span class="wd">'),
             (r'</\wd>', '</span>'),
             (r'<pkg>', '<span>'),
             ('t<m>alam', '<span class="wd">talam</span>'),
             ('</span><a> ', '</span></a> '),
             ('<p class="pnote"><hr><p class="pnote">', '<p class="pnote"'),
+            (' </span>ka-asgad-án</span> ', ' <span class="wd">ka-asgad-án</span> '),
         ]:
             s = s.replace(src, t)
+        s = re.sub(
+            r'<a name=(?P<abbr>[A-Za-z]+)></span>',
+            lambda m: '<a name="{}"></a>'.format(m.group('abbr')),
+            s)
         return s
 
     def iter_html(self):
         for p in self.paths:
             if self.include(p):
-                print(p)
+                #print(p)
                 yield bs(self.fix_html(p.read_text(encoding='utf8')), 'lxml')
 
     def __iter__(self):
@@ -76,18 +118,26 @@ class Item:
 
 @attr.s
 class Ref(Item):
-    key = attr.ib(default=None)
+    key_ = attr.ib(default=None)
     label = attr.ib(default=None)
+    year = attr.ib(default=None)
 
     @classmethod
     def match(cls, e):
         return isinstance(e, Tag) and e.name == 'span' and \
             ('class' in e.attrs) and e['class'][0] == 'bib'
 
+    @property
+    def key(self):
+        return '{}-{}'.format(self.key_, self.year or 'nd')
+
     def __attrs_post_init__(self):
         link = self.html.find('a')
-        self.key = link['href'].split('#')[1]
+        self.key_ = link['href'].split('#')[1]
         self.label = link.text
+        m = re.search('(?P<year>[0-9]{4}[a-z]?)', self.label)
+        if m:
+            self.year = m.group('year')
 
 
 @attr.s
@@ -120,7 +170,8 @@ class Gloss(Item):
                         or c.name in ('i', 'xlg', 'wd', 'ha', 'in'):
                     self.plain += c.text
                     self.markdown += '_{}_'.format(c.text)
-        self.plain = re.sub('\s+\(\)', '', self.plain.strip())
+        self.plain = re.sub(r'\s+\(\)', '', self.plain.strip())
+        self.plain = re.sub(r'\s+', ' ', self.plain)
 
 
 @attr.s
@@ -140,6 +191,7 @@ class Word(Item):
     gloss = attr.ib(default=None)
     cognateset = attr.ib(default=None)
     is_proto = attr.ib(default=False)
+    note = attr.ib(default=None)
 
     def __attrs_post_init__(self):
         for class_, attrib in [
@@ -164,9 +216,12 @@ class Word(Item):
                         raise
                 else:
                     setattr(self, attrib, re.sub(r'\s+', ' ', e.get_text().strip()))
+        self.headword, self.note = form_and_note(self.headword)
         if self.language in ['PRuk', 'PAty']:
             # In two cases, proto words are not marked up correctly:
             self.is_proto = True
+        if self.is_proto and self.headword.startswith('*'):
+            self.headword = self.headword[1:].strip()
         e = self.html.find('a', class_="setword2", href=True)
         if e:
             m = re.search('acd-(?P<module>s|f)_(?P<letter>[a-z0-9]+)\.htm#(?P<number>[0-9]+)', e['href'])
@@ -185,20 +240,95 @@ class WordParser(Parser):
 @attr.s
 class Source(Item):
     author = attr.ib(default=None)
-    year = attr.ib(default=None)
+    year_ = attr.ib(default=None)
     title = attr.ib(default=None)
     text = attr.ib(default=None)
+    bibline2 = attr.ib(default=False)
 
     def __attrs_post_init__(self):
+        years = {
+            'Blust': {
+                'A Murik vocabulary, with a note on the linguistic position of Murik': '1974b',
+                'Subgrouping, circularity and extinction: some issues in Austronesian comparative linguistics': '1999a',
+                'The history of faunal terms in Austronesian languages': '2002a',
+                'Fieldnotes on Atoni, July, 1973': '1973a',
+                'The Austronesian Comparative Dictionary: A Work in Progress.': '2013a',
+            },
+            'Fox': {
+                'Our ancestors spoke in pairs: Rotinese views of language, dialect, and code': '1874a',
+            },
+            'Lichtenberk': {
+                'Food preparation': '1998a',
+            },
+            'Osmond': {
+                'The Landscape': '2003a',
+                'The seascape': '2003b',
+                'Mammals, reptiles, amphibians': '2011b',
+            }
+        }
         for cls, attrib in [
             ('Author', 'author'),
-            ('PubYear', 'year'),
+            ('PubYear', 'year_'),
             ('RefTitle', 'title'),
             ('RefText', 'text'),
         ]:
             e = self.html.find('span', class_=cls)
             if e:
-                setattr(self, attrib, e.get_text())
+                text = e.get_text()
+                if attrib == 'author' and self.bibline2 and text:
+                    # concatenate!
+                    assert self.author
+                    self.author = '{}, {}'.format(self.author, text)
+                else:
+                    setattr(self, attrib, e.get_text())
+        #ak = self.author.split(',')[0]
+        #if self.title in years.get(ak, []):
+        #    self.year_ = years[ak][self.title]
+
+    @property
+    def authors(self):
+        def name(s):
+            if s.endswith('.') and ',' not in s:
+                s = s[:-1].strip()
+            return HumanName(s)
+
+        commas = self.author.count(',')
+        if commas < 2:
+            return [name(chunk.strip()) for chunk in self.author.split(' and ')]
+        chunks = [c.strip() for c in self.author.split(',')]
+        res = [name('{}, {}'.format(chunks.pop(0), chunks.pop(0)))]
+        for chunk in chunks:
+            if chunk:
+                for n in chunk.split(' and '):
+                    n = n.strip()
+                    if n:
+                        res.append(name(n))
+        return res
+
+    @property
+    def year(self):
+        m = re.search('(?P<year>[0-9]{4}(/[0-9]{2})?[a-z]?)', normalize_years(self.year_ or ''))
+        if m:
+            return m.group('year')
+        return self.year_
+
+    @property
+    def key(self):
+        authors = self.authors
+        if len(authors) == 2:
+            key = '{} and {}'.format(authors[0].last or authors[0].first, authors[1].last or authors[1].first)
+        elif len(authors) == 3:
+            key = '{}, {} and {}'.format(
+                authors[0].last or authors[0].first,
+                authors[1].last or authors[1].first,
+                authors[2].last or authors[2].first,
+            )
+        else:
+            key = authors[0].last or authors[0].first
+            if len(authors) > 1:
+                key += ' et al.'
+
+        return '{} {}'.format(key, self.year or 'nd')
 
 
 class SourceParser(Parser):
@@ -216,6 +346,14 @@ class SourceParser(Parser):
     # <p class="Bibline2">———. <span class="PubYear">2011.</span><span class="RefTitle">Birds</span>
     # <span class="RefText">. In Malcolm Ross, Andrew Pawley and Meredith Osmond, eds., <i>The lexicon of Proto Oceanic, the culture and environment of ancestral Oceanic society</i>, vol. 4: Animals: 271-370.</span>
 
+    """
+   <p class="Bibline2">———, <span class="Author">and Mary Kawena Pukui</span>
+<a name="Elbert"></a>
+ <span class="PubYear">1979.</span><span class="RefTitle"><i>Hawaiian grammar</i></span><span class="RefText">. Honolulu: The University Press of Hawaii.</span>
+<a name="Elgincolin"></a>
+</p> 
+    """
+
     def __iter__(self):
         for html in self.iter_html():
             author = None
@@ -226,7 +364,7 @@ class SourceParser(Parser):
                     yield res
                 elif e['class'][0] == 'Bibline2':
                     assert author
-                    yield self.__cls__(html=e, author=author)
+                    yield self.__cls__(html=e, author=author, bibline2=True)
 
 
 @attr.s
@@ -299,17 +437,6 @@ class Note(Item):
         self.plain = re.sub('\s+\(\)', '', self.plain)
         self.plain = self.plain.strip()
         self.markdown = self.markdown.strip()
-
-
-def next_tag(e):
-    n = e.next_sibling
-    if n is None:
-        return
-    while not isinstance(n, Tag):
-        n = n.next_sibling
-        if n is None:
-            return
-    return n
 
 
 @attr.s
@@ -499,22 +626,35 @@ class LForm(Item):
     <span class="formdef">careless, without worries <span class="bib"><a class="bib" href="acd-bib.htm#(Ferrell">(Ferrell 1969)</a></span></span>
     (<a class="pformN" href="acd-n_f.htm#2376">NOISE</a>)
     </p>
+
+    acd-l_n.htm:<p class="formline"><a href="acd-s_b.htm#560">bhalé (*i &gt; é unexpl.)</a><span class="formdef">change, exchange, alter</span>
+
+    acd-w_b.htm:<p class="formline"><span class="FormHw">bhalé (*i &gt; é unexpl.)</span><span class="FormLg">Ngadha</span><span class="FormGroup">(CMP)</span> <span class="FormGloss">change, exchange, alter</span> <span class="pLang">PMP</span> <a class="setword2" href="acd-s_b.htm#560">*<span class="pForm">baliw₂</span></a>
     """
     href = attr.ib(default=None)
     form = attr.ib(default=None)
     gloss = attr.ib(default=None)
     sets = attr.ib(default=attr.Factory(set))
+    note = attr.ib(default=None)
+    is_proto = attr.ib(default=False)
+
+    is_root = attr.ib(default=False)
+    ass = attr.ib(default=False)
+    met = attr.ib(default=False)
 
     def __attrs_post_init__(self):
         link = self.html.find('a', href=True)
         self.href = link['href']
-        self.form = link.text.strip()
-
+        self.form, self.note = form_and_note(link.text.strip())
+        if self.form.startswith('*'):
+            self.form = self.form[1:].strip()
         self.gloss = Gloss(self.html.find('span', class_='formdef'))
 
         for a in self.html.find_all('a', class_=True, href=True):
             if a['class'][0] == 'setkey' or a['class'][0].startswith('pform'):
                 self.sets.add(set_from_href(a))
+        if 'r' in {s[0] for s in self.sets}:
+            self.is_root = True
 
 
 @attr.s
@@ -570,8 +710,20 @@ class Language(Item):
     parent_language = attr.ib(default=None)
     is_dialect = attr.ib(default=False)
     forms = attr.ib(default=attr.Factory(list))
+    abbr = attr.ib(default=None)
+
+    @property
+    def is_proto(self):
+        return self.name.startswith('Proto-')
 
     def __attrs_post_init__(self):
+        prev = previous_tag(self.html)
+        if prev and prev.name == 'p':
+            prev = prev.contents[-1]
+            if not isinstance(prev, Tag):
+                prev = previous_tag(prev)
+        if prev and prev.name == 'a' and prev.has_attr('name'):
+            self.abbr = prev['name']
         self.name = self.html.find('span', class_='langname').get_text()
         if self.html['class'][0] == 'dialpara':
             self.is_dialect = True
@@ -603,24 +755,29 @@ class Language(Item):
         assert (self.isocode is None) or re.fullmatch('[a-z]{3}', self.isocode), self.isocode
 
         form = next_tag(self.html)
-        while (len(self.forms) < self.nwords) or (form and form.name == 'p' and form['class'][0] == 'formline'):
+        while (len(self.forms) < self.nwords) or \
+                (form and form.name == 'p' and form['class'][0] == 'formline') or \
+                (form and form.name == 'p' and form['class'][0] == 'lbreak'):
             if form is None or form.name != 'p':
                 break
             if form['class'][0] == 'lbreak':
                 form = next_tag(form)
             if form.name != 'p':
                 break
-            try:
-                assert form['class'][0] == 'formline'
-            except:
-                print(form['class'])
-                raise
-            self.forms.append(LForm.from_html(form))
+            assert form['class'][0] == 'formline'
+            self.forms.append(LForm(html=form, is_proto=self.is_proto))
             form = next_tag(form)
 
-        assert len(self.forms) >= self.nwords
-        if len(self.forms) > self.nwords:
-            print('+++', self.name)
+        if self.name == 'Sasak':
+            self.forms.append(LForm(
+                html=bs("""\
+<p class="formline"><a href="acd-s_t.htm#10372">tetes</a><span class="formdef">peck open an egg (of a hatching chick)</span>
+(WMP: *<a class="pform" href="acd-s_t.htm#10372">testes</a>)
+*<a class="setkey" href="acd-s_t.htm#10372">testes</a>
+</p>""", 'lxml'),
+                is_proto=self.is_proto))
+
+        assert self.nwords + 20 > len(self.forms) >= self.nwords
         # Merge forms:
         dedup = []
         for _, forms in itertools.groupby(
@@ -632,6 +789,11 @@ class Language(Item):
             dedup.append(form)
 
         self.forms = dedup
+        if self.abbr:
+            if self.abbr == self.name:
+                self.abbr = None
+            else:
+                self.abbr = self.abbr.lower()
 
 
 class LanguageParser(Parser):
@@ -660,15 +822,19 @@ class Form(Item):
 
     <tr valign="top"><td class="lg"><span class="brax">[</span><a href="acd-l_A.htm#'Āre'āre"><span class="lg">'Āre'āre</span></a></td>
     <td class="formuni">mā ni ʔaʔe</td><td class="gloss">core of a boil<span class="brax">]</span></td></tr>
+
+    acd-s_b.htm:<td class="formuni">bhalé <span class="hwnote">*i &gt; é unexpl.</span></td><td class="gloss">change, exchange, alter</td></tr>
     """
     form = attr.ib(default=None)
     gloss = attr.ib(default=None)
     language = attr.ib(default=None)
     is_proto = attr.ib(default=False)
+    is_root = attr.ib(default=False)
     set = attr.ib(default=None)
     bracketed = attr.ib(default=False)
     ass = attr.ib(default=False)
     met = attr.ib(default=False)
+    note = attr.ib(default=None)
 
     def __attrs_post_init__(self):
         for e in self.html.find_all('span', class_='brax'):
@@ -678,7 +844,7 @@ class Form(Item):
         pform = self.html.find('td', class_='rootproto')
         if pform:
             lgcls = 'lgP'
-            self.is_proto = True
+            self.is_root = True
             self.form = pform.get_text()
             slink = pform.find('a', class_='rootproto')
             if slink:
@@ -686,16 +852,20 @@ class Form(Item):
         else:
             lgcls = 'lg'
             formuni = self.html.find('td', class_='formuni')
-            for cls in ['Met', 'Ass']:
+            for cls in ['Met', 'Ass', 'hwnote']:
                 o = formuni.find('span', class_=cls)
                 if o:
-                    setattr(self, cls.lower(), True)
+                    setattr(self, cls.lower().replace('hw', ''), o.text if cls == 'hwnote' else True)
                     o.extract()
 
-            self.form = formuni.get_text().strip()
+            self.form, _ = form_and_note(formuni.get_text().strip())
         lg = re.sub(r'\s+', ' ', self.html.find('td', class_=lgcls).text.strip())
         if lg:
             self.language = lg
+        if self.language.startswith('Proto-'):
+            self.is_proto = True
+        if self.is_proto and self.form.startswith('*'):
+            self.form = self.form[1:].strip()
 
 
 @attr.s
@@ -738,103 +908,360 @@ class RootParser(Parser):
     __tag__ = ('table', 'settableR')
 
 
+REFS = {
+    "Ross 2006": ["Ross 2006a"],  # 6
+    "Dempwolff 1938": ["Dempwolff 1934/38"],  # 5
+    "Osmond and Ross 2016": ["Osmond and Ross 2016a", "Osmond and Ross 2016b"],  # 5
+    "Blust n.d. 1975": ["Blust 1975b"],  # 3
+    "Macdonald and Soenjono 1967": ["Macdonald and Darjowidjojo 1967"],  # 3
+    "Madulid 1999": ["Madulid 2001"],  # 2
+    "Fox, J. 1993": ["Fox 1993a"],  # 2
+    "Lobel 2014": ["Lobel 2016"],  # 2
+    "Pratt 1893": ["Pratt 1984"],  # 2
+    "Jeng 1972": ["Jeng 1971"],  # 2
+    "Jackson 1983": ["Jackson and Marck 1991"],  # 2
+    "van Wouden 1968 [1935]": ["Van Wouden 1968"],  # 2
+    "Warneck 1977 [1906]": ["Warneck 1977"],  # 2
+    "Warneck 1906": ["Warneck 1977"],  # 2
+    "Van der Veen 1940": ["van der Veen 1940"],  # 2
+    "Gonda 1973 [1952]": ["Gonda 1973"],  # 2
+    "Osmond and Pawley 2016a": [""],  # 2
+    "Blust n.d. 1971": ["Blust 1971"],  # 1
+    "Echols and Shadily": ["Echols and Shadily 1963"],  # 1
+    "Wallace 1869 1962": ["Wallace 1962"],  # 1
+    "Blust n.d. [1971]": ["Blust 1971"],  # 1
+    "Bender et al 2003": ["Bender et al. 2003"],  # 1
+    "Horne": ["Horne 1974"],  # 1
+    "Madulid": ["Madulid 2001"],  # 1
+    "Fox, C. 1970": ["Fox 1970"],  # 1
+    "Collins n.d.": [""],  # 1
+    "Ross n.d. b., Anastasia Vuluku Kaue from Makiri village, courtesy of Hiroko Sato": [""],  # 1
+    "Tsuchida, Yamada and Moriguchi 1991": [""],  # 1
+    "Freeman n.d.a.": [""],  # 1
+    "Mintz and Britanico 1985": ["Mintz and del Rosario Britanico 1985"],  # 1
+    "Blust n.d. [1975]": ["Blust 1975"],  # 1
+    "Collins n.d. b": [""],  # 1
+    "Reid 1976, Reid p.c.": ["Reid 1976"],  # 1
+    "White 1985": [""],  # 1
+    "Fox, J. n.d.": [""],  # 1
+    "Hughes n.d.": [""],  # 1
+    "Polillo Dumagat": [""],  # 1
+    "Wallace 1869, Dick Teljeur, p.c.": [""],  # 1
+    "Conklin 1953, Reid p.c.": ["Conklin 1953"],  # 1
+    "Hohulin et al. 2018": ["Hohulin, Hohulin and Maddawat 2018"],  # 1
+    "Rubino 2000, Carro 1956": ["Rubino 2000", "Carro 1956"],  # 1
+    "Ruch n.d.": [""],  # 1
+    "Esser 1964, Blust n.d. 1971": ["Esser 1964", "Blust 1971"],  # 1
+    "Reid 1971, Hohulin et al 2018": ["Reid 1971", "Hohulin, Hohulin and Maddawat 2018"],  # 1
+    "Rousseau n.d.": [""],  # 1
+    "Walker 1975,1976": ["Walker 1976"],  # 1
+    "Fox, C. 1974": [""],  # 1
+    "van Dierendonck n.d.": [""],  # 1
+    "Wallace 1962 [1869]": ["Wallace 1962"],  # 1
+    "Chowning n.d. b": [""],  # 1
+    "Fox, C. 1955": [""],  # 1
+    "Warren 1959, Reid p.c.": ["Warren 1959"],  # 1
+    "Hooley 1971, Adams and Lauck 1975": [""],  # 1
+    "Allen and Beaso1975": [""],  # 1
+    "Cauquelin 1991": [""],  # 1
+    "Nivens": [""],  # 1
+    "Bender et al. 2003, 2003a": [""],  # 1
+    #"Elgincolin, Goschnick and Elgincolin 1988": [""],  # 1
+    "Walker n.d.": [""],  # 1
+    "Blust n.d. 1975b": [""],  # 1
+    "Rajki 2018": [""],  # 1
+    "Capell 1943, Ezard 1985": [""],  # 1
+    "Beech 1908, Lobel 2016": [""],  # 1
+    "Hostetler 1975": [""],  # 1
+    "Schlegel 1971, Reid p.c.": [""],  # 1
+    "Seeddon 1978": [""],  # 1
+    "Melody Ross p.c.": [""],  # 1
+    "Held 1942, Anceaux 1961": [""],  # 1
+    "Holznecht 1989": [""],  # 1
+    "Rau, Dong, et al. 2012, Tsuchida 1987": [""],  # 1
+    "McFarland 1977, Davis and Mesa 2000": [""],  # 1
+    "van der Miesen": [""],  # 1
+    "Ogawa 1934": [""],  # 1
+    "Adriani 1928, sub onta": [""],  # 1
+    "Soenjono and Macdonald 1967": [""],  # 1
+    "Panitia 1978": [""],  # 1
+    "Ismail, Azis, Yakub, Taufik H. and Usman 1985": [""],  # 1
+    "Laktaw": ["Laktaw 1914"],  # 1
+    "Panganiban": ["Panganiban 1966"],  # 1
+    "Panganiban1966": ["Panganiban 1966"],  # 1
+    "van der Tuuk 1864/67": [""],  # 1
+    "van der Tuuk 1971 [1864/67]": [""],  # 1
+    "van Hasselt and van Hasselt 1947, sub nin": [""],  # 1
+    "Tsuchida, Yamada, and Moriguchi 1987": [""],  # 1
+    "Soeparno p.c.": [""],  # 1
+    "Rau 2006": [""],  # 1
+    "Conklin 1956": [""],  # 1
+    "van Hoëvell 1877": [""],  # 1
+    "Tylor 1958 [1871]": [""],  # 1
+    #"Biggs, Walsh and Waqa 1970": [""],  # 1
+    "Rau, Dong and Chang 2012": [""],  # 1
+    "Blust 1972b, no. 55": [""],  # 1
+    "Darlington 1957": [""],  # 1
+    "Greenberg 1966": [""],  # 1
+    "Smith n.d.": [""],  # 1
+    "Pawley 1978": [""],  # 1
+    "Li and Tsuchida 2006)": [""],  # 1
+    "K.A. Adelaar": [""],  # 1
+    "Dempwolff 1939": [""],  # 1
+    #"Starosta, Pawley and Reid 1982": [""],  # 1
+    "English 1985": [""],  # 1
+    "Li n.d.": [""],  # 1
+    #"Awed, Underwood and van Wynen 2004": [""],  # 1
+    "Llamzon 1971": [""],  # 1
+    "Ross 1996b": [""],  # 1
+    "D.J. Prentice and James T. Collins": [""],  # 1
+    "Ross 1998": [""],  # 1
+    "Himes 2002": [""],  # 1
+    "Lichtenberk and": [""],  # 1
+    "1998": [""],  # 1
+    "Pawley and Sayaba": [""],  # 1
+    "Sagart 2004": [""],  # 1
+    "Verheijen n.d.": [""],  # 1
+    "Schapper 2011": [""],  # 1
+    #"Osmond, Pawley and Ross 2003": [""],  # 1
+    "J.N. Sneddon p.c.": [""],  # 1
+    "Peterson 1931/51": [""],  # 1
+    "Wolff 2010, 2": [""],  # 1
+    "Chowning 1991": [""],  # 1
+    "Blust 2013, Table 6.5": [""],  # 1
+    "Dempwolff’s": [""],  # 1
+    "Milke 9168": [""],  # 1
+    "Madulid 2001.2": ["Madulid 2001"],  # 1
+    "Blust 2002a": [""],  # 1
+    "Arms 1973": [""],  # 1
+    "Dempwoff 1938": [""],  # 1
+    "Tsuchida": [""],  # 1
+    "Darwin Voyage of the Beagle 1839": [""],  # 1
+    "Blust 1970, fn. 123": [""],  # 1
+    "Blust 1974, fn. 4": [""],  # 1
+    "Pratt 1984 [1893]": [""],  # 1
+    "Ivens 1927": [""],  # 1
+    "Blust 2013, sect. 8.2.2.4": [""],  # 1
+    "Pratt 1878": [""],  # 1
+    "Zorc": [""],  # 1
+    "Evans 2008": [""],  # 1
+    "Blust 1998a, 2010a": [""],  # 1
+    "Ross 2011": [""],  # 1
+    "Pawley and Pawley 1994": [""],  # 1
+    "Conant": [""],  # 1
+    "Dahl 1978": [""],  # 1
+    "Nihira 1983 [1932]": ["Nihira 1983"],  # 1
+    "Zumbroich 2008": [""],  # 1
+    "Mills 1973": [""],  # 1
+    "Wolff 1971": [""],  # 1
+    "Pratt 1984/1893": ["Pratt 1984"],  # 1
+    "Blust 1980, no. 433": ["Blust 1980"],  # 1
+    "Denmpwolff 1938": ["Dempwolff 1934/38"],  # 1
+    "Pick, to appear": [""],  # 1
+    "Blust 1981, 1991a": ["Blust 1981", "Blust 1991a"],  # 1
+    "Blust 2015": [""],  # 1
+    "Zorc n.d.": [""],  # 5
+    "Geraghty n.d.": [""],  # 2
+    "Li 2004": [""],  # 2
+    "Chowning 2001": [""],
+    # https://core.ac.uk/download/pdf/160609367.pdf#page=85 Proto Melanesian plant names reconsidered
+    "Blust 2009": [""],  # 2
+    "Dempwolff": [""],  # 1
+    "Pigeaud": [""],  # 1
+    "Zorc 1981": [""],  # 1
+    "Fox n.d.": [""],  # 1
+    "Grace n.d.": [""],  # 1
+    "Fox 1993": [""],  # 1
+    "Madulid 2000": [""],  # 1
+    "Bergaño": [""],  # 1
+    "Elkins and Hendrickson 1984": [""],  # 1
+    "Blust n.d.": [""],  # 1
+    "Collins n.d. a": [""],  # 1
+    "Abo, Bender, Capelle and deBrum 1976": [""],  # 1
+    "Ross n.d.": [""],  # 1
+    "Collins n.d.a.": [""],  # 1
+    "Gibson": [""],  # 1
+    "Chinnery 1927": [""],  # 1
+    "Capell": [""],  # 1
+    "Bender et al 2003a": [""],  # 1
+    "Rubino": [""],  # 1
+    "Vanoverbergh 1956": [""],  # 1
+    "Tuan": [""],  # 1
+    "Evans 1923": [""],  # 1
+    "Echols and Shadily 1965": [""],  # 1
+    "Blust n.d": [""],  # 1
+    "Smits and Voorhoeve 1992": [""],  # 1
+    "Benton 1971a": [""],  # 1
+    "Tsuchida1976": [""],  # 1
+    "Jonker": [""],  # 1
+    "Ferrell 1971": [""],  # 1
+    "Pratt 1984 [1911]": [""],  # 1
+    "Pratt": [""],  # 1
+    "Churchill 1912": [""],  # 1
+    "Fox, J. n.d": [""],  # 1
+    "Lobel 2012": [""],  # 1
+    "Blust, fieldnotes": [""],  # 1
+    "Verheijen 1967": [""],  # 1
+    "Stresemann 1927, van der Miesen 1911": [""],  # 1
+    "Siregar 1977, Warren 1959": [""],  # 1
+}
+
+def clean_ref(ref):
+    ref = ref.strip()
+    if '(' in ref:
+        author, _, rem = ref.partition('(')
+        year, _, rem = rem.partition(')')
+        year, _, pages = year.partition(':')
+        ref = '{} {}'.format(author.strip(), year.strip())
+    elif ':' in ref:
+        ref, _, pages = ref.partition(':')
+        ref = ref.strip()
+
+    ref = normalize_years(ref)
+    ref = ref.replace("’s ", ' ').replace("'s ", ' ').replace(', and ', ' and ')
+    ref = {
+        'Ross 2008':
+            # There's Ross 2008a-g - all in the same collection
+            'Ross, Pawley and Osmond 2008',
+        'Ross 2003':
+            # There's Ross 2003a-c - all in the same collection
+            'Ross, Pawley and Osmond 2003',
+        'Ross and Osmond 2016': 'Ross, Pawley and Osmond 2016',
+        'Ross 2016a': 'Ross 2016',
+        'Osmond 1998': 'Osmond and Ross 1998',
+    }.get(ref, ref)
+    ref = ref.strip()
+
+    ref = REFS.get(ref, ref)
+    if not isinstance(ref, list):
+        ref = [ref]
+    return ref
+
+
 def main():
+    sources = {}
+    for src in SourceParser():
+        #print(src.author)
+        #print(src.key)
+        #print(src.key)
+        #if src.key in sources:
+        #    raise ValueError(src.key)
+        #if 'Osmond' in src.key:
+        #    print(src.key)
+        sources[src.key] = src
+
+    refs = collections.Counter()
     langs = collections.OrderedDict()
     for lang in LanguageParser():
+        for ref in lang.refs:
+            #assert ref.key in sources, ref.key
+            refs.update([ref.label])
         if lang.id in langs:
             # Proto-Western Micronesian is listed twice ...
             assert int(lang.id) == 19629
             assert lang.nwords == langs[lang.id].nwords
+            langs[lang.id].abbr = 'pwmc'
             continue
         langs[lang.id] = lang
     assert len(langs) == len(set(l.name for l in langs.values())), 'duplicate language name'
 
-    forms, sets = set(), set()
+    forms, linked_sets = set(), set()
     for l in langs.values():
         for form in l.forms:
+            for ref in form.gloss.refs:
+                #assert ref.key in sources, ref.key
+                refs.update([ref.label])
             forms.add((l.name, form.form))
             for cat, no in form.sets:
                 if cat in ['f', 's']:
-                    sets.add(int(no))
+                    linked_sets.add(int(no))
 
-    langs = {l.name: set((f.form, f.gloss.plain) for f in l.forms) for l in langs.values()}
+    forms_by_lang = {}
+    for l in langs.values():
+        forms_by_lang[l.name] = {(f.form, f.gloss.plain): f for f in l.forms}
+    for l in langs.values():
+        if l.abbr and l.abbr not in forms_by_lang:
+            forms_by_lang[l.abbr] = forms_by_lang[l.name]
 
-    c = 0
-    existing = collections.Counter()
-    seen = set()
+    for w in WordParser():
+        if w.language == 'Kaniet (Thilenius)':
+            continue
+        assert (w.language in forms_by_lang) or (w.language.lower() in forms_by_lang), w.language
+        form = w.headword
+        if w.note:
+            form = '{} ({})'.format(form, w.note)
+        forms = forms_by_lang.get(w.language, forms_by_lang.get(w.language.lower()))
+        assert (form, w.gloss.plain) in forms, '{}: "{}" {}'.format(w.language, form, w.gloss.plain)
+
+    sets, etyma = set(), collections.defaultdict(set)
     for e in EtymonParser():
-        seen.add(e.id)
+        if e.note:
+            for ref in e.note.refs:
+                refs.update([ref.label])
         for s in e.sets:
-            if s.id in seen:
+            if s.note:
+                for ref in s.note.refs:
+                    refs.update([ref.label])
+            etyma[e.id].add(s.id)
+            if s.id in sets:
                 raise ValueError(s.id)
-            seen.add(s.id)
+            sets.add(s.id)
             for f in s.forms:
                 if f.language == 'Kaniet (Thilenius)':
                     continue
-                assert f.language in langs, f.language
-                if (f.form, f.gloss.plain) not in langs[f.language]:
-                    c += 1
-                    print(f.language, f.form, f.gloss.plain)
-                existing.update([(False, f.language)])
+                assert f.language in forms_by_lang, f.language
+                form = f.form
+                if f.note:
+                    form = '{} ({})'.format(form, f.note)
+                assert (form, f.gloss.plain) in forms_by_lang[f.language], '{}: "{}" {}'.format(f.language, form, f.gloss.plain)
+                lform = forms_by_lang[f.language][(form, f.gloss.plain)]
+                lform.form = f.form
+                lform.note = f.note
+                lform.is_root = f.is_root
+                lform.ass = f.ass
+                lform.met = f.met
 
-    assert len(sets - seen) < 30
-    print(len(seen - sets), 'sets not linked from language forms')
-    print(len(seen.intersection(sets)), 'sets linked from language forms')
-    print(list(seen - sets)[:30])
-    print(c)
+    #assert len(linked_sets - sets) < 30
+    #print(len(sets - linked_sets), 'sets not linked from language forms')
+    #print(len(sets.intersection(linked_sets)), 'sets linked from language forms')
+    #print(list(sets - linked_sets)[:30])
 
-    #for w in WordParser():
-    #    if (w.language not in langs) and not w.is_proto:
-    #        missing.update([w.language])
-    #    else:
-    #        existing.update([(w.is_proto, w.language)])
-    #print(sum(1 for p, l in existing if not p), len(existing))
-    #print(sum(v for k, v in existing.items() if not k[0]), sum(existing.values()))
+    #
+    # FIXME:
+    # - check refs with sources
+    # - include pseudo cognate sets: Noise, Near, Loan,
+    # - include roots
+    #
+    linked_etyma = set()
+    for sid in sets.intersection(linked_sets):
+        for eid, sids in etyma.items():
+            if sid in sids:
+                linked_etyma.add(eid)
+                break
 
+    # some stats:
+    forms, roots, proto = 0, 0, 0
+    for l in langs.values():
+        for f in l.forms:
+            if f.is_root:
+                roots += 1
+            elif f.is_proto:
+                proto += 1
+            else:
+                forms += 1
+
+    print('{} forms in {} languages ({} roots, {} protoforms)'.format(forms + roots + proto, len(langs), roots, proto))
+    print('assigned to {} cognate sets grouped in {} etyma'.format(
+        len(sets.intersection(linked_sets)),
+        len(linked_etyma),
+    ))
+    for k, v in refs.most_common():
+        print(k, v)
     return
 
     for s in RootParser():
         if s.note and s.note.plain:
             print(s.note.markdown)
-
-    for s in SetParser():
-        if s.note and s.note.plain:
-            print(s.note.markdown)
-
-    return
-
-    sources = list(SourceParser())
-    print(len(sources), 'sources')
-
-    data = collections.defaultdict(lambda: collections.defaultdict(list))
-    bib = collections.Counter()
-    stats = collections.Counter()
-    cogsets = set()
-    c = 0
-    for w in WordParser():
-        c += 1
-        stats.update(['proto' if w.is_proto else 'word'])
-        data[w.group][w.language].append(w)
-        bib.update([r.key for r in w.gloss.refs])
-        if w.cognateset:
-            cogsets.add(tuple(list(w.cognateset)[:2]))
-    print(c)
-
-    sets = []
-    for s in SetParser():
-        sets.append(s)
-    print(len(sets))
-
-    #for m, l in sorted(cogsets):
-    #    print('acd-{}_{}.htm'.format(m, l))
-
-    print(stats)
-
-    #for k in data:
-    #    print(k, len(data[k]))
-
-    #for k, v in bib.most_common():
-    #    print(k, v)
 
 
 if __name__ == '__main__':
