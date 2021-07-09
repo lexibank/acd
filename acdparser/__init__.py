@@ -1,8 +1,22 @@
+import json
 import collections
+
+from nameparser import HumanName
 
 from acdparser.parser import *
 
 INVALID_LANGS = ['Kaniet (Thilenius)']
+
+
+class JsonEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if hasattr(obj, '__json__'):
+            return obj.__json__()
+        if isinstance(obj, set):
+            return sorted(obj)
+        if isinstance(obj, HumanName):
+            return {'first': obj.first, 'middle': obj.middle, 'last': obj.last}
+        return json.JSONEncoder.default(self, obj)
 
 
 def parse(d):
@@ -56,7 +70,8 @@ def parse(d):
 
     # Now check the Set pages:
     sets, etyma = set(), collections.defaultdict(set)
-    for e in EtymonParser(d):
+    cognates = list(EtymonParser(d))
+    for e in cognates:
         refs.update([r for r, _ in e.iter_refs()])
         for s in e.sets:
             refs.update([r for r, _ in s.iter_refs()])
@@ -109,7 +124,7 @@ def parse(d):
         len(linked_etyma),
     ))
     print('{} sources referenced {} times'.format(len(refs), sum(refs.values())))
-    return sources, langs
+    return sources, langs, cognates
 
     for s in RootParser():
         if s.note and s.note.plain:

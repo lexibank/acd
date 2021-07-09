@@ -28,6 +28,10 @@ class Item:
         if cls.match(e):
             return cls(e)
 
+    def __json__(self):
+        return {
+            f.name: getattr(self, f.name) for f in attr.fields(self.__class__) if f.name != 'html'}
+
     def iter_refs(self):
         refs = getattr(self, 'refs', [])
         if not refs:
@@ -56,6 +60,9 @@ class Ref(Item):
     key = attr.ib(default=None)
     label = attr.ib(default=None)
     year = attr.ib(default=None)
+
+    def __json__(self):
+        return self.label
 
     @classmethod
     def match(cls, e):
@@ -167,6 +174,15 @@ class Source(Item):
     title = attr.ib(default=None)
     text = attr.ib(default=None)
     bibline2 = attr.ib(default=False)
+
+    def __json__(self):
+        return {
+            'authors': self.authors,
+            'year': self.year,
+            'key': self.key,
+            'title': self.title,
+            'text': self.text,
+        }
 
     def __attrs_post_init__(self):
         years = {
@@ -572,7 +588,7 @@ class Language(Item):
             ('location', 'Loc'),
             ('aka', 'aka'),
         ]:
-            e = self.html.find('span', class_='ISO')
+            e = self.html.find('span', class_=cls)
             if e:
                 setattr(self, attrib, e.get_text())
 

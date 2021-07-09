@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 import json
 
 
@@ -7,19 +7,27 @@ with open('metadata.json', encoding='utf-8') as fp:
 
 
 setup(
-    name="lexibank_acd",
-    description=metadata["title"],
-    license=metadata.get("license", ""),
-    url=metadata.get("url", ""),
-    py_modules=["lexibank_acd"],
-    packages=find_packages(where='.'),
+    name='lexibank_acd',
+    description=metadata['title'],
+    license=metadata.get('license', ''),
+    url=metadata.get('url', ''),
+    py_modules=['lexibank_acd'],
     include_package_data=True,
     zip_safe=False,
-    entry_points={"lexibank.dataset": ["gaotb=lexibank_gaotb:Dataset"]},
+    entry_points={
+        'lexibank.dataset': [
+            'acd=lexibank_acd:Dataset',
+        ]
+    },
     install_requires=[
+        'pylexibank>=3.2.0',
         'lxml',
         'bs4',
         'nameparser',
     ],
-    extras_require={"test": ["pytest-cldf"]},
+    extras_require={
+        'test': [
+            'pytest-cldf',
+        ],
+    },
 )
