@@ -1,3 +1,43 @@
+"""
+The Austronesian Comparative Dictionary: A Work in Progress
+
+    December 2013 Oceanic Linguistics 52(2): 493-523
+
+DOI:10.1353/ol.2013.0016
+
+https://www.researchgate.net/publication/265931196_The_Austronesian_Comparative_Dictionary_A_Work_in_Progress
+
+
+Reconstructions in the ACD are assigned to any of nine distinct levels:
+1. PAN (Proto-Austronesian),
+2. PMP (Proto-Malayo-Polynesian),
+3. PWMP (Proto-Western Malayo-Polynesian),
+4. PPh (Proto-Philippines),
+5. PCEMP, (Proto-Central-Eastern Malayo-Polynesian),
+6. PCMP (Proto-Central Malayo-Polynesian),
+7. PEMP (Proto-Eastern Malayo-Polynesian),
+8. PSHWNG (Proto-South Halmahera-West New Guinea),
+9. POC (Proto-Oceanic).
+
+Subgroup labels that may require some explanation are:
+
+MP : Malayo-Polynesian = all AN languages outside Taiwan.
+WMP : Western Malayo-Polynesian = the AN languages of the Philippines, Borneo, the Malay peninsula
+    and islands in peninsular Thailand and Burma, Sumatra, Java and its satellites, Bali, Lombok,
+    western Sumbawa, Sulawesi, Palauan and Chamorro of western Micronesia, the seven or eight
+    Chamic languages of mainland Southeast Asia and Hainan island, and Malagasy.
+CEMP : Central-Eastern Malayo-Polynesian = CMP + EMP.
+CMP : Central Malayo-Polynesian = the AN languages of the Lesser Sunda islands and the southern
+    and central Moluccas of eastern Indonesia.
+EMP : Eastern Malayo-Polynesian = SHWNG + OC.
+SHWNG : South Halmahera-West New Guinea = the AN languages of southern Halmahera and the
+    northern Bird’s Head peninsula of New Guinea.
+OC : Oceanic = the roughly 460 AN languages of Melanesia, Micronesia and Polynesia except
+    Palauan and Chamorro of western Micronesia.
+
+Unlike these subgroup labels F (Formosan) is used as a cover term for the aboriginal languages of
+Taiwan, which appear to belong to at least nine primary branches of the AN language family.
+"""
 import json
 import collections
 

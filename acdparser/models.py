@@ -345,6 +345,23 @@ class Note(Item):
 @attr.s
 class Set(Item):
     """
+    1) Entries begin with an abbreviation for the proto-language to which the etymon is assigned.  This is followed on the same line by the reconstructed form marked by an asterisk indicating that it has been inferred by application of the Comparative Method, and then a gloss.
+
+    2) The next line contains supporting evidence, beginning with a subgroup label followed by language names that are generally cited in a north-to-south and west-to-east order, then the reflex of the reconstructed form and a gloss that is an exact or nearly exact copy of the meaning given in the primary source.
+
+    An example of a maximally simple comparison which contains only these features is the following:
+
+    Entry (1)
+
+    PMP *baliq ‘fracture, break’
+
+        WMP: Tagalog báliʔ ‘fracture, break along the length; fractured, broken’
+	        Aklanon báliʔ ‘get broken in two, get fractured (as an arm)’
+
+        CMP:  Hawu ɓari ‘broken, in pieces’
+
+    see Trussel and Blust paper
+
     <td class="entrytable">
         <p class="pidno">9625</p>
         <a name="saku₃"></a>
@@ -352,8 +369,11 @@ class Set(Item):
             <span class="pcode">POC</span> &nbsp; &nbsp;
             <span class="lineform">*saku₃ </span>
             <span class="linegloss"><a class="setline" href="acd-ak_k.htm#kind">kind </a> of  <a class="setline" href="acd-ak_b.htm#banana">banana</a> </span>
-            #FIXME#
+            #
+            # FIXME: parse doublets and disjuncts!
+            #
             <span class="dbl">[doublet: <a href="acd-s_t.htm#5496">*tabuRiq</a>]<span>
+            <span class="dsj">[disjunct: <a href="acd-s_z.htm#9437">*zizir</a>]<span>
         </p>
 
         <table class="forms" width="90%" align="center">
