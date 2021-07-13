@@ -110,8 +110,8 @@ class Gloss(Item):
                         or c.name in ('i', 'xlg', 'wd', 'ha', 'in'):
                     self.plain += c.text
                     self.markdown += '_{}_'.format(c.text)
+        self.plain = normalize_string(self.plain)
         self.plain = re.sub(r'\s+\(\)', '', self.plain.strip())
-        self.plain = re.sub(r'\s+', ' ', self.plain)
 
 
 @attr.s
@@ -147,13 +147,9 @@ class Word(Item, FormLike):
                 if class_ == 'FormPw':
                     self.is_proto = True
                 if class_ == 'FormGloss':
-                    try:
-                        setattr(self, attrib, Gloss(html=e))
-                    except:
-                        print(e)
-                        raise
+                    setattr(self, attrib, Gloss(html=e))
                 else:
-                    setattr(self, attrib, re.sub(r'\s+', ' ', e.get_text().strip()))
+                    setattr(self, attrib, normalize_string(e.get_text().strip()))
         if self.language in ['PRuk', 'PAty']:
             # In two cases, proto words are not marked up correctly:
             self.is_proto = True
@@ -423,8 +419,8 @@ class Set(Item):
 
         self.id = int(self.html.text)
         assert self.id
-        self.key = lang.find('span', class_='lineform').text.strip()
-        self.gloss = lang.find('span', class_='linegloss').get_text().strip()
+        self.key = normalize_string(lang.find('span', class_='lineform').text)
+        self.gloss = normalize_string(lang.find('span', class_='linegloss').get_text())
         pcode = lang.find('span', class_='pcode')
         if pcode:
             self.proto_language = pcode.get_text()
@@ -589,10 +585,7 @@ class Language(Item):
     is_dialect = attr.ib(default=False)
     forms = attr.ib(default=attr.Factory(list))
     abbr = attr.ib(default=None)
-
-    @property
-    def is_proto(self):
-        return self.name.startswith('Proto-')
+    is_proto = attr.ib(default=False)
 
     def __attrs_post_init__(self):
         prev = previous_tag(self.html)
@@ -672,6 +665,7 @@ class Language(Item):
                 self.abbr = None
             else:
                 self.abbr = self.abbr.lower()
+        self.is_proto = self.name.startswith('Proto-')
 
 
 @attr.s

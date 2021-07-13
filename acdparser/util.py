@@ -3,7 +3,12 @@ import functools
 
 from bs4 import Tag
 
-__all__ = ['normalize_years', 'parse_form', 'next_tag', 'previous_tag', 'set_from_href']
+__all__ = ['normalize_years', 'parse_form', 'next_tag', 'previous_tag', 'set_from_href',
+           'normalize_string']
+
+
+def normalize_string(s):
+    return re.sub('\s+', ' ', s.strip())
 
 
 def set_from_href(a):
