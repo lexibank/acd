@@ -38,6 +38,7 @@ OC : Oceanic = the roughly 460 AN languages of Melanesia, Micronesia and Polynes
 Unlike these subgroup labels F (Formosan) is used as a cover term for the aboriginal languages of
 Taiwan, which appear to belong to at least nine primary branches of the AN language family.
 """
+import re
 import json
 import collections
 
@@ -45,7 +46,45 @@ from nameparser import HumanName
 
 from acdparser.parser import *
 
+SUBGROUPS = {
+    'Form.': ('Formosan', ''),
+    'MP': ('Malayo-Polynesian', 'all AN languages outside Taiwan'),
+    'WMP': (
+        'Western Malayo-Polynesian',
+        'The Austronesian languages of the Philippines, Borneo, the Malay peninsula and islands in '
+        'peninsular Thailand and Burma, Sumatra, Java and its satellites, Bali, Lombok, '
+        'western Sumbawa, Sulawesi, Palauan and Chamorro of western Micronesia, the seven or '
+        'eight Chamic languages of mainland Southeast Asia and Hainan island, and Malagasy.'),
+    'CEMP': ('Central-Eastern Malayo-Polynesian', 'CMP + EMP'),
+    'CMP': (
+        'Central Malayo-Polynesian',
+        'The Austronesain languages of the Lesser Sunda islands and the southern and central '
+        'Moluccas of eastern Indonesia.'),
+    'EMP': ('Eastern Malayo-Polynesian', 'SHWNG + OC'),
+    'SHWNG': (
+        'South Halmahera-West New Guinea',
+        'The Austronesian languages of southern Halmahera and the northern Bird’s Head peninsula '
+        'of New Guinea.'),
+    'OC': (
+        'Oceanic',
+        'The roughly 460 Austronesian languages of Melanesia, Micronesia and Polynesia except '
+        'Palauan and Chamorro of western Micronesia.')
+}
+#PMJ
+#PSF
+
 INVALID_LANGS = ['Kaniet (Thilenius)']
+RECONCSTRUCTIONS = collections.OrderedDict([
+    ('PAN', 'Proto-Austronesian'),
+    ('PMP', 'Proto-Malayo-Polynesian'),
+    ('PWMP', 'Proto-Western Malayo-Polynesian'),
+    ('PPh', 'Proto-Philippines'),
+    ('PCEMP', 'Proto-Central-Eastern Malayo-Polynesian'),
+    ('PCMP', 'Proto-Central Malayo-Polynesian'),
+    ('PEMP', 'Proto-Eastern Malayo-Polynesian'),
+    ('PSHWNG', 'Proto-South Halmahera-West New Guinea'),
+    ('POC', 'Proto-Oceanic')
+])
 
 
 class JsonEncoder(json.JSONEncoder):
@@ -57,6 +96,33 @@ class JsonEncoder(json.JSONEncoder):
         if isinstance(obj, HumanName):
             return {'first': obj.first, 'middle': obj.middle, 'last': obj.last}
         return json.JSONEncoder.default(self, obj)
+
+
+MISSED = collections.Counter()
+
+def repl(languages_by_name, s):
+    from fuzzywuzzy import fuzz
+
+    res = []
+    start = '__language__'
+    while start in s:
+        b, _, rem = s.partition(start)
+        res.append(b)
+        lname, rem = rem.split('__', maxsplit=1)
+        lname = re.sub('\s+', ' ', lname.strip())
+        if lname in languages_by_name:
+            res.append('[{}](languages/{})'.format(lname, languages_by_name[lname]))
+        else:
+            for name, lid in languages_by_name.items():
+                if fuzz.token_sort_ratio(name, lname) > 99.0:
+                    res.append('[{}](languages/{})'.format(lname, lid))
+                    break
+            else:
+                MISSED.update([lname])
+                res.append(lname)
+        s = rem
+    res.append(s)
+    return ''.join(res)
 
 
 def parse(d):
@@ -79,6 +145,7 @@ def parse(d):
         langs[lang.id] = lang
     assert len(langs) == len(set(l.name for l in langs.values())), 'duplicate language name'
     # So now, language names and ids are unique.
+    lang_id_by_name = {l.name: lid for lid, l in langs.items()}
 
     forms, linked_sets = set(), set()
     for l in langs.values():
@@ -108,12 +175,21 @@ def parse(d):
         # All forms are found among the forms listed on the language pages:
         assert (w.form, w.gloss.plain) in forms, '{}: "{}" {}'.format(w.language, w.form, w.gloss.plain)
 
+    lang_id_by_name.update({plid: plid for plid in RECONCSTRUCTIONS})
+    for gid, (gname, _) in SUBGROUPS.items():
+        lang_id_by_name[gid] = gid
+        lang_id_by_name[gname] = gid
+
     # Now check the Set pages:
     sets, etyma = set(), collections.defaultdict(set)
     cognates = list(EtymonParser(d))
     for e in cognates:
+        if e.note:
+            e.note.markdown = repl(lang_id_by_name, e.note.markdown)
         refs.update([r for r, _ in e.iter_refs()])
         for s in e.sets:
+            if s.note:
+                s.note.markdown = repl(lang_id_by_name, s.note.markdown)
             refs.update([r for r, _ in s.iter_refs()])
             etyma[e.id].add(s.id)
             if s.id in sets:

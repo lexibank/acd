@@ -286,7 +286,7 @@ class Note(Item):
 
     @classmethod
     def match(cls, e):
-        return isinstance(e, Tag) and e.name == 'p' and e['class'][0] == 'setnote'
+        return isinstance(e, Tag) and e.name == 'p' and (e['class'][0] in ('setnote', 'pnote'))
 
     def __attrs_post_init__(self):
         for c in self.html.contents:
@@ -299,13 +299,13 @@ class Note(Item):
                 if c.name == 'span':
                     if cls == 'phoneme':
                         c, cls = c.find('span'), 'wd'
+                    elif cls == 'note':
+                        continue
                     assert cls in (None, 'wd', 'pwd', 'lg', 'plg', 'bib', 'proto', 'note', 'fam'), str(c)
                 ref = Ref.from_html(c)
                 if ref:
                     self.refs.append(ref)
                     self.markdown += '[{}](bib-{})'.format(ref.label, ref.key)
-                elif cls == 'note':
-                    pass
                 elif c.name == 'br':
                     self.plain += '\n'
                     self.markdown += '\n\n'
@@ -320,7 +320,7 @@ class Note(Item):
                     #
                     # FIXME: turn language spans/links into markdown links
                     #
-                    self.markdown += '[{}](lang-{})'.format(c.get_text(), c.get_text())
+                    self.markdown += '__language__{}__'.format(c.get_text())
                 elif c.name == 'a':
                     self.plain += c.get_text()
                     if cls == 'root':
@@ -339,7 +339,7 @@ class Note(Item):
                     raise ValueError(str(c))
         self.plain = re.sub('\s+\(\)', '', self.plain)
         self.plain = self.plain.strip()
-        self.markdown = self.markdown.strip()
+        self.markdown = self.markdown.strip().replace('*', '&ast;')
 
 
 @attr.s
@@ -369,9 +369,6 @@ class Set(Item):
             <span class="pcode">POC</span> &nbsp; &nbsp;
             <span class="lineform">*saku₃ </span>
             <span class="linegloss"><a class="setline" href="acd-ak_k.htm#kind">kind </a> of  <a class="setline" href="acd-ak_b.htm#banana">banana</a> </span>
-            #
-            # FIXME: parse doublets and disjuncts!
-            #
             <span class="dbl">[doublet: <a href="acd-s_t.htm#5496">*tabuRiq</a>]<span>
             <span class="dsj">[disjunct: <a href="acd-s_z.htm#9437">*zizir</a>]<span>
         </p>
@@ -410,8 +407,11 @@ class Set(Item):
     proto_language = attr.ib(default=None)
     forms = attr.ib(default=attr.Factory(list))
     note = attr.ib(default=None)
+    doublet = attr.ib(default=None)
+    disjunct = attr.ib(default=None)
 
     def __attrs_post_init__(self):
+        from acdparser import RECONCSTRUCTIONS
         name = next_tag(self.html)
         assert name.name == 'a'
         lang = next_tag(name)
@@ -428,7 +428,13 @@ class Set(Item):
         pcode = lang.find('span', class_='pcode')
         if pcode:
             self.proto_language = pcode.get_text()
+        assert self.proto_language in RECONCSTRUCTIONS, '{}'.format(self.proto_language)
 
+        for cls in ['disjunct', 'doublet']:
+            e = lang.find('span', class_=cls)
+            if e:
+                a = e.find('a')
+                setattr(self, cls, (a.text, a['href'].split('#')[1]))
 
         name = None
         if forms:
