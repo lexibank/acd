@@ -317,9 +317,6 @@ class Note(Item):
                     self.markdown += '__{}__'.format(c.get_text())
                 elif (cls in ('lg', 'plg', 'fam')) or c.name in ('xlg', 'xplg'):
                     self.plain += c.get_text()
-                    #
-                    # FIXME: turn language spans/links into markdown links
-                    #
                     self.markdown += '__language__{}__'.format(c.get_text())
                 elif c.name == 'a':
                     self.plain += c.get_text()
@@ -337,9 +334,10 @@ class Note(Item):
                     self.markdown += '_{}_'.format(c.text)
                 else:
                     raise ValueError(str(c))
-        self.plain = re.sub('\s+\(\)', '', self.plain)
-        self.plain = self.plain.strip()
+        self.plain = re.sub('\s+\(\)', '', self.plain).strip()
         self.markdown = self.markdown.strip().replace('*', '&ast;')
+        for a in ['plain', 'markdown']:
+            setattr(self, a, re.sub(r'^Note:\s+', '', getattr(self, a)))
 
 
 @attr.s
@@ -400,6 +398,7 @@ class Set(Item):
     </p>
     <table class="forms" width="90%" align="center">
     """
+    subset = attr.ib(default=0)
     id = attr.ib(default=None)  # pidno
     key = attr.ib(default=None)
     gloss = attr.ib(default=None)
@@ -411,6 +410,7 @@ class Set(Item):
     disjunct = attr.ib(default=None)
 
     def __attrs_post_init__(self):
+        # self.html = p class="pidno"
         from acdparser import RECONCSTRUCTIONS
         name = next_tag(self.html)
         assert name.name == 'a'
@@ -424,7 +424,7 @@ class Set(Item):
         self.id = int(self.html.text)
         assert self.id
         self.key = lang.find('span', class_='lineform').text.strip()
-        self.gloss = lang.find('span', class_='linegloss').get_text()
+        self.gloss = lang.find('span', class_='linegloss').get_text().strip()
         pcode = lang.find('span', class_='pcode')
         if pcode:
             self.proto_language = pcode.get_text()
@@ -436,14 +436,19 @@ class Set(Item):
                 a = e.find('a')
                 setattr(self, cls, (a.text, a['href'].split('#')[1]))
 
-        name = None
+        name, group = None, None
         if forms:
             pnote = forms.find('p', class_='pnote')
             if pnote:
+                if pnote.find('p', class_='pnote'):
+                    pnote = pnote.find('p', class_='pnote')
                 self.note = Note.from_html(pnote)
             for tr in forms.find_all('tr'):
+                g = tr.find('td', class_='group')
+                if g:
+                    group = g.get_text().strip()
                 if tr.find('td', class_='formuni'):
-                    form = Form(html=tr, language=name)
+                    form = Form(html=tr, language=name, group=group)
                     self.forms.append(form)
                     name = form.language
 
@@ -479,8 +484,15 @@ class Etymon(Item):
         self.gloss = self.html.find('span', class_='setline').get_text().strip()
         self.note = Note.from_html(self.html.find('p', class_='setnote'))
 
+        subset_index = 0
         for e in self.html.find_all('p', class_='pidno'):
-            self.sets.append(Set.from_html(e))
+            # FIXME:
+            p = previous_tag(e)
+            assert (p and p.name in ('a', 'p')) or e.parent.name == 'td', str(e.parent)
+            if not (p and p.name in ('a', 'p')):
+                # we're starting a new table of reconstructions
+                subset_index += 1
+            self.sets.append(Set(html=e, subset=subset_index))
         #if self.formosan_only:
         #    print('F', self.id)
 
@@ -682,6 +694,7 @@ class Form(Item, FormLike):
 
     acd-s_b.htm:<td class="formuni">bhalé <span class="hwnote">*i &gt; é unexpl.</span></td><td class="gloss">change, exchange, alter</td></tr>
     """
+    group = attr.ib(default=None)
     language = attr.ib(default=None)
     is_root = attr.ib(default=False)
     set = attr.ib(default=None)

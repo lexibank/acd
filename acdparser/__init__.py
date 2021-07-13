@@ -85,6 +85,7 @@ RECONCSTRUCTIONS = collections.OrderedDict([
     ('PSHWNG', 'Proto-South Halmahera-West New Guinea'),
     ('POC', 'Proto-Oceanic')
 ])
+TREE = '(Formosan,((PPh)PWMP,(PCMP,(PSHWNG,POC)PEMP)PCEMP)PMP)PAN;'
 
 
 class JsonEncoder(json.JSONEncoder):

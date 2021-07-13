@@ -15,7 +15,7 @@ This dataset is licensed under a CC-BY-4.0 license
 ## Statistics
 
 
-![Glottolog: 96%](https://img.shields.io/badge/Glottolog-96%25-green.svg "Glottolog: 96%")
+![Glottolog: 98%](https://img.shields.io/badge/Glottolog-98%25-green.svg "Glottolog: 98%")
 ![Concepticon: 0%](https://img.shields.io/badge/Concepticon-0%25-red.svg "Concepticon: 0%")
 ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
 
@@ -29,11 +29,6 @@ This dataset is licensed under a CC-BY-4.0 license
 
 ## Possible Improvements:
 
-- Languages linked to [bookkeeping languoids in Glottolog](http://glottolog.org/glottolog/glottologinformation#bookkeepinglanguoids):
-  - Beta [land1262](http://glottolog.org/resource/languoid/id/land1262)
-  - Kenyah (Lepu Tau) [mada1299](http://glottolog.org/resource/languoid/id/mada1299)
-  - Malay (Perak) [mala1546](http://glottolog.org/resource/languoid/id/mala1546)
-  - Malay (Trengganu) [mala1546](http://glottolog.org/resource/languoid/id/mala1546)
 
 
 - Entries missing sources: 121683/121683 (100.00%)
