@@ -707,7 +707,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 19729	pona1250	Ponam	OC					
 19570	pono1240	Ponosakan	WMP	pns		Sulawesi		
 936	tuka1249	Popalia	WMP					
-19355		Poro	OC					
+19355	gaoo1237	Poro	OC					
 19407	port1285	Port Sandwich	OC					
 19764		Proto-Trukic	OC					Jackson 1983
 19629		Proto-Western Micronesian	OC					
@@ -742,8 +742,8 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 19080		Proto-Minahasan	WMP					Sneddon 1978
 19204		Proto-Moken-Moklen	WMP					
 19497		Proto-North-Central Vanuatu	OC					
-19082		Proto-Oceanic	OC					
-19083		Proto-Philippines	WMP					
+19082		Proto-Oceanic	POC					
+19083		Proto-Philippines	PPh					
 19084		Proto-Polynesian	OC					
 19085		Proto-Puyuma	Form.					
 19086		Proto-Rukai	Form.					Li 1977
@@ -963,7 +963,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 1076	tomb1243	Tombulu	WMP	tom		Indonesia (Sulawesi)		
 1077	tond1251	Tondano	WMP	tdn		Indonesia (Sulawesi)		Sneddon 1978
 1078	tond1251	Tondano (Kakas)	WMP	tdn	Tondano	Indonesia (Sulawesi)		
-19323	tong1325	Tonga	OC			Vanuatu		
+19323	tong1322	Tonga	OC			Vanuatu		Tryon 1976
 434	tong1325	Tongan	OC	ton		Tonga		Churchward 1959
 1080	tons1239	Tonsawang	WMP	tnw		Indonesia (Sulawesi)		
 1081	tons1240	Tonsea	WMP	txs		Indonesia (Sulawesi)		Seeddon 1978
@@ -1059,7 +1059,5 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 19274	yoga1237	Yogad	WMP					McFarland 1977, Davis and Mesa 2000
 1135	toba1266	Yotefa	OC					
 19007	zaba1237	Zabana	OC	kji		Solomon Islands	[aka: Kia]	Tryon and Hackman 1983
-20000		Proto-Philippines	PPh					
 20001		Proto-Eastern Malayo-Polynesian	PEMP					
 20002		Proto-South Halmahera-West New Guinea	PSHWNG					
-20003		Proto-Oceanic	POC					
