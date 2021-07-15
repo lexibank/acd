@@ -9,7 +9,9 @@ from .refs import clean_ref
 from .util import *
 
 __all__ = [
-    'Ref', 'Gloss', 'Word', 'Source', 'Note', 'Set', 'Etymon', 'LForm', 'Language', 'Form', 'Root']
+    'Ref', 'Gloss', 'Word', 'Source', 'Note', 'Set', 'Etymon', 'LForm', 'Language', 'Form', 'Root',
+    'Loan', 'Noise', 'Near',
+]
 
 
 @attr.s
@@ -44,12 +46,148 @@ class Item:
             for r, pages in clean_ref(ref.label):
                 yield r, pages
 
+    def get_anchor(self):
+        for a in self.html.find_all('a'):
+            if 'name' in a.attrs and  re.fullmatch('[0-9]+', a['name']):
+                return int(a['name'])
+        raise ValueError(str(self.html))
+
+
+@attr.s
+class SetLike:
+    id = attr.ib(default=None)  # pidno
+    gloss = attr.ib(default=None)
+    forms = attr.ib(default=attr.Factory(list))
+    note = attr.ib(default=None)
+
+    @staticmethod
+    def get_forms(html, tablecls, formunicls, lgcls):
+        res, group, lname = [], None, None
+        forms = html.find('table', class_=tablecls)
+        assert forms
+        for tr in forms.find_all('tr'):
+            g = tr.find('td', class_='group')
+            if g:
+                group = g.get_text().strip()
+            if tr.find('td', class_=formunicls):
+                form = Form(
+                    html=tr,
+                    language=normalize_language(
+                        normalize_string(tr.find('td', class_=lgcls).get_text()) or lname),
+                    group=group,
+                    is_loan=True,
+                    fucls=formunicls,
+                )
+                lname = form.language
+                res.append(form)
+        return res
+
+
+@attr.s
+class Near(Item, SetLike):
+    """
+<table class="settableNear" align="center"><tbody><tr><td class="settable">
+<a name="nervous"></a>
+<a name="30724"></a>
+<p class="setline"><span class="keyloan"> nervous: &nbsp; anxious, nervous, restless</span></p>
+<p></p><table class="entrytable"><tbody><tr><td class="entrytable">
+<table class="loanforms" width="90%" align="center">
+<tbody><tr valign="top">
+<td class="group">WMP</td></tr>
+<tr valign="top"><td class="lgloan">Cebuano</td>
+<td class="formuniloan">balísa</td><td class="gloss">anxious, apprehensive</td></tr>
+<tr valign="top">
+<td class="lgloan">Malay</td>
+<td class="formuniloan">bəlisah</td><td class="gloss">restless, fidgety</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+<p class="setnote"><span class="lg">Malay</span> <span class="wd">bəlisah</span> points to a proto-form with *<span class="pwd">-q</span>, which <span class="lg">Cebuano</span> <span class="wd">balísa</span> supports a similar form with final vowel.  <span class="lg">Malay</span> <span class="wd">gəlisah</span> presumably is a secondary development from earlier <span class="wd">bəlisah</span>.
+</p></td></tr></tbody></table>
+    """
+    loanform = attr.ib(default=None)
+
+    def __attrs_post_init__(self):
+        self.id = self.get_anchor()
+        self.note = Note.from_html(self.html.find('p', class_='setnote'))
+        self.gloss = normalize_string(self.html.find('span', class_='keyloan').get_text())
+        lf = self.html.find('span', class_='lineloanform')
+        if lf:
+            self.loanform = normalize_string(lf.get_text())
+        self.forms = SetLike.get_forms(self.html, 'loanforms', 'formuniloan', 'lgloan')
+
+
+@attr.s
+class Noise(Item, SetLike):
+    """
+    <table class="settableNoise" align="center"><tbody><tr><td class="settable">
+<a name="abundant"></a>
+<a name="1658"></a>
+<span class="lineloanform">(Dempwolff: *bun) </span>
+<p class="setline"><span class="keyNoise">abundant</span></p>
+<p></p><table class="entrytable"><tbody><tr><td class="entrytable">
+<table class="noiseforms" width="90%" align="center">
+<tbody><tr valign="top">
+<td class="group">WMP</td></tr>
+<tr valign="top"><td class="lgnoise">Malay</td>
+<td class="formuninoise">bun</td><td class="gloss">croupier at a Chinese gaming mat</td></tr>
+<tr valign="top">
+<td class="lgnoise">Toba Batak</td>
+<td class="formuninoise">bun</td><td class="gloss">abundant, of a bumper crop of rice</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+    """
+    def __attrs_post_init__(self):
+        self.id = self.get_anchor()
+        self.note = Note.from_html(self.html.find('p', class_='setnote'))
+        self.gloss = normalize_string(self.html.find('span', class_='keyNoise').get_text())
+        lf = self.html.find('span', class_='lineloanform')
+        if lf:
+            self.loanform = normalize_string(lf.get_text())
+        self.forms = SetLike.get_forms(self.html, 'noiseforms', 'formuninoise', 'lgnoise')
+
+
+@attr.s
+class Loan(Item, SetLike):
+    """
+    <table class="settableLoan" align="center"><tbody><tr><td class="settable">
+<a name="appropriate"></a>
+<a name="30345"></a>
+<a name="app"></a>
+<span class="lineloanform">(Dempwolff: *patut ‘proper, fitting’) </span>
+<p class="setline"><span class="keyloan">appropriate: &nbsp; proper, fitting, appropriate</span></p>
+<p></p><table class="entrytable"><tbody><tr><td class="entrytable">
+<table class="loanforms" width="90%" align="center">
+<tbody><tr valign="top">
+<td class="group">WMP</td></tr>
+<tr valign="top"><td class="lgloan">Maranao</td>
+<td class="formuniloan">patot</td><td class="gloss">proper, fitting, due</td></tr>
+<tr valign="top">
+<td class="lgloan">Javanese</td>
+<td class="formuniloan">patut</td><td class="gloss">suitable, well-advised, appropriate</td></tr>
+</tbody></table>
+</td></tr></tbody></table>
+<p class="setnote">Borrowing from <span class="lg">Javanese</span> into <span class="lg">Malay</span>, with subsequent wide dispersal via <span class="lg">Malay</span>. <span class="bib"><a class="bib" href="acd-bib.htm#Dempwolff">Dempwolff (1938)</a></span> compared the <span class="lg">Ngaju Dayak</span>, <span class="lg">Malay</span>, <span class="lg">Javanese</span> and <span class="lg">Toba Batak</span> forms with <span class="lg">Tagalog</span> <span class="wd">patot</span> ‘proper, fitting’ and posited Uraustronesisch *<span class="pwd">patut</span> ‘proper, fitting’, but I have been unable to find the last of these forms in any modern dictionary.  Note the close semantics and probable origin in <span class="lg">Javanese</span> with subsequent spread by <span class="lg">Malay</span> for both this form and <span class="lg">Malay</span> <span class="wd">pantas</span>, etc.
+</p></td></tr></tbody></table>
+    """
+    loanform = attr.ib(default=None)
+
+    def __attrs_post_init__(self):
+        self.id = self.get_anchor()
+        self.note = Note.from_html(self.html.find('p', class_='setnote'))
+        self.gloss = normalize_string(self.html.find('span', class_='keyloan').get_text())
+        lf = self.html.find('span', class_='lineloanform')
+        if lf:
+            self.loanform = normalize_string(lf.get_text())
+        self.forms = SetLike.get_forms(self.html, 'loanforms', 'formuniloan', 'lgloan')
+
 
 @attr.s
 class FormLike:
     form = attr.ib(default=None)
     gloss = attr.ib(default=None)
     is_proto = attr.ib(default=False)
+    is_loan = attr.ib(default=False)
 
 
 @attr.s
@@ -337,7 +475,7 @@ class Note(Item):
 
 
 @attr.s
-class Set(Item):
+class Set(Item, SetLike):
     """
     1) Entries begin with an abbreviation for the proto-language to which the etymon is assigned.  This is followed on the same line by the reconstructed form marked by an asterisk indicating that it has been inferred by application of the Comparative Method, and then a gloss.
 
@@ -395,13 +533,9 @@ class Set(Item):
     <table class="forms" width="90%" align="center">
     """
     subset = attr.ib(default=0)
-    id = attr.ib(default=None)  # pidno
     key = attr.ib(default=None)
-    gloss = attr.ib(default=None)
     lookup = attr.ib(default=attr.Factory(list))
     proto_language = attr.ib(default=None)
-    forms = attr.ib(default=attr.Factory(list))
-    note = attr.ib(default=None)
     doublet = attr.ib(default=None)
     disjunct = attr.ib(default=None)
 
@@ -529,6 +663,13 @@ class LForm(Item, FormLike):
                 self.sets.add(set_from_href(a))
         if 'r' in {s[0] for s in self.sets}:
             self.is_root = True
+        # Fix sets:
+        ns = set()
+        for cat, no in self.sets:
+            if int(no) in [30144, 30269, 30262, 30324, 30351]:
+                cat = 'near'
+            ns.add((cat, no))
+        self.sets = ns
 
 
 @attr.s
@@ -654,8 +795,9 @@ class Language(Item):
         for _, forms in itertools.groupby(
                 sorted(self.forms, key=lambda f: (f.form, f.gloss.plain)), lambda f: (f.form, f.gloss.plain)
         ):
-            form = next(forms)
-            for f in forms:
+            forms = list(forms)
+            form = forms[0]
+            for f in forms[1:]:
                 form.sets = form.sets.union(f.sets)
             dedup.append(form)
 
@@ -696,6 +838,7 @@ class Form(Item, FormLike):
     ass = attr.ib(default=False)
     met = attr.ib(default=False)
     note = attr.ib(default=None)
+    fucls = attr.ib(default='formuni')
 
     def __attrs_post_init__(self):
         for e in self.html.find_all('span', class_='brax'):
@@ -711,8 +854,8 @@ class Form(Item, FormLike):
             if slink:
                 self.set = slink['href']
         else:
-            lgcls = 'lg'
-            formuni = self.html.find('td', class_='formuni')
+            lgcls = 'lgloan' if self.is_loan else 'lg'
+            formuni = self.html.find('td', class_=self.fucls)
             for cls in ['Met', 'Ass', 'hwnote']:
                 o = formuni.find('span', class_=cls)
                 if o:
@@ -720,9 +863,12 @@ class Form(Item, FormLike):
                     o.extract()
 
             self.form = formuni.get_text()
-        lg = re.sub(r'\s+', ' ', self.html.find('td', class_=lgcls).text.strip())
+
+        lg = self.html.find('td', class_=lgcls)
         if lg:
-            self.language = lg
+            lg = normalize_string(lg.text)
+            if lg:
+                self.language = normalize_language(lg)
         if self.language.startswith('Proto-'):
             self.is_proto = True
         self.form = parse_form(self.form, self.is_proto)

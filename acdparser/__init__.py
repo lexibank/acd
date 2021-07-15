@@ -137,25 +137,29 @@ def parse(d):
     langs = collections.OrderedDict()
     for lang in LanguageParser(d):
         refs.update([r for r, _ in lang.iter_refs()])
-        if lang.id in langs:
-            # Proto-Western Micronesian is listed twice ...
-            assert int(lang.id) == 19629
-            assert lang.nwords == langs[lang.id].nwords
-            langs[lang.id].abbr = 'pwmc'
-            continue
         langs[lang.id] = lang
+    langs[19629].abbr = 'pwmc'
     assert len(langs) == len(set(l.name for l in langs.values())), 'duplicate language name'
     # So now, language names and ids are unique.
     lang_id_by_name = {l.name: lid for lid, l in langs.items()}
+
+    loids = {l.id for l in LoanParser(d)}
 
     forms, linked_sets = set(), set()
     for l in langs.values():
         for form in l.forms:
             refs.update([r for r, _ in form.iter_refs()])
             forms.add((l.name, form.form))
+            ns = set()
             for cat, no in form.sets:
+                if cat == 'lo' and int(no) not in loids:
+                    cat = 'near'
+                if cat == 's' and no == '0' and form.gloss.plain == 'kind of shark':
+                    cat, no = 'near', '29910'
                 if cat in ['f', 's']:
                     linked_sets.add(int(no))
+                ns.add((cat, no))
+            form.sets = ns
 
     # We provide language forms for simple lookup:
     forms_by_lang = {}
@@ -166,6 +170,56 @@ def parse(d):
         if l.abbr and l.abbr not in forms_by_lang:
             forms_by_lang[l.abbr] = forms_by_lang[l.name]
 
+    lang_id_by_name.update({plid: plid for plid in RECONCSTRUCTIONS})
+    for gid, (gname, _) in SUBGROUPS.items():
+        lang_id_by_name[gid] = gid
+        lang_id_by_name[gname] = gid
+
+    nearsets = []
+    for near in NearParser(d):
+        nearsets.append(near)
+        for f in near.forms:
+            if f.language in forms_by_lang:
+                if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
+                    #pass
+                    print('{}: {} {}'.format(f.language, f.form, near.gloss))
+                else:
+                    form = forms_by_lang[f.language][f.form, f.gloss.plain]
+                    assert ('near', str(near.id)) in form.sets, '{} "{}": {} -- {}'.format(form.form, form.gloss.plain, form.sets, near.id)
+            else:
+                #pass
+                print('---', f.language)
+    noisesets = []
+    for noise in NoiseParser(d):
+        noisesets.append(noise)
+        for f in noise.forms:
+            if f.language in forms_by_lang:
+                if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
+                    pass
+                    #print('{}: {} {}'.format(f.language, f.form, noise.gloss))
+                else:
+                    form = forms_by_lang[f.language][f.form, f.gloss.plain]
+                    assert ('n', str(noise.id)) in form.sets, '{} -- {}'.format(form.sets, noise.id)
+            else:
+                pass
+                #print('---', f.language)
+
+    loans = []
+    for loan in LoanParser(d):
+        loans.append(loan)
+        for f in loan.forms:
+            if f.language in forms_by_lang:
+                if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
+                    pass
+                    #print('{}: {} {}'.format(f.language, f.form, loan.gloss))
+                else:
+                    form = forms_by_lang[f.language][f.form, f.gloss.plain]
+                    form.sets.add(('lo', str(loan.id)))
+                    form.is_loan = True
+            else:
+                pass
+                #print('---', f.language)
+
     # Now we cross-check the forms listed on the Words pages:
     for w in WordParser(d):
         if w.language in INVALID_LANGS:
@@ -175,11 +229,6 @@ def parse(d):
         forms = forms_by_lang.get(w.language, forms_by_lang.get(w.language.lower()))
         # All forms are found among the forms listed on the language pages:
         assert (w.form, w.gloss.plain) in forms, '{}: "{}" {}'.format(w.language, w.form, w.gloss.plain)
-
-    lang_id_by_name.update({plid: plid for plid in RECONCSTRUCTIONS})
-    for gid, (gname, _) in SUBGROUPS.items():
-        lang_id_by_name[gid] = gid
-        lang_id_by_name[gname] = gid
 
     # Now check the Set pages:
     sets, etyma = set(), collections.defaultdict(set)
@@ -241,7 +290,7 @@ def parse(d):
         len(linked_etyma),
     ))
     print('{} sources referenced {} times'.format(len(refs), sum(refs.values())))
-    return sources, langs, cognates
+    return sources, langs, cognates, loans, noisesets, nearsets
 
     for s in RootParser():
         if s.note and s.note.plain:

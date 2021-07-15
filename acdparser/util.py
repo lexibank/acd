@@ -4,7 +4,29 @@ import functools
 from bs4 import Tag
 
 __all__ = ['normalize_years', 'parse_form', 'next_tag', 'previous_tag', 'set_from_href',
-           'normalize_string']
+           'normalize_string', 'normalize_language']
+
+
+def normalize_language(l):
+    return {
+        "'āre'āre": "'Āre'āre",
+        'PAmb': 'Proto-Ambon',
+        'PAty': 'Proto-Atayalic',
+        'PCham': 'Proto-Chamic',
+        'PCha': 'Proto-Chamic',
+        'PMin': 'Proto-Minahasan',
+        'PSan': 'Proto-Sangiric',
+        'PSS': 'Proto-South Sulawesi',
+        'PWMP': 'Proto-Western Malayo-Polynesian',
+        'PPh': 'Proto-Philippines',
+        'PRuk': 'Proto-Rukai',
+        'PAdm': 'Proto-Admiralty',
+        'PMic': 'Proto-Micronesian',
+        'PWMC': 'Proto-Western Micronesian',
+        'POc': 'Proto-Oceanic',
+        'PSF': 'Proto-South Formosan',
+        "Ida'an begak": "Ida'an Begak",
+    }.get(l, l)
 
 
 def normalize_string(s):

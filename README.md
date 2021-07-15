@@ -19,7 +19,7 @@ This dataset is licensed under a CC-BY-4.0 license
 ![Concepticon: 0%](https://img.shields.io/badge/Concepticon-0%25-red.svg "Concepticon: 0%")
 ![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
 
-- **Varieties:** 1,064
+- **Varieties:** 1,062
 - **Concepts:** 86,412
 - **Lexemes:** 146,545
 - **Sources:** 0
