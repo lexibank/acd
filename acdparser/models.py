@@ -62,24 +62,60 @@ class SetLike:
 
     @staticmethod
     def get_forms(html, tablecls, formunicls, lgcls):
+        """
+        Forms are listed in tables, grouped into language groups.
+        """
+        if isinstance(formunicls, str):
+            formunicls = [formunicls]
+        if isinstance(lgcls, str):
+            lgcls = [lgcls]
         res, group, lname = [], None, None
-        forms = html.find('table', class_=tablecls)
+        forms = html.find('table', class_=tablecls) if isinstance(tablecls, str) else tablecls
         assert forms
         for tr in forms.find_all('tr'):
             g = tr.find('td', class_='group')
-            if g:
+            if g:  # A group row.
                 group = g.get_text().strip()
-            if tr.find('td', class_=formunicls):
-                form = Form(
-                    html=tr,
-                    language=normalize_language(
-                        normalize_string(tr.find('td', class_=lgcls).get_text()) or lname),
-                    group=group,
-                    is_loan=True,
-                    fucls=formunicls,
-                )
-                lname = form.language
-                res.append(form)
+                continue
+
+            bracketed = False
+            for e in tr.find_all('span', class_='brax'):
+                e.extract()
+                bracketed = True
+
+            # The language name is only specified in the first row of forms for the language.
+            # Thus we have to remember it for later forms.
+            for lcls in lgcls:
+                if tr.find('td', class_=lcls):
+                    language = normalize_language(
+                        normalize_string(tr.find('td', class_=lcls).get_text()) or lname)
+                    break
+            else:
+                language = lname
+
+            for fcls in formunicls:
+                f = tr.find('td', class_=fcls)
+                if f:
+                    form = Form(
+                        html=tr,
+                        language=language,
+                        group=group,
+                        is_loan=True,
+                        fucls=f,
+                        bracketed=bracketed,
+                    )
+                    if fcls == 'rootproto':
+                        form.is_root = True
+
+                        # FIXME: parse root set link!
+                        # if 0:
+                        #    slink = pform.find('a', class_='rootproto')
+                        #    if slink:
+                        #        self.set = slink['href']
+
+                    lname = form.language
+                    res.append(form)
+                    break
         return res
 
 
@@ -573,14 +609,7 @@ class Set(Item, SetLike):
                 if pnote.find('p', class_='pnote'):
                     pnote = pnote.find('p', class_='pnote')
                 self.note = Note.from_html(pnote)
-            for tr in forms.find_all('tr'):
-                g = tr.find('td', class_='group')
-                if g:
-                    group = g.get_text().strip()
-                if tr.find('td', class_='formuni'):
-                    form = Form(html=tr, language=name, group=group)
-                    self.forms.append(form)
-                    name = form.language
+            self.forms = SetLike.get_forms(forms, forms, 'formuni', 'lg')
 
 
 @attr.s
@@ -841,41 +870,25 @@ class Form(Item, FormLike):
     fucls = attr.ib(default='formuni')
 
     def __attrs_post_init__(self):
-        for e in self.html.find_all('span', class_='brax'):
-            e.extract()
-            self.bracketed = True
         self.gloss = Gloss(html=self.html.find('td', class_='gloss'))
-        pform = self.html.find('td', class_='rootproto')
-        if pform:
-            lgcls = 'lgP'
-            self.is_root = True
-            self.form = pform.get_text()
-            slink = pform.find('a', class_='rootproto')
-            if slink:
-                self.set = slink['href']
-        else:
-            lgcls = 'lgloan' if self.is_loan else 'lg'
-            formuni = self.html.find('td', class_=self.fucls)
-            for cls in ['Met', 'Ass', 'hwnote']:
-                o = formuni.find('span', class_=cls)
-                if o:
-                    setattr(self, cls.lower().replace('hw', ''), o.text if cls == 'hwnote' else True)
-                    o.extract()
+        formuni = self.html.find('td', class_=self.fucls) if isinstance(self.fucls, str) else self.fucls
+        for cls in ['Met', 'Ass', 'hwnote']:
+            o = formuni.find('span', class_=cls)
+            if o:
+                setattr(self, cls.lower().replace('hw', ''), o.text if cls == 'hwnote' else True)
+                o.extract()
 
             self.form = formuni.get_text()
 
-        lg = self.html.find('td', class_=lgcls)
-        if lg:
-            lg = normalize_string(lg.text)
-            if lg:
-                self.language = normalize_language(lg)
         if self.language.startswith('Proto-'):
             self.is_proto = True
         self.form = parse_form(self.form, self.is_proto)
+        assert self.language and self.form
+        self.fucls = None
 
 
 @attr.s
-class Root(Item):
+class Root(Item, SetLike):
     """
     <td>
     <a name="-baj"></a>
@@ -888,11 +901,7 @@ class Root(Item):
     <p class="setnote"><span class="lg">Isneg</span> <span class="wd">ubād</span> 'untie, unbind, let loose' (expected **<span class="wd">ubag</span>) suggests that <span class="lg">Aklanon</span> <span class="wd">húbad</span> may not contain the root *<span class="pwd">-baj</span>.
     </p></td>
     """
-    id = attr.ib(default=None)
-    note = attr.ib(default=None)
     key = attr.ib(default=None)
-    gloss = attr.ib(default=None)
-    forms = attr.ib(default=attr.Factory(list))
 
     def __attrs_post_init__(self):
         self.note = Note.from_html(self.html.find('p', 'setnote'))
@@ -900,9 +909,4 @@ class Root(Item):
         self.key = self.html.find('span', class_='key').text
         self.gloss = self.html.find('span', class_='key').get_text()
 
-        name = None
-        for tr in self.html.find('table', class_='formsR').find_all('tr'):
-            if tr.find('td'):
-                form = Form(html=tr, language=name)
-                self.forms.append(form)
-                name = form.language
+        self.forms = SetLike.get_forms(self.html, 'formsR', ('rootproto', 'formuni'), ('lg', 'lgP'))

@@ -175,50 +175,140 @@ def parse(d):
         lang_id_by_name[gid] = gid
         lang_id_by_name[gname] = gid
 
+    rootsets = []
+    for s in RootParser(d):
+        rootsets.append(s)
+        refs.update([r for r, _ in s.iter_refs()])
+        for f in s.forms:
+            if f.language in [
+                'Mb(T)', 'LgW', 'TYPE', 'LgL', 'LgS', 'SB', 'KADAYAN', '(??) *', 'SUB(S)', 'MOO',
+            ]:
+                continue
+            assert f.language in forms_by_lang, f.language
+            if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
+                #print('{}: {} {}'.format(f.language, f.form, f.gloss.plain))
+                # Rembong: bunit peel the stalks of vegetables
+                # Bungku: wita earth, land
+                # Manggarai: wituk swaying the body, posturing
+                pass
+            else:
+                form = forms_by_lang[f.language][f.form, f.gloss.plain]
+                assert ('r', str(s.id)) in form.sets, '{} "{}": {} -- {}'.format(form.form, form.gloss.plain, form.sets, s.id)
+
     nearsets = []
     for near in NearParser(d):
         nearsets.append(near)
+        refs.update([r for r, _ in near.iter_refs()])
         for f in near.forms:
-            if f.language in forms_by_lang:
-                if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
-                    #pass
-                    print('{}: {} {}'.format(f.language, f.form, near.gloss))
-                else:
-                    form = forms_by_lang[f.language][f.form, f.gloss.plain]
-                    assert ('near', str(near.id)) in form.sets, '{} "{}": {} -- {}'.format(form.form, form.gloss.plain, form.sets, near.id)
+            if f.language in [
+                'PPn', 'Batangan'
+            ]:
+                continue
+            if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
+                #print('{}: {} {}'.format(f.language, f.form, near.gloss))
+                # Rarotongan: tino body
+                # Malay: mə-ləcit fly off: fly off, squirt out
+                # Palawano: deŋen river otter
+                pass
             else:
-                #pass
-                print('---', f.language)
+                form = forms_by_lang[f.language][f.form, f.gloss.plain]
+                assert ('near', str(near.id)) in form.sets, '{} "{}": {} -- {}'.format(form.form, form.gloss.plain, form.sets, near.id)
+
     noisesets = []
     for noise in NoiseParser(d):
         noisesets.append(noise)
+        refs.update([r for r, _ in noise.iter_refs()])
         for f in noise.forms:
-            if f.language in forms_by_lang:
-                if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
-                    pass
-                    #print('{}: {} {}'.format(f.language, f.form, noise.gloss))
-                else:
-                    form = forms_by_lang[f.language][f.form, f.gloss.plain]
-                    assert ('n', str(noise.id)) in form.sets, '{} -- {}'.format(form.sets, noise.id)
-            else:
+            if f.language in [
+                'RHB', 'TND', 'LON', 'MUR',
+            ]:
+                continue
+            if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
                 pass
-                #print('---', f.language)
+                #print('{}: {} {}'.format(f.language, f.form, noise.gloss))
+                # Thao: taqtaq adze something: chop, split, adze something
+                # Paiwan: ŋasŋas be out of breath: pant, be out of breath
+                # Tagalog: dúkit cut off
+                # Ilokano: tata elder sibling: father, uncle, elder sibling
+                # Malagasy: pelika fan: vibrate, fan
+                # Balinese: tuli fast
+                # Samoan: tafa-tafa flank: side, flank
+                # Tagalog: kubót fold, wrinkle
+                # Tagalog: labág free, on the loose
+                # Old Javanese: a-sisib-an glide off, slide off
+                # Old Javanese: taŋtaŋ grip, grasp
+                # Tagalog: kugkog grate: to grate
+                # Tagalog: sabád hindrance
+                # Toba Batak: dahop join together
+                # Tausug: kawin marry: wedding, to marry
+                # Sinaugoro: gepa mat
+                # Tagalog: kirót pain
+                # Malagasy: dzuluka (a bar to prevent entrance pierce, skewer
+                # Tagalog: lúlos slip off
+                # Tagalog: layláy spread out
+                # Ngaju Dayak: lawas stand open
+                # Malay: lawas stand open
+                # Tagalog: kaykay stand up
+                # Paiwan: tjiptjip suck
+                # Ilokano: kahút take with hand
+                # Tagalog: pásaŋ wooden implement
+            else:
+                form = forms_by_lang[f.language][f.form, f.gloss.plain]
+                assert ('n', str(noise.id)) in form.sets, '{} -- {}'.format(form.sets, noise.id)
 
     loans = []
     for loan in LoanParser(d):
         loans.append(loan)
+        refs.update([r for r, _ in loan.iter_refs()])
         for f in loan.forms:
-            if f.language in forms_by_lang:
-                if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
-                    pass
-                    #print('{}: {} {}'.format(f.language, f.form, loan.gloss))
-                else:
-                    form = forms_by_lang[f.language][f.form, f.gloss.plain]
-                    form.sets.add(('lo', str(loan.id)))
-                    form.is_loan = True
-            else:
+            if f.language in [
+                'NGA', 'RNB', 'PCS', 'K-K', 'CRAM',
+            ]:
+                continue
+            if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
                 pass
-                #print('---', f.language)
+                #print('{}: {} {}'.format(f.language, f.form, loan.gloss))
+                # Bikol: mag-gúlpi all at once: sudden(ly), all at once
+                # Ilokano: limós alms
+                # Tae': tadi-i artificial cockspur
+                # Agutaynen: láŋka Artocarpus: jackfruit Artocarpus spp.
+                # Toba Batak: pisaŋ banana
+                # Casiguran Dumagat: kahíl Bitter orange Seville orange: Citrus aurantium
+                # Hanunóo: kahíl Bitter orange Seville orange: Citrus aurantium
+                # Ilokano: Insík Chinese
+                # Tagalog: Insík Chinese
+                # Tagalog: sigih-an continue
+                # Binukid: ka-piaŋ crippled, lame
+                # Sundanese: gedoŋ bicara discussion: speak, discussion
+                # Bontok: talóŋ eggplant
+                # Casiguran Dumagat: búrupickled ipon fish: pickled fish
+                # Pazeh: ʔa:kúŋ grandfather
+                # Samoan: ʔava kava: Piper methysticum
+                # Toba Batak: undaŋ law
+                # Javanese: unḍaŋ law
+                # Ilokano: líra lyre
+                # Sundanese: tilam quilt mattress thin cover to sleep on
+                # Maranao: talompaʔ ~ tarompaʔ sandal
+                # Paiwan: ts<alʸ>ebak shoot
+                # Malay: pandak ~ pendek short
+                # Tagalog: tíbay sound: well-made structurally sound
+                # Ibaloy: pison steamroller
+                # Tboli: atis Sweetsop: Annona squamosa
+                # Ilokano: kaʔiŋin swidden
+                # Tagalog: kaʔiŋin swidden
+                # Cebuano: kaʔiŋin swidden
+                # Malay: pədaŋ sword
+                # Hanunóo: kaládiʔ taro variety
+                # Tagalog: tuksó temptation; to tempt
+                # Bikol: ma-tipíd thrifty
+                # Bikol: título title (to land)
+                # Bontok: tabáko tobacco
+                # Agutaynen: pabo turkey
+                # Malay: pəñəŋat wasp
+            else:
+                form = forms_by_lang[f.language][f.form, f.gloss.plain]
+                form.sets.add(('lo', str(loan.id)))
+                form.is_loan = True
 
     # Now we cross-check the forms listed on the Words pages:
     for w in WordParser(d):
@@ -254,6 +344,7 @@ def parse(d):
                     form = '{} ({})'.format(form, f.note)
                 assert (form, f.gloss.plain) in forms_by_lang[f.language], '{}: "{}" {}'.format(f.language, form, f.gloss.plain)
                 lform = forms_by_lang[f.language][(form, f.gloss.plain)]
+                assert ('s', str(s.id)) in lform.sets or (('f', str(s.id)) in lform.sets), '{} -- {}'.format(lform.sets, s.id)
                 lform.form = f.form
                 lform.note = f.note
                 lform.is_root = f.is_root
@@ -263,8 +354,6 @@ def parse(d):
     #
     # FIXME:
     # - check refs with sources
-    # - include pseudo cognate sets: Noise, Near, Loan,
-    # - include roots
     #
     linked_etyma = set()
     for sid in sets.intersection(linked_sets):
@@ -290,8 +379,4 @@ def parse(d):
         len(linked_etyma),
     ))
     print('{} sources referenced {} times'.format(len(refs), sum(refs.values())))
-    return sources, langs, cognates, loans, noisesets, nearsets
-
-    for s in RootParser():
-        if s.note and s.note.plain:
-            print(s.note.markdown)
+    return sources, langs, cognates, loans, noisesets, nearsets, roots

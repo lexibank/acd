@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup as bs
 from .models import *
 
 __all__ = ['SourceParser', 'LanguageParser', 'WordParser', 'EtymonParser', 'LoanParser',
-           'NoiseParser', 'NearParser']
+           'NoiseParser', 'NearParser', 'RootParser']
 
 
 class Parser:
@@ -30,6 +30,7 @@ class Parser:
     @staticmethod
     def fix_html(s):
         for src, t in [
+            ('<*<span class', '<span class'),
             ('<famg>', '<span class="fam">'),
             ('</wd?', '</span>'),
             ('</wad>', '</span>'),
@@ -216,6 +217,12 @@ class LanguageParser(Parser):
 
 
 class RootParser(Parser):
+    """
+    Because many reconstructed morphemes contain smaller submorphemic sound-meaning associations
+    of the type that Brandstetter (1916) called ‘roots’ (Wurzeln), I felt that a module collecting
+    these elements into one place would be useful. The ‘Roots’ module of the ACD thus amounts to
+    a continuation of the data set presented in Blust 1988.
+    """
     __glob__ = 'acd-r_*.htm'
     __cls__ = Root
     __tag__ = ('table', 'settableR')

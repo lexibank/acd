@@ -19,13 +19,23 @@ def normalize_language(l):
         'PSS': 'Proto-South Sulawesi',
         'PWMP': 'Proto-Western Malayo-Polynesian',
         'PPh': 'Proto-Philippines',
+        'PPH': 'Proto-Philippines',
         'PRuk': 'Proto-Rukai',
         'PAdm': 'Proto-Admiralty',
         'PMic': 'Proto-Micronesian',
         'PWMC': 'Proto-Western Micronesian',
         'POc': 'Proto-Oceanic',
+        'PEFor': 'Proto-East Formosan',
         'PSF': 'Proto-South Formosan',
+        'PAN': 'Proto-Austronesian',
+        'PMP': 'Proto-Malayo-Polynesian',
+        'PCEMP': 'Proto-Central-Eastern Malayo-Polynesian',
+        'PCMP': 'Proto-Central Malayo-Polynesian',
+        'PGor': 'Proto-Gorontalic',
+        'PMJ': 'Proto-Malayo-Javanic',
         "Ida'an begak": "Ida'an Begak",
+        'BUNGKU': 'Bungku',
+        'RALU (DY)': 'Duke of York',
     }.get(l, l)
 
 
