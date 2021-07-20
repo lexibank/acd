@@ -909,6 +909,6 @@ class Root(Item, SetLike):
         self.note = Note.from_html(self.html.find('p', 'setnote'))
         self.id = int(self.html.find('p', class_='SetIdno').text)
         self.key = self.html.find('span', class_='key').text
-        self.gloss = self.html.find('span', class_='key').get_text()
+        self.gloss = self.html.find('span', class_='setline').get_text()
 
         self.forms = SetLike.get_forms(self.html, 'formsR', ('rootproto', 'formuni'), ('lg', 'lgP'))

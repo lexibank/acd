@@ -343,11 +343,11 @@ must be based on criteria such as
                 Description=s['gloss'],
                 Comment=s['note']['markdown'] if s['note'] else None,
             ))
+
             for fid, form in links['r'].get(sid, []):
                 args.writer.add_cognate(
                     Form_ID=fid,
                     Form=form,
-                    Reconstruction_ID=str(sid),
                     Cognateset_ID='{}-{}'.format('Root', sid),
                 )
         for d, cid in [('near.json', 'Near'), ('noise.json', 'Noise')]:
