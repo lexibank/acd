@@ -1,0 +1,133 @@
+{
+    "_color": "Model:    color\nInfo:     Model for colored sound class output based on Dolgopolsky (1986)\nSource:   Dolgopolsky (1986)\nCompiler: Johann-Mattis List\nDate:     2012-03",
+    "align_classes": true,
+    "align_factor": 0.3,
+    "align_gap_weight": 0.5,
+    "align_gop": -2,
+    "align_mode": "global",
+    "align_modes": [
+        [
+            "global",
+            -2,
+            0.5
+        ],
+        [
+            "local",
+            -1,
+            0.5
+        ]
+    ],
+    "align_notransform": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "L": 1,
+        "M": 1,
+        "N": 1,
+        "T": 1,
+        "X": 1,
+        "Y": 1,
+        "Z": 1,
+        "_": 1
+    },
+    "align_scale": 0.5,
+    "align_scorer": {},
+    "align_sonar": true,
+    "align_stamp": "# MSA\n# dataset    : {0}\n# collection : {1}\n# aligned by : LingPy Version {2} <www.lingpy.org>\n# created on : {3}\n# parameters : {4}\n",
+    "align_transform": {
+        "A": 1.6,
+        "B": 1.3,
+        "C": 1.2,
+        "L": 1.1,
+        "M": 1.1,
+        "N": 0.5,
+        "T": 1.0,
+        "X": 3.0,
+        "Y": 3.0,
+        "Z": 0.7,
+        "_": 0.0
+    },
+    "align_tree_calc": "neighbor",
+    "art": "Model:    art\nInfo:     Specific sound-class model for the creation of prosodic strings.\nSource:   List (2012)\nCompiler: Johann-Mattis List\nDate:     2012",
+    "asjp": "Model:    asjp\nInfo:     Sound-Class model following Brown et al. (2008) and Brown et al. (2011)\nSource:   Brown et al (2008), Brown et al. (2011)\nCompiler: Johann-Mattis List\nDate:     2011",
+    "basic_orthography": "fuzzy",
+    "breaks": ".-",
+    "classes": true,
+    "cmodules": false,
+    "combiners": "\u0361\u035c",
+    "comment": "#",
+    "cv": "Model:    cv\nInfo:     Specific sound-class model for the creation of consonant vowel templates.\nSource:   None\nCompiler: Johann-Mattis List\nDate:     2015",
+    "diacritics": "!:|\u00af\u02b0\u02b1\u02b2\u02b3\u02b4\u02b5\u02b6\u02b7\u02b8\u02b9\u02ba\u02bb\u02bc\u02bd\u02be\u02bf\u02c0\u02c0 \u02c1\u02c2\u02c3\u02c4\u02c5\u02c6\u02c8\u02c9\u02ca\u02cb\u02cc\u02cd\u02ce\u02cf\u02d0\u02d1\u02d2\u02d3\u02d4\u02d5\u02d6\u02d7\u02de\u02df\u02e0\u02e1\u02e2\u02e3\u02e4\u02ec\u02ed\u02ee\u02ef\u02f0\u02f1\u02f2\u02f3\u02f4\u02f5\u02f6\u02f7\u02f8\u02f9\u02fa\u02fb\u02fc\u02fd\u02fe\u02ff\u0300\u0301\u0302\u0303\u0304\u0305\u0306\u0307\u0308\u0309\u030a\u030b\u030c\u030d\u030e\u030f\u0310\u0311\u0312\u0313\u0314\u0315\u0316\u0317\u0318\u0319\u031a\u031b\u031c\u031d\u031e\u031f\u0320\u0321\u0322\u0323\u0324\u0325\u0326\u0327\u0328\u0329\u032a\u032b\u032c\u032d\u032e\u032f\u0330\u0331\u0332\u0333\u0334\u0335\u0336\u0337\u0338\u0339\u033a\u033b\u033c\u033d\u033e\u033f\u0300\u0301\u0342\u0313\u0308\u0301\u0345\u0346\u0347\u0348\u0349\u034a\u034b\u034c\u034d\u034e\u034f\u0350\u0351\u0352\u0353\u0354\u0355\u0356\u0357\u0358\u0359\u035a\u035b\u035d\u035e\u035f\u0360\u0362\u0363\u0364\u0365\u0366\u0367\u0368\u0369\u036a\u036b\u036c\u036d\u036e\u036f\u0483\u0484\u0485\u0486\u0487\u0488\u0489\u0559\u0656\u0670\u0711\u07eb\u07ec\u07ed\u07ee\u07ef\u07f0\u07f1\u07f2\u07f3\u1d2c\u1d2d\u1d2e\u1d2f\u1d30\u1d31\u1d32\u1d33\u1d34\u1d35\u1d36\u1d37\u1d38\u1d39\u1d3a\u1d3b\u1d3c\u1d3d\u1d3e\u1d3f\u1d40\u1d41\u1d42\u1d43\u1d44\u1d45\u1d46\u1d47\u1d48\u1d49\u1d4a\u1d4b\u1d4c\u1d4d\u1d4e\u1d4f\u1d50\u1d51\u1d52\u1d53\u1d54\u1d55\u1d56\u1d57\u1d58\u1d59\u1d5a\u1d5b\u1d5c\u1d5d\u1d5e\u1d5f\u1d60\u1d61\u1d62\u1d63\u1d64\u1d65\u1d66\u1d67\u1d68\u1d69\u1d6a\u1d78\u1d9b\u1d9c\u1d9d\u1d9e\u1d9f\u1da0\u1da1\u1da2\u1da3\u1da4\u1da5\u1da6\u1da7\u1da8\u1da9\u1daa\u1dab\u1dac\u1dad\u1dae\u1daf\u1db0\u1db1\u1db2\u1db3\u1db4\u1db5\u1db6\u1db7\u1db8\u1db9\u1dba\u1dbb\u1dbc\u1dbd\u1dbe\u1dbf\u1dc0\u1dc1\u1dc2\u1dc3\u1dc4\u1dc5\u1dc6\u1dc7\u1dc8\u1dc9\u1dca\u1dcb\u1dcc\u1dcd\u1dce\u1dcf\u1dd3\u1dd4\u1dd5\u1dd6\u1dd7\u1dd8\u1dd9\u1dda\u1ddb\u1ddc\u1ddd\u1dde\u1ddf\u1de0\u1de1\u1de2\u1de3\u1de4\u1de5\u1de6\u1dfc\u1dfd\u1dfe\u1dff\u2071\u207a\u207b\u207c\u207d\u207e\u207f\u208a\u208b\u208c\u208d\u208e\u2090\u2091\u2092\u2093\u2094\u2095\u2096\u2097\u2098\u2099\u209a\u209b\u209c\u20d0\u20d1\u20d2\u20d3\u20d4\u20d5\u20d6\u20d7\u20d8\u20d9\u20da\u20db\u20dc\u20e5\u20e6\u20e7\u20e8\u20e9\u20ea\u20eb\u20ec\u20ed\u20ee\u20ef\u20f0\u2192\u21d2\u2a27\u2c7c\u2c7d\u2d6f\u2de0\u2de1\u2de2\u2de3\u2de4\u2de5\u2de6\u2de7\u2de8\u2de9\u2dea\u2deb\u2dec\u2ded\u2dee\u2def\u2df0\u2df1\u2df2\u2df3\u2df4\u2df5\u2df6\u2df7\u2df8\u2df9\u2dfa\u2dfb\u2dfc\u2dfd\u2dfe\u2dff\u3099\u309a\ua66f\ua67c\ua67d\ua69c\ua69d\ua71b\ua71c\ua71d\ua71e\ua71f\ua788\ua789\ua78a\ua8e0\ua8e1\ua8e2\ua8e3\ua8e4\ua8e5\ua8e6\ua8e7\ua8e8\ua8e9\ua8ea\ua8eb\ua8ec\ua8ed\ua8ee\ua8ef\ua8f0\ua8f1\uaa70\uab5c\uab5e\ufe20\ufe21\ufe22\ufe23\ufe24\ufe25\ufe26\uf1af\u0332",
+    "dolgo": "Model:    dolgo\nInfo:     Sound-Class model based on Dolgopolsky (1986)\nSource:   Dolgopolsky (1986)\nCompiler: Johann-Mattis List\nDate:     2012-03",
+    "factor": 0.3,
+    "figsize": [
+        10,
+        10
+    ],
+    "filename": "lingpy-2021-07-20",
+    "gap_symbol": "-",
+    "gap_weight": 0.5,
+    "gop": -2,
+    "internal_morpheme_separator": "_",
+    "jaeger": "Model:    jaeger\nInfo:     Sound-Class model based on PMI scores calculated for ASJP data.\nSource:   Jaeger (2015)\nCompiler: unknown\nDate:     2016-03-29",
+    "lexstat_bad_chars_limit": 0.1,
+    "lexstat_cluster_method": "upgma",
+    "lexstat_limit": 10000,
+    "lexstat_modes": [
+        [
+            "global",
+            -2,
+            0.5
+        ],
+        [
+            "local",
+            -1,
+            0.5
+        ]
+    ],
+    "lexstat_preprocessing_method": "sca",
+    "lexstat_preprocessing_threshold": 0.7,
+    "lexstat_rands": 1000,
+    "lexstat_ratio": [
+        2,
+        1
+    ],
+    "lexstat_runs": 1000,
+    "lexstat_scoring_method": "shuffle",
+    "lexstat_scoring_threshold": 0.7,
+    "lexstat_threshold": 0.45,
+    "lexstat_transform": {
+        "A": "C",
+        "B": "C",
+        "C": "C",
+        "L": "c",
+        "M": "c",
+        "N": "c",
+        "T": "T",
+        "X": "V",
+        "Y": "V",
+        "Z": "V",
+        "_": "_"
+    },
+    "lexstat_vscale": 1.0,
+    "merge_vowels": true,
+    "model": "Model:    sca\nInfo:     Extended sound class model based on Dolgopolsky (1986)\nSource:   List (2012)\nCompiler: Johann-Mattis List\nDate:     2012-03",
+    "morpheme_separator": "+",
+    "morpheme_separators": "\u25e6+\u2192\u2190",
+    "nasal_placeholder": "\u223c",
+    "ref": "cogid",
+    "restricted_chars": "_T",
+    "sca": "Model:    sca\nInfo:     Extended sound class model based on Dolgopolsky (1986)\nSource:   List (2012)\nCompiler: Johann-Mattis List\nDate:     2012-03",
+    "scale": 0.5,
+    "schema": "qlc",
+    "scorer": {},
+    "sonar": true,
+    "stress": "\u02c8\u02cc'",
+    "timestamp": "2021-07-20 12:25",
+    "tones": "\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2079\u2070\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u20800123456789\u02e5\u02e6\u02e7\u02e8\u02e9\u02ea\u02eb-\ua708-\ua709-\ua70a-\ua70b-\ua70c-\ua70d-\ua70e-\ua70f-\ua710-\ua711-\ua712-\ua713-\ua714-\ua715-\ua716-\ua717-\ua718-\ua719-\ua71a-\ua700-\ua701-\ua702-\ua703-\ua704-\ua705-\ua706-\ua707",
+    "tree_calc": "neighbor",
+    "unique_sequences": true,
+    "vowels": "\u1e4d\u02af\u03b5aeiouy\u00e1\u00e3\u00e6\u00ed\u00f5\u00f8\u00fa\u0129\u0131\u0153\u0169\u016b\u01d2\u01dd\u0207\u0217\u0250\u0251\u0252\u0254\u0258\u0259\u025a\u025b\u025c\u025e\u0264\u0268\u026a\u026f\u0275\u0276\u0277\u027f\u0285\u0289\u028a\u028c\u028f\u1d00\u1d07\u1d1c\u1ebd\u1ef9\u1e73",
+    "word_separator": "_",
+    "word_separators": "_#"
+}

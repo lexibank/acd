@@ -572,8 +572,10 @@ class Set(Item, SetLike):
     key = attr.ib(default=None)
     lookup = attr.ib(default=attr.Factory(list))
     proto_language = attr.ib(default=None)
-    doublet = attr.ib(default=None)
-    disjunct = attr.ib(default=None)
+    doublet_text = attr.ib(default=None)
+    disjunct_text = attr.ib(default=None)
+    doublets = attr.ib(default=attr.Factory(list))
+    disjuncts = attr.ib(default=attr.Factory(list))
 
     def __attrs_post_init__(self):
         # self.html = p class="pidno"
@@ -596,13 +598,13 @@ class Set(Item, SetLike):
             self.proto_language = pcode.get_text()
         assert self.proto_language in RECONCSTRUCTIONS, '{}'.format(self.proto_language)
 
-        for cls in ['disjunct', 'doublet']:
+        for cls, attrib in [('dsj', 'disjunct'), ('dbl', 'doublet')]:
             e = lang.find('span', class_=cls)
             if e:
-                a = e.find('a')
-                setattr(self, cls, (a.text, a['href'].split('#')[1]))
+                setattr(self, attrib + '_text', re.sub(r'\[{}:\s*'.format(attrib), '', e.get_text().replace(']', '')))
+                for a in e.find_all('a', href=True):
+                    getattr(self, attrib + 's').append((a.text, set_from_href(a)))
 
-        name, group = None, None
         if forms:
             pnote = forms.find('p', class_='pnote')
             if pnote:

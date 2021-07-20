@@ -1,0 +1,15 @@
+{
+    "by_language": {},
+    "stats": {
+        "bad_words": [],
+        "bad_words_count": 0,
+        "bipa_errors": [],
+        "general_errors": 0,
+        "invalid_words": [],
+        "invalid_words_count": 0,
+        "inventory_size": 0,
+        "replacements": {},
+        "sclass_errors": [],
+        "segments": {}
+    }
+}

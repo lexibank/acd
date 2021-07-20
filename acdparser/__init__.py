@@ -379,4 +379,4 @@ def parse(d):
         len(linked_etyma),
     ))
     print('{} sources referenced {} times'.format(len(refs), sum(refs.values())))
-    return sources, langs, cognates, loans, noisesets, nearsets, roots
+    return sources, langs, cognates, loans, noisesets, nearsets, rootsets

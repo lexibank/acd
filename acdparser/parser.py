@@ -32,6 +32,7 @@ class Parser:
         for src, t in [
             ('<*<span class', '<span class'),
             ('<famg>', '<span class="fam">'),
+            ('<span>', '</span>'),
             ('</wd?', '</span>'),
             ('</wad>', '</span>'),
             ('>/wd>', '</span>'),

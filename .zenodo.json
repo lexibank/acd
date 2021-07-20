@@ -1,0 +1,32 @@
+{
+    "title": "CLDF dataset derived from Blust's \"Austronesian Comparative Dictionary\"",
+    "access_right": "open",
+    "keywords": [
+        "cldf:Wordlist",
+        "linguistics"
+    ],
+    "creators": [
+        {
+            "name": "Robert Bust"
+        },
+        {
+            "name": "Stephen Trussel"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Robert Forkel",
+            "type": "DataCurator"
+        }
+    ],
+    "communities": [
+        {
+            "identifier": "lexibank"
+        }
+    ],
+    "upload_type": "dataset",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>The Austronesian Comparative Dictionary</p>\n</blockquote>",
+    "license": {
+        "id": "CC-BY-4.0"
+    }
+}
