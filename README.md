@@ -87,7 +87,10 @@ Row count: 24862
 
 Name | GitHub user | Role
 --- | --- | ---
- | @ | maintainer
+Robert Bust |  | author
+Stephen Trussel | | author
+Robert Forkel | @xrotwang | DataCurator
+
 
 
 

@@ -12,7 +12,7 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "aa4ce98",
+            "dc:created": "6b1cce7",
             "dc:title": "Repository"
         },
         {
@@ -657,17 +657,19 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "Doublect_Comment"
+                        "name": "Doublet_Comment"
                     },
                     {
                         "datatype": "string",
                         "name": "Disjunct_Comment"
                     },
                     {
+                        "dc:description": "variants that are independently supported by the comparative evidence",
                         "separator": " ",
                         "name": "Doublets"
                     },
                     {
+                        "dc:description": "",
                         "separator": " ",
                         "name": "Disjuncts"
                     }

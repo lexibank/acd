@@ -163,10 +163,18 @@ class Dataset(pylexibank.Dataset):
             'Proto_Language',
             'Comment',
             {'name': 'Inferred', 'datatype': 'boolean'},
-            'Doublect_Comment',
+            'Doublet_Comment',
             'Disjunct_Comment',
-            {'name': 'Doublets', 'separator': ' '},
-            {'name': 'Disjuncts', 'separator': ' '},
+            {
+                'name': 'Doublets',
+                'separator': ' ',
+                'dc:description': "variants that are independently supported by the comparative evidence",
+            },
+            {
+                'name': 'Disjuncts',
+                'separator': ' ',
+                'dc:description': "",
+            },
         )
         t.tableSchema.primaryKey = ['ID']
         #t.common_props['dc:description'] = ""
@@ -296,8 +304,8 @@ must be based on criteria such as
                     Inferred=False,
                     Doublet_Comment=s['doublet_text'],
                     Disjunct_Comment=s['disjunct_text'],
-                    Doublets=[str(k[1][1]) for k in s['doublets'] if k[1][0] in ['s', 'f'] and k[1][1] in setids],
-                    Disjuncts=[str(k[1][1]) for k in s['disjuncts'] if k[1][0] in ['s', 'f'] and k[1][1] in setids],
+                    Doublets=[str(k[1][1]) for k in s['doublets'] if k[1][0] in ['s', 'f'] and int(k[1][1]) in setids],
+                    Disjuncts=[str(k[1][1]) for k in s['disjuncts'] if k[1][0] in ['s', 'f'] and int(k[1][1]) in setids],
                 ))
                 for t in ['s', 'f']:
                     for fid, form in links[t].get(sid, []):
@@ -372,7 +380,7 @@ must be based on criteria such as
             args.writer.objects['loansets.csv'].append(dict(
                 ID='{}'.format(sid),
                 Contribution_ID='Loan',
-                Description=s['gloss'],
+                Gloss=s['gloss'],
                 Dempwolff_Etymology=de(s['loanform']) if s['loanform'] else None,
                 Comment=s['note']['markdown'] if s['note'] else None,
             ))
