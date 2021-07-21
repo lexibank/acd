@@ -30,7 +30,9 @@ class Parser:
     @staticmethod
     def fix_html(s):
         for src, t in [
-            ('<*<span class', '<span class'),
+            ('<span class="work"><p>', '<span class="work">'),
+            ('<KAV>', '<span class="lg">Kavalan'),
+            ('<*<span class', '&lt;*<span class'),
             ('<famg>', '<span class="fam">'),
             ('<span>', '</span>'),
             ('</wd?', '</span>'),

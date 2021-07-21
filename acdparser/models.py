@@ -459,51 +459,64 @@ class Note(Item):
         return isinstance(e, Tag) and e.name == 'p' and (e['class'][0] in ('setnote', 'pnote'))
 
     def __attrs_post_init__(self):
-        for c in self.html.contents:
-            if isinstance(c, NavigableString):
-                self.plain += str(c)
-                self.markdown += str(c)
-            else:
-                cls = c['class'][0] if 'class' in c.attrs else None
-                assert c.name in ['span', 'i', 'a', 'xlg', 'b', 'pn', 'br', 'xplg', 'font', 'um'], str(c)
-                if c.name == 'span':
-                    if cls == 'phoneme':
-                        c, cls = c.find('span'), 'wd'
-                    elif cls == 'note':
-                        continue
-                    assert cls in (None, 'wd', 'pwd', 'lg', 'plg', 'bib', 'proto', 'note', 'fam'), str(c)
-                ref = Ref.from_html(c)
-                if ref:
-                    self.refs.append(ref)
-                    self.markdown += '[{}](bib-{})'.format(ref.label, ref.key)
-                elif c.name == 'br':
-                    self.plain += '\n'
-                    self.markdown += '\n\n'
-                elif c.name == 'font':
-                    self.plain += c.get_text()
+        html = self.html
+        while True:
+            for c in html.contents:
+                if isinstance(c, NavigableString):
+                    self.plain += str(c)
                     self.markdown += str(c)
-                elif c.name == 'b':
-                    self.plain += c.get_text()
-                    self.markdown += '__{}__'.format(c.get_text())
-                elif (cls in ('lg', 'plg', 'fam')) or c.name in ('xlg', 'xplg'):
-                    self.plain += c.get_text()
-                    self.markdown += '__language__{}__'.format(c.get_text())
-                elif c.name == 'a':
-                    self.plain += c.get_text()
-                    if cls == 'root':
-                        self.markdown += '[{}](root-{})'.format(c.get_text(), c['href'])
-                    else:
-                        if cls:
-                            raise ValueError(c)
-                        self.markdown += c.get_text()
-                elif c.name == 'span' and cls is None:
-                    self.plain += c.get_text()
-                    self.markdown += c.get_text()
-                elif (cls in ('wd', 'pwd', 'proto')) or c.name in ('i', 'wd', 'ha', 'in', 'pn', 'um'):
-                    self.plain += c.text
-                    self.markdown += '_{}_'.format(c.text)
                 else:
-                    raise ValueError(str(c))
+                    cls = c['class'][0] if 'class' in c.attrs else None
+                    assert c.name in ['span', 'i', 'a', 'xlg', 'b', 'pn', 'br', 'xplg', 'font', 'um'], str(c)
+                    if c.name == 'span':
+                        if cls == 'phoneme':
+                            c, cls = c.find('span'), 'wd'
+                        elif cls == 'note':
+                            continue
+                        elif cls == 'work':
+                            assert c.find('table'), str(c)
+                            c = c.find('table')
+                            self.plain += str(c)
+                            self.markdown += str(c)
+                            continue
+                        assert cls in (None, 'wd', 'pwd', 'lg', 'plg', 'bib', 'proto', 'note', 'fam'), str(c)
+                    ref = Ref.from_html(c)
+                    if ref:
+                        self.refs.append(ref)
+                        self.markdown += '[{}](bib-{})'.format(ref.label, ref.key)
+                    elif c.name == 'br':
+                        self.plain += '\n'
+                        self.markdown += '\n\n'
+                    elif c.name == 'font':
+                        self.plain += c.get_text()
+                        self.markdown += str(c)
+                    elif c.name == 'b':
+                        self.plain += c.get_text()
+                        self.markdown += '__{}__'.format(c.get_text())
+                    elif (cls in ('lg', 'plg', 'fam')) or c.name in ('xlg', 'xplg'):
+                        self.plain += c.get_text()
+                        self.markdown += '__language__{}__'.format(c.get_text())
+                    elif c.name == 'a':
+                        self.plain += c.get_text()
+                        if cls == 'root':
+                            self.markdown += '[{}](root-{})'.format(c.get_text(), c['href'])
+                        else:
+                            if cls:
+                                raise ValueError(c)
+                            self.markdown += c.get_text()
+                    elif c.name == 'span' and cls is None:
+                        self.plain += c.get_text()
+                        self.markdown += c.get_text()
+                    elif (cls in ('wd', 'pwd', 'proto')) or c.name in ('i', 'wd', 'ha', 'in', 'pn', 'um'):
+                        self.plain += c.text
+                        self.markdown += '_{}_'.format(c.text)
+                    else:
+                        raise ValueError(str(c))
+            html = next_tag(html)
+            if not Note.match(html):
+                break
+            self.plain += '\n\n'
+            self.markdown += '\n\n'
         self.plain = re.sub('\s+\(\)', '', self.plain).strip()
         self.markdown = self.markdown.strip().replace('*', '&ast;')
         for a in ['plain', 'markdown']:
