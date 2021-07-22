@@ -526,8 +526,8 @@ number of typographical and other errors to light.
 - **Lexemes:** 146,545
 - **Sources:** 0
 - **Synonymy:** 1.01
-- **Cognacy:** 113,859 cognates in 8,625 cognate sets (12 singletons)
-- **Cognate Diversity:** -1.29
+- **Cognacy:** 116,577 cognates in 9,355 cognate sets (14 singletons)
+- **Cognate Diversity:** -1.28
 
 ## Possible Improvements:
 

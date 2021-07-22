@@ -12,7 +12,7 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "5fcfe87",
+            "dc:created": "3dbcf4a",
             "dc:title": "Repository"
         },
         {
@@ -293,7 +293,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognateTable",
-            "dc:extent": 113859,
+            "dc:extent": 116577,
             "tableSchema": {
                 "columns": [
                     {

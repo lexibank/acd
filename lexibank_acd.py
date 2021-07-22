@@ -350,7 +350,7 @@ must be based on criteria such as
                     Form=form,
                     Cognateset_ID='{}-{}'.format('Root', sid),
                 )
-        for d, cid in [('near.json', 'Near'), ('noise.json', 'Noise')]:
+        for d, cid, lcat in [('near.json', 'Near', 'near'), ('noise.json', 'Noise', 'n')]:
             for s in jsonlib.load(self.raw_dir / d):
                 sid = s['id']
                 args.writer.objects['CognatesetTable'].append(dict(
@@ -359,7 +359,7 @@ must be based on criteria such as
                     Description=s['gloss'],
                     Comment=s['note']['markdown'] if s['note'] else None,
                 ))
-                for fid, form in links['near'].get(sid, []):
+                for fid, form in links[lcat].get(sid, []):
                     args.writer.add_cognate(
                         Form_ID=fid,
                         Form=form,
