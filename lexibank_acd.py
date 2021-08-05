@@ -13,6 +13,7 @@ from csvw.dsv import UnicodeWriter, reader
 
 from acdparser import RECONCSTRUCTIONS
 from acdparser.parser import RootParser, LoanParser
+from acdparser import updates
 
 TREE = newick.loads('(Formosan,((PPh)PWMP,(PCMP,(PSHWNG,POC)PEMP)PCEMP)PMP)PAN;')[0]
 
@@ -187,6 +188,15 @@ class Dataset(pylexibank.Dataset):
         self._schema(args)
 
         args.writer.add_languages()
+        languages = args.writer.objects['LanguageTable']
+        l2id = {l['Name']: l['ID'] for l in languages}
+        for l in languages:
+            if l['Group'].startswith('P'):
+                l2id[l['Group'].upper()] = l['ID']
+            if '(' in l['Name']:
+                # Sambal (Botolan) -> Botolan Sambal
+                comps = l['Name'].replace(')', '').split('(', 1)
+                l2id['{} {}'.format(comps[1].strip(), comps[0].strip())] = l['ID']
         langs = jsonlib.load(self.raw_dir / 'languages.json')
         for l in args.writer.objects['LanguageTable']:
             l['is_proto'] = l['Name'].startswith('Proto-')
@@ -393,3 +403,79 @@ must be based on criteria such as
                     #Reconstruction_ID=str(sid),
                     Loanset_ID='{}'.format(sid),
                 ))
+
+        max_eid = 40000
+        max_pfid = 20000
+        forms_by_lgid = collections.defaultdict(dict)
+        for f in args.writer.objects['FormTable']:
+            forms_by_lgid[f['Language_ID']][f['Form']] = f['ID']
+
+        for p in sorted(self.raw_dir.joinpath('updates').glob('*.odt'), key=lambda p_: p_.stem):
+            for etymon, forms, note in updates.parse(p):
+                assert etymon[0].upper() in l2id, str(etymon)
+                for group, lg, _, _ in forms:
+                    #assert group in l2id, group
+                    assert lg in l2id, lg
+                #sid, pl = s['id'], s['proto_language']
+                max_eid += 1
+                args.writer.objects['CognatesetTable'].append(dict(
+                    ID=str(max_eid),
+                    Contribution_ID='Canonical',
+                    Form=etymon[1],
+                    Description=etymon[2],
+                    Proto_Language=etymon[0],
+                    Comment=note,
+                ))
+                cid = hash(etymon[2])
+                if cid not in concepts:
+                    args.writer.add_concept(
+                        ID=cid,
+                        Name=etymon[2],
+                        #Description=form['gloss']['markdown'],
+                    )
+                    concepts.add(cid)
+                max_pfid += 1
+                fid = 'protoform-{}'.format(max_pfid)
+                args.writer.objects['FormTable'].append(dict(
+                    ID=fid,
+                    Language_ID=l2id[etymon[0]],
+                    Parameter_ID=cid,
+                    Value=etymon[1],
+                    Form=etymon[1].replace('*', ''),
+                    is_proto=True,
+                ))
+                args.writer.objects['protoforms.csv'].append(dict(
+                    ID=str(max_pfid),
+                    Form_ID=fid,
+                    Proto_Language=etymon[0],
+                    Cognateset_ID=str(max_eid),
+                    Comment=None,
+                    Subset=1,
+                    Inferred=False,
+                ))
+                for group, lg, form, gloss in forms:
+                    cid = hash(gloss)
+                    if cid not in concepts:
+                        args.writer.add_concept(ID=cid, Name=gloss)
+                        concepts.add(cid)
+                    form_id = forms_by_lgid[l2id[lg]].get(form)
+                    if not form_id:
+                        for lexeme in args.writer.add_forms_from_value(
+                            Language_ID=l2id[lg],
+                            Parameter_ID=cid,
+                            Value=form,
+                        ):
+                            form_id = lexeme['ID']
+                            break
+                    #Source=[row['Source']],
+
+                    args.writer.add_cognate(
+                            Form_ID=form_id,
+                            Form=form,
+                            Reconstruction_ID=str(max_pfid),
+                            Cognateset_ID=str(max_eid),
+                            Proto_Language=etymon[0],
+                    )
+                #
+                # FIXME: infer reconstructions!
+                #

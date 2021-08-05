@@ -15,6 +15,9 @@ setup(
     include_package_data=True,
     zip_safe=False,
     entry_points={
+        'cldfbench.commands': [
+            'acd=acdcommands',
+        ],
         'lexibank.dataset': [
             'acd=lexibank_acd:Dataset',
         ]

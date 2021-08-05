@@ -12,7 +12,7 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "3dbcf4a",
+            "dc:created": "9314a07",
             "dc:title": "Repository"
         },
         {
@@ -56,7 +56,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 146545,
+            "dc:extent": 146573,
             "tableSchema": {
                 "columns": [
                     {
@@ -261,7 +261,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 86409,
+            "dc:extent": 86433,
             "tableSchema": {
                 "columns": [
                     {
@@ -293,7 +293,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognateTable",
-            "dc:extent": 116577,
+            "dc:extent": 116599,
             "tableSchema": {
                 "columns": [
                     {
@@ -431,7 +431,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognatesetTable",
-            "dc:extent": 9355,
+            "dc:extent": 9361,
             "tableSchema": {
                 "columns": [
                     {
@@ -624,7 +624,7 @@
             "url": "borrowings.csv"
         },
         {
-            "dc:extent": 24862,
+            "dc:extent": 24868,
             "tableSchema": {
                 "columns": [
                     {
