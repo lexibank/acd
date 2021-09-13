@@ -12,13 +12,13 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "9314a07",
+            "dc:created": "0dddc58",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.4-8-g43833512ad",
+            "dc:created": "v4.4-23-gfb68e566c4",
             "dc:title": "Glottolog"
         },
         {
@@ -56,7 +56,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 146573,
+            "dc:extent": 146642,
             "tableSchema": {
                 "columns": [
                     {
@@ -261,7 +261,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 86433,
+            "dc:extent": 86494,
             "tableSchema": {
                 "columns": [
                     {
@@ -293,7 +293,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognateTable",
-            "dc:extent": 116599,
+            "dc:extent": 116662,
             "tableSchema": {
                 "columns": [
                     {
@@ -431,7 +431,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognatesetTable",
-            "dc:extent": 9361,
+            "dc:extent": 9377,
             "tableSchema": {
                 "columns": [
                     {
@@ -624,7 +624,7 @@
             "url": "borrowings.csv"
         },
         {
-            "dc:extent": 24868,
+            "dc:extent": 24884,
             "tableSchema": {
                 "columns": [
                     {

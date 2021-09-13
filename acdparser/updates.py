@@ -11,6 +11,10 @@ NS = dict(
     xlink="http://www.w3.org/1999/xlink",
     fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0",
 )
+LNAMES = {
+    'Ayta Abellen': 'Ayta Abellan',
+    'Waray': 'Waray-Waray',
+}
 
 
 def qname(prefix, lname):
@@ -75,10 +79,12 @@ def get_styles(d):
 
 def splitline(indent, text):
     res = []
-    in_margin = False
+    in_margin = True
 
     for s in text.split('___tab___'):
         s = s.strip()
+        if re.fullmatch(r'\([a-c]\)', s):  # strip "(a)", "(b)"-type ordering of witnesses.
+            s = ''
         if not s:
             if in_margin:  # Leading tabs contribute to the indentation.
                 indent += 0.5
@@ -111,6 +117,7 @@ def parse(p, verbose=False):
 
     if verbose:
         for e, w, n in iter_etyma(lines):
+            print(len(w))
             #
             # FIXME: Create Etymon object instances, ready for saving as JSON
             #
@@ -118,6 +125,7 @@ def parse(p, verbose=False):
             for sg, items in itertools.groupby(w, lambda i: i[0]):
                 print(sg)
                 for lg, forms in itertools.groupby(items, lambda i: i[1]):
+                    print('***', lg)
                     for i, (_, _, form, gloss) in enumerate(forms):
                         if i == 0:
                             print('{}\t{}\t{}'.format(lg, form, gloss))
@@ -140,6 +148,12 @@ def iter_etyma(lines):
     lnamestart = None
 
     for indent, line in lines:
+        if line and line[0].startswith('UPGRADES'):
+            #
+            # FIXME: learn to parse upgrades/fixes
+            #
+            break
+        #print(indent, line)
         if not line:  # empty lines are not informative
             continue
         if len(line) == 1 and set(list(line[0])) == {'='}:  # explicit etymon separator
@@ -148,7 +162,8 @@ def iter_etyma(lines):
             etymon, note, subgroup, witnesses = None, None, None, []
             continue
 
-        if len(line) > 1 and re.fullmatch('P[A-Z]+', line[0]):  # new etymon start
+        if len(line) > 1 and re.fullmatch('P[A-Zh]+', line[0]):  # new etymon start
+            line[0] = line[0].upper()
             if etymon:
                 yield etymon, witnesses, note
             if len(line) == 2:  # Fix missing separation of proto-form and gloss.
@@ -161,7 +176,7 @@ def iter_etyma(lines):
         if etymon:
             if len(line) == 1:
                 if re.fullmatch('[A-Z]+', line[0]):  # A subgroup line.
-                    subgroup = line[0]
+                    subgroup = line[0].upper()
                 elif note:  # We are already in the note, so assume this is a continuation line.
                     note += ' ' + line[0]
                 elif line[0].startswith('NOTE:'):  # Note starts here.
@@ -175,14 +190,15 @@ def iter_etyma(lines):
                         # A single item on a line with big indentation: Assume this is a
                         # continuation line for a long gloss.
                         witnesses[-1][-1] += ' ' + line[0]
-            elif len(line) == 3:  # A proper witness line, giving language name, form and gloss.
+            elif 3 <= len(line) <= 4:  # A proper witness line, giving language name, form and gloss.
                 lname = line[0]
                 if lnamestart:
                     lname = '{} {}'.format(lnamestart, lname)
                     lnamestart = None
-                witnesses.append([subgroup, lname, line[1], line[2]])
+                lname = LNAMES.get(lname, lname)
+                witnesses.append([subgroup, lname, line[1], ' '.join(line[2:])])
             else:
-                assert len(line) == 2 and 1 < indent < 3
+                assert len(line) == 2 and 1 < indent < 3, line
                 # A two-item line. Assume this is another (form, gloss) pair for the language of
                 # the last language.
                 witnesses.append([subgroup, witnesses[-1][1], line[0], line[1]])

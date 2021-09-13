@@ -413,9 +413,16 @@ must be based on criteria such as
         for p in sorted(self.raw_dir.joinpath('updates').glob('*.odt'), key=lambda p_: p_.stem):
             for etymon, forms, note in updates.parse(p):
                 assert etymon[0].upper() in l2id, str(etymon)
-                for group, lg, _, _ in forms:
+                nf = []
+                for group, lg, a, b in forms:
+                    if lg not in l2id:
+                        if '(' in lg:
+                            lg = '{} {}'.format(
+                                lg.split('(')[1].replace(')', '').strip(), lg.split('(')[0].strip())
                     #assert group in l2id, group
                     assert lg in l2id, lg
+                    nf.append([group, lg, a, b])
+                forms = nf
                 #sid, pl = s['id'], s['proto_language']
                 max_eid += 1
                 args.writer.objects['CognatesetTable'].append(dict(
