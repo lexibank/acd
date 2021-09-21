@@ -113,13 +113,12 @@ to a size where only quantitative analysis seems appropriate ...
     4200: ▏ 2.00
     7900: ▏ 1.00
     ```
-    
- - individual cognate sets:
-   - https://acd.clld.org/cognatesets/30830 - 1031 witnesses grouped in almost 40 associated reconstructions
-   - https://acd.clld.org/cognatesets/24748 - 2 witnesses
-   - https://acd.clld.org/cognatesets/30164
-     > As noted in Blust (1982b) from a morphological standpoint this is one of the most challenging of all Austronesian comparisons. In addition to the reduplicated and infixed forms of *bahi that are reconstructed here there are numerous other affixed forms that are confined to particular languages or genetically restricted groups of languages, and a few that are widespread but semantically heterogeneous.
-    - https://acd.clld.org/cognatesets/25870 with a ~10,000 character comment ...
+   - individual cognate sets:
+     - https://acd.clld.org/cognatesets/30830 - 1031 witnesses grouped in almost 40 associated reconstructions
+     - https://acd.clld.org/cognatesets/24748 - 2 witnesses
+     - https://acd.clld.org/cognatesets/30164
+       > As noted in Blust (1982b) from a morphological standpoint this is one of the most challenging of all Austronesian comparisons. In addition to the reduplicated and infixed forms of *bahi that are reconstructed here there are numerous other affixed forms that are confined to particular languages or genetically restricted groups of languages, and a few that are widespread but semantically heterogeneous.
+     - https://acd.clld.org/cognatesets/25870 with a ~10,000 character comment ...
 
 - non-normalized glosses:
   ```
