@@ -5,7 +5,7 @@ The Austronesian Comparative Dictionary
 Status quo ante: https://www.trussel2.com/acd/ (For even earlier states, refer to https://www.trussel2.com/acd/ACD-OL.pdf)
 Status quo post: https://acd.clld.org/
 
-Transition implemented via cldfbench curated CLDF dataset at
+Transition implemented via cldfbench curated **CLDF dataset** at
 https://github.com/lexibank/acd
 
 
@@ -62,7 +62,10 @@ to a size where only quantitative analysis seems appropriate ...
   sqlite> select count(distinct cldf_glottocode) from acd.languagetable;
   795
 
-  sqlite> select count(distinct cldf_glottocode) from acd.languagetable where cldf_glottocode is not null and cldf_glottocode in (select cldf_glottocode from abvd.languagetable);
+  sqlite> select count(distinct cldf_glottocode) 
+          from acd.languagetable 
+          where cldf_glottocode is not null and cldf_glottocode in 
+          (select cldf_glottocode from abvd.languagetable);
   550
   ```
   Overlap in terms of concepts:
@@ -74,7 +77,10 @@ to a size where only quantitative analysis seems appropriate ...
 - very variable coverage
   - coverage of languages/varieties
     ```
-    $ sqlite3 acd.sqlite "select cast(c * 100 + 100 as int), count(lid) from (select cldf_languagereference as lid, round(count(cldf_id) / 100, 0) as c from formtable group by cldf_languagereference) group by c" | termgraph --delim "|"
+    $ sqlite3 acd.sqlite "select cast(c * 100 + 100 as int), count(lid) \
+    from (\
+      select cldf_languagereference as lid, round(count(cldf_id) / 100, 0) as c from formtable group by cldf_languagereference\
+    ) group by c" | termgraph --delim "|"
 
     100 : ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ 864.00
     200 : ▇▇▇ 65.00
