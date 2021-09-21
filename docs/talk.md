@@ -141,4 +141,5 @@ to a size where only quantitative analysis seems appropriate ...
 ## Conclusion
 
 "Panta Rei" - and now is the time to influence the future by formulating
-research questions making use of ACD!
+research questions making use of ACD - and the CLDF data will at least give us a starting point to
+address opportunities and challenges with a good toolset!
