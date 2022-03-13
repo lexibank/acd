@@ -9,7 +9,9 @@ import newick
 import pylexibank
 from clldutils import jsonlib
 from clldutils.misc import slug
+from clldutils.markup import MarkdownLink
 from csvw.dsv import UnicodeWriter, reader
+from pybtex.database import parse_string
 
 from acdparser import RECONCSTRUCTIONS
 from acdparser.parser import RootParser, LoanParser
@@ -139,6 +141,7 @@ class Dataset(pylexibank.Dataset):
             'Comment',
             'Proto_Language',
             'Contribution_ID',
+            #{"name": "Source", "separator": ";", "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source"},
         )
         args.writer.cldf.add_foreign_key('CognatesetTable', 'Contribution_ID', 'ContributionTable', 'ID')
 
@@ -247,6 +250,11 @@ must be based on criteria such as
 - there is already a well-established reconstruction for the same meaning.
 """,
         ))
+        bib = self.etc_dir.read_bib()
+        args.writer.cldf.sources.add(*bib)
+        bib = {e['key']: e.id for e in bib}
+        update_bib(bib)
+        lsources = {r['ID']: [s.strip() for s in r['Source'].split(';') if s.strip()] for r in self.etc_dir.read_csv('languages.tsv', delimiter='\t', dicts=True)}
 
         links = collections.defaultdict(lambda: collections.defaultdict(set))
         concepts, etyma = set(), collections.defaultdict(set)
@@ -268,24 +276,29 @@ must be based on criteria such as
                     Value=form['form'],
                     is_root=form['is_root'],
                     is_proto=language['is_proto'],
-                    #Source=[row['Source']],
+                    Source=[bib[ref] for ref in lsources[str(language['id'])] if ref in bib],
                 ):
                     for i in form['sets']:
                         links[i[0]][int(i[1])].add((lexeme['ID'], lexeme['Form']))
 
+        missing = collections.Counter()
         etyma = jsonlib.load(self.raw_dir / 'cognates.json')
         setids = list(itertools.chain(*[[s['id'] for s in e['sets']] for e in etyma]))
         for etymon in etyma:
             for i, s in enumerate(etymon['sets']):
                 sid, pl = s['id'], s['proto_language']
                 if i == 0:
+                    comment, refs = etymon['note']['markdown'] if etymon['note'] else None, []
+                    if comment:
+                        comment, refs = insert_refs(comment, bib, missing)
                     args.writer.objects['CognatesetTable'].append(dict(
                         ID=str(etymon['id']),
                         Contribution_ID='Canonical',
                         Form=s['key'],
                         Description=s['gloss'],
                         Proto_Language=pl,
-                        Comment=etymon['note']['markdown'] if etymon['note'] else None,
+                        Comment=comment,
+                        Source=refs,
                     ))
                 cid = hash(s['gloss'])
                 if cid not in concepts:
@@ -304,12 +317,16 @@ must be based on criteria such as
                     Form=s['key'].replace('*', ''),
                     is_proto=True,
                 ))
+                comment, refs = s['note']['markdown'] if s['note'] else None, []
+                if comment:
+                    comment, refs = insert_refs(comment, bib, missing)
                 args.writer.objects['protoforms.csv'].append(dict(
                     ID=str(sid),
                     Form_ID=fid,
                     Proto_Language=pl,
                     Cognateset_ID=str(etymon['id']),
-                    Comment=s['note']['markdown'] if s['note'] else None,
+                    Comment=comment,
+                    Source=refs,
                     Subset=s['subset'],
                     Inferred=False,
                     Doublet_Comment=s['doublet_text'],
@@ -346,12 +363,16 @@ must be based on criteria such as
                     ))
         for s in jsonlib.load(self.raw_dir / 'root.json'):
             sid = s['id']
+            comment, refs = s['note']['markdown'] if s['note'] else None, []
+            if comment:
+                comment, refs = insert_refs(comment, bib, missing)
             args.writer.objects['CognatesetTable'].append(dict(
                 ID='{}-{}'.format('Root', sid),
                 Contribution_ID='Root',
                 Form=s['key'],
                 Description=s['gloss'],
-                Comment=s['note']['markdown'] if s['note'] else None,
+                Comment=comment,
+                Sorce=refs,
             ))
 
             for fid, form in links['r'].get(sid, []):
@@ -363,13 +384,17 @@ must be based on criteria such as
         for d, cid, lcat in [('near.json', 'Near', 'near'), ('noise.json', 'Noise', 'n')]:
             for s in jsonlib.load(self.raw_dir / d):
                 sid = s['id']
+                comment, refs = s['note']['markdown'] if s['note'] else None, []
+                if comment:
+                    comment, refs = insert_refs(comment, bib, missing)
                 args.writer.objects['CognatesetTable'].append(dict(
                     ID='{}-{}'.format(cid, sid),
                     Contribution_ID=cid,
                     Description=s['gloss'],
-                    Comment=s['note']['markdown'] if s['note'] else None,
+                    Comment=comment,
+                    Source=refs,
                 ))
-                for fid, form in links[lcat].get(sid, []):
+                for fid, form in sorted(links[lcat].get(sid, []), key=lambda i: i[0]):
                     args.writer.add_cognate(
                         Form_ID=fid,
                         Form=form,
@@ -387,14 +412,18 @@ must be based on criteria such as
         bid = 0
         for s in jsonlib.load(self.raw_dir / 'borrowings.json'):
             sid = s['id']
+            comment, refs = s['note']['markdown'] if s['note'] else None, []
+            if comment:
+                comment, refs = insert_refs(comment, bib, missing)
             args.writer.objects['loansets.csv'].append(dict(
                 ID='{}'.format(sid),
                 Contribution_ID='Loan',
                 Gloss=s['gloss'],
                 Dempwolff_Etymology=de(s['loanform']) if s['loanform'] else None,
-                Comment=s['note']['markdown'] if s['note'] else None,
+                Comment=comment,
+                Source=refs,
             ))
-            for fid, form in links['lo'].get(sid, []):
+            for fid, form in sorted(links['lo'].get(sid, []), key=lambda i: i[0]):
                 bid += 1
                 args.writer.objects['BorrowingTable'].append(dict(
                     ID=str(bid),
@@ -404,6 +433,10 @@ must be based on criteria such as
                     Loanset_ID='{}'.format(sid),
                 ))
 
+        for k, v in missing.most_common():
+            if v > 1:
+                print(k, v)
+
         max_eid = 40000
         max_pfid = 20000
         forms_by_lgid = collections.defaultdict(dict)
@@ -411,6 +444,7 @@ must be based on criteria such as
             forms_by_lgid[f['Language_ID']][f['Form']] = f['ID']
 
         for p in sorted(self.raw_dir.joinpath('updates').glob('*.odt'), key=lambda p_: p_.stem):
+            #continue
             for etymon, forms, note in updates.parse(p):
                 assert etymon[0].upper() in l2id, str(etymon)
                 nf = []
@@ -486,3 +520,79 @@ must be based on criteria such as
                 #
                 # FIXME: infer reconstructions!
                 #
+
+
+def update_bib(bib):
+    for k, v in {
+        'Dempwolff 1938': 'Dempwolff 1934/38',
+        'Dempwolff 1934-1938': 'Dempwolff 1934/38',
+        'Dempwolff 1934-38': 'Dempwolff 1934/38',
+        'Dempwolff 1939': 'Dempwolff 1934/38',
+        'Dempwolff’s 1938': 'Dempwolff 1934/38',
+        'Dempwolff 9138': 'Dempwolff 1934/38',
+        'Dempwolfff 1938': 'Dempwolff 1934/38',
+        'Dempwoff 1938': 'Dempwolff 1934/38',
+        'Denmpwolff 1938': 'Dempwolff 1934/38',
+        'Ross 1998': 'Osmond and Ross 1998',
+        'Ross 2008': 'Ross, Pawley and Osmond 2008',
+        'Ross 2003': 'Osmond, Pawley and Ross 2003',
+        'Osmond 1998': 'Osmond and Ross 1998',
+        'Verheijen 1967-70': 'Verheijen 1967/70',
+        'Dempwolff 1924-1925': 'Dempwolff 1924/25',
+        'Schulte 1971': 'Schulte Nordholt 1971',
+        'Pratt 1893': 'Pratt 1984',
+        'Lister-Turner 1954': 'Lister-Turner and Clark 1954',
+        'Lister-Turner 1930': 'Lister-Turner and Clark 1930',
+        'Li 2006': 'Li and Tsuchida 2006',
+        'Van 1940': 'van der Veen 1940',
+        'van 1940': 'van der Veen 1940',
+        'Blust 1983-1984': 'Blust 1983/84',
+        'Mintz 1985': 'Mintz and del Rosario Britanico 1985',
+        'Starosta 1982': 'Starosta, Pawley and Reid 1982',
+        'Verheijen 1967': 'Verheijen 1967/70',
+        'Bender 2003': 'Bender et al. 2003',
+        'Tsuchida 1987': 'Tsuchida, Yamada and Moriguchi 1987',
+        'Fox 1993': 'Fox 1993a',
+        'Warneck 1906': 'Warneck 1977',
+        'Walsh 1966': 'Walsh and Biggs 1966',
+        'Brown 1981': 'Brown and Witkowski 1981',
+        'Tryon 1983': 'Tryon and Hackman 1983',
+        '(Blust 1976': 'Blust 1976',
+        'Pawley 1998': 'Pawley and Pawley 1998',
+        'Pawley 2003': 'Pawley and Sayaba 2003',
+    }.items():
+        bib[k] = bib[v]
+    """
+    """
+
+def insert_refs(md, bib, missing):
+    # e.g. [Mills (1975:712)](bib-Mills)
+    YEAR_PAGES_PATTERN = re.compile(r'\(?(?P<year>[0-9]{4}(-[0-9]+)?)(:\s*(?P<pages>[^)]+))?\)?')
+    refs = []
+    labels = {
+        'Dempwolff': 'Dempwolff 1934/38',
+        'Dempwolff’s': 'Dempwolff 1934/38',
+        'Pigeaud': 'Pigeaud 1938',
+    }
+    def repl(ml):
+        if ml.url.startswith('bib-'):
+            author = ml.url.split('-', maxsplit=1)[1]
+            key = labels.get(ml.label)
+
+            y = YEAR_PAGES_PATTERN.search(ml.label)
+            if key or y:
+                key = key or '{} {}'.format(author, y.group('year'))
+                if key not in bib:
+                    key = re.sub(r'-(?P<year>[0-9]{4})', lambda m: '/' + m.group('year')[2:], key)
+
+                if key in bib:
+                    refs.append('{}[{}]'.format(bib[key], (y.group('pages') or '') if y else ''))
+                    ml.url = 'bib-' + bib[key]
+                else:
+                    missing.update([key])
+                #    return ml.label
+            else:
+                missing.update(['--' + ml.label])
+                #print('---', ml.label)
+        return ml
+    return MarkdownLink.replace(md, repl), refs

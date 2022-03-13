@@ -519,12 +519,12 @@ number of typographical and other errors to light.
 
 ![Glottolog: 82%](https://img.shields.io/badge/Glottolog-82%25-yellowgreen.svg "Glottolog: 82%")
 ![Concepticon: 0%](https://img.shields.io/badge/Concepticon-0%25-red.svg "Concepticon: 0%")
-![Source: 0%](https://img.shields.io/badge/Source-0%25-red.svg "Source: 0%")
+![Source: 72%](https://img.shields.io/badge/Source-72%25-yellow.svg "Source: 72%")
 
 - **Varieties:** 1,062
 - **Concepts:** 86,494
 - **Lexemes:** 146,642
-- **Sources:** 0
+- **Sources:** 256
 - **Synonymy:** 1.01
 - **Cognacy:** 116,662 cognates in 9,377 cognate sets (14 singletons)
 - **Cognate Diversity:** -1.28
@@ -533,7 +533,7 @@ number of typographical and other errors to light.
 
 
 
-- Entries missing sources: 146642/146642 (100.00%)
+- Entries missing sources: 40704/146642 (27.76%)
 
 # Contributors
 

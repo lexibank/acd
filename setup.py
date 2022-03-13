@@ -23,6 +23,7 @@ setup(
         ]
     },
     install_requires=[
+        'clldutils>=3.11',
         'pylexibank>=3.2.0',
         'lxml',
         'bs4',
