@@ -13,7 +13,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 226	akla1240	Aklanon	WMP	akl	Inakeanon	Philippines		Zorc 1969
 468	bata1292	Alas	WMP	btz	Batak Alas-Kluet	Indonesia (Sumatra)		Akbar, Ahmaddin and Mardjo 1985
 469	kapp1237	Ali	OC					
-471	alun1238	Alune	CMP	alp		Indonesia (Maluku)	[aka: Murnaten]	Niggemeyer 1951-52
+471	alun1238	Alune	CMP	alp		Indonesia (Maluku)	[aka: Murnaten]	Niggemeyer 1951/52
 19529	amar1272	Amara	OC					Thurston 1987
 472	amba1265	Ambai	SHWNG	amk		Indonesia (Papua)		Anceaux 1961
 473	ambe1248	Amblau	CMP	amv	Ambelau	Indonesia (Maluku)		Stresemann 1927; van der Miesen 1911
@@ -272,7 +272,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 637	amga1235	Ifugaw (Amganad)	WMP	ifa	Ifugao, Amganad	Philippines		Reid 1971
 18225	bata1298	Ifugaw (Batad)	WMP					Newell 1993
 639	kele1259	Ifugaw (Bayninan)	WMP	ify	Kallahan, Keley-i	Philippines		Reid 1971
-19772	kele1259	Ifugaw (Keley-i)	WMP					Hohulin et al. 2018
+19772	kele1259	Ifugaw (Keley-i)	WMP					Hohulin, Hohulin and Maddawat 2018
 279	ilok1237	Ilokano	WMP	ilo	Ilocano	Philippines		Rubino 2000; Carro 1956
 642	ilon1239	Ilongot	WMP	ilk		Philippines		
 19613	ilon1239	Ilongot (Kakiduge:n)	WMP					Reid 1971
@@ -302,7 +302,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 672	lubu1243	Kalinga	WMP	knb				Reid 1971
 673	lubu1243	Kalinga (Guinaang)	WMP	knb	Kalinga, Lubuagan	Philippines		Reid 1971
 676	ahin1234	Kallahan (Kayapa)	WMP	kak	Kallahan, Kayapa	Philippines		Reid 1971
-288	kama1362	Kamarian	CMP	kzx		Indonesia (Maluku)		Ekris 1864-65
+288	kama1362	Kamarian	CMP	kzx		Indonesia (Maluku)		Ekris 1864/65
 678	kamb1299	Kambera	CMP	xbr		Indonesia (Nusa Tenggara)		Onvlee 1984
 679	kamb1299	Kambera (Mangili)	CMP	xbr	Kambera	Indonesia (Nusa Tenggara)		
 680	kana1286	Kanakanabu	Form.	xnb		Taiwan	[aka: Kanakanavu]	Tsuchida 1976
@@ -337,7 +337,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 762	kela1258	Kelabit (Long Napir)	WMP	kzi	Kelabit	Indonesia (Kalimantan)		Blust 1971
 19768	kela1259	Kelai	WMP					
 19257	kele1258	Kele	OC	sbc		Papua New Guinea		
-675	kele1259	Keley-i	WMP	ify	Kallahan, Keley-i	Philippines	[aka: Keleyqiq Kallahan, Kallahan (Keleyqiq)]	Reid 1971; Hohulin et al 2018
+675	kele1259	Keley-i	WMP	ify	Kallahan, Keley-i	Philippines	[aka: Keleyqiq Kallahan, Kallahan (Keleyqiq)]	Reid 1971; Hohulin, Hohulin and Maddawat 2018
 699	kema1243	Kemak	CMP	kem		East Timor		
 700	kemb1249	Kembayan	WMP	xem		Indonesia (Kalimantan)		
 300	sebo1238	Kenyah	WMP	sib				Galvin 1967
@@ -353,7 +353,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 19276	long1406	Kenyah (Long San)	WMP					Blust 1971
 765	long1406	Kenyah (Long Selaaʻn)	WMP					Blust 1971
 19298	long1406	Kenyah (Long Wat)	WMP	ttw		Malaysia (Sarawak)		Blust 1971
-19195	umal1238	Kenyah (Òma Lóngh)	WMP					Soriente (2006)
+19195	umal1238	Kenyah (Òma Lóngh)	WMP					Soriente 2006
 19178	keoo1238	Keo	CMP	xxk	Ke'o	Indonesia (Nusa Tenggara)		
 19472	kile1242	Kilenge	OC					
 19026	kili1267	Kilivila	OC	kij		Papua New Guinea		Senft 1986
@@ -385,7 +385,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 307	kwai1243	Kwaio	OC	kwd		Solomon Islands		Keesing 1975
 19307	kwam1252	Kwamera	OC	tnk		Vanuatu	[aka: Isiai]	
 18944	kwar1239	Kwara'ae	OC	kwf	Kwara’ae	Solomon Islands		Pawley 1972
-309	labe1239	Label	OC	lbb		Papua New Guinea		Peekel 1929-30
+309	labe1239	Label	OC	lbb		Papua New Guinea		Peekel 1929/30
 19679	labu1248	Labu	OC					
 19514	labu1249	Labuk-Kinabatangan Kadazan	WMP				[aka: Kadazan (Labuk-Kinabatangan)]	
 19708	lagh1246	Laghu	OC				[aka: Laghua]	
@@ -504,7 +504,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 328	mana1295	Manam	OC	mva		Papua New Guinea		Böhm 1975
 813	mand1442	Mandar	WMP	mdr		Indonesia (Sulawesi)		Muthalib 1977
 18477	kara1489	Mandaya	WMP	mry	Mandaya, Karaga	Philippines		
-816	mang1405	Manggarai	CMP	mqy		Indonesia (Nusa Tenggara)		Verheijen 1967-70
+816	mang1405	Manggarai	CMP	mqy		Indonesia (Nusa Tenggara)		Verheijen 1967/70
 19628	cent2073	Manggarai (Central)	CMP					
 19722	mang1405	Manggarai (Mulu)	CMP					
 19347	mang1405	Manggarai (Pacar)	CMP					
@@ -782,7 +782,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 19354	romb1245	Romblomanon	WMP				[aka: Bikol Romblomanon]	
 960	roon1237	Ron	SHWNG					
 393	waim1251	Roro	OC	rro	Waima	Papua New Guinea		Capell 1943
-395	bilb1242	Rotinese	CMP	bpz	Bilba	Indonesia (Nusa Tenggara)		Jonker 1908; Fox 1993
+395	bilb1242	Rotinese	CMP	bpz	Bilba	Indonesia (Nusa Tenggara)		Jonker 1908; Fox 1993a
 394	rotu1241	Rotuman	OC	rtm		Rotuman		Churchward 1940
 396	rovi1238	Roviana	OC	rug		Solomon Islands		Waterhouse 1949
 397	ruka1240	Rukai	Form.	dru		Taiwan		Li 1977
@@ -811,10 +811,10 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source
 981	cent2092	Samal	WMP	sml	Sama, Central	Philippines		Reid 1971
 19479	bala1311	Samal (Balangingi )	WMP				[aka: Balangingi Samal]	Reid 1971
 19439	lagh1246	Samasodu	OC				[aka: Laghu]	
-19397	boto1242	Sambal	WMP	sbl				Madulid 2000
+19397	boto1242	Sambal	WMP	sbl				Madulid 2001
 546	boli1256	Sambal (Bolinaw)	WMP	smk	Bolinao	Philippines	[aka: Bolinao]	McFarland 1977
 18976	boto1242	Sambal (Botolan)	WMP	sbl	Sambal, Botolan	Philippines		Reid 1971
-19716	boto1242	Sambal (Pinatubo)	WMP					Madulid 2000
+19716	boto1242	Sambal (Pinatubo)	WMP					Madulid 2001
 19395	tina1248	Sambal (Tina)	WMP					Elgincolin, Goschnick and Elgincolin 1988
 983	maan1238	Samihim	WMP	mhy	Ma’anyan	Indonesia (Kalimantan)		
 401	samo1305	Samoan	OC	smo		Samoa		Milner 1966
