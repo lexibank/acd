@@ -94,7 +94,10 @@ class Variety(pylexibank.Language):
     Group = attr.ib(default=None)
     Location = attr.ib(default=None)
     Alias = attr.ib(default=None)
-    Source = attr.ib(default=None)
+    Source = attr.ib(
+        default=None,
+        metadata=dict(propertyUrl='http://cldf.clld.org/v1.0/terms.rdf#source', separator=';')
+    )
     is_proto = attr.ib(default=False, metadata=dict(datatype='boolean'))
     Dialect_Of = attr.ib(default=None)
 
@@ -189,9 +192,22 @@ class Dataset(pylexibank.Dataset):
 
     def cmd_makecldf(self, args):
         self._schema(args)
+        bib = self.etc_dir.read_bib()
+        args.writer.cldf.sources.add(*bib)
+        bib = {e['key']: e.id for e in bib}
+        update_bib(bib)
+        for kw in self.languages:
+            glang = args.glottolog.api.cached_languoids.get(kw['Glottocode'])
+            if glang and glang.latitude:
+                kw['Latitude'] = glang.latitude
+                kw['Longitude'] = glang.longitude
+                kw['Glottolog_Name'] = glang.name
+                kw['ISO639P3code'] = glang.iso
+            kw['Source'] = [bib[s.strip()] for s in kw['Source'].split(';') if s.strip() in bib]
+            args.writer.objects['LanguageTable'].append(kw)
 
-        args.writer.add_languages()
         languages = args.writer.objects['LanguageTable']
+        lsources = {l['ID']: l['Source'] for l in languages}
         l2id = {l['Name']: l['ID'] for l in languages}
         for l in languages:
             if l['Group'].startswith('P'):
@@ -250,11 +266,6 @@ must be based on criteria such as
 - there is already a well-established reconstruction for the same meaning.
 """,
         ))
-        bib = self.etc_dir.read_bib()
-        args.writer.cldf.sources.add(*bib)
-        bib = {e['key']: e.id for e in bib}
-        update_bib(bib)
-        lsources = {r['ID']: [s.strip() for s in r['Source'].split(';') if s.strip()] for r in self.etc_dir.read_csv('languages.tsv', delimiter='\t', dicts=True)}
 
         links = collections.defaultdict(lambda: collections.defaultdict(set))
         concepts, etyma = set(), collections.defaultdict(set)
@@ -276,7 +287,7 @@ must be based on criteria such as
                     Value=form['form'],
                     is_root=form['is_root'],
                     is_proto=language['is_proto'],
-                    Source=[bib[ref] for ref in lsources[str(language['id'])] if ref in bib],
+                    Source=lsources[str(language['id'])],
                 ):
                     for i in form['sets']:
                         links[i[0]][int(i[1])].add((lexeme['ID'], lexeme['Form']))
