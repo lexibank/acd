@@ -10,8 +10,6 @@ import pylexibank
 from clldutils import jsonlib
 from clldutils.misc import slug
 from clldutils.markup import MarkdownLink
-from csvw.dsv import UnicodeWriter, reader
-from pybtex.database import parse_string
 
 from acdparser import RECONCSTRUCTIONS
 from acdparser.parser import RootParser, LoanParser
@@ -19,6 +17,8 @@ from acdparser import updates
 
 TREE = newick.loads('(Formosan,((PPh)PWMP,(PCMP,(PSHWNG,POC)PEMP)PCEMP)PMP)PAN;')[0]
 
+# cognatesets.csv
+# protoforms.csv
 
 def infer_protoforms(sets):
     """
@@ -598,12 +598,14 @@ def insert_refs(md, bib, missing):
 
                 if key in bib:
                     refs.append('{}[{}]'.format(bib[key], (y.group('pages') or '') if y else ''))
-                    ml.url = 'bib-' + bib[key]
+                    ml.url = 'sources.bib#cldf:' + bib[key]
                 else:
                     missing.update([key])
                 #    return ml.label
             else:
                 missing.update(['--' + ml.label])
                 #print('---', ml.label)
+        elif ml.url.startswith('languages/'):
+            ml.url = 'LanguageTable#cldf:{}'.format(ml.url.split('/')[-1])
         return ml
     return MarkdownLink.replace(md, repl), refs
