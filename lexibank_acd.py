@@ -10,6 +10,7 @@ import pylexibank
 from clldutils import jsonlib
 from clldutils.misc import slug
 from clldutils.markup import MarkdownLink
+from cldfviz.text import CLDFMarkdownLink
 
 from acdparser import RECONCSTRUCTIONS
 from acdparser.parser import RootParser, LoanParser
@@ -244,7 +245,7 @@ class Dataset(pylexibank.Dataset):
         ))
         args.writer.objects['ContributionTable'].append(dict(
             ID='Near',
-            Name='Near comparisons',
+            Name='Near Cognates',
             Description='Forms that are strikingly similar but irregular, and which cannot be '
                         'included in a note to an established reconstruction. Stated differently, '
                         'these are forms that appear to be historically related, but do not yet '
@@ -252,7 +253,7 @@ class Dataset(pylexibank.Dataset):
         ))
         args.writer.objects['ContributionTable'].append(dict(
             ID='Noise',
-            Name='Noise (look-alikes)',
+            Name='Chance Resemblances',
             Description="""Given the number of languages being compared and the number of forms in 
 many of the sources, forms that resemble one another in shape and meaning by chance will not be 
 uncommon, and the decision as to whether a comparison that appears good is a product of chance 
@@ -598,7 +599,7 @@ def insert_refs(md, bib, missing):
 
                 if key in bib:
                     refs.append('{}[{}]'.format(bib[key], (y.group('pages') or '') if y else ''))
-                    ml.url = 'sources.bib#cldf:' + bib[key]
+                    ml.url = CLDFMarkdownLink.from_component('Source', objid=bib[key]).url
                 else:
                     missing.update([key])
                 #    return ml.label
@@ -606,6 +607,6 @@ def insert_refs(md, bib, missing):
                 missing.update(['--' + ml.label])
                 #print('---', ml.label)
         elif ml.url.startswith('languages/'):
-            ml.url = 'LanguageTable#cldf:{}'.format(ml.url.split('/')[-1])
+            ml.url = CLDFMarkdownLink.from_component('LanguageTable', objid=ml.url.split('/')[-1]).url
         return ml
     return MarkdownLink.replace(md, repl), refs

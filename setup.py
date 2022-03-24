@@ -23,6 +23,7 @@ setup(
         ]
     },
     install_requires=[
+        'cldfviz>=0.7',
         'clldutils>=3.11',
         'pylexibank>=3.2.0',
         'lxml',
