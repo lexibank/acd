@@ -456,7 +456,7 @@ must be based on criteria such as
             forms_by_lgid[f['Language_ID']][f['Form']] = f['ID']
 
         for p in sorted(self.raw_dir.joinpath('updates').glob('*.odt'), key=lambda p_: p_.stem):
-            #continue
+            continue
             for etymon, forms, note in updates.parse(p):
                 assert etymon[0].upper() in l2id, str(etymon)
                 nf = []
