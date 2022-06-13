@@ -522,18 +522,18 @@ number of typographical and other errors to light.
 ![Source: 74%](https://img.shields.io/badge/Source-74%25-yellow.svg "Source: 74%")
 
 - **Varieties:** 1,062
-- **Concepts:** 86,409
-- **Lexemes:** 146,545
+- **Concepts:** 86,494
+- **Lexemes:** 146,642
 - **Sources:** 277
 - **Synonymy:** 1.01
-- **Cognacy:** 116,577 cognates in 9,355 cognate sets (14 singletons)
+- **Cognacy:** 116,662 cognates in 9,377 cognate sets (14 singletons)
 - **Cognate Diversity:** -1.28
 
 ## Possible Improvements:
 
 
 
-- Entries missing sources: 38141/146545 (26.03%)
+- Entries missing sources: 38238/146642 (26.08%)
 
 # Contributors
 
