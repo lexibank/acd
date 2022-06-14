@@ -1021,7 +1021,7 @@ ID,Name,Glottocode,Glottolog_Name,ISO639P3code,Macroarea,Latitude,Longitude,Fami
 1104,W.Tarangan (Ngaibor),west2538,West Tarangan,txn,,-6.62046,134.168,,,CMP,,,,false,W.Tarangan
 1106,Wagawaga,waga1268,Wagawaga,wgb,,-10.41792,150.37814,,,OC,Papua New Guinea,,,false,
 1107,Wahai,sale1244,Saleman,sau,,-2.82548,129.427,,Saleman,CMP,Indonesia (Maluku),[aka: Waay],wallace1962,false,
-19766,Wahau,waha1238,Eastern Lowland Kenyah,whk,,1.56635,116.655,,,WMP,,,smith2020a,false,
+19766,Wahau,waha1238,Eastern Lowland Kenyah,whk,,1.56635,116.655,,,WMP,,,smith2018a,false,
 19445,Wailengi,east2443,East Ambae,omb,,-15.3523,167.89,,,OC,,,tryon1976,false,
 19440,Waima'a,waim1252,Waima'a,wmh,,-8.53416,126.317,,,CMP,,,,false,
 1109,Waiyewa,weje1237,Wewewa,wew,,-9.55099,119.349,,,CMP,,"[aka: Wewewa, Weweya]",foxnd,false,
@@ -1044,7 +1044,7 @@ ID,Name,Glottocode,Glottolog_Name,ISO639P3code,Macroarea,Latitude,Longitude,Fami
 1122,Woi,woii1237,Woi,wbw,,-1.62746,135.484,,,SHWNG,Indonesia (Papua),,,false,
 443,Woleaian,wole1240,Woleaian,woe,,7.37957,143.916,,,OC,Micronesia,,sohnandtawerilmang1976,false,
 1124,Wolio,woli1241,Wolio,wlo,,-5.33,122.67,,,WMP,Indonesia (Sulawesi),,anceaux1987,false,
-19770,Woq Helaq Modang,moda1244,Modang,mxd,,0.80793,116.573,,,WMP,,,smith2020a,false,
+19770,Woq Helaq Modang,moda1244,Modang,mxd,,0.80793,116.573,,,WMP,,,smith2018a,false,
 1125,Wusi-Mana,wusi1237,Kula (Vanuatu),wsi,,-15.2786,166.696,,,OC,,,tryon1976,false,
 19316,Wusi-Valui,wusi1237,Kula (Vanuatu),wsi,,-15.2786,166.696,,,OC,,,tryon1976,false,
 445,Wuvulu,wuvu1240,,,,,,,,OC,,,blust1975,false,

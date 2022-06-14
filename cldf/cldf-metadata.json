@@ -13,7 +13,7 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.1-1-gfe05fa3",
+            "dc:created": "v1.1-6-gd307fb6",
             "dc:title": "Repository"
         }
     ],
