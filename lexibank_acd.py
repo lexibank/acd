@@ -136,10 +136,10 @@ class Dataset(pylexibank.Dataset):
         jsonlib.dump(nearsets, self.raw_dir / 'near.json', cls=JsonEncoder)
         jsonlib.dump(roots, self.raw_dir / 'root.json', cls=JsonEncoder)
 
-    def _schema(self, args):
-        args.writer.cldf.add_component('ContributionTable')
+    def add_schema(self, cldf):
+        cldf.add_component('ContributionTable')
 
-        args.writer.cldf.add_component(
+        cldf.add_component(
             'CognatesetTable',
             'Form',
             'Comment',
@@ -147,9 +147,9 @@ class Dataset(pylexibank.Dataset):
             'Contribution_ID',
             #{"name": "Source", "separator": ";", "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source"},
         )
-        args.writer.cldf.add_foreign_key('CognatesetTable', 'Contribution_ID', 'ContributionTable', 'ID')
+        cldf.add_foreign_key('CognatesetTable', 'Contribution_ID', 'ContributionTable', 'ID')
 
-        t = args.writer.cldf.add_table(
+        t = cldf.add_table(
             'loansets.csv',
             'ID',
             'Gloss',
@@ -158,11 +158,11 @@ class Dataset(pylexibank.Dataset):
             'Comment',
         )
         t.tableSchema.primaryKey = ['ID']
-        args.writer.cldf.add_component('BorrowingTable', 'Loanset_ID')
-        args.writer.cldf.add_foreign_key('loansets.csv', 'Contribution_ID', 'ContributionTable', 'ID')
-        args.writer.cldf.add_foreign_key('BorrowingTable', 'Loanset_ID', 'loansets.csv', 'ID')
+        cldf.add_component('BorrowingTable', 'Loanset_ID')
+        cldf.add_foreign_key('loansets.csv', 'Contribution_ID', 'ContributionTable', 'ID')
+        cldf.add_foreign_key('BorrowingTable', 'Loanset_ID', 'loansets.csv', 'ID')
 
-        t = args.writer.cldf.add_table(
+        t = cldf.add_table(
             'protoforms.csv',
             'ID',
             'Cognateset_ID',
@@ -186,13 +186,14 @@ class Dataset(pylexibank.Dataset):
         )
         t.tableSchema.primaryKey = ['ID']
         #t.common_props['dc:description'] = ""
-        args.writer.cldf.add_foreign_key('protoforms.csv', 'Form_ID', 'FormTable', 'ID')
-        args.writer.cldf.add_foreign_key('protoforms.csv', 'Cognateset_ID', 'CognatesetTable', 'ID')
-        args.writer.cldf.add_foreign_key('protoforms.csv', 'Doublets', 'protoforms.csv', 'ID')
-        args.writer.cldf.add_foreign_key('protoforms.csv', 'Disjuncts', 'protoforms.csv', 'ID')
+        cldf.add_foreign_key('protoforms.csv', 'Form_ID', 'FormTable', 'ID')
+        cldf.add_foreign_key('protoforms.csv', 'Cognateset_ID', 'CognatesetTable', 'ID')
+        cldf.add_foreign_key('protoforms.csv', 'Doublets', 'protoforms.csv', 'ID')
+        cldf.add_foreign_key('protoforms.csv', 'Disjuncts', 'protoforms.csv', 'ID')
+        cldf.add_foreign_key('CognateTable', 'Reconstruction_ID', 'protoforms.csv', 'ID')
 
     def cmd_makecldf(self, args):
-        self._schema(args)
+        self.add_schema(args.writer.cldf)
         bib = self.etc_dir.read_bib()
         args.writer.cldf.sources.add(*bib)
         bib = {e['key']: e.id for e in bib}
@@ -410,7 +411,7 @@ must be based on criteria such as
                     args.writer.add_cognate(
                         Form_ID=fid,
                         Form=form,
-                        Reconstruction_ID=str(sid),
+                        #Reconstruction_ID=str(sid),
                         Cognateset_ID='{}-{}'.format(cid, sid),
                     )
 
@@ -522,11 +523,11 @@ must be based on criteria such as
                     #Source=[row['Source']],
 
                     args.writer.add_cognate(
-                            Form_ID=form_id,
-                            Form=form,
-                            Reconstruction_ID=str(max_pfid),
-                            Cognateset_ID=str(max_eid),
-                            Proto_Language=etymon[0],
+                        Form_ID=form_id,
+                        Form=form,
+                        Reconstruction_ID=str(max_pfid),
+                        Cognateset_ID=str(max_eid),
+                        Proto_Language=etymon[0],
                     )
                 #
                 # FIXME: infer reconstructions!

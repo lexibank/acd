@@ -13,7 +13,7 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0",
+            "dc:created": "v1.1",
             "dc:title": "Repository"
         },
         {
@@ -375,6 +375,17 @@
                         ],
                         "reference": {
                             "resource": "cognatesets.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Reconstruction_ID"
+                        ],
+                        "reference": {
+                            "resource": "protoforms.csv",
                             "columnReference": [
                                 "ID"
                             ]
