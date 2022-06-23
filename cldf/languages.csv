@@ -911,7 +911,7 @@ ID,Name,Glottocode,Glottolog_Name,ISO639P3code,Macroarea,Latitude,Longitude,Fami
 425,Tanga,tang1348,Tangga,tgg,,-4.08824,153.611,,Tangga,OC,Papua New Guinea,[aka: Tangga],bell1977,false,
 426,Tangoa,tang1347,Movono,tgp,,-15.5643,166.958,,,OC,Vanuatu,,tryon1976,false,
 1049,Tanjong,kano1244,Kanowit-Tanjong Melanau,kxn,,2.03781,112.383,,"Melanau, Kanowit-Tanjong",WMP,Malaysia (Sarawak),,ray1913,false,
-19210,Taokas,buli1255,Buli (Indonesia),bzq,,1.0008,128.443,,Babuza,Form.,Taiwan,,,false,
+19210,Taokas,taok1237,Taokas,bzq,,23.9,120.9,,Babuza,Form.,Taiwan,,,false,
 19612,Tape,mara1399,Maragus,mrs,,-16.0695,167.33,,,OC,,,tryon1976,false,
 1051,Tapuh,buka1257,Bukar-Sadung Bidayuh,sdo,,0.96817,110.657,,"Bidayuh, Bukar-Sadong",WMP,Malaysia (Sarawak),,,false,
 1052,Tarakan,tidu1239,Tidung,tid,,3.937955,117.55143,,Tidong,WMP,Indonesia (Kalimantan),,beech1908,false,
