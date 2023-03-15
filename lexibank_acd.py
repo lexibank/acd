@@ -10,7 +10,7 @@ import pylexibank
 from clldutils import jsonlib
 from clldutils.misc import slug
 from clldutils.markup import MarkdownLink
-from cldfviz.text import CLDFMarkdownLink
+from pycldf.ext.markdown import CLDFMarkdownLink
 
 from acdparser import RECONCSTRUCTIONS
 from acdparser.parser import RootParser, LoanParser
@@ -20,6 +20,7 @@ TREE = newick.loads('(Formosan,((PPh)PWMP,(PCMP,(PSHWNG,POC)PEMP)PCEMP)PMP)PAN;'
 
 # cognatesets.csv
 # protoforms.csv
+
 
 def infer_protoforms(sets):
     """
@@ -457,6 +458,7 @@ must be based on criteria such as
             forms_by_lgid[f['Language_ID']][f['Form']] = f['ID']
 
         for p in sorted(self.raw_dir.joinpath('updates').glob('*.odt'), key=lambda p_: p_.stem):
+            continue
             for etymon, forms, note in updates.parse(p):
                 assert etymon[0].upper() in l2id, str(etymon)
                 nf = []

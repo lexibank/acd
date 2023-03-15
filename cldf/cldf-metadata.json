@@ -1,7 +1,7 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
     "aboutUrl": null,
-    "dc:bibliographicCitation": "The Austronesian Comparative Dictionary",
+    "dc:bibliographicCitation": "Robert Blust and Stephen Trussel 2020. The Austronesian Comparative Dictionary. Web edition",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
     "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
@@ -13,8 +13,26 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.1-6-gd307fb6",
+            "dc:created": "v1.1-13-g46a22df",
             "dc:title": "Repository"
+        },
+        {
+            "rdf:about": "https://github.com/glottolog/glottolog",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v4.7",
+            "dc:title": "Glottolog"
+        },
+        {
+            "rdf:about": "https://github.com/concepticon/concepticon-data",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v3.0.0",
+            "dc:title": "Concepticon"
+        },
+        {
+            "rdf:about": "https://github.com/cldf-clts/clts",
+            "rdf:type": "prov:Entity",
+            "dc:created": "v2.2.0",
+            "dc:title": "CLTS"
         }
     ],
     "prov:wasGeneratedBy": [
@@ -24,7 +42,7 @@
         },
         {
             "dc:title": "python",
-            "dc:description": "3.8.10"
+            "dc:description": "3.10.6"
         },
         {
             "dc:title": "python-packages",
@@ -33,13 +51,10 @@
     ],
     "rdf:ID": "acd",
     "rdf:type": "http://www.w3.org/ns/dcat#Distribution",
-    "dialect": {
-        "commentPrefix": null
-    },
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 146733,
+            "dc:extent": 146545,
             "tableSchema": {
                 "columns": [
                     {
@@ -150,7 +165,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 1063,
+            "dc:extent": 1062,
             "tableSchema": {
                 "columns": [
                     {
@@ -166,7 +181,7 @@
                     {
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#glottocode",
-                        "valueUrl": "http://glottolog.org/resource/languoid/id/{glottolog_id}",
+                        "valueUrl": "http://glottolog.org/resource/languoid/id/{Glottocode}",
                         "name": "Glottocode"
                     },
                     {
@@ -246,7 +261,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 86502,
+            "dc:extent": 86409,
             "tableSchema": {
                 "columns": [
                     {
@@ -262,7 +277,7 @@
                     {
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#concepticonReference",
-                        "valueUrl": "http://concepticon.clld.org/parameters/{concepticon_id}",
+                        "valueUrl": "http://concepticon.clld.org/parameters/{Concepticon_ID}",
                         "name": "Concepticon_ID"
                     },
                     {
@@ -278,7 +293,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognateTable",
-            "dc:extent": 116753,
+            "dc:extent": 116577,
             "tableSchema": {
                 "columns": [
                     {
@@ -427,7 +442,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognatesetTable",
-            "dc:extent": 9377,
+            "dc:extent": 9355,
             "tableSchema": {
                 "columns": [
                     {
@@ -620,7 +635,7 @@
             "url": "borrowings.csv"
         },
         {
-            "dc:extent": 24884,
+            "dc:extent": 24862,
             "tableSchema": {
                 "columns": [
                     {

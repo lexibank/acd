@@ -11,6 +11,9 @@
         },
         {
             "name": "Stephen Trussel"
+        },
+        {
+            "name": "Alexander Smith"
         }
     ],
     "contributors": [
@@ -25,7 +28,7 @@
         }
     ],
     "upload_type": "dataset",
-    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>The Austronesian Comparative Dictionary</p>\n</blockquote>",
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Robert Blust and Stephen Trussel 2020. The Austronesian Comparative Dictionary. Web edition</p>\n</blockquote>",
     "license": {
         "id": "CC-BY-4.0"
     }
