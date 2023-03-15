@@ -125,17 +125,7 @@ class Dataset(pylexibank.Dataset):
     )
 
     def cmd_download(self, args):
-        from acdparser import parse, JsonEncoder
-
-        res = parse(self.raw_dir)
-        sources, langs, cogs, loans, nsets, nearsets, roots = res
-        jsonlib.dump(sources, self.raw_dir / 'sources.json', cls=JsonEncoder)
-        jsonlib.dump(langs, self.raw_dir / 'languages.json', cls=JsonEncoder)
-        jsonlib.dump(cogs, self.raw_dir / 'cognates.json', cls=JsonEncoder)
-        jsonlib.dump(loans, self.raw_dir / 'borrowings.json', cls=JsonEncoder)
-        jsonlib.dump(nsets, self.raw_dir / 'noise.json', cls=JsonEncoder)
-        jsonlib.dump(nearsets, self.raw_dir / 'near.json', cls=JsonEncoder)
-        jsonlib.dump(roots, self.raw_dir / 'root.json', cls=JsonEncoder)
+        pass
 
     def add_schema(self, cldf):
         cldf.add_component('ContributionTable')
@@ -458,7 +448,6 @@ must be based on criteria such as
             forms_by_lgid[f['Language_ID']][f['Form']] = f['ID']
 
         for p in sorted(self.raw_dir.joinpath('updates').glob('*.odt'), key=lambda p_: p_.stem):
-            continue
             for etymon, forms, note in updates.parse(p):
                 assert etymon[0].upper() in l2id, str(etymon)
                 nf = []
