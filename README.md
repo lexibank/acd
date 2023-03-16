@@ -19,19 +19,19 @@ This dataset is licensed under a CC-BY-4.0 license
 ![Concepticon: 0%](https://img.shields.io/badge/Concepticon-0%25-red.svg "Concepticon: 0%")
 ![Source: 74%](https://img.shields.io/badge/Source-74%25-yellow.svg "Source: 74%")
 
-- **Varieties:** 1,062
-- **Concepts:** 86,494
-- **Lexemes:** 146,642
+- **Varieties:** 1,063
+- **Concepts:** 86,502
+- **Lexemes:** 146,733
 - **Sources:** 277
 - **Synonymy:** 1.01
-- **Cognacy:** 116,662 cognates in 9,377 cognate sets (14 singletons)
+- **Cognacy:** 116,753 cognates in 9,377 cognate sets (14 singletons)
 - **Cognate Diversity:** -1.28
 
 ## Possible Improvements:
 
 
 
-- Entries missing sources: 38238/146642 (26.08%)
+- Entries missing sources: 38329/146733 (26.12%)
 
 # Contributors
 
@@ -39,7 +39,7 @@ Name | GitHub user | Role
 --- | --- | ---
 Robert Bust |  | author
 Stephen Trussel | | author
-Alexander Smith | @The-Austronesianist | author
+Alexander D. Smith | @The-Austronesianist | author
 Robert Forkel | @xrotwang | DataCurator
 
 

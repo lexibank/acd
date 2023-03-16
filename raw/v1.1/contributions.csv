@@ -1,0 +1,58 @@
+ID,Name,Description,Contributor,Citation
+Canonical,Canonical comparisons,"Comparisons with regular sound correspondences and close semantics. If there are additional forms that are strikingly similar but irregular, or that show strong semantic divergence, these are are added in a note. Every attempt is made to keep the comparison proper free from problems.",,
+Root,Roots,"
+    Because many reconstructed morphemes contain smaller submorphemic sound-meaning associations
+    of the type that Brandstetter (1916) called ‘roots’ (Wurzeln), I felt that a module collecting
+    these elements into one place would be useful. The ‘Roots’ module of the ACD thus amounts to
+    a continuation of the data set presented in Blust 1988.
+    ",,
+Loan,Loans,"
+    Loanwords are a perennial problem in historical linguistics. When they involve morphemes that
+    are borrowed between related languages they can provoke questions about the regularity of sound
+    correspondences. When they involve morphemes that are borrowed between unrelated languages they
+    can give rise to invalid reconstructions. Dempwolff (1934-38) included a number of known
+    loanwords among his 2,216 ‘Proto-Austronesian’ reconstructions in order to show that sound
+    correspondences are often regular even with loanwords that are borrowed relatively early, but
+    he marked these with an ‘x’, as with *xbazu ‘shirt’, which he knew to be a Persian loanword in
+    many of the languages of western Indonesia, and (via Malay) in some of the languages of the
+    Philippines. However, he overlooked a number of cases, such as *nanas ‘pineapple’ (an Amazonian
+    cultigen that was introduced to insular Southeast Asia by the Portuguese). Since widely
+    distributed loanwords can easily be confused with native forms I have found it useful to
+    include them in a separate module of the dictionary.
+
+    A fairly careful (but inevitably imperfect) attempt has been made to identify and document
+    loanwords with a distribution sufficient to justify a reconstruction on one of the eight levels
+    of the ACD, if treated erroneously as native. While this has been done wherever the possibility
+    of confusion with native forms seemed real, there is no reason to include obvious loans that
+    would never be mistaken for native forms.
+
+    This issue is especially evident in the Philippines, where hundreds of Spanish loanwords from
+    the colonial period that began late in the 16th century, are scattered from at least Ilokano in
+    northern Luzon to the Bisayan languages of the central Philippines and some of the languages of
+    Mindanao (as Subanon). Comparisons like Ilokano kamarón ‘prawn’, Cebuano kamarún ‘dish of
+    shrimps, split and dipped in eggs, optionally mixed with ground meat’ < Spanish camarón
+    ‘shrimp’, or Ilokano kalábus ‘jail, prison’, Cebuano kalabús, kalabúsu ‘jail; to land in
+    prison, in jail’ < Spanish calabozo ‘dungeon’ seem inappropriate for inclusion in LOANS, but
+    introduced plants have generally been admitted. Some of these, as ‘tomato’ may be widely known
+    as New World plants that were introduced to the Philippines by the Spanish, but others, as
+    ‘chayote’, may be less familiar. As already noted, Dempwolff (1938) posited
+    ‘Uraustronesisch’ *nanas and *kenas as doublets for ‘pineapple’, completely overlooking the
+    fact that this is an Amazonian plant that could hardly have been present in the Austronesian
+    world before the advent of the colonial period. This example shows that errors in the semantic
+    domain of plant names can sometimes escape detection by scholars who are otherwise known for
+    their careful, meticulous work, and for this reason all borrowed cognate sets involving plant
+    names are documented as loanwords to avoid any possible misinterpretation.
+    ",,
+Near,Near Cognates,"Forms that are strikingly similar but irregular, and which cannot be included in a note to an established reconstruction. Stated differently, these are forms that appear to be historically related, but do not yet permit a reconstruction.",,
+Noise,Chance Resemblances,"Given the number of languages being compared and the number of forms in 
+many of the sources, forms that resemble one another in shape and meaning by chance will not be 
+uncommon, and the decision as to whether a comparison that appears good is a product of chance 
+must be based on criteria such as
+
+- how general the semantic category of the form is (e.g. phonologically corresponding forms 
+  meaning ‘cut’ are less diagnostic of relationship than phonologically corresponding forms for 
+  particular types of cutting),
+- how richly attested the form is (if it is found in just two witnesses the likelihood that it is 
+  a product of chance is greatly increased),
+- there is already a well-established reconstruction for the same meaning.
+",,

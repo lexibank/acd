@@ -1,5 +1,5 @@
 """
-
+FIXME: copy cldf/ of version v1.1 to raw/ as baseline for updates!
 """
 from pylexibank.cldf import LexibankWriter
 from clldutils.clilib import PathType

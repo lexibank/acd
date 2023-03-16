@@ -64,7 +64,7 @@
         10,
         10
     ],
-    "filename": "lingpy-2023-03-15",
+    "filename": "lingpy-2023-03-16",
     "gap_symbol": "-",
     "gap_weight": 0.5,
     "gop": -2,
@@ -123,7 +123,7 @@
     "scorer": {},
     "sonar": true,
     "stress": "\u02c8\u02cc'",
-    "timestamp": "2023-03-15 15:15",
+    "timestamp": "2023-03-16 13:44",
     "tones": "\u00b9\u00b2\u00b3\u2074\u2075\u2076\u2077\u2078\u2079\u2070\u2081\u2082\u2083\u2084\u2085\u2086\u2087\u2088\u2089\u20800123456789\u02e5\u02e6\u02e7\u02e8\u02e9\u02ea\u02eb-\ua708-\ua709-\ua70a-\ua70b-\ua70c-\ua70d-\ua70e-\ua70f-\ua710-\ua711-\ua712-\ua713-\ua714-\ua715-\ua716-\ua717-\ua718-\ua719-\ua71a-\ua700-\ua701-\ua702-\ua703-\ua704-\ua705-\ua706-\ua707",
     "tree_calc": "neighbor",
     "unique_sequences": true,

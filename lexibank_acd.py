@@ -1,25 +1,15 @@
-import re
 import hashlib
-import itertools
 import pathlib
 import collections
 
 import attr
 import newick
 import pylexibank
-from clldutils import jsonlib
 from clldutils.misc import slug
-from clldutils.markup import MarkdownLink
-from pycldf.ext.markdown import CLDFMarkdownLink
-
-from acdparser import RECONCSTRUCTIONS
-from acdparser.parser import RootParser, LoanParser
-from acdparser import updates
+from pycldf import Dataset as CLDFDataset
+from csvw.dsv import reader
 
 TREE = newick.loads('(Formosan,((PPh)PWMP,(PCMP,(PSHWNG,POC)PEMP)PCEMP)PMP)PAN;')[0]
-
-# cognatesets.csv
-# protoforms.csv
 
 
 def infer_protoforms(sets):
@@ -185,344 +175,105 @@ class Dataset(pylexibank.Dataset):
 
     def cmd_makecldf(self, args):
         self.add_schema(args.writer.cldf)
+
+        #
+        # FIXME: Start out with data from v1.1:
+        #
         bib = self.etc_dir.read_bib()
         args.writer.cldf.sources.add(*bib)
         bib = {e['key']: e.id for e in bib}
         update_bib(bib)
-        for kw in self.languages:
-            glang = args.glottolog.api.cached_languoids.get(kw['Glottocode'])
-            if glang and glang.latitude:
-                kw['Latitude'] = glang.latitude
-                kw['Longitude'] = glang.longitude
-                kw['Glottolog_Name'] = glang.name
-                kw['ISO639P3code'] = glang.iso
-            kw['Source'] = [bib[s.strip()] for s in kw['Source'].split(';') if s.strip() in bib]
-            args.writer.objects['LanguageTable'].append(kw)
 
-        languages = args.writer.objects['LanguageTable']
-        lsources = {l['ID']: l['Source'] for l in languages}
-        l2id = {l['Name']: l['ID'] for l in languages}
-        for l in languages:
-            if l['Group'].startswith('P'):
-                l2id[l['Group'].upper()] = l['ID']
-            if '(' in l['Name']:
-                # Sambal (Botolan) -> Botolan Sambal
-                comps = l['Name'].replace(')', '').split('(', 1)
-                l2id['{} {}'.format(comps[1].strip(), comps[0].strip())] = l['ID']
-        langs = jsonlib.load(self.raw_dir / 'languages.json')
-        for l in args.writer.objects['LanguageTable']:
-            l['is_proto'] = l['Name'].startswith('Proto-')
-            l['Dialect_Of'] = langs.get(l['ID'], {}).get('parent_language')
+        cldf = CLDFDataset.from_metadata(self.raw_dir / 'v1.1' / 'cldf-metadata.json')
+        for table in cldf.tables:
+            try:
+                tt = cldf.get_tabletype(table)
+            except ValueError:
+                tt = None
+            for obj in table:
+                if tt and tt in args.writer._obj_index:
+                    args.writer._obj_index[tt or str(table.url)].add(obj['ID'])
+                args.writer.objects[tt or str(table.url)].append(obj)
 
-        lid_by_group = {l['Group']: l['ID'] for l in args.writer.objects['LanguageTable']}
-        assert all(k in lid_by_group for k in RECONCSTRUCTIONS)
+        forms_by_id = {f['ID']: f for f in cldf['FormTable']}
+        protoforms = {}
+        for pf in cldf['protoforms.csv']:
+            if not pf['Inferred']:
+                # FIXME: add Proto_Language to the key!?
+                protoforms[forms_by_id[pf['Form_ID']]['Value']] = pf
+                protoforms[pf['ID']] = pf
 
-        args.writer.objects['ContributionTable'].append(dict(
-            ID='Canonical',
-            Name='Canonical comparisons',
-            Description='Comparisons with regular sound correspondences and close semantics. If '
-                        'there are additional forms that are strikingly similar but irregular, or '
-                        'that show strong semantic divergence, these are are added in a note. '
-                        'Every attempt is made to keep the comparison proper free from problems.',
-        ))
-        args.writer.objects['ContributionTable'].append(dict(
-            ID='Root',
-            Name='Roots',
-            Description=RootParser.__doc__,
-        ))
-        args.writer.objects['ContributionTable'].append(dict(
-            ID='Loan',
-            Name='Loans',
-            Description=LoanParser.__doc__,
-        ))
-        args.writer.objects['ContributionTable'].append(dict(
-            ID='Near',
-            Name='Near Cognates',
-            Description='Forms that are strikingly similar but irregular, and which cannot be '
-                        'included in a note to an established reconstruction. Stated differently, '
-                        'these are forms that appear to be historically related, but do not yet '
-                        'permit a reconstruction.',
-        ))
-        args.writer.objects['ContributionTable'].append(dict(
-            ID='Noise',
-            Name='Chance Resemblances',
-            Description="""Given the number of languages being compared and the number of forms in 
-many of the sources, forms that resemble one another in shape and meaning by chance will not be 
-uncommon, and the decision as to whether a comparison that appears good is a product of chance 
-must be based on criteria such as
+        #
+        # FIXME: Update language metadata according to changes in etc/languages.tsv
+        # **and** according to new Glottolog data!
+        #for kw in self.languages:
+        #    glang = args.glottolog.api.cached_languoids.get(kw['Glottocode'])
+        #    if glang and glang.latitude:
+        #        kw['Latitude'] = glang.latitude
+        #        kw['Longitude'] = glang.longitude
+        #        kw['Glottolog_Name'] = glang.name
+        #        kw['ISO639P3code'] = glang.iso
+        #    kw['Source'] = [bib[s.strip()] for s in kw['Source'].split(';') if s.strip() in bib]
+        #    args.writer.objects['LanguageTable'].append(kw)
+        #
 
-- how general the semantic category of the form is (e.g. phonologically corresponding forms 
-  meaning ‘cut’ are less diagnostic of relationship than phonologically corresponding forms for 
-  particular types of cutting),
-- how richly attested the form is (if it is found in just two witnesses the likelihood that it is 
-  a product of chance is greatly increased),
-- there is already a well-established reconstruction for the same meaning.
-""",
-        ))
+        for d in self.raw_dir.joinpath('updates').iterdir():
+            if not d.is_dir():
+                continue
+            data = {}
+            for name in ['forms', 'metadata']:
+                p = d.joinpath('{}.tsv'.format(name))
+                assert p.exists()
+                data[name] = list(reader(p, delimiter='\t', dicts=True))
 
-        links = collections.defaultdict(lambda: collections.defaultdict(set))
-        concepts, etyma = set(), collections.defaultdict(set)
-        for language in jsonlib.load(self.raw_dir / 'languages.json').values():
-            for form in language['forms']:
-                concept = form['gloss']['plain']
-                cid = hash(concept)
-                if cid not in concepts:
-                    args.writer.add_concept(
-                        ID=cid,
-                        Name=concept,
-                        #Description=form['gloss']['markdown'],
-                    )
-                    concepts.add(cid)
-
-                for lexeme in args.writer.add_forms_from_value(
-                    Language_ID=language['id'],
-                    Parameter_ID=cid,
-                    Value=form['form'],
-                    is_root=form['is_root'],
-                    is_proto=language['is_proto'],
-                    Source=lsources[str(language['id'])],
-                ):
-                    for i in form['sets']:
-                        links[i[0]][int(i[1])].add((lexeme['ID'], lexeme['Form']))
-
-        missing = collections.Counter()
-        etyma = jsonlib.load(self.raw_dir / 'cognates.json')
-        setids = list(itertools.chain(*[[s['id'] for s in e['sets']] for e in etyma]))
-        for etymon in etyma:
-            for i, s in enumerate(etymon['sets']):
-                sid, pl = s['id'], s['proto_language']
-                if i == 0:
-                    comment, refs = etymon['note']['markdown'] if etymon['note'] else None, []
-                    if comment:
-                        comment, refs = insert_refs(comment, bib, missing)
-                    args.writer.objects['CognatesetTable'].append(dict(
-                        ID=str(etymon['id']),
-                        Contribution_ID='Canonical',
-                        Form=s['key'],
-                        Description=s['gloss'],
-                        Proto_Language=pl,
-                        Comment=comment,
-                        Source=refs,
-                    ))
-                cid = hash(s['gloss'])
-                if cid not in concepts:
-                    args.writer.add_concept(
-                        ID=cid,
-                        Name=s['gloss'],
-                        #Description=form['gloss']['markdown'],
-                    )
-                    concepts.add(cid)
-                fid = 'protoform-{}'.format(sid)
-                args.writer.objects['FormTable'].append(dict(
-                    ID=fid,
-                    Language_ID=lid_by_group[s['proto_language']],
-                    Parameter_ID=cid,
-                    Value=s['key'],
-                    Form=s['key'].replace('*', ''),
-                    is_proto=True,
-                ))
-                comment, refs = s['note']['markdown'] if s['note'] else None, []
-                if comment:
-                    comment, refs = insert_refs(comment, bib, missing)
-                args.writer.objects['protoforms.csv'].append(dict(
-                    ID=str(sid),
-                    Form_ID=fid,
-                    Proto_Language=pl,
-                    Cognateset_ID=str(etymon['id']),
-                    Comment=comment,
-                    Source=refs,
-                    Subset=s['subset'],
-                    Inferred=False,
-                    Doublet_Comment=s['doublet_text'],
-                    Disjunct_Comment=s['disjunct_text'],
-                    Doublets=[str(k[1][1]) for k in s['doublets'] if k[1][0] in ['s', 'f'] and int(k[1][1]) in setids],
-                    Disjuncts=[str(k[1][1]) for k in s['disjuncts'] if k[1][0] in ['s', 'f'] and int(k[1][1]) in setids],
-                ))
-                for t in ['s', 'f']:
-                    for fid, form in links[t].get(sid, []):
-                        args.writer.add_cognate(
-                            Form_ID=fid,
-                            Form=form,
-                            Reconstruction_ID=str(sid),
-                            Cognateset_ID=str(etymon['id']),
-                            Proto_Language=pl,
-                        )
-            for _, sets in itertools.groupby(etymon['sets'], lambda s: s['subset']):
-                for sid, plg, form, gloss in infer_protoforms(list(sets)):
-                    fid = 'protoform-{}-{}'.format(sid, plg)
-                    args.writer.objects['FormTable'].append(dict(
-                        ID=fid,
-                        Language_ID=lid_by_group[plg],
-                        Parameter_ID=hash(gloss),
-                        Value=form,
-                        Form=form.replace('*', ''),
-                        is_proto=True,
-                    ))
-                    args.writer.objects['protoforms.csv'].append(dict(
-                        ID='{}-{}'.format(sid, plg),
-                        Cognateset_ID=str(etymon['id']),
-                        Form_ID=fid,
-                        Proto_Language=plg,
-                        Inferred=True,
-                    ))
-        for s in jsonlib.load(self.raw_dir / 'root.json'):
-            sid = s['id']
-            comment, refs = s['note']['markdown'] if s['note'] else None, []
-            if comment:
-                comment, refs = insert_refs(comment, bib, missing)
-            args.writer.objects['CognatesetTable'].append(dict(
-                ID='{}-{}'.format('Root', sid),
-                Contribution_ID='Root',
-                Form=s['key'],
-                Description=s['gloss'],
-                Comment=comment,
-                Sorce=refs,
-            ))
-
-            for fid, form in links['r'].get(sid, []):
-                args.writer.add_cognate(
-                    Form_ID=fid,
-                    Form=form,
-                    Cognateset_ID='{}-{}'.format('Root', sid),
+            for lang in data['metadata']:
+                lid = str(max(int(i) for i in args.writer._obj_index['LanguageTable']) + 1)
+                args.writer.add_language(
+                    ID=lid,
+                    Name=lang['name'],
+                    Group=lang['group'].upper(),
+                    ISO639P3code=lang['ISO639P3code'],
+                    Location=lang['location'],
+                    Alias=lang['Alias'],
+                    Source=[lang['source']],
+                    Longitude=float(lang['lon']),
+                    Latitude=float(lang['lat']),
                 )
-        for d, cid, lcat in [('near.json', 'Near', 'near'), ('noise.json', 'Noise', 'n')]:
-            for s in jsonlib.load(self.raw_dir / d):
-                sid = s['id']
-                comment, refs = s['note']['markdown'] if s['note'] else None, []
-                if comment:
-                    comment, refs = insert_refs(comment, bib, missing)
-                args.writer.objects['CognatesetTable'].append(dict(
-                    ID='{}-{}'.format(cid, sid),
-                    Contribution_ID=cid,
-                    Description=s['gloss'],
-                    Comment=comment,
-                    Source=refs,
-                ))
-                for fid, form in sorted(links[lcat].get(sid, []), key=lambda i: i[0]):
-                    args.writer.add_cognate(
-                        Form_ID=fid,
-                        Form=form,
-                        #Reconstruction_ID=str(sid),
-                        Cognateset_ID='{}-{}'.format(cid, sid),
-                    )
-
-        def de(s):
-            if s.startswith('(Dempwolff'):
-                s = re.sub(r'\(Dempwolff:\s*', '', s)
-                if s.endswith(')'):
-                    s = s[:-1].strip()
-                return s
-
-        bid = 0
-        for s in jsonlib.load(self.raw_dir / 'borrowings.json'):
-            sid = s['id']
-            comment, refs = s['note']['markdown'] if s['note'] else None, []
-            if comment:
-                comment, refs = insert_refs(comment, bib, missing)
-            args.writer.objects['loansets.csv'].append(dict(
-                ID='{}'.format(sid),
-                Contribution_ID='Loan',
-                Gloss=s['gloss'],
-                Dempwolff_Etymology=de(s['loanform']) if s['loanform'] else None,
-                Comment=comment,
-                Source=refs,
-            ))
-            for fid, form in sorted(links['lo'].get(sid, []), key=lambda i: i[0]):
-                bid += 1
-                args.writer.objects['BorrowingTable'].append(dict(
-                    ID=str(bid),
-                    Target_Form_ID=fid,
-                    #Form=form,
-                    #Reconstruction_ID=str(sid),
-                    Loanset_ID='{}'.format(sid),
-                ))
-
-        for k, v in missing.most_common():
-            if v > 1:
-                print(k, v)
-
-        max_eid = 40000
-        max_pfid = 20000
-        forms_by_lgid = collections.defaultdict(dict)
-        for f in args.writer.objects['FormTable']:
-            forms_by_lgid[f['Language_ID']][f['Form']] = f['ID']
-
-        for p in sorted(self.raw_dir.joinpath('updates').glob('*.odt'), key=lambda p_: p_.stem):
-            for etymon, forms, note in updates.parse(p):
-                assert etymon[0].upper() in l2id, str(etymon)
-                nf = []
-                for group, lg, a, b in forms:
-                    if lg not in l2id:
-                        if '(' in lg:
-                            lg = '{} {}'.format(
-                                lg.split('(')[1].replace(')', '').strip(), lg.split('(')[0].strip())
-                    #assert group in l2id, group
-                    assert lg in l2id, lg
-                    nf.append([group, lg, a, b])
-                forms = nf
-                #sid, pl = s['id'], s['proto_language']
-                max_eid += 1
-                args.writer.objects['CognatesetTable'].append(dict(
-                    ID=str(max_eid),
-                    Contribution_ID='Canonical',
-                    Form=etymon[1],
-                    Description=etymon[2],
-                    Proto_Language=etymon[0],
-                    Comment=note,
-                ))
-                cid = hash(etymon[2])
-                if cid not in concepts:
+                break
+            else:
+                raise ValueError
+            for form in data['forms']:
+                cid = hash(form['merap gloss'] or form['gloss'])
+                if cid not in args.writer._obj_index['ParameterTable']:
                     args.writer.add_concept(
                         ID=cid,
-                        Name=etymon[2],
-                        #Description=form['gloss']['markdown'],
+                        Name=form['merap gloss'],
                     )
-                    concepts.add(cid)
-                max_pfid += 1
-                fid = 'protoform-{}'.format(max_pfid)
-                args.writer.objects['FormTable'].append(dict(
-                    ID=fid,
-                    Language_ID=l2id[etymon[0]],
-                    Parameter_ID=cid,
-                    Value=etymon[1],
-                    Form=etymon[1].replace('*', ''),
-                    is_proto=True,
-                ))
-                args.writer.objects['protoforms.csv'].append(dict(
-                    ID=str(max_pfid),
-                    Form_ID=fid,
-                    Proto_Language=etymon[0],
-                    Cognateset_ID=str(max_eid),
-                    Comment=None,
-                    Subset=1,
-                    Inferred=False,
-                ))
-                for group, lg, form, gloss in forms:
-                    cid = hash(gloss)
-                    if cid not in concepts:
-                        args.writer.add_concept(ID=cid, Name=gloss)
-                        concepts.add(cid)
-                    form_id = forms_by_lgid[l2id[lg]].get(form)
-                    if not form_id:
-                        for lexeme in args.writer.add_forms_from_value(
-                            Language_ID=l2id[lg],
-                            Parameter_ID=cid,
-                            Value=form,
-                        ):
-                            form_id = lexeme['ID']
-                            break
-                    #Source=[row['Source']],
 
+                pf = protoforms[form['pfid']] if form['pfid'] else protoforms[form['reconstruction']]
+                #
+                # FIXME: add disambiguation markers!
+                #
+                if pf['Proto_Language'] != form['proto level'].upper():
+                    print('{}: {} vs. {}'.format(form['reconstruction'], pf['Proto_Language'],
+                                                 form['proto level'].upper()))
+                    #
+                    # FIXME: We might have to deepen the reconstruction level!?
+                    #
+                    pass
+                for lexeme in args.writer.add_forms_from_value(
+                    Language_ID=lid,
+                    Parameter_ID=cid,
+                    Value=form['Merap'],
+                ):
                     args.writer.add_cognate(
-                        Form_ID=form_id,
-                        Form=form,
-                        Reconstruction_ID=str(max_pfid),
-                        Cognateset_ID=str(max_eid),
-                        Proto_Language=etymon[0],
+                        lexeme=lexeme,
+                        Reconstruction_ID=pf['ID'],
+                        Cognateset_ID=pf['Cognateset_ID'],
+                        Proto_Language=form['proto level'].upper(),
                     )
-                #
-                # FIXME: infer reconstructions!
-                #
+
+        return
 
 
 def update_bib(bib):
@@ -565,39 +316,3 @@ def update_bib(bib):
         'Pawley 2003': 'Pawley and Sayaba 2003',
     }.items():
         bib[k] = bib[v]
-    """
-    """
-
-def insert_refs(md, bib, missing):
-    # e.g. [Mills (1975:712)](bib-Mills)
-    YEAR_PAGES_PATTERN = re.compile(r'\(?(?P<year>[0-9]{4}(-[0-9]+)?)(:\s*(?P<pages>[^)]+))?\)?')
-    refs = []
-    labels = {
-        'Dempwolff': 'Dempwolff 1934/38',
-        'Dempwolff’s': 'Dempwolff 1934/38',
-        'Pigeaud': 'Pigeaud 1938',
-    }
-    def repl(ml):
-        if ml.url.startswith('bib-'):
-            author = ml.url.split('-', maxsplit=1)[1]
-            key = labels.get(ml.label)
-
-            y = YEAR_PAGES_PATTERN.search(ml.label)
-            if key or y:
-                key = key or '{} {}'.format(author, y.group('year'))
-                if key not in bib:
-                    key = re.sub(r'-(?P<year>[0-9]{4})', lambda m: '/' + m.group('year')[2:], key)
-
-                if key in bib:
-                    refs.append('{}[{}]'.format(bib[key], (y.group('pages') or '') if y else ''))
-                    ml.url = CLDFMarkdownLink.from_component('Source', objid=bib[key]).url
-                else:
-                    missing.update([key])
-                #    return ml.label
-            else:
-                missing.update(['--' + ml.label])
-                #print('---', ml.label)
-        elif ml.url.startswith('languages/'):
-            ml.url = CLDFMarkdownLink.from_component('LanguageTable', objid=ml.url.split('/')[-1]).url
-        return ml
-    return MarkdownLink.replace(md, repl), refs

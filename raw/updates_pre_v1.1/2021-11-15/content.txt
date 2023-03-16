@@ -1,0 +1,2441 @@
+
+001.	*abus ‘to feel upset about s.t., brood over’
+KLY	__it__abuh__/it__	‘to be upset about something and complain (a person who is upset does not confront the person involved; instead, he complains to s.o. else)’
+MSK	__it__abos__/it__	‘to think continually about some difficulty; brood continually’
+
+002.	*agap ‘greedy’
+SblBt	__it__ágap__/it__	‘to covet or desire more’
+BKD	__it__agap__/it__	‘greedy (in taking or getting something)’
+
+003.	*ag(e)páŋ ‘rattan or bamboo strip used to measure, when weaving nets or baskets’
+ILK	__it__agpáŋ__/it__	‘bamboo strip used in netting; a measure; standard; guidepost’
+TAG	__it__agpáŋ__/it__	‘exact; fitted; right’
+HAN	__it__agpáŋ__/it__	‘a doubled strip of rattan held tightly around a strip of __it__buri__/it__ palm leaf which is being split for fine basket weaving (this helps the basketmaker in keeping the __it__buri__/it__ strips of even width)’
+CEB	__it__agpáŋ__/it__	‘a thin piece of bamboo, three or four inches in length, used to set the size of the hold in weaving fish nets’
+
+NOTE: This probably is not a Tagalog loan, as it refers to aspects of traditional culture that would have been universal among Austronesian speakers in the Philippines and many other places, and the Tagalog form lacks the specificity of the other glosses.
+
+004.	*agud ‘to moan, agonize’
+SblBt	__it__ágol__/it__	‘to moan or agonize in pain’
+MSK	__it__agod__/it__	‘to moan, to agonize (as a pig in pain)’
+
+005.	*ákay ‘to guide, direct the motion of someone or something, as a herd of animals’
+ILK	__it__ákay__/it__	‘a herd’,
+	__it__akáy-en__/it__	‘to guide; to herd’
+PGS	__it__ákay__/it__	‘to lead by the hand, guide’
+TAG	__it__ákay__/it__	‘led by the hand’
+	__it__in-akáy__/it__	‘a young chick led by a hen’
+	__it__um-ákay__/it__	‘to guide, direct or lead (in a moral or physical sense)’
+HAN	__it__ákay__/it__	‘direction; guidance; aid; helping (someone) along’
+
+NOTE: Possibly a Tagalog loan distribution, although the divergent semantics of the Ilokano form weighs against this interpretation.
+
+006.	*alabaqab ‘unquenchable thirst’
+ILK	__it__alabáab__/it__	‘unappeasable thirst’
+PGS	__it__alabáb__/it__	‘to drink much wine’
+BKD	__it__alabɁab__/it__	‘greedy (in eating), voracious’
+
+NOTE: PPH *buk(e)law, *lamun/lamut, and *sibáq ‘gluttonous’ referred to a runaway appetite for food; this term may have designated uncontrollable thirst.
+
+007.	*aláw ‘to catch someone or something that has escaped’
+ILK	__it__aláw__/it__	‘rescue; method of getting back a lost spirit by putting water in a white bowl, dekernel 27 kernels of plain rice, pray the Apostle’s creed….’
+BKL	__it__álaw__/it__	‘to seek refuge at or with’
+CEB	__it__aláw__/it__	‘watch s.o. from hiding unobserved; watch for, wait for; be after s.t. with a hidden motive’
+	__it__alaw-álaw__/it__	‘try to get to see someone hard to see by catching him somewhere’
+WBM	__it__alew__/it__	‘to catch, as one catches a chicken; to look for and fetch someone’
+MSK	__it__araw__/it__	‘to drive (as animals and fish); to chase’
+BKD	__it__alaw__/it__	‘to run after, chase (a person or animal in order to catch him/it)’
+
+NOTE: Philippine reflexes of PAN *qusiR ‘pursuit, as of enemies or game’ refer to alien people or wild animals, but *aláw appears to refer to something formerly with the pursuer that has fled or escaped, and must be recaptured (the fleeing spirit of an ailing person, a domestic animal that has run off, etc). The Ilokano word refers to a traditional animistic healing ceremony of soul capture overlaid with a veneer of Christianity.
+
+008.	*alug(e)báti ‘kind of vegetable’
+ILK	__it__alugbáti__/it__	‘species of plant with edible leaves and reddish stems: Malabar nightshade’
+AGU	__it__alogbati__/it__	‘plant similar to a sweet potato vine; the vine is red or maroon and climbs up fences; the young leaves are edible’
+AKL	__it__aeogbáti__/it__	‘a vegetable: __it__Basella rubra__/it__ L.’
+CEB	__it__alugbáti__/it__	‘k.o. vine with leaves widely used as a vegetable: __it__Basilla rubra__/it__’.
+
+NOTE: Quadrisyllabic comparisons that do not contain the *qali/kali- prefix are suspect, and if the heterorganic cluster in the reflexes was earlier separated by a schwa the base morpheme had an unprecedented five syllables. This may be a loan from a non-AN source, but no promising candidate has been found.
+
+009.	*aluyun ‘mutual aid, as in farm work or house-building’
+IBL	__it__adoyon__/it__	‘system of mutual and reciprocal work (the farm family gains manpower by asking for help from their neighbors, and is in return obligated to reciprocate with work for their neighbors in their fields, repairing irrigation canals, building a house and the like)’
+MSK	__it__aroyon__/it__	‘to help one another (in work activity)’
+
+NOTE: This sparsely attested, but culturally important comparison, documents a practice that must have been all but universal in Neolithic societies, namely, the need for cooperative labor with work projects that everyone needed at some time, but no one could do alone, such as building a house, bringing in the harvest, and the like (as evidence that it extended beyond the Philippines, it is the national concept of __it__gotong royong__/it__ (mutual aid) in Indonesia.
+
+010.	*amiliq ‘uncooperative’
+IFG	__it__amíli__/it__	‘to avoid obedience, to refuse to be obedient’
+BKD	__it__amiliɁ__/it__	‘choosy, not easily contented, fussy; to be choosy, fussy, etc.’.
+
+NOTE: Possibly related to PAN *piliq ‘to choose, select’.
+
+011.	*amúl ‘to suck on, as candy’
+ILK	__it__ammól__/it__(< *am-amúl)	‘to hold in the mouth; play with s.t. in the mouth’
+SblBt	__it__amol-amól__/it__	‘to suck on, as candy’
+WBM	__it__amul__/it__	‘to suck on s.t.’
+MSK	__it__amol__/it__	‘to lick the seed of a fruit in eating its meat; to lick the hand in order to eat any remaining particles of food’
+TBL	__it__amul__/it__	‘to suck on, as candy, one’s thumb’.
+
+012.	*amulúŋ ‘type of wild vine used to blacken the teeth’
+Arta	__it__amuluŋ__/it__	‘type of wild vine (substitute for betel nut)’
+DgtC	__it__amulóŋ__/it__	‘type of vine chewed as a substitute for betel nut; it causes the spittle to turn black’
+BKL	__it__amlóŋ__/it__	‘vine hanging from trees in the forest and used to make baskets’
+HAN	__it__amlúŋ__/it__	‘any of several useful climbing ferns, some of which are used to blacken the teeth’.
+
+NOTE: With unexplained loss of the medial vowel in in Bikol and Hanunóo.
+
+013.	*amuŋ	‘dispute resolution; to resolve a dispute’
+IBL	__it__amoŋ__/it__	‘to refer a case to the authorities, or to the council of elders for resolution (as land quarrel)’
+WRY	__it__amóŋ__/it__	‘disturbance; the act of bothering; to be a party accidentally with untoward incident or situation’
+
+014.	*anag ‘flavor’
+ILK	__it__ánag__/it__	‘flavor; meaning; savor; characteristic property’
+PLW	__it__anag__/it__	‘blandness, tastelessness’
+MSK	__it__anag__/it__	‘spices; seasoning’
+
+015.	*andurug ‘share space or feelings with s.o, put oneself in another’s place’.
+KNK	__it__andulúg__/it__	‘to lie down with a companion’
+BKL	__it__andúrog__/it__	‘to share experiences or feelings; to live vicariously’
+MAR	__it__doro-dorog__/it__	‘adjacent; side-by-side’
+WBM	__it__durug__/it__	‘to sit beside s.o.; the one who is sitting beside s.o.’
+
+NOTE: I assume regular reduction of VNC- clusters in the antepenult of native Maranao and Western Bukidnon Manobo words.
+
+016.	*antad ‘open and spacious terrain’
+AKL	__it__antad__/it__	‘gap, distance, space’
+TTB	__it__atar__/it__	‘open and spacious terrain’
+
+017.	*apa ‘to be upset, defensive or angry’
+IFG	__it__apá__/it__	‘exclammation expressing fear, provoking compassion or protection’
+IfgBt	__it__āpa__/it__	‘covetousness; jealousy; to begrudge, be covetous or jealous’
+IBL	__it__apa__/it__	‘to be oversensitive, react defensively, become angry or upset upon being criticized, insulted or rejected’
+BKD	__it__apa__/it__	‘to get upset and angry’
+
+018.	*apat ‘to lie in wait for animals to pass (in hunting)’
+DgtC	__it__apát__/it__	‘to lie in wait in ambush (what hunters do during a game drive as they wait for the game to be driven towards them)’
+AA	__it__apat__/it__	‘to wait or watch for a wild pig; to put a trap below a dammed-up place in a stream’
+SblBt	__it__ápat__/it__	‘to wait or watch for wild pig; to put a trap below dammed-up place in stream’
+HAN	__it__apát-an__/it__	‘trail or pathway used by animals’
+
+019.	*ápaw	‘to overflow’
+ILK	__it__um-ápaw__/it__	‘to overwhelm, overflow’
+TAG	__it__ápaw__/it__	‘overflow; a flowing over; flood’
+AKL	__it__ápaw__/it__	‘to exceed, go beyond; above one’s head (as river water)’
+
+020. *apel ‘congealed blood, blood clot’
+KLY	__it__apel__/it__	‘congealed blood; thickened, hardened blood’
+CEB	__it__ápul__/it__	‘coagulated blood’
+MSK	__it__apul__/it__	‘blood’
+TSG	__it__apul__/it__	‘coagulated blood’
+
+021.	*ap(e)lag/ap(e)lak ‘to lay out flat, as a mat’
+(a)
+ILK	__it__aplág__/it__	‘to spread, unfurl (as a towel on the sand)’
+DgtC	__it__aplág__/it__	‘to be lying aslant (of grass, growing rice, corn, etc.); to push grass over so that it is not standing straight up’
+BON	__it__aplág__/it__	‘sleeping mat’
+KNK	__it__men-aplág__/it__	‘to lay the cloth, the mat; to make the bed’
+IBL	__it__apdag__/it__	‘to spread s.t. that was folded or rolled (as rug, sleeping mat, blanket)’
+AA	__it__aplag__/it__	‘lying as dead’
+(b)
+SblBt	__it__aplák__/it__	‘to spread out (as mat)’
+MSK	__it__aplak__/it__	‘to lay out flat (as a mat)’
+
+022.	*awán	‘to be missing, absent; not exist’
+ILK	__it__awán__/it__	‘negative existential; to not have; nothing; nobody; there is not’
+AgtaE	__it__awán__/it__	‘no, not’
+ITW	__it__awán__/it__	‘No! to not exist, to not have’
+ISG	__it__āwán__/it__	‘not to have, not to be (somewhere); there is no; nothing; nobody’
+IBL	__it__awan__/it__	‘No way! Not a chance! (occurs with adverb __it__a__/it__ (‘of course’) or with a long second vowel)’
+WRY	__it__awán__/it__	‘to get absent’
+	__it__pag-awán__/it__	‘absence; non-appearance’
+
+023.	*ayekqek ‘sound made swallowing or clearing the throat’
+ILK	__it__ayekɁék__/it__	‘controlled laughter’
+	__it__um-ayekɁék__/it__	‘to laugh softly; try to hold back laughter but laugh by shaking the body’
+KNK	__it__ayekɁék__/it__	‘to foam; to froth; to spume’
+IFG	__it__ayokɁók__/it__	‘noise produced by gurgling or by something that bubbles’
+BKD	__it__ayekɁek__/it__	‘heavy and prolonged coughing’
+
+024.	*ayu ‘to joke with, jest about’
+SblBt	__it__áyo__/it__	‘to get or take something in fun’
+WBM	__it__ayu__/it__	‘to tease; to joke with’
+
+025.	*áyuq	‘to soothe someone (as a crying child) with speech, speak soothingly’
+ILK	__it__áyo__/it__	‘to flatter; please; persuade; convince’
+BON	__it__áyo__/it__	‘to speak pleasantly to; to help one who is sick, or a child who is crying, or a person who is doing wrong’
+KNK	__it__pa-ayó-en__/it__	‘to soothe; to calm; to tame animals that are wild or shy’
+TAG	__it__áyoɁ__/it__	‘partiality; favor; bias; help’
+BKD	__it__ayuɁ__/it__	‘to quiet a crying child’
+
+026.	*bagaybáy ‘the young inflorescence of palm trees’
+AA	__it__bagaybay__/it__	‘midrib of coconut leaf’
+SblBt	__it__bagaybáy__/it__	‘midrib of coconut leaf’
+BKL	__it__bagaybáy__/it__	‘corn silk’
+MSK	__it__bagaybay__/it__	‘blossom of the betel tree’
+TSG	__it__bagaybay__/it__	‘the young inflorescence of palm trees’
+
+027.	*bagbág ‘to destroy, ruin’
+IBL	__it__bagbag__/it__	‘to dismantle, disassemble, demolish s.t. (as a house to be moved, a stone wall)
+PGS	__it__bagbág__/it__	‘to destroy, ruin’
+TAG	__it__bagbág__/it__	‘broken up, as soil or rock; shipwrecked’
+BKL	__it__bagbág__/it__	‘shipwrecked’
+	__it__ma-bagbág__/it__	‘to be driven off course, hit by bad weather; to become shipwrecked
+AGU	__it__ma-bagbag__/it__	‘for a boat or passengers to suffer problems out at sea; for a boat or people to be shipwrecked’
+AKL	__it__bágbag__/it__	‘to crash, come or fall down (as a plane that crashes)’
+
+NOTE: DgtC __it__bagbag__/it__ ‘to overturn, to come apart in rough sea (of a boat at sea)’ probably is a Tagalog loan, but his is hard to apply to Ibaloy __it__bagbag__/it__.
+
+028.	*báhiq	‘the hard, outer wood of a palm trunk, used in making bows’
+ILK	__it__bái__/it__	‘bow; bowlike device used for fluffing cotton’
+AA	__it__bai__/it__	‘bow’
+BtkP	__it__báɁi__/it__	‘type of wood used to make hunting bow’
+	__it__bayɁ__/it__	‘hunting bow’
+HAN	__it__báhiɁ__/it__	‘hard outer wood of a palm bole, that part which is of greatest economic value as bow wood, for spear shafts, arrow points, etc.’
+AKL	__it__báhiɁ__/it__	‘hard stick’
+CEB	__it__báhiɁ__/it__	‘the hard portion of a palm trunk; cane or club made of palm trunk’
+MSK	__it__báiɁ__/it__	‘kind of palm tree (inner part is soft, but outer part is hard)’
+
+029.	*bak(e)nís ‘to tear with an upward motion’
+ILK	__it__baknís__/it__	‘to tear with the teeth’
+BKL	__it__mag-baknís__/it__	‘to pull upward, pulling off portions of the abaca plant containing the fibers later to be stripped’
+
+030.	*bakúlud ‘plateau, stony high-level ground’
+ILK	__it__bakúlod__/it__	‘hillock’
+KPG	__it__maka-bakúlud__/it__	‘plain, plateau, high level rocky place’
+TAG	__it__bakóɁod__/it__	‘high land being cultivated; plateau’
+HAN	__it__bakúlud__/it__	‘plateau, elevated land’
+HLG	__it__bakúlud__/it__	‘slope, hill’
+AKL	__it__bakúeod__/it__	‘rocky or stony coast, stony shoreline or bank of river’
+CEB	__it__bakúlud__/it__	‘rounded stone found in the sea and exposed at low tide’
+MAR	__it__bakolod__/it__	‘shore’
+TSG	__it__bakūd__/it__	‘ground which has a gradual incline, slope, side of a hill’
+
+031.	*balaw	‘to sulk, feel hurt by someone’s behavior’
+IFG	__it__baló__/it__	‘conveys the meaning of disapproval, what is hurting one’s feelings’
+KLY	__it__balaw__/it__	‘to dislike s.o. or s.t.; to be displeased with s.o. or s.t.’
+IBL	__it__balaw__/it__	‘to dislike, disapprove of s.t. or s.o.’
+BKD	__it__balaw__/it__	‘to sulk, refrain from doing s.t. because of an offense, or a wish not granted’
+
+032.	*bali-weswes ‘to rotate, turn around (of an object)’
+ITB	__it__valiweswes__/it__	‘idea of being rotated’
+IFG	__it__baliwohwo(h)__/it__	‘an apparatus with two standing rollers for pressing out the juice of the sugarcane (to make the rollers revolve a man pushes a long pole fixed to one roller, walking in a circle around the milling apparatus)’.
+
+NOTE: Presumably with a variant of the *qali/kali- prefix (Blust 2001).
+
+033.	*baluq	‘to mistake someone’s identity, have a misconception’
+SblBt	__it__báloɁ__/it__	‘to be mistaken’
+	__it__mi-báloɁ__/it__	‘one mistaken’
+	__it__na-balóɁ-an__/it__	‘to take (something) by mistake’
+BKD	__it__ka-baluɁ__/it__	‘to misjudge s.t.; to expect s.t. to be a certain way when it is not’
+
+NOTE: Whereas PMP *salaq and its PPH reflex appear to have referred to errors of __it__behavior__/it__, which might be reprehensible, since one has a choice in the matter, PPH *baluq appears to have referred to errors of __it__perception__/it__, over which one has no control. Reflexes of *salaq are therefore associated in some languages with guilt, or the Christian concept of ‘sin’, whereas the only reflexes of PPH *baluq known so far seem more likely to be associated with apology or embarrassment.
+
+034.	*banaq ‘because, for the reason that’
+SblBt	__it__bánaɁ__/it__	‘conjunction -- because; it is often followed by __it__ta__/it__ or __it__ha__/it__’
+MSK	__it__bana__/it__	‘it is because; because of; in view of’
+
+035.	*báŋan	‘fire saw, friction stick for starting a fire’
+ILK	__it__báŋan__/it__	‘fire saw’
+BtkP	__it__baŋán-un__/it__	‘friction stick used for fire making, used with fire thong’
+
+NOTE: The Palawan Batak form is assumed to contain a reflex of the patient voice suffix *-en, sometimes used in nominalizations, as in PAN *Sikam ‘mat’, but BtkP __it__ikámun__/it__ ‘grass or woven leaf mat’, PPH *paŋan ‘food; to feed’, but BtkP __it__paŋán-un__/it__ ‘cooked rice’, or *turiq, but BtkP __it__turiɁ-ún__/it__ ‘circumcision’.
+
+036.	*baŋen	‘barrier used to keep people out of a given area’
+ILK	__it__baŋén__/it__	‘small fence to cover doors and stairs when children are present; any device that prevents one from passing by; obstruction’
+KLY	__it__baŋen__/it__	‘wooden frame of fireplace’
+WBM	__it__baŋen__/it__	‘a hindrance; to hinder’
+
+NOTE: I assume that the *baŋen was a barrier used mainly to protect young children in domestic contexts from getting burned or falling from a height.
+
+037. *baŋkíl ‘carry a load with a shoulder pole’
+KNK	__it__baŋkíl__/it__	‘pole; to carry s.t. on the shoulder, the load being equal on each side’
+IBL	__it__man-baŋkil__/it__	‘the action of two or more people carrying s.t. with a pole’
+TAG	__it__baŋkíl__/it__	‘a large round basket used to carry coconuts, fruit, etc. on horseback’
+BKL	__it__baŋkíl__/it__	‘k.o. basket for carrying food’
+MAR	__it__baŋkil__/it__	‘packsaddle’
+	__it__baŋki-baŋkil__/it__	‘laden with fruits, heavily pack by saddle’
+
+NOTE: I assume that this form referred to carrying with a carrying pole across both shoulders, with an equal weight on each side. When horses were introduced by the Spanish, it was transferred to saddlebags slung across a horse’s withers.
+
+038.	*baɁeg	‘barren, sterile’
+KLY	__it__baweg__/it__	‘to be barren, to be unable to have children’
+TAG	__it__baɁóg__/it__	‘sterile, barren, unproductive’
+HAN	__it__baɁúg__/it__	‘sterile woman; tree which does not bear fruit’
+AGU	__it__bog__/it__	‘for an egg to rot; for an animal or a person to be sterile or infertile’
+AKL	__it__báog__/it__	‘to putrify, rot (like old eggs)’
+	__it__baóg__/it__	‘sterile (incapable of bearing children)’
+WRY	__it__baóg__/it__	‘sterile; impotent’
+
+039.	*bara-bara ‘move arms in a flailing motion, as in freestyle swimming’
+ILK	__it__bára-bára__/it__	‘freestyle swimming’
+	__it__ag-bára-bára__/it__	‘to swim freestyle’
+BKL	__it__mag-bará-bára__/it__	‘to flail the hands, or wave the hands about; swim freestyle’.
+
+040.	*barakílan ‘crossbeam in house construction’
+ILK	__it__barakílan__/it__	‘horizontal rafter used in construction’
+TAG	__it__balakílan__/it__	‘rafter; crossbeam or crosspiece of a house’
+BKL	__it__barakílan__/it__	‘cross-beam’
+
+NOTE: The likelihood that this is a Tagalog loan is reduced by the agreement of Ilokano and Bikol in pointing to *r, a phoneme which Tagalog had lost by merger with *l in the earliest Spanish records for languages of the Philippines.
+
+041.	*batas ‘to cross a stream’
+SblBt	__it__bátah__/it__	‘to cross a stream’
+BKD	__it__batas__/it__	‘to cross over, go to the opposite side of something’
+
+042.	*batás ‘to suffer, bear, endure’
+SblBt	__it__batáh__/it__	‘to suffer, bear, endure’
+HLG	__it__mag-batás__/it__	‘to bear, suffer, endure’
+AKL	__it__batás__/it__	‘to endure, put up with, suffer’
+
+043.	*batbat	‘invocation to the spirits’
+KLY	__it__batbat__/it__	‘the name of an invocational ritual chant of the traditional religion’
+IBL	__it__batbat__/it__	‘historically, a mostly curative ritual feast for a broad spectrum of lingering illnesse, done whenever divination indicates __it__batbat__/it__ is required’
+WRY	__it__batbát__/it__	‘the act of leading in saying a prayer; to lead in a group prayer’
+
+NOTE: This comparison neatly captures the semantic variation of cognate forms used by lowland Filipinos who have long been Christianized, and their montane relatives, who remained much less affected by the hispanization of the Philippines, and so continued until modern times to adhere to an animistic system of belief.
+
+044.	*bayug	‘slender bamboo used for binding’
+ILK	__it__bayóg__/it__	‘bamboo used for flooring; rattan strip used for tying’
+	__it__na-bayóg__/it__	‘a tall and slender bamboo’
+ISG	__it__bayúg__/it__	‘k.o. unarmed pendulous bamboo; strips of this bamboo are used for binding purposes’
+ITW	__it__bayúg__/it__	‘bamboo species having thick stems’
+IFG	__it__bayúg__/it__	‘an unarmed climbing bamboo with thick walls; it is chiefly used for flooring and binding purposes’
+IBL	__it__bayog__/it__	‘a variety of bamboo --- tough, small bore; it is desirable commercially for many things, including furniture’
+WBM	__it__bayug__/it__	‘a tall bamboo of recent introduction in western Bukidnon’
+TIR	__it__bayug rebuk__/it__	‘k.o. bamboo: __it__Dendrocalamus merrillianus__/it__ (Elm.)’
+TBL	__it__bayug__/it__	‘k.o. small bamboo used for tying and building houses’
+
+NOTE: Evidently distinct from PMP *bayuR ‘a tree: __it__Pterospermum__/it__ spp.’. Despite the statement that this bamboo is a recent introduction in western Bukidnon a source language remains unclear, since it has not been reported in either Tagalog or Malay.
+
+045.	*bikal ‘k.o. slender bamboo’
+ITB	__it__vichax__/it__	‘kind of bamboo (thinner)’
+ILK	__it__bíkal__/it__	‘species of climbing bamboo: S __it__chizostachyum acutiflorum__/it__’
+ISG	__it__bikal__/it__	‘a pendulous bamboo with thick walls: S __it__chizostachyum multiflorum__/it__ Munro’
+DgtC	__it__bikal__/it__	‘a species of uncultivated bamboo’
+BON	__it__bíkal__/it__	‘a kind of bamboo'
+
+046.	*bilbíl ‘rolls of adipose tissue in the abdominal or hip area’
+ILK	__it__bilbíl__/it__	‘double fold in the upper stomachs of stout women’
+TAG	__it__bilbíl__/it__	‘dropsy; a disease in which liquid collects in the body’
+AGU	__it__bilbil__/it__	‘body fat found on the trunk’
+CEB	__it__bilbíl__/it__	‘to make or be overly obese’
+	__it__bilbil-ún__/it__	‘overly obese’
+WRY	__it__bilbil__/it__	‘fatness of the hips’
+
+NOTE: The probability that this is a Tagalog loan distribution is lowered by the divergence of the Tagalog gloss from that of all other languages.
+
+047.	*bitwak ‘to lance, open up the flesh in an operation’
+SblBt	__it__bitwák__/it__	‘to open up, as when dressing an animal; to operate’
+MSK	__it__bitwak__/it__	‘to open, to lance (as a boil)’
+
+048.	*buaj ‘to eat heartily’
+PGS	__it__buág__/it__	‘to eat heartily’
+	__it__buág-en__/it__	‘food, sustenance’
+MSK	__it__buwad__/it__	‘to have a full stomach’
+
+049.	*buaŋ ‘to release s.t. pent-up, let s.t. go’
+ILK	__it__buáŋ__/it__	‘opening’
+	__it__i-buáŋ__/it__	‘to permit, allow; open (clear obstruction), open (faucet); set loose (animal); let newly hatched chicks out of the nest’
+IBL	__it__i-bowaŋ__/it__	‘to release water by removing what blocks it (as plug in rice terrace dyke, opening dam spillway, dismantling dam used in __it__salep__/it__ fishing, etc.)
+TIR	__it__buaŋ__/it__	‘to loosen, to release s.t.’
+
+050.	*buk(e)law ‘gluttonous, greedy with food’
+ILK	__it__bukláw__/it__	‘gluttonous, greedy with food’
+MSK	__it__boklaw__/it__	‘to be gluttonous’
+
+051.	*buk(e)lid ‘stumble, lose balance and fall’
+AA	__it__boklid__/it__	‘to stumble or trip, thereby twisting or spraining the foot or ankle’
+SblBt	__it__boklíd__/it__	‘to turn one’s foot over, to twist one’s foot’
+MAR	__it__boklid__/it__	‘to topple, totter, tumble’
+
+052.	*buneg	‘a tree with berry-like fruit that is fed to animals: __it__Garcinia__/it__ spp.’
+ILK	búneg	‘k.o. tree whose fruits are fed to swine’
+PLW	buneg	‘a tree: __it__Garcinia__/it__ spp.’
+
+NOTE: Evidence that this is the same tree comes from the observation that trees of the genus __it__Garcinia__/it__ yield fruits that are a food source for many animals.
+
+053.	*buntún ‘heap or pile, as of produce; to pile in a heap’
+ILK	__it__buntón__/it__	‘a heap, pile, stack; small hill; anthill’
+	__it__i-buntón__/it__	‘to place things in a pile or heap’ (myth. home of the __it__ansísit__/it__ = dwarves)
+AA	__it__bonton__/it__	‘to pile in a heap’
+SblBt	__it__i-bontón__/it__	‘to pile in a heap’
+KPG	__it__búntun__/it__	‘pile, stack (as a haystack)’
+TAG	__it__buntón__/it__	‘heap, pile, collection (as of tins, newspapers, etc.)’
+PGS	__it__bontón__/it__	‘heap; pile; to gather up, pile up’
+MSK	__it__bonton__/it__	‘a pile of abaca’
+
+NOTE: Until a cognate is found outside the Philippines, I assume Yakan __it__buntun__/it__ ‘a pile of s.t. (e.g. of coconuts for husking, of rice)’ to be a borrowing from a language of Mindanao.	Contrarily, given its connection with native mythology, it seems unlikely that the Ilokano word is a Tagalog loan.
+
+054.	*buŋun	‘wraping material; to wrap’
+ILK	__it__buŋón__/it__	‘wrapper, covering; package’
+	__it__buŋun-en__/it__	‘to wrap up, pack’
+BON	__it__buŋun__/it__	‘to wrap up, as a parcel’
+TbwC	__it__buŋon__/it__	‘to wrap something with a wrapper’
+
+055.	*burúj	‘lazy, listless, unwilling to work’
+ILK	__it__buróg__/it__	‘lazy fellow; bum’
+BKL	__it__buród__/it__	‘languid, listless, sluggish, torpid, phlegmatic’
+
+056.	*buR(e)túq ‘to snap under tension (rope, string)’
+SblBt	__it__boytóɁ__/it__	‘to break s.t. flexible, as a rope’
+BKL	__it__mag-bugtóɁ__/it__	‘to pull a string until it snaps’
+AKL	__it__búgtoɁ__/it__	‘to break, snap’
+CEB	__it__búgtuɁ__/it__	‘for string, rope, wire, etc. to break with a snap’
+TSG	__it__mag-bugtuɁ__/it__	‘to break (something, as rope, thread, wire, string, etc.)’.
+
+057.	*bús(e)kaj/bús(e)kag ‘to burst open, become exposed’
+(a)
+PGS	__it__búskag__/it__	‘to sprout, burst open (as flower bud)’
+HLG	__it__mag-búskad__/it__	‘to spread open (as in a flower), to unfold’
+AKL	__it__búskad__/it__	‘to open wide (like a flower)’
+(b)
+CEB	__it__buskág__/it__	‘undo, untie s.t., esp. so that the contents spread; for s.t. wrapped or tied up to open’
+MSK	__it__buskag__/it__	‘to open (as a bud)’
+
+058.	*butáŋ	‘to punch, beat up’
+ILK	__it__butáŋ__/it__	‘to attack; beat up; gang up on’
+WRY	__it__butáŋ__/it__	‘the act of giving a fist blow’
+
+059.	*dábu-dábu ‘melee, brawl, fight between parties’
+AA	__it__labo-labo__/it__	‘fight between two parties, two families, or man to man’
+SblBt	__it__labo-lábo__/it__	‘fight between two parties two families, or between many parties or nations’
+CEB	__it__dabu-dábu__/it__	‘successive blows; to bombard, rain blows upon’
+BKD	__it__dabo-dabo__/it__	‘to hit repeatedly with fist’
+
+060.	*dagáqaŋ ‘warm air, heated air, muggy weather’
+ILK	__it__dagáaŋ__/it__	‘sultry weather’
+	__it__ag-dagáaŋ__/it__	‘to feel sultry/muggy’
+CEB	__it__dagáaŋ__/it__	‘heat, warmth given off, usually by s.t. solid’
+WRY	__it__dagaaŋ__/it__	‘the hot air emitted by fire or flame’
+	__it__ma-dagaaŋ__/it__	‘hot, warm’
+
+061.	*dagaw ‘to play, to frolic’
+AA	__it__dagaw__/it__	‘game, play; to play; a toy’
+SblBt	__it__dagáw__/it__	‘to play’
+MAR	__it__dagaw__/it__	‘frolic’
+
+062.	*dagínut ‘to use sparingly’ (dbl. *inut)
+ILK	__it__dagínot__/it__	‘to be frugal, use sparingly’
+AKL	__it__dagínot__/it__	‘to go slowly (on), use up slowly, economize’
+CEB	__it__dagínut__/it__	‘to use sparingly’
+WRY	__it__daginot__/it__	‘gradual; little by little; by or in installments’
+
+063.	*dalit ‘to be in close contact’
+KLY	__it__dalit__/it__	‘to be close by s.o. (as two people sitting or sleeping together)’
+MSK	__it__darit__/it__	‘to touch, be in contact with’
+
+064.	*dalugdug ‘to rumble, as thunder’
+ILK	__it__dalugúdug__/it__	‘sound of running or trampling’
+WRY	__it__dalugdóg__/it__	‘thunder; thunderbolt; thunderstorm’
+
+NOTE: Ilokano has added a stressed copy vowel between heterorganic obstruents in a number of reduplications, as with PWMP *dapdap > __it__dapádap__/it__ ‘to grope, feel for’, PAN *gisgis ‘to rub, scrape against’ > __it__gisígis__/it__ ‘toothbrush’, or PAN *kiwkiw ‘to wave, wag (tail)’ > __it__kiwíkiw__/it__ ‘wagging of the tail’.
+
+065.	*dalúkap ‘palm of the hand’
+AA	__it__daokap__/it__	‘palm of hand, sole of foot’
+SblBt	__it__dawókap__/it__	‘palm of hand, bottom of foot’
+HAN	__it__dalúkap__/it__	‘palm of the hand’
+
+NOTE: PMP *palaj ‘palm of the hand’ was retained in PPH, raising questions about how these two terms differed in meaning.
+
+066. *daluq ‘greedy, selfish’ (dbl. *daluk)
+AGU	__it__mag-dalok__/it__	‘to eat a lot very greedily, without sharing with others; to be a “pig”’
+CEB	__it__dáluɁ__/it__	‘selfish, disliking to give things’
+MAR	__it__daloɁ__/it__	‘selfish, greedy, voracious’
+
+067.	*dalús ‘clearing in the forest’
+ILK	__it__dalús__/it__	‘clean space; clearing (of a forest); completed work’
+PGS	__it__dalós__/it__	‘to clean, clear of weeds, etc.’
+BtkP	__it__dalús__/it__	‘clearing’
+WRY	__it__dalós__/it__	‘the act of cutting or uprooting weeds or shrubs’
+
+068.	*dames ‘be covered with dirt’
+KLY	__it__dameh__/it__	‘for clothing to have thick dirt’
+MSK	__it__damos__/it__	‘to smear (as the face with mud); to taint; to put dirt on anything’
+
+069.	*dampil ‘to strike someone with the hand or an instrument’
+PGS	__it__dampíl__/it__	‘to strike someone with the hand on any part of the body’
+MSK	__it__dampil__/it__	‘to strike (someone) with the side of a bolo’
+
+070.	*dapílus ‘skidding, stumbling, losing balance’
+ILK	__it__dapílos__/it__	‘crumbling; sagging; disabled’
+	__it__dapilús-en__/it__	‘to cause to collapse’
+TAG	__it__dapílos__/it__	‘skidding, stumbling’
+AKL	__it__dápeos__/it__	‘to slide down (as down the railing of a stairway); to slip down (unable to take hold)
+CEB	__it__dapílus__/it__	‘to slide straight downward’
+
+NOTE: Possibly a Tagalog loan in Ilokano, although the semantics are sufficiently different to bring this interpretation into question.
+
+071.	*daqég	‘to defeat, overpower, outdo in competition’
+ILK	__it__ag-d<inn>aég__/it__	‘to outdo each other’
+PGS	__it__daég__/it__	‘to overcome, surpass, overpower, prevail, deliver’
+TAG	__it__daíg__/it__	‘beaten; defeated; excelled’
+BKL	__it__daɁóg__/it__	‘beaten, defeated; lost’
+HAN	__it__dáɁug__/it__	‘to defeat, esp. in games’
+	__it__ma-dáɁug__/it__	‘defeated (passive sense); lose (active sense)’
+TbwC	__it__daɨg__/it__	‘surpassed, defeated, or beaten by something’
+AKL	__it__daóg__/it__	‘to win, beat, overpower’
+	__it__daóg-dáog__/it__	‘to prevail; want to be on top’
+CEB	__it__daúg__/it__	‘to outdo, overcome someone’
+	__it__daúg-dáug__/it__	‘to maltreat, step on s.o.’
+MSK	__it__daug__/it__	‘to defeat’
+BKD	__it__daeg__/it__	‘to win, gain the victory; to finish first (in a race, contest, etc.); to outdo, overcome (someone); to defeat, conquer (someone or something)’
+TSG	__it__d<um>aug__/it__	‘to win (as a game, race, demand, lawsuit, battle)’
+
+072.	*darusdús ‘to slide down’
+ILK	__it__ag-darusdús__/it__	‘to slide down a slope or tree’
+BON	__it__dalosdos__/it__	‘to fall by having the base slip out from underneath’
+TAG	__it__dalusdós__/it__	‘slipping downward, as on a slope or down a pole’
+BKL	__it__mapa-darusdós__/it__	’to slide; to get slid’
+	__it__darusdus-án__/it__	‘playground slide’
+AGU	__it__ma-dalosdos__/it__	‘to accidentally slide down from somewhere’
+	__it__magpa-dalosdos__/it__	‘for a person to intentionally slide down from somewhere’
+
+NOTE: Also Tagalog __it__dausdós__/it__ ‘a slide; sliding down an inclined surface (intentionally)’, Cebuano __it__dalusɁús__/it__ ‘to slide down’, __it__dalusɁus__/it__ __it__án__/it__	‘slide, children’s playground equipment’.
+
+073.	*daRit	‘to swoop down and seize prey, of raptorial birds’
+TAG	__it__pag-dágit__/it__	‘swooping and seizing while in flight, as when a hawk or an eagle snatches its prey’
+BKL	__it__mag-dágit__/it__	‘to swoop down on a catch (birds)’
+AKL	__it__dágit__/it__	‘to pounce upon, swoop down and seize (said of birds seizing prey)’
+MAR	__it__ragit__/it__	‘to capture, as bird of prey captures’
+MSK	__it__dagit__/it__	‘to swoop down and seize (of birds)’
+TIR	__it__darit__/it__	‘a hawk: __it__Spilornis cheela holospilsus__/it__ (Latham)’
+TSG	__it__d<um>agit__/it__	‘for a bird of prey to seize or snatch s.t.’
+BM	__it__dagit__/it__	‘to seize s.t. in a swift motion, as a bird of prey or a crocodile does’
+TTB	__it__ragit__/it__	‘to seize as prey, of a hawk in flight’
+
+074.	*dawa	‘alibi, excuse’
+BKL	__it__dawa__/it__	‘even if, even though’
+PLW	__it__dawa__/it__	‘justification, excuse’
+TBL	__it__dawa__/it__	‘alibi, excuse’
+
+075.	*dayun-1 ‘to continue, proceed with an action’
+AA	__it__dayon__/it__	‘to pluck heads of grain with hand while moving past’
+HAN	__it__dáyun__/it__	‘continuation’
+	__it__pa-dáyun__/it__	‘to continue, follow through’
+AGU	__it__dayon__/it__	‘to proceed to do something’
+	__it__ipa-dayon__/it__	‘to continue on one’s way’
+AKL	__it__dáyon__/it__	‘then, consequently, thereupon; to go on, carry on; push through’
+CEB	__it__dáyun__/it__	‘immediate, at once; to do as the next thing; do s.t. immediately’
+BKD	__it__dayun__/it__	‘to proceed, go on or forward; to continue doing something)’
+
+076.	*dayun-2 ‘swinging cradle for babies’ (dbl. *ayun, *dúyan)
+BON	__it__dáyon__/it__	‘a swing’
+IFG	__it__dáyun__/it__	‘cradle, i.e., an oblong basket that can be suspended in some way on both its ends, so that the baby can be rocked’
+PLW	__it__dayun__/it__	‘cradle, swing (for babies)’
+
+077.	*dayuq	‘to compete with’
+ILK	__it__dáyo__/it__	‘to compete, rival’
+	__it__dayó-an__/it__	‘to outdo, better, exceed’
+MAR	__it__rayoɁ__/it__	‘to aspire, wish, want’
+WBM	__it__dayuɁ__/it__	‘to admire someone’
+
+078.	*deldel ‘force something to move’
+ILK	__it__deldel-én__/it__	‘to move something to one’s advantage; put nearer to’
+BON	__it__deldél__/it__	‘to move something by applying sustained pressure against it, as by leaning against it; to push’
+KNK	__it__deldel-án__/it__	‘to dun, to beset for payment’
+IFG	__it__doldól__/it__	‘to shove, push s.t. forward (over the floor, ground, bench., etc.)
+IfgBt	__it__doldol__/it__	‘someone’s provoking or tempting of someone else’
+IBL	__it__shelshel__/it__	‘to push something with a steady, even pressure (as in forcing open a door); to push one another thus (as two carabaos head-to-head)’
+PGS	__it__on-déldel__/it__	‘to insist’
+TIR	__it__dedel__/it__	‘to drive an animal into or away from something’
+
+079.	*déqdeq ‘to dip something in a liquid’
+AA	dede	‘to dip something in a liquid or powder’
+SblBt	dédeɁ	‘to dip forefinger in sugar or salt and lick’’
+AKL	dóɁdoɁ	‘to dab, daub; dip into liquid, dunk’
+BKD	deɁdeɁ	‘to dunk, dip something in a liquid (partially or completely)’
+
+080.	*dilas ‘internal organ, pancreas or spleen’
+ITB	__it__rilas__/it__	‘pancreas (part of the body)’
+TIR	__it__dilos__/it__	‘the spleen’
+TBL	__it__dilós__/it__	‘spleen’
+
+081.	*dubdub ‘to set on fire’
+AA	__it__loblob__/it__	‘to burn or be aflame’
+SblBt	__it__i-loblób__/it__	‘to place on a fire’
+BKD	__it__dubdub__/it__	‘set s.t. on fire so it will gradually burn through (as a tree to fell it)’
+
+082.	*dúhul	‘to feed others, as birds feed their young’
+ILK	__it__dúol__/it__	‘handout; food given to young birds by their mother’
+	__it__duól-an__/it__	‘to give out, give for free’
+BON	__it__dóol__/it__	‘to distribute cooked meat and vegetables to one’s family and neighbors during feasting’
+IBL	__it__i-shool__/it__	‘to put s.t. into the mouth of another (as food or medicine into a child’s mouth, or bird feeding her young)’
+BKL	__it__i-dúhol__/it__	‘to bestow; to pass or hand s.t. over’
+HLG	__it__dúhul__/it__	‘to give personally, to hand over’
+WRY	__it__duhól__/it__	‘the act of handing over’
+
+083.	*dukduk ‘to bend down to pick up something’
+PGS	__it__dokdók__/it__	‘to pick up or raise s.t. from the floor’
+MSK	__it__dokdok__/it__	‘to bend down toward (tree toward the river, a person to see s.t.)’
+
+084.	*duldúl ‘thunder’
+KPG	__it__duldúl__/it__	‘thunder’
+BKL	__it__d<ag>uldól__/it__	‘thunder’
+	__it__mag-d<ag>uldól__/it__	‘to thunder’
+AGU	__it__doldol__/it__	‘thunder’
+TbwC	__it__duldul__/it__	‘thunder’
+
+085.	*dulí-dulí ‘cicada’
+IFG	__it__dulí-dulí__/it__	‘k.o. small cricket which hides in growing beans, eventually in their pods; it is difficult to discover them, but now and then it cries __it__dulí-dulí__/it__’
+IfgBt	__it__duli-dūli__/it__	‘a cicada (produces a long, shrill sound)’
+BKL	__it__dulí-dulí__/it__	‘cicada’
+
+NOTE: Also Bikol __it__durí-durí__/it__ ‘cicada’.
+
+086.	*dúlun	‘contiguous, adjacent (of agricultural land)’
+ILK	__it__dúlon__/it__	‘limit, boundary; landmark’
+	__it__ag-ka-dúlon__/it__	‘adjacent, bordering’
+	__it__ka-dúlon a mannalon__/it__	‘neighboring farmer’
+AKL	__it__dúeon__/it__	‘to be neighbors, have land next to each other, share a boundary’
+	__it__dueón-an__/it__	‘boundary’
+	__it__ka-dúeon__/it__	‘neighbor; owner of neighboring land’
+CEB	__it__dulun-aɁ__/it__	‘boundary; for pieces of land to be adjacent’
+MAR	__it__dolon__/it__	‘contiguous, adjacent (of agricultural land)’
+WBM	__it__dulun__/it__	‘to plant a portion of someone else’s field’
+	__it__dulun-aɁ__/it__	‘boundary between two fields’
+BKD	__it__dulun-aɁ__/it__	‘boundary’
+
+087.	*dúnut	‘to rot; become worn out’
+KLY	__it__dunut__/it__	‘to rot; primarily refers to the rotting of wood or large plants’
+IfgBt	__it__dūnut__/it__	‘for wood or grass to be rotten, as the posts or grass roof of a house; for dirt, water, etc. to rot s.t. (wood, a grass roof, etc.)’
+IBL	__it__shonot__/it__	‘to wear out, break down, become old (as clothes)’
+HLG	__it__ma-dunút__/it__	‘rotten, spoiled (as an apple)’
+MSB	__it__dúnot__/it__	‘rotten; tattered’
+	__it__mag-dúnot__/it__	‘to rot, decay, wear out’
+CEB	__it__dúnut__/it__	‘to wear s.t. out, become worn out; somewhat rotten, spoiled’
+WRY	__it__dunót__/it__	‘rotten; putrified; decayed’
+MSK	__it__dónot__/it__	‘rotten; soft (of overripe fruit)’
+
+088.	*duqúm ‘to eat unripe rice’
+ILK	__it__duom-én__/it__	‘to eat immature or uncooked rice’
+BON	__it__doóm__/it__	‘the stage of rice development when the grain has developed but is still unripe’
+AKL	__it__dúom__/it__	‘to chew (like gum, but referring to rice)’
+WRY	__it__duóm__/it__	‘the act of eating raw rice grains’
+MAR	__it__rom__/it__	‘eat a kind of raw or popped rice’
+
+089.	*duqut	‘to push things together’
+BON	__it__i-dóot__/it__	‘to shove close to s.t.; to thrust at s.o.; to jab at s.o., as with a gun’
+HAN	__it__duɁút__/it__	‘proximity, closeness; esp. of a series of objects placed against each other with no intervening space’
+AKL	__it__dúɁot__/it__	‘to push together, press against, put side by side, leave no space’
+CEB	__it__duɁút__/it__	‘to put, push on to s.t. (ear one’s ear to a wall); press down on s.t.’
+
+090.	*eduR ‘thunder’
+ITB	__it__aɁdoy__/it__	‘thunder’
+ISG	__it__addúg__/it__	‘thunder’
+Arta	__it__adúr__/it__	‘thunder’
+
+091.	*eyaw	‘to shout, yell’
+ITB	__it__aɁyaw__/it__	‘shout’
+	maŋ-yaw	‘to shout, to yell’
+	aɁyaw-an	‘to shout at’
+HAN	__it__úyaw__/it__	‘a general term for yelling, calling, shouting’
+
+NOTE: Also Tagalog __it__hiyáw__/it__ ‘a scream, a loud cry’.	The sequence *e (schwa) + glide is rare, but is attested in PAN *Seyup, PMP *heyup, with reflexes in a number of Philippine languages.	The difference here is that this rare sequence is found in a comparison that so far is limited to these two languages.
+
+092.	*gahem ‘power, authority’
+AGU	__it__gaem__/it__	‘power, authority over’
+	__it__mag-gaem__/it__	‘to rule over; to have power, authority, or control over someone’
+AKL	__it__gahóm__/it__	‘force, power, authority; to govern, rule, direct’
+CEB	__it__gahúm__/it__	‘power; to overpower, take power over’
+MSK	__it__gaom__/it__	‘to be capable of’
+BKD	__it__gahem__/it__	‘power, authority, influence’
+	__it__gahem-anan__/it__	‘powerful, authoritative, influential’
+
+093.	*gamal	‘a handful (measurement)’
+ILK	__it__gámal__/it__	‘handful’
+	__it__saŋa-gámal__/it__	‘one handful’
+BON	__it__gamál__/it__	‘to take a handful, as rice, beans, soil or pebbles; a handful’
+IfgBt	__it__gamal__/it__	‘a dry measure, the amount grasped in one hand held fingers down, as with betel nuts, corn, coffee beans, peanuts, etc.
+MAR	__it__gamal-an__/it__	‘handle’
+BKD	__it__gamal__/it__	‘handful measurement’
+TBL	__it__gamal__/it__	‘to encircle s.t. round with the hand, as when holding a baseball bat’
+
+094.	*gátaŋ/Rataŋ ‘to trade, buy’
+ILK	__it__gátaŋ__/it__	‘purchase’
+Arta	__it__ma-ratáŋ__/it__	‘to buy’
+KLY	__it__gataŋ__/it__	‘to buy something; to sell something’
+IFG	__it__gátaŋ__/it__	‘transaction, sale or purchase of moveable property’
+BKL	__it__gátaŋ__/it__	‘to buy something; to trade one item for another’
+
+NOTE: Comparison of Bikol to Keley-i or Ifugaw yields *gátaŋ; the Arta : Bikol comparison points to *Rataŋ.
+
+095.	*gáyad	‘dragging of garment, blanket, rope, etc. on the ground’
+ILK	__it__gáyad__/it__	‘length of a garment’
+	__it__g<um>áyad__/it__	‘to trail (garments)’
+KLY	__it__gayad__/it__	‘for the hem of a dress to drag on the ground’
+IFG	__it__gáyad__/it__	‘to reach the ground, applied to clothes, blankets that have been swung over the shoulders; men who sleep on the ground during the day (being too lazy to work)’
+IBL	__it__Kayad__/it__	‘to be long (as trouser legs, skirt)
+	__it__i-Kayad__/it__	‘to pull s.t. along that is touching, dragging on the ground (as long rope, cable)’
+TAG	__it__gáyad__/it__	‘dragging of a skirt or train of a dress along the ground or floor’
+BKL	__it__gáyad__/it__	‘hem’
+	__it__mag-gáyad__/it__	‘to have the hem touch or drag on s.t.’
+
+096.	*gelgél	‘to cut with sawing motion’
+DgtC	__it__gelgél__/it__	‘to butcher meat; to divide, to cut up meat, to slice’
+Arta	__it__gèlgèl__/it__	‘to cut’
+	__it__ga gèlgèl-èn__/it__	‘cut with knife moved repeatedly’
+IFG	__it__golgól__/it__	‘a saw; act of sawing’
+IBL	__it__KedKed__/it__	‘to cut s.t. with a bladed instrument by pressing down and drawing the blade back and forth (as in cutting meat with a knife)’;
+TAG	__it__gilgíl__/it__	‘cutting s.t. while applying pressure on the cutting instrument’
+BKL	__it__mag-gulgól__/it__	‘to slice by not lifting the knife’
+CEB	__it__gulgúl__/it__	‘to cut something with a blade using a back-and-forth motion’
+MAR	__it__gelgel__/it__	‘to cut (as the neck of a person)’
+BKD	__it__gelgel__/it__	‘to slit the throat (of a fowl, with repeated back and forth motions)’
+
+097.	*getáŋ ‘crack, cleft’
+ILK	__it__gettáŋ__/it__	‘flaw, crack (in plates, etc.)’
+KLY	__it__getaŋ__/it__	‘the gaps between floor boards or wall boards’
+TAG	__it__gitáŋ__/it__	‘crack or cleft in metal’
+AKL	__it__gutáŋ-gutáŋ__/it__	‘skin disease --- dry, cracked skin’
+CEB	__it__gutáŋ__/it__	‘to develop cracks in the calluses of the feet from going barefoot; a slash, incision’
+MAR	__it__getaŋ__/it__	‘break, furrow’
+
+098.	*getes	‘dry river bed’
+SblBt	__it__geteh__/it__	‘dry place in river with water on both sides, a dammed-up place’
+BKD	__it__getes__/it__	‘new channel causing flow of river to divert from its natural channel’
+
+099.	*giruk ‘to tickle; ticklish’
+BKL	__it__mag-gírok__/it__	‘to give a ticklish feeling’
+	__it__ma-girúk-an__/it__	‘to feel ticklish’
+TBL	__it__kilok__/it__	‘to tickle; ticklish’
+
+100.	*gisay ‘tattered, torn, ragged’
+SblBt	__it__gíhay__/it__	‘scalloped edge’
+BKD	__it__gisay__/it__	‘ragged, tattered, torn (as banana leaves battered by the wind)’
+
+101.	*hadaw ‘to remove coals from a fire’
+Yami	__it__araw__/it__	‘to move the coals (move live coals away after cooking)’
+ITB	__it__haraw__/it__	‘idea of partial fire extinguishment’
+	__it__haraw-an__/it__	‘to reduce the heating power of fire by removing or putting aside some of the fuel’
+ILK	__it__um-ádaw__/it__	‘to borrow fire from a neighbor’
+	__it__adaw-en__/it__	‘to extract, remove (from the fire)’
+
+102.	*hag(e)qut ‘to strip abaca fiber from the stems’
+IBL	__it__agot__/it__	‘the pulpy substance that is scraped off the skin of the leaves of the maguey hemp plant or the petioles of abaca to make rope strands’
+IfgBt	__it__agut__/it__	‘the thin outer skin of certain plants, peeled off in preparation for spinning the fibers into thread
+MSK	__it__agot__/it__	‘to strip abaca’
+BKD	__it__hagɁut__/it__	‘to strip the outer part of abaca (to get the fibers)’
+
+103.	*hames ‘to make oneself or something wet, touch with s.t. damp or moist’
+KNK	__it__men-amés__/it__	‘to bathe; to wash; to take a bath’
+IfgBt	__it__amoh__/it__	‘bathwater used for bathing; for s.o.to bathe her own body, a child, a dead person, with water, soap’
+PGS	__it__amés__/it__	‘to bathe’
+AKL	__it__hámos__/it__	‘neat, clean’
+CEB	__it__hámus__/it__	‘messy and dirty with something wet (as a child with nasal mucus all over his face, a wet and grimy kitchen floor)’
+WBM	__it__hames__/it__	‘wet; to wet (something)’
+BKD	__it__ma-hames__/it__	‘moderately wet, moist, damp; to dampen, moisten (something)’
+
+NOTE: Also Bontok __it__emes__/it__ ‘to take a bath; to bathe someone’.
+
+104.	*hánap	‘to look for, search’
+DgtC	__it__hanáp__/it__	‘to hunt for food’
+BON	__it__ánap__/it__	‘to look for; to find, of something that has been lost’
+	__it__in-an-ánap__/it__	to play hide-and-seek; the game of hide and seek’
+KLY	__it__anap__/it__	‘to look for s.o. or s.t.; to find a lost object’
+IFG	__it__ánap__/it__	‘act of fetching, looking for, searching, trying to find something, or somebody who got lost or disappeared’
+IBL	__it__enap-en__/it__	‘to look for, search for, seek s.t.’
+PGS	__it__man-anáp__/it__	‘to seek, look for’
+	__it__man-ánap__/it__	‘to earn a living
+TAG	__it__hánap__/it__	‘quest; object of search; the thing or person being looked for’
+	__it__h<um>ánap__/it__	‘to seek; to look for; to quest’
+BKL	__it__mag-hánap__/it__	‘to look for; to search for; to seek’
+HAN	__it__hánap__/it__	‘search, looking for something’
+MSK	__it__anap__/it__	‘to look for; search for’
+MAR	__it__anap__/it__	‘to fumble; search’
+
+105.	*háŋad	‘to lift the head, raise the head’
+ILK	__it__i-áŋad__/it__	‘to lift the head, raise the face’
+BKL	__it__mag-háŋad__/it__	‘to lift the head to look at someone who is talking’
+HLG	__it__haŋád__/it__	‘to look up to, to honor, to admire, to raise one’s eyes to’
+CEB	__it__haŋád__/it__	‘to look up, turn the head up; for s.t. usually level to tilt upwards’
+BKD	__it__haŋad__/it__	‘to look up at something’
+TSG	__it__mag-haŋad__/it__	‘to look up (as into a tree)’
+
+NOTE: Mapun, Yakan __it__haŋad__/it__ ‘to look upwards’ are assumed to be Tausug loans.
+
+106.	*háqun ‘to draw out, lift up out of something’
+ILK	__it__aón-en__/it__	‘to pull up from; to draw out, scoop, extract; quote; bail out of jail’
+ISG	__it__aón-an__/it__	‘to extract, draw out, take out’
+PGS	__it__aón__/it__	‘to draw out’
+WRY	__it__háon__/it__	‘the act of removing the cooking pot, etc. from the stove’
+TIR	__it__aɁun__/it__	‘to redeem, regain possession’
+TBL	__it__ahun__/it__	‘to lift something cooked off the fire; to lift up out of, as problems, circumstances; to lift to a higher level or condition’
+SGR	maŋ-auŋ	‘to take out (things that are packed away, cargo from a boat)’
+TTB	__it__aɁun__/it__	‘to take s.t. out from somewhere and take it somewhere else’
+
+107.	*háwan ‘to clear a path; cleared of underbrush, as a path’
+DgtC	__it__áwan__/it__	‘clear (of underbrush, e.g., a cleared trail)’
+TAG	__it__háwan__/it__	‘clearing made by the removal of grass, plants or trees; clearing in the sky, by the disappearance of clouds’
+BKL	__it__mag-háwan__/it__	‘to mow; to cut, prune, trim (as grass, hedges)’
+AKL	__it__háwan__/it__	‘to clear up, clean up, make open’
+CEB	__it__háwan__/it__	‘to clear an area (as weeds from a yard)’
+MAR	__it__awan__/it__	‘to clean graves’
+TSG	__it__mag-háwan__/it__	‘to clean (a courtyard, garden, lawn, house, etc.)’
+
+NOTE: Despite its currently known restriction to Greater Central Philippine languages and Casiguran Dumagat, it is unlikely that this word in the latter language is a borrowing from Tagalog.	Keeping trails clear of underbrush was traditionally a basic activity for foragers in their daily quest for food, and there would have been no motivation to borrow a word for such a key cultural concept from a language of higher prestige
+
+108.	*háwid	‘to restrain, hold back, prevent from going forward’
+ILK	__it__áwid__/it__	‘to keep back; turn a steering wheel; win someone over; convince’
+ISG	__it__maŋ-áwid__/it__	‘to bend, to brace, to strain (a spring pole, etc.)’
+DgtC	__it__awed__/it__	‘to draw back a bow (in shooting an arrow)’
+KNK	__it__awíd__/it__	‘to call back; to order to come back; to cause to return’
+BKL	__it__háwid__/it__	‘to hold something in the hand’
+AGU	__it__awid__/it__	‘to restrain s.o. or s.t.; to detain a person; to keep an animal from running off; to hold something back, hang on to; to keep something in one’s possession’
+	__it__ma-awid__/it__	‘to control oneself; to hold back emotions, tears, urge to urinate, etc.; to exercise self control’
+PLW	__it__awid__/it__	‘act of holding, grabbing, catching, prevention’
+AKL	__it__háwid__/it__	‘to restrain, retain, hold back, hold on to; make stay’
+CEB	__it__háwid__/it__	‘to hold s.t. to prevent forward motion; hold rigidly in place, hold on to s.t.; urge a visitor to stay for dinner, spend the night; for a blade to snag’
+WBM	__it__hawid__/it__	‘to rescue or grab s.o. or s.t. which is falling; to dissuade s.o. from proceeding on a course of action which means certain disaster’
+BKD	__it__hawid__/it__	‘to want, urge s.o. to stay longer’
+TBL	__it__awéd__/it__	‘to hold back, as a horse, in a holding pattern’
+TSG	__it__mag-hawid__/it__	‘to hold, hinder, restrain someone’ from going away or doing s.t.; to hold s.t. being pulled away
+
+NOTE: Mapun __it__hawid-an__/it__ ‘to restrain; hold s.o. back (as s.o. who wants to kill, or is demon-possessed)’ is assumed to be a Tausug loan.
+
+109.	*henat	‘to lift, raise up’
+ITB	__it__ahnat ~ henat__/it__	‘idea of carrying, lifting’
+	__it__ahnat-en__/it__	‘to carry up, to lift, to raise up’
+	__it__nan-henat__/it__	‘carried s.t. from one place to another’
+BKD	__it__henat__/it__	‘to be able to carry, lift, move (something heavy)’
+
+110.	*hubuq ‘to move s.t. to another place’
+ILK	__it__ubó__/it__	‘to carry something somewhere’
+BKL	__it__mag-húboɁ__/it__	‘to move to a new place; to move or transfer s.t. to a new place’
+WBM	__it__huvuɁ__/it__	‘to go and borrow fire from a neighbor’
+
+111.	*hulit ‘lecture, sermon, harangue’
+IBL	__it__odit-en__/it__	‘to say, tell, relate, esp. of s.t. said repeatedly (as in scolding)’
+BKL	__it__húlit__/it__	‘homily’
+	__it__i-húlit__/it__	‘to preach about’
+
+112.	*ilag ‘the color of ripe fruit or dry leaves’
+KLY	__it__ilag__/it__	‘the change of color as fruit ripens; the color change when leaves dry’
+IFG	__it__ílag__/it__	‘what is glimmering on account of its yellowish, reddish color (as bamboo)’
+MSK	__it__ilag__/it__	‘orange-yellow color (as of ripe fruit)’
+
+113.	*ilas ‘to crawl’
+ILK	__it__ílas__/it__	‘crawling, slithering, dragging movement’
+	__it__ag-ílas__/it__	‘to crawl, slither’
+WRY	__it__ilás__/it__	‘to crawl’
+
+114.	*íris ‘watery diarrhea’
+ILK	__it__íris__/it__	‘green stool of babies’
+	__it__ag-íris__/it__	‘to defecate green stool’
+BKL	__it__íris__/it__	‘watery diarrhea’
+	__it__mag-íris__/it__	‘to have watery diarrhea’
+
+115.	*itika ‘tuberculosis’
+AA	__it__itika__/it__	‘tuberculosis’
+SblBt	__it__itiká__/it__	‘tuberculosis’
+AGU	__it__itika__/it__	‘tuberculosis’
+BKD	__it__itika__/it__	‘tuberculosis’
+
+116.	*iway ‘to keep to oneself, avoid others’
+KLY	__it__iwey__/it__	‘to be alone or solitary’
+IfgBt	__it__iway__/it__	‘a single person of marriageable age’
+WRY	__it__iway__/it__	‘the act of avoiding or keeping away from’
+	__it__ma-iway__/it__	‘aloof; apart; distant’
+MSK	__it__iway__/it__	‘to move aside (as when a car is coming)’
+
+117.	*kalkál	‘to rummage through; turn things over in searching’
+IBT	__it__kalkal__/it__	‘s.o. rearranges rocks on the shore, esp. for a path to pull up a boat’
+ILK	__it__kalkál__/it__	‘to rummage through a pile or stack of papers, clothes, etc.’
+BON	__it__kalkál__/it__	‘to take out the contents of s.t., as a house or trunk; to shift things out of their usual position’
+WRY	__it__kalkál__/it__	‘the act of digging up and down in search of s.t.; ransacking; rummaging’
+
+118.	*kamata ‘conjunctivitis, pink eye’
+ILK	__it__kamatá__/it__	‘eye infection; opththalmia; inflammation of the eyes’
+ISG	__it__kamatá__/it__	‘conjunctivitis’
+BON	__it__kamáta__/it__	‘infected eyes; conjunctivitis’
+KNK	__it__kamáta__/it__	‘a kind of eye sickness in which the cornea is injected with blood’
+IBL	__it__kamata__/it__	‘conjunctivitis, sore eyes, “pink eye”’
+AGU	__it__kamata__/it__	‘pink eye; conjunctivitis
+	__it__kamata-en__/it__	‘infected with conjunctivitis’
+
+NOTE: Also Bontok __it__kámat__/it__ ‘to stitch two edges together’, __it__na-kámat__/it__ ‘to be stuck together, of infected eyes’.	This word seems to derive from PAN *maCa ‘eye’, but not through any known process of affixation (compare e.g. Tagalog __it__ka-matá__/it__ ‘having the same type of eyes’, with prefix __it__ka__/it__ ‘mate, partner’).
+
+119.	*kantuŋ ‘type of banana’
+IBL	__it__kantoŋ__/it__	‘variety of banana --- somewhat taller tree with small hands and small, sweet, yellow fruit (__it__kantoŋ__/it__ are cut prematurely)’
+MAR	__it__kantoŋ__/it__	‘type of banana: __it__Musa sapientum__/it__ L.’
+
+120.	*karáy	‘plastron, turtle shell’
+ILK	__it__karáy__/it__	‘plastron, turtle shell’
+BKL	__it__karáy__/it__	‘breastplate made of bone’
+
+121.	*káRun ‘intermediary, go-between (mainly for a marriage proposal)’
+Yami	__it__kayon__/it__	‘matchmaking’
+	__it__kayon-an__/it__	‘to propose marriage; engage in matchmaking’
+IBT	__it__kayon__/it__	‘proposal of marriage, engagement (pre-marriage ceremony)’
+	__it__mi-chayon__/it__	‘to become engaged’
+BON	__it__kálon__/it__	‘the first betrothal ceremony for couples from wealthy families; it requires the sacrifice of a water buffalo’
+IFG	__it__kálun__/it__	‘an intermediary, an interlocutor between two parties, a “go-between”’
+IBL	__it__kalon__/it__	‘marriage arrangement done by others (traditionally a group of elders would approach a young man and ask whom he would like to marry; they would then approach the young woman, and if she consented, the betrothal could be carried out almost immediately; a cow or carabao was butchered for the __it__kalon__/it__ occasion)’
+BKL	__it__mag-kágon__/it__	‘to act as a go-between for s.o. (as to settle an argument, or arrange a marriage)’
+WBM	__it__kaɣun__/it__	‘the prepayment for a bride’
+BKD	__it__kagun__/it__	‘person who acts as an intermediary between parties, spokesman, go-between; to be the intermediary, spokesman (for the groom)’
+
+122.	*katay ‘to become separated from a group or herd’
+IBL	__it__i-katay__/it__	‘to leave s.o. or s.t. far behind (as in walking a trail, running a race)
+AKL	__it__kátay__/it__	‘to scatter, spread’
+TSG	__it__katay__/it__	‘a vagabond (person), stray (animal)’
+
+NOTE: Mapun	__it__katay__/it__	‘to wander, to roam’is assumed to be a Tausug loan.
+
+123.	*kawkáw ‘to dip hands in water, to wash the vagina by splashing with water’
+ILK	__it__ag-kawkáw__/it__	‘to wash the vagina’
+	__it__i-kawkáw__/it__	‘to dip in water’
+	__it__k<um>awkáw__/it__	‘to dip the fingers in water’
+PGS	__it__kawkáw__/it__	‘to wash the private parts with water’
+TAG	__it__kawkáw__/it__	‘dipping of hand in liquid’
+	__it__i-kawkáw__/it__	‘to dabble with water’
+BKL	__it__mag-kawkáw__/it__	‘to feel or grope for, to paw’
+CEB	__it__kawkáw__/it__	‘to touch something with the hands’
+MSK	__it__kawkaw__/it__	‘to touch s.t. in a container; to steal’
+
+NOTE: This is potentially a Tagalog loan in Ilokano and Pangasinan, but the specific reference to washing the vagina in the latter languages, and not the former, disfavors this interpretation.
+
+124.	*kayad ‘to come out, or take out of the water’
+KLY	__it__kayad__/it__	‘to come up from water, get out of the water (as after bathing)’
+MSK	__it__kayad__/it__	‘to hang up to dry (clothes from the wash)’
+
+125.	*kayaŋ	‘to lie on one’s back, supine’
+BON	__it__kayáŋ__/it__	‘to lie on one’s back’
+PLW	__it__kayaŋ__/it__	‘to lie flat on one’s back, supine’
+
+126.	*kayasakas ‘sound of rustling or swishing’
+ITB	__it__kayasakas__/it__	‘noise; men’s rain coat made of dried banana leaves’
+ILK	__it__kayaskás__/it__	‘sound of slippers on the floor’
+AA	__it__kayasakas__/it__	‘to swish, noise produced when walking in grass, straw, etc.’
+
+NOTE: Also Casiguran Dumagat __it__kayasukas__/it__ ‘rustling sound of paper or bushes; sound of dry leaves being walked on’. Ayta Abellen normally reflects *s as __it__h__/it__; I assume the absence of this change in __it__kayasakas__/it__ to be an onomatopoetic retention.
+
+127.	*kebet/kubut ‘wrinkled’
+(a)
+AA	__it__kebet__/it__	‘wrinkled by shrinking’
+BKD	__it__kebet__/it__	‘for skin of the face, etc. to be wrinkled up’
+(b)
+IBL	__it__kobot__/it__	‘to be wrinkled, as s.t. dried in the sun, skin of old people, animals’
+BKL	__it__kubót-kubót__/it__	‘wrinkles in the skin’
+
+128.	*kelkel	‘to have a fit of coughing’
+ILK	__it__kelkél__/it__	‘whooping cough’
+	__it__kelkel-en__/it__	‘to cough repeatedly’
+MbS	__it__kelkel__/it__	‘to cough’
+
+NOTE: Also Kalamian Tagbanwa __it__kulkul__/it__, Agutaynen __it__keykey__/it__ ‘cough; to cough’.
+
+129.	*ke(n)teR ‘stiff, rigid’
+BON	__it__kentég__/it__	‘to be hard or stiff, as in __it__rigor mortis__/it__’
+AGU	__it__ketel__/it__	‘stiff, as of starched clothes, hair, etc.’
+
+NOTE: With root *-teR ‘stiff, rigid, as a corpse’.
+
+130.	*kepet	‘to hold, cling to’
+ILK	__it__k<um>pét__/it__	‘to cling, attach to’
+PLW	__it__kepet__/it__	‘to hold (something)’
+
+131.	*ki ‘2sg. topic pronoun (possibly respect form)’
+PGS	__it__ki__/it__	‘you, topic, respectful (usually combined with __it__la__/it__ ‘already’)’
+WBM	__it__ki__/it__	‘1st dl. topic pronoun’
+BKD	__it__ki__/it__	‘1st dl. topic, you and me’
+
+NOTE: The glosses given in the sources for Western Bukidnon Manobo (‘first person plural dual topic pronoun’) and Binukid (‘2du. topic; we, us (you and I/me) are self-contradictory, the first with regard to number, and the second with regard to person.	It seems clear that both are first-person dual topic pronouns, and that the Pangasinan form is a second-person topic pronoun connoting respect.	The common element in the two witnesses (Southern Cordilleran vs. Manobo) is second person topic.	Since PPH *ikaw is already well-supported in this function it must be assumed that *ki, which is far less robustly attested, had a less common function, hence the inference that it may have been a respect form, as in Pangasinan.	In any case a pronoun of this shape is currently unknown outside the proposed Philippine subgroup.
+
+132.	*kiki ‘to tickle’
+ILK	__it__maka-kíki__/it__	‘tickling’
+	__it__kikí-en__/it__	‘to tickle’
+IBL	__it__kiki-en__/it__	‘to tickle s.o. --- esp. of tickling animals in a friendly fashion’
+TbwC	__it__kiki-an__/it__	‘armpit’
+
+133.	*kidkíd ‘to remove weeds from rice field’
+BON	__it__kidkíd__/it__	‘to clean completely, as a terrace wall, so that no weeds remain’
+BKL	__it__mag-kidkíd__/it__	‘to pull weeds from the rice field’
+HAN	__it__kidkíd__/it__	‘land which has been completely cleared “to the last blade of grass”’
+
+134.	*kimkím ‘to pick at one’s food, show little interest in eating’
+ILK	__it__na-kimkím__/it__	‘frugal in eating’
+BKL	__it__mag-kimkím__/it__	‘to pick at one’s food, show little interest in eating; to eat with just the tips of the fingers; to eat slowly and fastidiously’
+
+135.	*kinel ‘shake, shiver’
+BON	__it__kínel__/it__	‘to wriggle, to make small jerky movements’
+BKL	__it__mag-kinól-kinól__/it__	‘to shiver, to shake’
+
+136.	*kudúg ‘stamping of feet’
+ILK	__it__kudúg__/it__	‘stampede; stomping of the feet’
+BKL	__it__kuróg-kudóg__/it__	‘the sound of stamping feet’
+
+137.	*kudúq ‘pebbles used in jacks (children’s game)’
+ILK	__it__kudó__/it__	‘pebbles used as jack stones’
+	__it__ag-kudó__/it__	‘to play a kind of (girls’) game resembling knucklebones’
+CEB	__it__kúruɁ__/it__	‘game played similarly to jackstones, but different in that the stone or ball must be caught in the palm before it hits the floor’
+WRY	__it__kudóɁ__/it__	‘to play jack stone’
+
+NOTE: So far as I have been able to determine, this is an indigenous game.
+
+138.	*kul(e)qúb ‘lying face down; prone, prostrate’
+ILK	__it__ag-kulɁób__/it__	‘to bend toward the ground, prostrate’
+AKL	__it__kueób__/it__	‘face downwards, lying on one’s face’
+CEB	__it__kulúb__/it__	‘lie on one’s belly, be overturned’
+WRY	__it__kulob__/it__	‘lying face down, sprawling face down’
+
+139.	*kúlit ‘to peel sugarcane with the teeth’
+ILK	__it__kúlit__/it__	‘to peel, decorticate (sugarcane); bite off the rind of sugarcane’
+ISG	__it__kúlit__/it__	‘to peel sugarcane’
+BKL	__it__mag-kúlit__/it__	‘to eat sugarcane, pulling off the skin with the teeth’
+MSK	__it__korit__/it__	‘to remove with the teeth, bite off’
+
+NOTE: Possibly a reflex of PAN *kuliC ‘rind, peeling’, but its use as a verb with special reference to sugarcane has not been reported outside the Philippines.
+
+140.	*kulkúl ‘to argue, disagree with’
+ILK	__it__ag-kulkól__/it__	‘to litigate’
+PGS	__it__kolkól__/it__	‘quarrel, verbal altercation’
+WRY	__it__kulkól__/it__	‘assertion, beseeching, begging’
+	__it__kulkol-á__/it__	‘to assert or insist’
+
+141.	*kuriq ‘poor, impoverished, having little’
+ILK	__it__kur-kurí__/it__	‘kitchen boy, scullery maid’
+HAN	__it__kúriɁ__/it__	‘poverty, destitution’
+	__it__ma-kúriɁ__/it__	‘poor, indigent, poverty stricken’
+AKL	__it__kuríɁ__/it__	‘scarce, rare, hard to obtain or find’
+	__it__ka kuríɁ__/it__	‘want; scarcity; rarity’
+	__it__saŋ-kuríɁ__/it__	‘few, very little, a bit’
+CEB	__it__kúliɁ__/it__	‘having a hard time doing s.t. because of some obstacle’
+WRY	__it__kúri__/it__	‘poverty, impoverishment’
+
+142.	*kutiteb ‘small insect, possibly bed bug’
+SblBt	__it__kotíteb__/it__	‘bed bug’
+MSK	__it__kotitub__/it__	‘kind of ant’
+
+143.	*labit ‘to gossip, talk about someone’
+AA	__it__labit__/it__	‘to gossip’
+	__it__ma-labit__/it__	‘talkative’
+KPG	__it__labít__/it__	‘blabber, chatter without stopping’
+	__it__ma-labít__/it__	‘talkative’
+MSK	__it__labit__/it__	‘to mention a person’s name; to speak of; to talk about’
+TIR	__it__labit__/it__	‘to refer to someone by name in a conversation’
+
+144.	*lama ‘caution, vigilance; to be careful’
+ITB	__it__xama__/it__	‘idea of carefulness’
+	__it__i-xama__/it__	‘to be careful about/with’
+MSK	__it__lama__/it__	‘to beware; to be careful; to exercise vigilance’
+
+145.	*lamut	‘gluttonous’ (dbl. *lamun)
+ILK	__it__lámut__/it__	‘food, viands’
+	__it__lamút-en__/it__	‘to devour; eat; swallow’
+WRY	__it__lamót__/it__	‘gluttonous, voracious’
+
+146.	*lanab ‘high water, flood’
+AKL	__it__eanáb__/it__	‘to flood a little bit, overflow a little’
+SGR	__it__lanabəɁ__/it__	‘high water, flood’
+
+147.	*lanaŋ	‘to overflow, as a river’
+ITB	__it__mi-xanaŋ-an__/it__	‘to flow continuously and abundantly’
+	__it__xanaŋ-an__/it__	‘the place where water comes out (hillside, at the foot of hill)’
+DgtC	__it__lanáŋ__/it__	‘puddles of water on the ground after a rain’
+MAR	__it__lanaŋ-an__/it__	‘toilet’
+MSK	__it__lanaŋ__/it__	‘to overflow, as water from a river’
+
+148.	*lanútan ‘a tree: __it__Bombycidendron__/it__ spp.’
+ILK	__it__lanótan__/it__	‘k.o. tree: __it__Bombycidendron Vidalianum__/it__’
+BKL	__it__lanótan__/it__	‘a tree: __it__Bombycidendron__/it__ spp.’
+
+149.	*lañej ‘to sink, submerge’
+Yami	__it__aned__/it__	‘to sink’
+ILK	__it__ag-lanéd__/it__	‘to fall down head first; dive’
+BKL	__it__lánod__/it__	‘to sink, to capsize, to submerge’
+
+NOTE: Also Bikol __it__lúnod__/it__ ‘to sink; to capsize; to submerge’.	With root *-nej to submerge, sink, drown’.
+
+150.	*lap(e)quk ‘sandy soil?’
+ILK	__it__lapɁók__/it__	‘sandy soil; dust; sand’
+AKL	__it__eápok__/it__	‘soil, earth’
+WRY	__it__lápok__/it__	‘mud, mire’
+
+NOTE: Also Waray __it__lápak__/it__ ‘mud, mire’.
+
+151.	*lapu-1 ‘to overflow’
+KPG	__it__lapú__/it__	‘to overflow’
+MSK	__it__lapo__/it__	‘to overflow (as water in a vessel)’
+
+152.	*lapu-2 ‘to start out, begin’
+Yami	__it__lapo__/it__	‘beginning, to begin’
+	__it__om-lapo__/it__	‘to start from’
+	__it__lapo-en__/it__	‘beginning’
+BON	__it__lapó__/it__	‘to start from; to begin at some place; to lead the way’
+
+153.	*lapuŋ	‘mildew, mildewed, moldy’ (dbl. lapuk)
+ITB	__it__xapoŋ__/it__	‘to get moldy’
+TIR	__it__lafuŋ__/it__	‘mildew’
+	__it__lafuŋ-en__/it__	‘covered with mildew’
+
+154.	*lásaw	‘thin, of liquids; watery’
+ILK	__it__na-lásaw__/it__	‘thin, weak, watery; sparse; scanty; easily consumed’
+TAG	__it__pagka-lásaw__/it__	‘thawing; liquefying’
+	__it__lasáw__/it__	‘thawed’
+BKL	__it__lásaw__/it__	‘watery, thin (liquids)’
+AKL	__it__easáw__/it__	‘not sticky; liquidy, watery’
+CEB	__it__lásaw__/it__	‘for liquids to flow or spread all over’; lasáw diluted, watery’
+MSK	__it__lásaw__/it__	‘weak because diluted with water (as coffee)’
+
+NOTE: Possibly a Tagalog loan in Ilokano, but the divergent semantics weighs against this interpretation.
+
+155.	*latlat ‘to peel off, tear off or apart’
+ILK	__it__ag-latlát__/it__	‘to peel’
+BON	__it__latlat-en__/it__	‘to peel off, as skin; to strip off, as sheets of metal off a roof’
+KLY	__it__latlat__/it__	‘to remove the skin of an animal’
+PGS	__it__latlát__/it__	‘to rip cloth, etc. with a knife; strip’
+AGU	__it__mag-laɁlat__/it__	‘to tear or rip s.t. apart or out; to split or cut s.t. in two by ripping it’
+MSK	__it__latlat__/it__	‘to tear (as old clothes)’
+
+156.	*lawag ‘light, brilliance’
+ILK	__it__lawág__/it__	‘brightness; brilliance; light; glow’
+CEB	__it__láwag__/it__	‘kind of fishing with lights’
+WRY	__it__láwag__/it__	‘the act of shedding or giving light’
+	__it__lawág__/it__	‘lamp; torch; light’
+
+157.	*libeg ‘murky, roiled, of water’
+IBL	__it__dibeg__/it__	‘murkiness, turbidity of water --- esp. of a condition that clears quickly (as when a truck crosses a stream)’
+BKL	__it__ma-líbog__/it__	‘blurred, fuzzy, indistinct, obscure, vague’
+	__it__ma-líbog na túbig__/it__	‘cloudy or murky water’
+AGU	__it__libeg__/it__	‘be worried, upset, troubled; to be confused’
+AKL	__it__libóg__/it__	‘to be confused, be in a quandary’
+
+158.	*lilid ‘to roll over and over’
+DgtC	__it__léled__/it__	‘to roll (of a wheel, a winnowing tray, coconut husk, etc.)’
+HAN	__it__lilíd__/it__	‘rolling over and over’
+MAR	__it__lilid__/it__	‘to roll (as a stone down a hill)’; lilid-en ‘roller of a Maranao loom’
+WBM	__it__lilid__/it__	‘of an object, to roll on the floor or ground’
+MSK	__it__lilid__/it__	‘to roll (as a log)’
+BM	__it__mo-lilid__/it__	‘to roll (as over the ground), roll away’
+
+NOTE: Mapun __it__lilid__/it__ ‘to cause s.t. to go down a hill’ is assumed to be a GCP loan.
+
+159.	*linamun ‘k.o. sea grass’
+AGU	__it__linamon__/it__	‘k.o. green sea grass with strong roots which grows in shallow water all year long (small fish live in it)’
+MAR	__it__linamon__/it__	‘water plant or seaweed: __it__Hydrrilla verticillata__/it__ Presl.’
+
+160.	*lináŋ ‘shiny, bright’
+IFG	__it__lináŋ__/it__	‘brilliant shining of the sun’
+KLY	__it__linaŋ__/it__	‘shining (like a galvanized iron roof)’
+BKL	__it__ma-lináŋ__/it__	‘describing s.t. smooth and shiny; sleek’
+MAR	__it__linaŋ__/it__	‘silver’
+
+161.	*linap ‘to sink, disappear under water’
+ISG	__it__na-línap__/it__	‘submerged’
+BON	__it__linap-en__/it__	‘to cover with water’
+KNK	__it__ma-lináp__/it__	‘submerged, inundated’
+SGR	__it__linapǝɁ__/it__	‘to disappear’
+
+162.	*líŋgas	‘of good quality, nice-looking, as crops’
+PGS	__it__líŋgas__/it__	‘beauty, neatness’
+	__it__ma-líŋgas__/it__	‘beautiful; spick and span’
+BKD	__it__ma-liŋgas__/it__	‘of good quality (rice, corn, beans, etc.)’
+
+163.	*lipi ‘edge or rim of basket, hat, etc.’
+ILK	__it__lip-lípi__/it__	‘border of a hat’
+BtkP	__it__lipí__/it__	‘leaf of palm tree; edge or rim of basket’
+
+NOTE: This word evidently referred to the part of anything made from plaited leaves that needs to be ‘closed off’ to hold the material in place.
+
+164.	*lipuŋ ‘dish for holding food’
+PGS	__it__lipoŋ__/it__	‘plate
+MSK	__it__lipoŋ__/it__	‘bowl’
+
+165.	*lubuk ‘in the middle, between two other things’
+ITB	__it__xovok__/it__	‘center, middle, central’
+	__it__maŋ-xovok__/it__	‘stay or be in the middle’
+DgtC	__it__lubuk__/it__	‘inside (esp. of a house)’
+	__it__l<um>ubuk__/it__	‘to sleep between two people’
+
+166.	*lukut	‘small stingless bee’
+IBL	__it__dokot__/it__	‘small species of honeybee with no stinger; its honey is edible; builds small hives in clefts of rocks’
+HAN	__it__lukút-an__/it__	‘a stingless honeybee (family __it__Meliponidae__/it__, species __it__Trigona__/it__)’
+
+167.	*lumput ‘native cloth, woven material’
+ILK	__it__lúpot__/it__	‘clothes, cloth; apparel; garments’
+BON	__it__lópot__/it__	‘clothes; cloth’
+KLY	__it__luput__/it__	‘cloth’
+IBL	__it__dopot__/it__	‘cloth, fabric, material; clothing’
+PGS	__it__lópot__/it__	‘cloth, rag’
+CEB	__it__lumpút__/it__	‘home-woven cloth of a checkered design and with a plain weave; wear clothing of this weave’
+
+168.	*lupiq ‘dented or chipped, of the cutting edge of a knife, etc.’ (dbl. *lupiŋ)
+KLY	__it__lupi__/it__	‘for a knife edge to be flattened and dull’
+AGU	__it__lopik__/it__	‘for s.t. made of metal or tin to become dented’
+CEB	__it__lúmpiɁ__/it__	‘dented, having a dent’
+WRY	__it__lupíɁ__/it__	‘a dent: small surface depression caused by a hard blow; dented’
+SGR	__it__lupi__/it__	‘blunt, bent back (of the point of a spear, etc.)’
+
+169.	*lúquŋ	‘steep declivity, ravine’
+BON	__it__lóoŋ__/it__	’to be steep, as a hillside’
+HAN	__it__lúɁuŋ__/it__	‘valley or steep ravine’
+
+170.	*lusak ‘muddy, as ground’ (dbl. *lutak)
+ISG	__it__lusáɁ__/it__	‘earth; land, soil; ground’
+TAG	__it__lúsak__/it__	‘mire; slush; slime; a soft sticky mud or something like it’
+
+NOTE: With root *-cak ‘muddy; sound of walking in mud’.
+
+171.	*lusek ‘insert into the ground, as a housepost’
+PGS	__it__losék__/it__	‘post, pillar’
+MSK	__it__lusuk__/it__	‘to insert (as into the ground); to plant (as seed)’
+
+NOTE: With root *-sek ‘insert, stick into a soft surface’.
+
+172.	*maŋá	‘approximately, about, roughly; some’
+ILK	__it__ag-maŋá-maŋá__/it__	‘to be uncertain, undecided’
+DgtC	__it__máŋa__/it__	‘expressing approximation; some; about (e.g. in telling time)’
+AA	__it__maŋa__/it__	‘approximately (used before a cardinal number)’
+HAN	__it__maŋá__/it__	‘about, approximately (used before numbers)’
+BtkP	__it__máŋa__/it__	‘some’
+AKL	__it__máŋa__/it__	‘some, approximately, about (before numbers)’
+CEB	__it__máŋa__/it__	‘about, approximately (before words referring to time or measurement)’
+
+NOTE: Although this form is cited together with reflexes of PMP *maŋa ‘prenominal marker of plurality’ in some languages (as Cebuano), the meanings are different enough to merit separate treatment.	As an approximative marker *maŋá appears to have been used most commonly with expressions of quantity.
+
+173.	*míŋsan ‘once, one time only’
+DgtC	__it__mɛnsan__/it__	‘once, one time’
+PGS	__it__mínsan__/it__	‘once only’
+AA	__it__miŋhan__/it__	‘once’
+SblBt	__it__miŋhán__/it__	‘once, once in awhile’
+KPG	__it__mísan__/it__	‘once in a while (a time measure)’
+TAG	__it__mínsan__/it__	‘once; on a single occasion; one time’
+BKL	__it__kon mínsan__/it__	‘sometimes, once in a while, from time to time’
+HAN	__it__mínsan__/it__	‘once, at one time’
+MSK	__it__minsan__/it__	‘once’
+
+NOTE: Also Agutaynen __it__minta__/it__ ‘one time; once’.	This may be a Tagalog loan distribution, but the velar nasal in the Ayta Abellen and Botolan Sambal forms weighs against this interpretation.
+
+174.	*mukmuk ‘to eat heartily, stuff one's mouth full’
+AA	__it__mokmok__/it__	‘to eat heartily alone, hiding from companion’
+SblBt	__it__mokmók__/it__	‘to eat heartily
+AKL	__it__múkmuk__/it__	‘to stuff one's mouth full’
+
+175.	*mulmul ‘toothless’
+SblBt	__it__molmól__/it__	‘to have one's teeth come out’
+MAR	__it__momol__/it__	‘toothless, old’
+
+NOTE: Apparently distinct from PAN *mulmul 'hold in the mouth and suck'.
+
+176.	*mus(e)qiŋ ‘covered with dirt or dust’
+SblBt	__it__móhiŋ__/it__	‘to be covered with dirt or dust’
+AKL	__it__musíŋ-musíŋ__/it__	‘to become dirty; smear with soot or grime’
+WRY	__it__musɁíŋ__/it__	‘dirt; stain; grime’
+TSG	__it__musiŋ__/it__	‘dirt (embedded on the face, esp. of a child)’
+
+177.	*musmus ‘lowly, humble, poor’
+PGS	__it__musmús__/it__	‘stupid’
+AKL	__it__músmus__/it__	‘poor, lowly, humble’
+
+178.	*namaq ‘to hope for’
+ILK	__it__náma__/it__	‘hope, trust, confidence’
+	__it__i-na-nama-en__/it__	‘to hope for’
+BKL	__it__namáɁ__/it__	‘might, possibly, perchance’
+
+179.	*náwiq ‘rattan that has been processed for use by splitting and cleaning’
+ILK	__it__nawí-en__/it__	‘to clean rattan; clean reeds’
+	__it__saŋa-náwi__/it__	‘one strip of (cleaned) rattan’
+BKL	__it__náwiɁ__/it__	‘cleaned and split rattan’
+WBM	__it__nawiɁ__/it__	‘a small knife used for splitting rattan, etc.
+
+NOTE: Also Palawano __it__nawi__/it__ ‘rattan’, Cebunao __it__náwi__/it__ ‘strip of rattan’; to cut rattan into strips’. PAN *quay ‘rattan’, which is far more robustly attested than this form, evidently referred to rattan in its natural state, while PPH *nawiq referred to processed rattan, that is, to rattan already been prepared for human use.
+
+180.	*náyun ‘addition, as to a settlement; continuation of an activity’
+ILK	__it__náyon__/it__	‘addition; part’
+	__it__ma-náyon__/it__	‘to last; live to a ripe old age; be durable’
+	__it__nayon-an__/it__	‘to increase, enlarge’
+BON	__it__náyon__/it__	‘to add to; to extend’
+IBL	__it__nayon__/it__	‘addition to s.t. (as parcel of land covered by an existing title, bonus for things bought in large quantities)’
+PGS	__it__náyon__/it__	‘continue; persist in plan or activity’
+TAG	__it__náyon__/it__	‘village; hamlet; barrio’
+	__it__ka-náyom__/it__	‘fellow villager’
+BKL	__it__mag-nayón__/it__	‘to do s.t. without interruption; to work on s.t. continuously without a break’
+AKL	__it__náyon__/it__	“um”, “er” (expression used to fill in a pause in one’s speech while groping for the right word)’
+CEB	__it__náyun__/it__	‘adjacent, in line with’
+MAR	__it__nayon__/it__	‘continuous with, part of, contiguous with, join (as a hamlet to a neighboring town)’
+
+181.	*ŋáqŋaq ‘to stutter, stammer, have trouble uttering speech’
+KLY	__it__ŋaŋa__/it__	‘to be unable to speak; deaf and dumb’
+IFG	__it__ŋáŋa__/it__	‘speech without moving one’s tongue sufficiently’
+CEB	__it__ŋáɁŋaɁ__/it__	‘stuttering’
+
+NOTE: Evidently distinct from PAN *ŋaŋa ‘to open the mouth; gape’.
+
+182.	*ŋarab	‘blade, cutting edge of knife, etc.’
+ITB	__it__ŋarab__/it__	‘blade, cutting edge’
+DgtC	__it__ŋahab__/it__	‘sharp edge (of the sharp edge of a mountain, or the sharpened edge of a bolo or arrowhead)
+ISG	__it__ŋárab__/it__	‘the edge of a cutting instrument’
+IFG	__it__ŋaláb__/it__	‘the sharp and whetted side of the blade of a knife’
+IfgBt	__it__ŋālab__/it__	‘the thin edge of the blade of an axe’
+
+183.	*ŋiq(e)rit ‘to smile’
+DgtC	__it__ŋehét__/it__	‘to laugh, to smile’
+IBL	__it__on-ŋiɁshit__/it__	‘to smile, show the teeth’
+BKL	__it__ŋírit__/it__	‘a grin, smile, smirk’
+HAN	__it__ŋírit__/it__	‘to smile’
+
+184.	*pakid	‘have lower leg extended to the side’
+KLY	__it__pakid__/it__	‘to entangle another person’s foot with one’s own; to entwine feet’
+TAG	__it__pakíd__/it__	‘knock-kneed’
+
+185.	*pantát	‘k.o. catfish that lives in swamps’
+PGS	__it__pantát__/it__	‘variety of mudfish much used for food’
+KPG	__it__pantat__/it__	‘k.o. fish similar to catfish’
+BKL	__it__pantát__/it__	‘catfish sp.’
+AKL	__it__pántat__/it__	‘mudfish’
+CEB	__it__pantát__/it__	‘k.o. freshwater catfish’
+MSK	__it__pantat__/it__	‘k.o. freshwater fish (has no scales, and is found in swamps)’
+
+186.	*paŋel/	*paŋeR ‘stupid, unthinking’
+(a)
+AGU	__it__paŋel__/it__	‘stupid; asinine; idiot’
+BKL	__it__paŋól__/it__	‘stupid, dull’
+(b)
+AGU	__it__paŋel__/it__	‘stupid; asinine; idiot’
+CEB	__it__paŋúg__/it__	‘stupid, tending to do the wrong thing unthinkingly’
+
+NOTE: Also Cebuano __it__paŋu__/it__ ‘stupid, tending to do the wrong thing unthinkingly’.
+
+187.	*paŋét	‘to clutch, grasp tightly’
+ILK	__it__paŋét__/it__	‘entanglement’
+PGS	__it__paŋét__/it__	‘to clutch’
+BKL	__it__mag-paŋót__/it__	‘to fight by grasping the comb or feathers with the beak (fowl)’
+MSK	__it__paŋot__/it__	‘to catch, as with the hands’
+
+188.	*pasaw	‘to fade in intensity or force’
+BON	__it__ma-pásew__/it__	‘to become less intense; to fade away, as an emotion or drunkenness’
+AGU	__it__ma-pasaw__/it__	‘to lose power, as of written prayers or amulets’
+TSG	__it__pasaw__/it__	‘no good, weak, stale, old stock (of canned goods, merchandise, batteries); (of a license or permit) expired’
+
+NOTE: Mapun __it__pasaw__/it__ ‘expired (as a license, medicine); dead (as a battery); flat or stale (as carbonated drinks or packaged snacks)’ is assumed to be a Tausug loan.
+
+189.	*pasáyan ‘freshwater shrimp’
+ILK	__it__pasáyan__/it__	‘shrimp, prawn’
+BKL	__it__pasáyan__/it__	‘freshwater shrimp’
+AKL	__it__pasáyan__/it__	‘small shrimp’
+WRY	__it__pasáyan__/it__	‘shrimp’
+MAR	__it__pasayan__/it__	‘seaweed’
+	__it__pasayan-en__/it__	‘fishing ground for shrimps’
+
+190.	*paták	‘raindrop’
+ILK	__it__paták__/it__	‘raindrop’
+TAG	__it__paták__/it__	‘a drop of liquid’
+AGU	__it__patak__/it__	‘a raindrop, one drop of rain’
+
+191.	*patuŋ ‘bamboo stocks or fetters’
+ILK	__it__patóŋ-patóŋ__/it__	‘kind of native instrument made of bamboo’
+MAR	__it__patoŋ__/it__	‘handcuff, hog-tie, fetters’
+WBM	__it__patuŋ__/it__	‘a stock, i.e. a frame of wood with holes for the feet and hands to confine a prisoner’
+
+NOTE: Possibly the same as PWMP *patuŋ ‘large, thick bamboo sp.’, but the reference to an instrument of punishment is not known outside the Philippines. Rubino (2000:450) is non-specific in his definition of “instrument”, but cross-references Ilokano __it__patóŋ-patóŋ__/it__ with Bontok __it__patóŋ__/it__ ‘to perch; to sit on an elevated place’, which implies that the Ilokano form refers to an instrument that is connected in some way to confining a person in a sitting position.
+
+192.	*páud	‘nipa leaf shingles for roofing; to sew palm leaves for roof thatch’
+ILK	__it__p<in>aúd__/it__	‘lowermost layer of __it__nipa__/it__ leaves when making the eaves of thatching; thatched __it__nipa__/it__ leaves’
+DgtC	__it__páwed__/it__	‘nipa shingles’
+PGS	paór	‘to arrange the leaves of the nipa palm into panels for thatching’
+AGU	__it__paod__/it__	‘roofing shingles made by sewing or weaving palm leaves together, either nipa palm or coconut palm
+TbwC	__it__paod__/it__	‘thatch’
+AKL	__it__páwod__/it__	‘nipa shingle; nipa thatching’
+SGR	__it__paudǝɁ__/it__	‘sew together palm leaves for roof thatch’
+BM	__it__paud__/it__	‘to sew thatch panels for roofing.
+
+NOTE: Also TAG __it__páwid__/it__ ‘nipa palm, the leaves of which are used for making thatched roofs’, Cebuano __it__pálud ~ páwud__/it__ ‘shingle of palm thatch, used for roofing or walling’. Mapun __it__pawud__/it__ ‘a section (about 6 feet long) of palm leaves sewn on a strip of bamboo, used for roofing’ is assumed to be a GCP loanword.
+
+193.	*pawed ‘back strap securing the loom to the weaver’ (dbl. *paud)
+ITB	__it__pawed__/it__	‘leatther belt strap used for knitting or weaving’
+KNK	__it__i-pawéd__/it__	‘to bind; to fasten; to tie; to attach; to fix; to link; to strap’
+
+194.	*pedaq ‘to tire of some activity or taste’
+ILK	__it__peddá__/it__	‘to be fatigued, tired and worn out; to be satiated, to have had more than enough’
+	__it__ma-pdá__/it__	‘to be fatigued, satiated’
+CEB	__it__púraɁ__/it__	‘indulge in s.t. to the point of satiety, where one desires no more’
+WBM	__it__pezaɁ__/it__	‘of an activity or food, to tire or bore someone’
+BKD	__it__ka-peraɁ__/it__	‘to be tired, weary, fatigued, exhausted (from exertion); to be bored, tired of (something or doing something)’
+
+195.	*pegpeg ‘to tremble, as with chills’
+Yami	__it__pegpeg__/it__	‘shivering’
+	__it__ma-megpeg__/it__	‘to shiver’
+ITB	__it__pegpeg__/it__	‘idea of chills’
+	__it__ma-megpeg__/it__	‘to tremble accompanied with chill’
+DgtC	__it__pegpeg__/it__	‘to shake, to quiver (in fear, or from cold or malaria chills)’
+AA	__it__pegpeg__/it__	‘trembling (as with cold)’
+
+196.	*peŋgéd ‘acne, pimples on the face’
+DgtC	__it__peŋgéd__/it__	‘acne, whiteheads’
+BKL	__it__puŋgód__/it__	‘pimples’
+	__it__ma-puŋgód__/it__	‘to have pimples, to have acne’
+HAN	__it__puŋgúd__/it__	‘pimple’
+AKL	__it__púŋgud__/it__	‘pimple, blemish’
+CEB	__it__púgud__/it__	‘for a bud to form and swell; infected pimple on the face’;
+	__it__puŋgúd__/it__	‘infected pimple on the face’
+AGU	__it__peŋged__/it__	‘pimple; acne’
+	__it__peŋged-en__/it__	‘to have pimples, acne’
+
+197.	*peqpeq ‘to hush someone, put a hand over someone's mouth to shut them up’
+AA	__it__pepe__/it__	‘to suppress someone from telling something’
+SblBt	__it__péɁpeɁ__/it__	‘to suppress s.o. from telling s.t. by a signal of putting the finger over one's mouth, or by holding a hand over the mouth of the speaker’
+BKD	__it__peɁpeɁ__/it__	‘to hit the mouth to discourage bad talking’
+
+NOTE: Also TAG __it__pípi__/it__ ‘dumb; mute’.
+
+198.	*pesit ‘to splash’
+ITB	__it__apsit__/it__	‘idea of being splashed with liquid’
+	__it__k-apsit-an__/it__	‘be splashed (with water, mud)’
+HAN	__it__pusít__/it__	‘to spurt, spurting, as of blood’
+
+NOTE: Also Agutaynen __it__ma-posit-an__/it__ ‘for a liquid to squirt or spray forcefully out of a bottle, hose, one’s mouth, etc.; to flow hard.’	Malay __it__pərcit__/it__ ‘squirting out (of water)’ may be related, but if so the preconsonantal /r/ is unexplained.
+
+199.	*peyeŋ/pireŋ ‘to close the eyes’ (dbl. *pezeŋ)
+(a)
+AGU	__it__mem-peyeŋ__/it__	‘to close the eyes’
+TbwC	__it__pɨyɨŋ__/it__	‘to close one's eyes’
+BKD	__it__peyeŋ__/it__	‘to close the eyes to a slit, to squint’
+(b)
+BKL	__it__maka-píroŋ__/it__	‘to close (the eyes, as when dust enters)’
+MSK	__it__piluŋ__/it__	‘to close (as the eyes)’
+TIR	__it__fireŋ__/it__	‘having a drooping eyelid’
+TSG	__it__mag-piruŋ__/it__	‘to close the eyes’
+
+NOTE: Also TAG __it__piríŋ__/it__ ‘a blindfold; abandage that covers the eyes’.
+
+200.	*pírit ‘to insist on, consider essential’
+ILK	__it__i-pírit__/it__	‘to heed, consider, give importance to’
+TAG	__it__pilít__/it__	‘forced; strained; not natural’
+BKL	__it__mag-pírit__/it__	‘to force s.o. to do s.t., to persuade forcefully’
+WRY	__it__pírit__/it__	‘insistence, assertion; demanding’
+
+201.	*piset ‘young, green (immature), of fruit or betel nut’
+KLY	__it__pihet__/it__	‘a young, green betel nut (chewed if there are no other betel nuts available)’
+WRY	__it__pisót__/it__	‘young (as of fruit; unripe; immature; premature)’
+
+202.	*pisi ‘a piece of something, part of a whole’
+ILK	__it__písi__/it__	‘part, fragment, piece; cut of a round object, or lengthwise cut of a long object (a widthwise cut of a long object is called __it__puted__/it__)’
+AGU	__it__pisi__/it__	‘a piece, part of a whole’
+
+NOTE: Despite its similarity to English ‘piece’, this word does not appear to be a loan, any more than Tagalog __it__sipsíp__/it__ ‘sip’ (< PAN *sepsep) is a borrowing of English ‘sip’.
+
+203.	*pugus	‘short-haired’
+ILK	__it__púgus__/it__	‘short-haired, short-tailed’
+	__it__pugús-en__/it__	‘to cut the web from the loom; to cut testicles off an animal’
+TSG	__it__pugus__/it__	‘to roll or knot the hair’
+
+204.	*púkan	‘to fell a tree, cut down bamboo’
+ILK	__it__púkan__/it__	‘to cut down bamboo or wood’
+DgtC	__it__pukán__/it__	‘to chop down a tree’
+BKL	__it__púkan__/it__	‘to fell (a tree, something cut at the base)’
+HAN	__it__púkan__/it__	‘chopping down, cutting, felling’
+HLG	__it__mag-púkan__/it__	‘to cut a tree down’
+AKL	__it__pukán__/it__	‘to cut down a tree’
+WRY	__it__pukán__/it__	‘fell down; collapsed; dropped down’
+	__it__pag-ka-púkan__/it__	‘the act of falling; collapsing, or dropping down something’
+
+205.	*púluŋ	‘to speak ill of someone’
+ILK	__it__púloŋ__/it__	‘report of bad conduct’
+	__it__i-púloŋ__/it__	‘to tattle, tell on, inform against’
+WRY	__it__púloŋ__/it__	‘the act of speaking unsavory and insulting words’
+
+206.	*puŋan	‘pillow (headrest)’
+ITB	__it__poŋan__/it__	‘pillow’
+ILK	__it__puŋán__/it__	‘pillow, cushion’
+IBG	__it__fuŋan__/it__	‘pillow’
+DgtC	__it__puŋan__/it__	‘to rest the head against something’
+	__it__puŋan-an__/it__	‘pillow’
+ISG	__it__puŋān__/it__	‘laying one’s head on somebody’s arm; pillow, cushion’
+KNK	__it__puŋán__/it__	‘pillow’
+ITW	__it__fuŋán__/it__	‘pillow’
+	__it__maf-fuŋán__/it__	‘to use a pillow’
+IBL	__it__poŋan__/it__	‘pillow’
+	__it__man-poŋan__/it__	‘to lay one’s head on a pillow’
+AA	__it__poŋan__/it__	‘pillow’
+
+NOTE: A variant of this comparison was first noted by David Zorc (p.c.).
+
+207.	*puŋus	‘to wrap, tie up or tie together’
+ITB	__it__poŋos__/it__	‘wrapping, envelope’
+	__it__ma-moŋos__/it__	‘to wrap’
+	__it__ma-poŋos__/it__	‘wrapped’
+AA	__it__poŋoh__/it__	‘one bunch or bundle of s.t., as corn tied together; to bunch together’
+CEB	__it__púŋus__/it__	‘to gather the hair and tie it in a knot’
+
+208.	*pus(e)lít ‘to slip through or out, get away from’
+ILK	__it__puslít__/it__	‘smuggled; smuggled items, contraband’
+	__it__i-puslít__/it__	‘to smuggle’
+PGS	__it__póslit__/it__	‘smuggling; obtain without permission; escape’
+AA	__it__pohlit__/it__	‘to have s.t. or s.o. slip out of one’s hands and get away (can be a fish or a person)’
+KPG	__it__mag-puslit__/it__	‘to sneak in’
+TAG	__it__puslít__/it__	‘spurt, squirt; uninvited guest, gate-crasher; contraband; smuggled goods’
+	__it__puslit-án__/it__	to escape or run away secretly from; to smuggle s.t.’
+BKL	__it__ma-puslit-án__/it__	‘to slip through, as a police watch, a defense line in basketball’
+AKL	__it__púslit__/it__	‘to spurt, gush out’
+
+NOTE: This might be considered a Tagalog loan distribution, but the meaning of the Ayta Abellen form points to an earlier, more basic sense than the one found in the languages of more urbanized populations.
+
+209.	*pusiaw ‘faded, having lost color (of clothing)’
+ILK	__it__posiáw__/it__	‘faded to yellow (clothes, paper, etc.)’
+AGU	__it__mag-posiaw__/it__	‘for clothing to fade, have the color washed out’
+
+NOTE: Also Aklanon __it__púsɁaw__/it__ ‘to fade, die out (said of colors)’, Cebuano __it__pusɁáw__/it__ ‘for a color to fade’.
+
+210.	*qadem ‘mole on the skin (dbl. *qadeŋ)’
+AGU	__it__karem__/it__	‘mole on the skin’
+	__it__karem-en__/it__	‘to have or develop a mole’
+AKL	__it__aeóm__/it__	‘mole, birthmark’
+WRY	__it__arom__/it__	‘mole’
+	__it__ma-arom__/it__	‘full of moles’
+CEB	__it__alúm__/it__	‘mole’
+	__it__alum-án__/it__	‘having a mole
+
+211.	*qakqák ‘to pull something apart, disjoin it’
+BON	__it__akɁák__/it__	‘to split with a knife, as bamboo or rattan (the splitting is accomplished by moving the blade of the knife from side to side)’
+IFG	__it__akɁák__/it__	‘to tear apart, tear out (as the intestines of a pig), pull out, disjoin’
+AKL	__it__ákɁak__/it__	‘to detach, separate, take apart or off’
+CEB	__it__akɁák__/it__	‘to peel, rip off, usually s.t. not flexible (as the sole of one’s shoe)
+BKD	akɁak	‘to yank, pull (something nonflexible) apart (as wood)’
+
+212.	*qalibun ‘a plant with medicinal value, probably __it__Blumea__/it__ spp.’
+HAN	__it__alíbun__/it__	‘a tree (__it__Blumea balsamifera__/it__ Linn.); the leaves are boiled to make a beverage believed to stop malarial attacks’
+AGU	__it__kalibon__/it__	‘kind of shrub with large pointed leaves which can be used for medicinal purposes; the leaves can be boiled and then the water drunk to relieve a cough or intestinal problems’
+
+NOTE: Despite the geographical proximity of these languages, they belong to different primary branches of the proposed Philippine group, and given the phonetic difference between the forms in this comparison it is unlikely that they have been borrowed in either direction.
+
+213.	*qalibuŋbuŋ ‘to encircle, surround something’
+ITB	__it__alivovoŋ__/it__	‘idea of circling or circumscribing’
+	__it__alivovoŋ-en__/it__	‘to encircle (as troops and the like)
+ISG	__it__aliboŋbóŋ__/it__	‘the lunar halo’
+IBL	__it__aliboŋboŋ__/it__	‘to be clustered, gathered (of people)’
+	__it__aliboŋboŋ-an__/it__	‘to crowd around something or someone’
+
+NOTE: This word is assumed to contain the *qali/kali- prefix.
+
+214.	*qalin-tatáw ‘pupil of the eye’
+ILK	__it__alintatáo__/it__	‘pupil of the eye; imagination’
+BKL	__it__(k)alintatáw__/it__	‘pupil of the eye’
+HAN	__it__alintáwu__/it__	‘pupil of the eye’
+
+NOTE: Also TAG __it__balintatáw__/it__ ‘pupil of the eye’.	This almost certainly is an *qali/kali- word (Blust 2001).	Although reflexes of PAN *Cau ‘person, human being’ are found more widely in the Austronesian family in words for ‘pupil (person) of the eye’, the use of a reduplicated base with the *qali/kali- prefix is known only in languages assigned to the Philippine group.	I assume that Hanunóo __it__alintáwu__/it__ shows haplology.
+
+215.	*qalqal	‘migraine, or similar crippling pain’
+IFG	__it__álɁal__/it__	‘to feel a kind of gnawing and beating pain in the head, migraine’
+MAR	__it__alal__/it__	‘pain, ache’
+WBM	__it__alɁal__/it__	‘a throbbing pain; to throb with pain’
+
+216.	*qapuqap ‘to rub gently’
+SblBt	__it__apóɁap__/it__	‘to rub gently’
+MSK	__it__apowap__/it__	‘to rub gently; to massage lightly’
+
+217.	*qulqul ‘constant movement of the lips in sucking or nibbling on somethng’
+SblBt	__it__olɁól__/it__	‘to suck (as candy)’
+BKD	__it__ulɁul__/it__	‘to gnaw on, nibble (something) with repeated motion’
+
+218. *rabaq ‘to suffer a series of misfortunes or setbacks in health’
+ILK	__it__raba__/it__	‘to increase or worsen (of sickness)’
+MAR	__it__rabaɁ__/it__	‘suffer a series of losses or painful experiences’
+
+219. *rabaw	‘exceed, go beyond’ (dbl. *labaw)
+ILK	__it__rabáw__/it__	‘top of, highest point on something’
+MAR	__it__rabaw__/it__	‘exceed’
+BKD	__it__labaw__/it__	‘being more, exceeding; superior, higher, greater (in rank or power)’
+
+220.	*rab(e)nút ‘to grab and pull’
+ILK	__it__rabnót__/it__	‘to snatch; remove forcibly and suddenly
+PGS	__it__labnót__/it__	‘grab and snatch with violence; plucking out of hair
+TAG	__it__labnót__/it__	‘a tweak; a sharp pull and twist; plucking out hair, weeds, etc.; pulling up by the roots; plucked out; pulled up by the roots
+BKL	__it__mag-rabnót__/it__	‘to grab someone by the hair or beard; to grab onto s.t. and pull’
+CEB	__it__labnút__/it__	‘to pull s.t. with a jerk, usually s.t. that is in s.t. else’
+
+221.	*rabuŋ ‘luxuriant growth (as of weeds)’
+KLY	__it__labuŋ__/it__	‘grass and weeds overgrow cultivated areas such as gardens, sweet potato patches, orchards, or rice fields’
+WRY	__it__raboŋ__/it__	‘a luxuriant growth of plants; a healthy growth of plants’
+
+NOTE: Also TAG __it__yáboŋ__/it__ ‘luxuriant foliage’.	Apparently distinct from PPH *rabuŋ ‘bamboo shoot’.
+
+222.	*rakrák-2 ‘to smash, demolish, destroy’
+ILK	__it__rakrák__/it__	‘demolished, destroyed, ruined’
+BKL	__it__rakrák__/it__	‘to break, smash or rip s.t. in anger’
+
+223.	*rámas-1 ‘hand-to-hand combat’
+ILK	__it__rámas__/it__	‘hand-to-hand combat’
+TAG	__it__lámas__/it__	‘combat; hand-to-hand fighting or battle’
+
+224.	*rámas	-2 ‘to mix, stir together’
+ILK	__it__rámas__/it__	‘mixing ingredients well’
+TAG	__it__lámas__/it__	‘mussing or crushing with the hand’
+BKL	__it__mag-rámas__/it__	‘to combine or mix’
+
+225.	*ráwis	‘a long slender point, as of land jutting into the sea’
+ILK	__it__ráwis__/it__	‘cape jutting into the sea; tip of a branch’
+TAG	__it__láwis__/it__	‘a sickle-like cutter attached to the top of a long pole, for picking coconuts’
+BKL	__it__ráwis__/it__	‘a long slender point’
+AGU	__it__lawit__/it__	‘a single long piece of bamboo’
+	__it__rawit__/it__	‘a long pole with a blade on the end, used for cutting down leaves and branches’
+CEB	__it__láwis__/it__	‘spit, a point of low land extending from the shore into the water’
+MSK	__it__lawis__/it__	‘peninsula; spit; sand bar (extending from the shore)’
+
+226.	*rebreb ‘to put under water, soak’
+ILK	__it__ag-rebréb__/it__	‘to drink to excess’
+	__it__i-rebréb__/it__	‘to immerse; plunge into; sink’
+PGS	__it__lebléb__/it__	‘to soak in liquid’
+PLW	__it__rebreb__/it__	‘to soak; soaking’
+
+NOTE: Also TAG __it__lublób__/it__ ‘wallowing in mud; immersing for some time in a liquid’.
+
+227.	*regrég crumbs ‘dropped while eating’
+ILK	__it__regrég__/it__	‘droppings; particles of food falling off a plate; crumbs’
+	__it__regreg-án__/it__	‘to drop; intentionally drop food under the table for the dog’
+BKL	__it__ragrág__/it__	‘referring to fallen crumbs, particles of food, grains of rice, dirt, hair’
+
+NOTE: Also TAG __it__laglág__/it__ ‘fallen down; dropped off (as fruit from a tree)’.
+
+228.	*ribuk ‘noise, tumult, turmoil, confusion’
+ILK	__it__ri-ríbuk__/it__	‘trouble, unrest, disorder, riot, turmoil’
+ISG	__it__ríbuɁ__/it__	‘to trouble, perturb, upset, perplex, annoy’
+BKL	__it__ribók__/it__	‘noise, clamor, din, hubbub’
+	__it__ma-ribók__/it__	‘noisy, boisterous’
+
+229.	*rikut ‘difficult, hard, complicated’
+ILK	__it__na-rikút__/it__	‘difficult, hard, complicated’
+	__it__pa-rikút__/it__	‘trouble’
+PLW	__it__rikut__/it__	‘overgrown vegetation; things that are disorderly, in the way; encumbrance’
+
+NOTE: Possibly the same cognate set as PWMP *rikut ‘grass’, but with a metaphorical extension that justifies a separate listing.
+
+230.	*RakRak ‘to cut something loose from its attachment’
+KLY	__it__laklak__/it__	‘to remove s.t. that is attached, as bark from trees, or banana stalks from banana plants’
+MSK	__it__gakgak__/it__	‘to cut s.t. away, as a pig’s intestine to remove it from the stomach’
+
+231.	*Ratek ‘swollen; to swell’
+Yami	__it__yatek__/it__	‘swollen (as the face)’; om-yatek ‘to swell; swollen’
+ITB	__it__yatek__/it__	‘idea of swelling’; om-yatek ‘swelling on the body due to mosquito bite, wound, broken bone, disease, etc.’
+IBT	__it__yatek__/it__	‘the body, or a body part, swells from infection’
+BKL	__it__gatók__/it__	‘swelling, inflammation’
+	__it__mag-gatók__/it__	‘to swell (as a mosquito bite)’
+
+232.	*Rukuq ‘stooped, bent over (as an aged person)’
+AA	__it__yoko__/it__	‘bending of the head or body; bowing’
+SblBt	__it__yokóɁ__/it__	‘to stoop down’
+BKD	__it__gukuɁ__/it__	‘to be stooped, bent over (as an old man, a tree that is bent)
+
+NOTE: Also Tagalog __it__yukóɁ__/it__ ‘a bending of the head or body’.
+
+233.	*sábaq ‘to suppress, hold back one’s feelings or speech’
+ILK	__it__ma-sába__/it__	‘to restrain, repress; avoid; be able to bear (hardship)’
+MSB	__it__mag-sábaɁ__/it__	‘be quiet, shut up’
+WRY	__it__sábaɁ__/it__	‘the act of ceasing to say anything; to keep quiet; stop talking’
+
+234.	*sabwag ‘to scatter seed, broadcast’ (dbl. *sa(m)beR)
+AA	__it__habwag__/it__	‘to scatter’
+SblBt	__it__habwag__/it__	‘to scatter seed, broadcast; to cast a net’
+BKD	__it__sabwag__/it__	‘to scatter, strew (something) over an area; to sow seed’
+
+NOTE: Also TAG __it__sábog__/it__ ‘scattering; dispersing; planting of seeds by scattering them’.
+
+235.	*ság(e)hid ‘to graze, brush against lightly’
+ILK	__it__ságid__/it__	‘touch’
+	__it__ag-ságid__/it__	‘to brush up against; touch accidentally or incidentally’
+AKL	__it__sághid__/it__	‘to strike, scape against (like lighting a match), to graze’
+CEB	__it__saghíd__/it__	‘to brush, come into light contact’
+WRY	__it__saghíd__/it__	‘the act of touching slightly the bottom edge of skirts, or the like to other objects in passing’
+MAR	__it__sagid__/it__	‘to pass by’
+TSG	__it__mag-sagid__/it__	‘to brush against’
+
+NOTE: Mapun __it__mag-sagid__/it__ ‘to brush against s.t. or s.o.; to touch (by brushing up against) is assumed to be a Tausug loan.
+
+236.	*ság(e)qeb ‘bamboo internode used to fetch water’
+IFG	__it__hágob__/it__	‘to get water from a spring (using a long bamboo water container)’
+HAN	__it__sagɁub-án__/it__	‘any place from which water is procured’
+AKL	__it__ságɁob__/it__	‘to fetch water; bamboo container about 2 meters long, used to fetch water – carried on shoulder’
+CEB	__it__sagɁúb__/it__	‘a bamboo 6-7 feet long with nodes removed except at the bottom, used to fetch liquids’
+
+NOTE: This culturally important term clarifies how water --- a daily necessity in domestic living --- was transported from a source to the house.	The use of a long bamboo tube allowed a large amount of water to be carried at one time, and the shape of the tube allowed relatively easy carriage over the shoulder.
+
+237.	*sagság ‘the work of harvesting’; *ka-sagság-an ‘harvest season, season for major agricultural work’
+DgtC	__it__ka-sagság-en__/it__	‘season for beginning or doing s.t. (as the harvest season, or planting season)
+HAN	__it__sagság__/it__	‘harvesting’
+	__it__ka-sagság-an__/it__	‘harvest, esp. the work involved at harvesttime’
+
+NOTE: This comparison is at once immensely valuable as an indication of historical connection, and a source of puzzlement and frustration.	Both the quadrisyllabic shape of the stem in Casiguran Dumagat (which is cited as an unanalyzed lexical entry), and the synchronic evidence for the __it__ka- -an__/it__ circumfix in Hanunóo justify positing a disyllabic base *sagság and its affixed counterpart *ka-sagság-an.	It is unlikely that either the simple base or its affixed form functioned as the verb ‘to harvest’, as this meaning is represented by reflexes of PAN *qaniS over much of the Philippines.	Rather, the glosses suggest that *ka-sagság-an referred to that part of the annual cycle when the harvest (and possibly other types of socially-important group work activity) took place, leaving the gloss of the unaffixed base somewhat in limbo.	What is puzzling is that this comparison is attested so far only in these two languages, and since both chance and borrowing can effectively be ruled out as plausible explanations for the distribution, it is necessary to conclude that it was found in Proto-Philippines.
+
+238. *sak(e)bit ‘to hang, suspend from something’
+KNK	__it__i-sakbít__/it__	‘to hang, to hang upon, to hook’
+HAN	__it__sakbít__/it__	‘hanging by hands and feet, or by the feet only, from a raised horizonal pole; a form of amusement among Hanunóo boys’
+
+NOTE: With root *-bit- 1 (or *-beqit?) ‘to hook, clasp; grasp with fingers’.
+
+239.	*sak(e)láw ‘to cut s.o. off, by blocking a path or stepping between two people’
+ILK	__it__sakláw__/it__	‘to overtake by a shortcut’
+DgtC	__it__sakláw__/it__	‘to interfere in the quarrel of others; to get involved in the problems of others’
+TAG	__it__sakláw__/it__	‘limits; confines; the space within aboundary; the distance between limits; comprehension or inclusion’
+TbwC	__it__saklaw__/it__	‘to head off something, to block’
+CEB	__it__sakláw__/it__	‘to snatch at something, grab something away from someone’
+
+NOTE: The chances of this being a Tagalog loan in Ilokano seem slight, given the semantic distance between these forms.
+
+240.	*salagúntiŋ ‘scissor-shaped crosspieces used as roof supports or in animal traps’
+DgtC	__it__salaguntiŋ__/it__	‘crossed vertical poles holding the spring of the __it__bilatek__/it__ trap (spring-set spear or arrow trap for wild pigs)’
+HAN	__it__salagúntiŋ__/it__	‘a geometrical position in the form of an X’
+AGU	__it__talagonsiŋ__/it__	‘to use scissors to divine information, similar to a Quija board’
+AKL	__it__saeagúntiŋ__/it__	‘to question the spirits about something by putting scissors into a winnowing basket, which will then point to the person in question; thief, malefactor, etc.’
+CEB	__it__salagúntiŋ__/it__	‘the principal rafters of a roof’
+BKD	__it__salaguntiŋ__/it__	‘the principal rafters of a roof’
+TIR	__it__salaguntiŋ__/it__	‘a roof truss in house construction’
+
+NOTE: Also Tiruray __it__salaguntiŋ__/it__ ‘a roof truss in house construction’. This puzzling comparsion is one of the few quadrisyllables that does not contain the *qali/kali- prefix. It clearly contains *guntiŋ, which is widely reflected with the meaning ‘scissors’, but which apparently had much the same meaning as the longer word, as seen in Asilulu __it__guntiŋ__/it__ ‘the forked timbers that support a peaked roof’ and Malay __it__guntiŋ babi__/it__ ‘pig trap’. Once scissors were introduced the ‘X’ shape of the original referent was easily transferred to this new tool, which when opened shows the same configuration.
+
+241.	*salaŋat ‘to interrupt mid-course’
+PGS	__it__salaŋát__/it__	‘to answer; interrupt, intrude into, or join a conversation’
+TAG	__it__saláŋat__/it__	‘caught between branches, and thus prevented from falling further’
+MSK	__it__saraŋat__/it__	‘to get stuck (as a ball in a tree)’
+
+NOTE: Despite their superficial semantic distance, these two meanings both refer to the physical or social interruption of something already set in motion.
+
+242.	*sal(e)qaw ‘to encounter, meet by chance’
+ILK	__it__ma-saláw__/it__	‘to meet, see s.o.’
+	__it__ma-sal-saláw__/it__	‘unseen spirits met on the way’
+BON	__it__salɁáw__/it__	‘to waste time, as in waiting to meet s.o. who doesn’t arrive as planned’
+BKD	__it__salɁaw__/it__	‘to encounter, meet s.o. or s.t. coming from the opposite direction’
+
+243.	*salikuŋkuŋ ‘funnel-shaped (?)’
+ITB	__it__mis-salichoŋkoŋ__/it__	‘slightly concave’
+HAN	__it__salikuŋkúŋ__/it__	‘funnel-shaped form, funnel-fashioned leaf, paper, etc.’
+
+244.	*sálu ‘loop of rope, lasso’
+DgtC	__it__sálo__/it__	‘to put a rope around the neck or horns of an animal (as a lasso)’
+HAN	__it__sálu__/it__	‘catch loop’
+
+245.	*salúkub ‘cover something to protect it, or oneself’
+ILK	__it__salukúb-an__/it__	‘to cover (in order to protect); defend, shelter; conceal’
+HAN	__it__salúkub__/it__	‘tubular bamboo quiver for arrows, especially if poison-tipped’
+MAR	__it__salokob__/it__	‘thimble’
+
+NOTE: Also DgtC __it__salokop__/it__ ‘to cup s.t. over s.t. else (as to put a hat on the head, to cup a tin can upside down over a post or stick, etc.)’. With root *-kub ‘to cover’.
+
+246.	*saŋ(e)lád ‘to run aground, be beached, of a boat’
+ILK	__it__ma-i-saŋlád__/it__	‘to strand, hit the bottom, ground’
+AGU	__it__ma-taŋlad__/it__	‘to run aground on rocks, coral, or sand; for a boat to run over a rock in shallow water’
+AKL	__it__sáŋead__/it__	‘to run aground (ship)’
+CEB	__it__saŋlád__/it__	‘run aground, stranded on the sand’
+TSG	__it__mag-saŋlád__/it__	‘for a vessel to run aground’
+
+NOTE: Yakan __it__s<um>aŋlad__/it__ ‘to have run aground, gotten stuck (in shallow water or on rock, of boats)’ is assumed to be aTausug loan.
+
+247.	*saŋ(e)put ‘to come to the end (of a story, a race, etc.)’
+PGS	__it__man-sampót__/it__	‘end; to end’
+	__it__ka-sampot-án__/it__	‘the end (e.g. of a story)’
+HLG	__it__mag-sámput__/it__	‘to come to, to reach, to arrive at’
+AKL	__it__sámput__/it__	‘to come back, return, finish a round trip’
+CEB	__it__saŋput ~ samput__/it__	‘to result in, become, end up as; buttocks’
+MSK	__it__samput__/it__	‘to come to the finishing line; to arrive (as at a destination)’
+
+248.	*saŋgul ‘to arm wrestle’
+ILK	__it__saŋgól__/it__	‘arm wrestling’
+	__it__ag-saŋgó__/it__	l ‘to wrestle to the ground with the arms’
+ISG	__it__saŋgól__/it__	‘(lying down) elbow over elbow, of a boy and girl’
+TSG	__it__mag-saŋgul__/it__	‘to arm wrestle’
+
+NOTE: Mapun __it__mag-sangol__/it__ ‘to arm wrestle’ is assumed to be a Tausug loan.
+
+249.	*sapwát ‘to lift from the bottom’
+IBT	__it__sapwat__/it__	‘someone or something (as wind) uproots a tree’
+SblBt	__it__hapwát__/it__	‘to lift, to take up, to carry’
+BKL	__it__mag-sapwát__/it__	‘to lift a container from the bottom’
+BKD	__it__sapwat__/it__	‘to lift s.o. or s.t. from underneath (as a basket with a weak bottom, a sick person)’
+
+250.	*saq(e)lap ‘to cast a net (in fishing)’
+ISG	__it__s<um>aɁláp__/it__	‘to cast a __it__tabúkol__/it__ net (round casting net with sinkers at perimeter)’
+AKL	__it__sáeap__/it__	‘net’, saeáp ‘to catch, capture’
+
+251.	*sarabúsab ‘rude, inconsiderate’
+ILK	__it__sarabúsab__/it__	‘thoughtless, inconsiderate; greedy eater’
+WRY	__it__sarabúsab__/it__	‘having rude or rough manner or behavior; rude; impolite; gruff’
+
+NOTE: This is a rare quadrisyllable without containing the *qali/kali- prefix, raising suspicions that it is a loan. However, no source is known, and the comparison itself is faultless.
+
+252.	*saraw ‘to snatch food when an opportunity arises’
+IBT	__it__ma-saraw__/it__	‘s.o. is gluttonous to eat or drink s.t. (as pigs being fed)’
+BKL	__it__ma-saráw__/it__	‘describing dogs or cats which take food while people are eating’
+	__it__mag-saráw__/it__	‘to take food in this way’
+
+253.	*sárut ‘to waste away from illness’
+ILK	__it__sárut__/it__	‘tuberculosis, consumption’
+BON	__it__sálot__/it__	‘tuberculosis’
+IBL	__it__sarot__/it__	‘laziness, sloth; lack of ambition’
+AA	__it__halot__/it__	‘to have fever; epidemic, pestilence; plague; disease that spreads rapidly, causing many deaths’
+TAG	__it__sálot__/it__	‘epidemic; pestilence; plague’
+KPG	__it__salút__/it__	‘disease, epidemic’
+BKL	__it__sarót__/it__	‘affliction, illness, harm’
+CEB	sálut	‘cause stunted growth; to get sick, esp. by something that brings general body weakening and loss of weight’
+AKL	__it__sáeot__/it__	‘evil; the work of the Devil. or evil spirits’
+
+NOTE: I take the Aklanon gloss to be a residue of animistic beliefs about illness.
+
+254.	*sawáliq ‘woven bamboo walling material’
+ILK	__it__sawáli__/it__	‘interwoven splits of bamboo used in walls’
+PGS	__it__sawáli__/it__	‘flattened bamboo made into mat-like panels serving as walling for traditional-type houses’
+KPG	__it__sawáliɁ__/it__	‘a woven walling material made of __it__búluɁ__/it__ bamboo’
+TAG	__it__sawáliɁ__/it__	‘woven strips of split bamboo used for simple walls in native houses’
+BKL	__it__sawáliɁ__/it__	‘woven, split bamboo strips used for walling’
+AGU	__it__sawali__/it__	‘woven, split-bamboo walling material’
+AKL	__it__sawáliɁ__/it__	‘woven bamboo’
+TIR	__it__sawaliɁ__/it__	‘sheets of interwoven split reeds used for walling, sides of containers, etc.
+
+NOTE: This word also is found in Chamorro, as __it__sagwaleɁ__/it__ ‘thatched house, usually made with __it__karisu__/it__ (swamp bamboo: __it__Phragmites karka__/it__)’. I take the Chamorro word to be a loan from Tagalog that was borrowed during the time of the Manila Galleon trade (1565-1815), as Safford (1905:334) notes that some types of walling material in Guam, including at least nipa palm thatch, were introduced from the Philippines.
+
+255.	*sawi ‘hawk sp.’
+ITB	__it__sawi__/it__/__it__ka-pa-nawi__/it__	‘preying upon (chicken, bird)
+	__it__ma-nawi__/it__	‘hawk’
+ILK	__it__sawi__/it__	‘k.o. hawk’
+AgtaE	__it__sawe ~ sawi__/it__	‘black and white chicken hawk’
+
+NOTE: Apparently distinct from PWMP *cawi ‘drongo’, a non-raptorial bird.
+
+256.	*sayud	‘capable, adroit; knowledgeable’
+ILK	__it__na-sayód__/it__	‘handy; adroit; dextrous’
+BKL	__it__mag-sáyod__/it__	‘to articulate, enunciate, pronounce, utter; to clarify’
+AGU	__it__ma-sayod__/it__	‘to tell s.o. a story or information; to explain s.t.; to hear, come to know the news about s.t.’
+AKL	__it__sáyod__/it__	‘to know (a fact; something)’
+WBM	__it__sayud__/it__	‘to inform s.o. of s.t.’
+BKD	__it__sayud__/it__	‘to tell, inform s.o. about s.t.; to give information, news’
+
+257.	*sebuh	‘foam, bubbles’
+ITB	__it__asboh ~ soboh__/it__	‘foam, bubble, suds’
+TAG	__it__subó__/it__	‘seething, like a boiling liquid’
+BKL	__it__sabó__/it__	‘bubbles, foam, froth’
+MSK	__it__sobo__/it__	‘bubbling’
+
+258.	*sebuR ‘splash water on a fire; dilute with water’
+Yami	__it__-sboy__/it__	‘to put out with water’
+ITB	__it__asboy-an__/it__	‘put out a fire by pouring water on it; add water when cooking’
+BKL	__it__mag-sábog__/it__	‘to splash water on; to dilute or mix with another liquid’
+
+259.	*seléd ‘interior, inner room; to enter’ (dbl. *selep)
+SblBt	__it__heléd__/it__	‘to go to stay in a house with others’
+TAG	__it__silíd__/it__	‘very small room in a native house for storing things’
+HAN	__it__sulúd__/it__	‘interior, inside, as of a house, pavilion, etc.
+AGU	__it__oŋ teled__/it__	‘inside’
+PLW	__it__seled__/it__	‘inside’
+AKL	__it__sueód__/it__	‘inside (part); bedroom; to enter, go into’
+CEB	__it__sulúd__/it__	‘go in, into’
+WBM	__it__seled__/it__	‘the inside of something; to enter’
+BKD	__it__seled__/it__	‘to go in or into something; to enter somewhere (as a room)’
+
+260.	*sel(e)daŋ ‘to shine, be bright’
+ITB	__it__sexdaŋ__/it__	‘light, brightness, clarity, dawning’
+BKL	__it__saldáŋ__/it__	‘the sun; to shine (sun)’
+
+NOTE: With root *-daŋ ‘to dazzle, shine’
+
+261.	*sikil ‘contend with others, compete for something’
+IBL	__it__meki-sikil__/it__	‘to contend with others for s.t.’
+	__it__sikil-en__/it__	‘to push s.t., s.o. aside’
+PGS	__it__síkil__/it__	‘to elbow; to spur a horse’
+TAG	__it__sikíl__/it__	‘pushing and jostling, esp. with the elbows and shoulders; oppression, ill-treatment’
+
+262.	*silág ‘to hunt at night by torchlight’
+ISG	__it__silāg__/it__	‘to be conspicuous, plainly visible, manifest’
+KNK	__it__man-sílag__/it__	‘to attract by light (as in hunting June bugs, etc. at night)’
+IBL	__it__silag ~ me-nidag__/it__	to catch frogs, fish or other water creatures at night (using torches or head lamps)’
+SblBt	__it__hílag__/it__	‘light (e.g. as used in night fishing)’
+BKL	__it__silág__/it__	‘transparent, translucent’
+AKL	__it__silág__/it__	‘clear, transparent’
+
+263.	*siŋsiŋ	‘branchlet, small branch’
+IBL	__it__siŋisiŋ__/it__	‘small branches of a tree or plant’
+HAN	__it__síŋsiŋ__/it__	‘branch (i.e. of a tree)’
+	__it__s<al>íŋsiŋ__/it__	‘branches, twigs’
+
+NOTE: An intrusive medial vowel, like that in the Ibaloy form given here, is also seen in __it__ŋoliŋol__/it__ ‘to ruin a blade by chipping it, dulling it, etc.’ (cp. Ilokano __it__ŋulŋól__/it__ ‘dull, not sharp’). Alternatively, this vowel may have been lost in Hanunóo reflexes of “extended” reduplications, as in PPH *waŋáwaŋ ‘wide open space’, but Hanunóo __it__waŋwáŋ__/it__ ‘expansiveness, broadness, wideness, as of pools’.
+
+264.	*sipet ‘to consume totally, use up’
+AA	__it__hipet__/it__	‘to consume all; to leave none remaining’
+SblBt	__it__hipét__/it__	‘to consume all; to leave none remaining’
+AKL	__it__sípot__/it__	‘to consume totally, exhause, use up all; totally used up’
+
+265.	*siput ‘to be on the look-out for something that might appear’
+ILK	__it__sipút-an__/it__	‘to keep an eye on; watch over’
+	__it__na-síput__/it__	‘vigilant; attentive’
+DgtC	__it__siput__/it__	‘to arrive, to come, to appear, to emerge’
+ISG	__it__sipút-an__/it__	‘to see, to notice, to observe’
+BON	__it__sípot__/it__	‘to watch closely; to discover; to reveal’
+TAG	__it__pag-sipót__/it__	‘coming; appearance’
+	__it__s<um>ipót__/it__	‘to appear; to arrive; to move, go or come suddenly or unexpectedly’
+BKL	__it__mag-sipót__/it__	‘to appear, turn up or show up somewhat unexpectedly’
+	__it__siput-ón__/it__	‘to startle or surprise s.o. by appearing suddenly’
+MSK	__it__sipot__/it__	‘to appear; to come into view; to show up’
+
+266.	*sub(e)laR ‘to bypass, miss contact with another person’ (dbl. *sub(e)líq)
+AA	__it__hoblay__/it__	‘to bypass each other unintentionally’
+BKL	__it__sublág__/it__	‘to part or separate from; to depart, leaving others behind’
+
+267.	*suhíq	‘breach baby, upside-down’ (dbl. *suliq)
+IBL	__it__sowi__/it__	‘to invert, reverse, turn something upside down’
+AA	__it__howiɁ__/it__	‘breach baby’
+SblBt	__it__hówiɁ__/it__	‘a breach baby; to sleep side by side with head and feet in opposite directions’
+TAG	__it__suhíɁ__/it__	‘born in an abnormal position with the feet first’
+BKL	__it__suhíɁ ~ suwíɁ__/it__	‘to be upside down’
+TIR	__it__suwiɁ__/it__	‘to invert, to reverse something; inverted, reversed’
+TBL	__it__swiɁ__/it__	‘to do or put s.t. backward, the reverse of what it should be, as to be upside down, back to front, inside out’
+
+268.	*súlit ‘replacement planting’
+ILK	__it__súlit__/it__	‘substitute; replacement’
+	__it__sulít-en__/it__	‘win back one’s losses in gambling’
+DgtC	__it__sulet__/it__	‘the replacement of something planted that has died or been uprooted (as to replant coconuts where the previously planted coconuts had been eaten by pigs; or for a child’s second teeth to come in after the first baby teeth had come out)’
+BKL	__it__i-sulít__/it__	‘to return or put something in its proper place (used in the curse ‘May you return to your mother’s womb!’)
+HAN	__it__sulít__/it__	‘replanting of a swidden if the sprouts of the first planting are too few’
+HLG	__it__súlit__/it__	‘to repeat, to do again (as to see a movie for the second time)’
+MSB	__it__maka-súlit__/it__	‘able to regain, able to recover, able to recoup’
+BKD	__it__sulit__/it__	‘to mimic, ape, repeat what someone said’
+
+269.	*suŋáw ‘to evaporate, as vapor rising from the ground after rain’	(dbl. *seŋ(e)qaw)
+PGS	__it__soŋáw__/it__	‘evaporation by exposure; vapor rising from ground after rain’
+BKL	__it__mag-suŋáw__/it__	‘to exude a vapor, air, etc.; to give off (as fumes)’
+AGU	__it__toŋaw__/it__	‘for the air to escape from a baloon or a tire; for a smell to escape; for the ground to steam and smell; for s.t. to evaporate, or a fever to go down’
+TSG	__it__suŋaw__/it__	‘a leak of air’
+
+NOTE: Mapun __it__suŋaw__/it__ ‘a leak (esp. of air, but also of oil from an engine, cold from a refrigerator, etc.’, is assumed to be a Tausug loan.
+
+270.	*tadék ‘hand movements in dance(?)’
+BON	__it__ma-nadek__/it__	‘a slow beating of gongs in unison during certain ceremonies’
+	__it__ta-tadk-an__/it__	‘the dancing place at a ward house; any place where the __it__tadek__/it__ may be performed’
+KNK	__it__tadék__/it__	‘dance’
+	__it__ma-nadék__/it__	‘to dance (men stretch out their arms, over which blankets are hung; women erect their forearms and stretch out their hands, the palms turned forward)
+AA	__it__talek__/it__	‘to dance’
+SblBt	__it__talék__/it__	‘dance’
+	__it__mag-talék__/it__	‘to dance’
+TAG	__it__pag-talík__/it__	‘artistic movement of the hands, as in folk dancing’
+BKL	__it__mag-tarók__/it__	‘to dance’
+	__it__tarók-tarók__/it__	‘to prance about as if dancing’
+HAN	__it__tarúk__/it__	‘dance, dancing’
+	__it__mag-tarúk__/it__	‘to dance, will dance’
+TbwC	__it__talɨk__/it__	‘dance’
+
+NOTE: Also Kapampangan __it__terák__/it__ ‘dance’. The meaning of this term is unclear. In most languages it refers to traditional dancing without further specification. However, this is also true of Philippine reflexes of PWMP *sayaw. One possibility is that *sayaw referred to martial dancing, as it does in Ilocano, and *tadék to social dancing.	However, reflexes of *sayaw also refer to social dancing in many languages, raising the second possibility, which is adopted here, namely that *tadék referred to the graceful hand movements used in folk dancing, as its reflex does in Tagalog.
+
+271.	*taed ‘natural cockspur’
+IBL	__it__taed__/it__	‘short knife’
+AGU	__it__taed__/it__	‘the sharp, horny claw on the back of a chicken’s leg’
+MSK	__it__taad__/it__	‘spur (as of a rooster)’
+
+272.	*tagub-an ‘sheath; quiver’
+ILK	__it__tagúban__/it__	‘quiver for carrying arrows’
+HLG	__it__tagúb__/it__	‘sheath, scabbard’
+AKL	__it__tagób__/it__	‘sheath, case, cover (for knife or sword); to sheathe, put into case’
+MAR	__it__tagob__/it__	‘sheath’
+	__it__tagob-an__/it__	‘scabbard, sheath’
+
+NOTE: Also Tiruray __it__tabugan__/it__ ‘a scabbard’, which appears to be a Danaw loan. The stem here is clearly *tagub, but only *tagub-an can be reconstructed on the basis of evidence from two primary branches of the Philippine group, since the Ilokano form now appears to be monomorphemic.
+
+273.	*taka ‘tired of, no longer interested in; lazy’
+AKL	__it__taká__/it__	‘be bored with, fed up with, dislike’
+AGU	__it__t<om>aka__/it__	‘to eventually stop, cease doing s.t.; become tired of doing s.t.’
+CEB	__it__taká__/it__	‘get tired of doing s.t. and thus cease’
+MSK	__it__taka__/it__	‘lazy’
+TTB	__it__taka__/it__	‘lazy, unwilling to work’
+
+NOTE: Apparently distinct from *taka ‘to hesitate; not able to act’
+
+274.	*takéd ‘to bind or tie, as with rattan’
+DgtC	__it__taked__/it__	‘a bamboo floor tied down with rattan (in contrast to being nailed down)’
+BON	__it__taked__/it__	‘to bind, as in repairing the broken rattan rim of a basket; to secure; to fasten; anything used, as a vine or rattan, for such a purpose’
+KNK	__it__i-takéd__/it__	‘to bind, to tie, to fasten, to attach’
+IBL	__it__taked__/it__	‘tie, fastening, binding --- that wrapped around to hold something in place (as with the use of rattan rather than nails to hold a house together)’
+AA	__it__takel ŋipen__/it__	‘gums (what binds the teeth)’
+SblBt	__it__takél__/it__	‘thing to tie with; to tie’
+HAN	__it__takúd__/it__	‘s.t. which may be fastened or tied onto s.t. else’
+
+275.	*tak(e)néŋ ‘quiet dignity’
+ILK	__it__taknéŋ__/it__	‘honor; dignity’
+	__it__na-taknéŋ__/it__	‘mild, peaceful; temperate; dignified; honorable’
+WRY	__it__taknóŋ__/it__	‘to keep silent; stay calm or still; behaving well’
+
+276.	*tálad ‘a slip, or cutting of sugarcane; to plant sugarcane’
+ISG	__it__tálad__/it__	‘a slip or cutting of sugarcane’
+	__it__mag-tálad__/it__	‘to plant sugarcane’
+DgtC	__it__talád__/it__	‘sugarcane; to gather sugarcane’
+BKL	__it__mag-tálad__/it__	‘to plant sugarcane’
+
+277.	*talákid	‘material for tying bamboo flooring of a house; to tie bamboo flooring’
+ILK	__it__talákid__/it__	‘strips of rattan used to tie bamboo in flooring’
+BON	__it__talákid__/it__	‘a stick fence’
+IFG	__it__talákid__/it__	‘the two strings, or liana thongs, which run vertically and alternately above and under a number of horizontal hanks, or reeds with which a mat or a reed shelf is made’
+BKL	__it__mag-talakíd__/it__	‘to tie or lash bamboo poles used for the flooring of a house’
+AKL	__it__taeákid__/it__	‘to bundle together’
+
+278.	*talakítuk ‘a sea fish: __it__Caranx__/it__ spp.’
+ILK	__it__talakítok__/it__	‘k.o. small, speckled marine fish with dark meat: __it__Caranx__/it__ sp.’
+TAG	__it__talakítok__/it__	‘a species of cavalla fish’
+CEB	__it__talakítuk__/it__	‘k.o. fish, name given to jacks and other good-sized carangoid fish’
+WRY	__it__talakítok__/it__	‘cavalla fish (__it__Caranx__/it__ sp.)’
+MSK	__it__tarakitok__/it__	k.o. saltwater fish’
+
+NOTE: Since __it__Caranx__/it__ species are found throughout the Philippines, and are not favored as food, there is no compelling reason to consider the name for them a Tagalog loanword in Ilokano.
+
+279.	*tanáq ‘to rest, relax’
+SblBt	__it__tanáɁ__/it__	‘to be quiet, to be still, to relax’
+MSK	__it__tanáɁ__/it__	‘to rest’
+
+280.	*tantán	‘to exercise patience in acting’
+ILK	__it__ag-tantán__/it__	‘to delay unnecessarily’
+IFG	__it__mun-tantán__/it__	‘progress of a certain work which cannot be finished in one day, or even in a few days’
+KLY	__it__tantan__/it__	‘to continue s.t. which has been started’
+IBL	__it__i-tantan__/it__	‘to delay s.t., esp. of that done purposely or by neglect’
+PGS	__it__tantán__/it__	‘calm, become calm, slow down’
+	__it__ma-tantán__/it__	‘slow’
+TAG	__it__t<um>antán__/it__	‘to stop, cease or desist’
+BKL	__it__mag-tantán__/it__	‘to do s.t. with great caution or circumspection (as eating a fish slowly so that one does not swallow a bone; walking carefully in the dark so that one does not trip over s.t.)’
+WBM	__it__tantan__/it__	‘to be immobilized by fear or surprise’
+MSK	__it__tantan__/it__	‘to give up, to stop trying’
+
+281.	*taqan	‘to bet, place a bet in gambling’
+ILK	__it__ag-táɁan__/it__	‘to bet, wager’
+MAR	__it__taɁan__/it__	‘bet --- gambling’
+
+282.	*taqem	‘to close tightly, leaving no opening’
+AA	__it__taem__/it__	‘to close the mouth tightly’
+SblBt	__it__i-taɁém__/it__	‘to close the mouth tightly’
+BKD	__it__taem__/it__	‘to seal, shut (a lid, door) tightly’
+
+283.	*tarabítab ‘idle talk, gossip’
+ILK	__it__tarabítab__/it__	‘gossiper’
+	__it__na-tarabítab__/it__	‘idle talking, chatty’
+WRY	__it__tarabútab__/it__	‘the act of gossip or rumor-mongering; idle chat’
+
+NOTE: The reconstructed penultimate vowel of this form is arbitrary. Despite its known occurrence in only two languages and the vocalic irregularity in the penult there can hardly be a serious question about whether these forms are cognate.
+
+284.	*taray ‘to run’
+ILK	__it__taráy__/it__	‘run; speed; operation or functioning (of a machine); drift; elopement’;
+	__it__ka-taráy__/it__	‘to run away with; elope’
+MAR	__it__taray__/it__	‘run’
+
+285.	*tariktík ‘woodpecker’
+ILK	__it__tariktík__/it__	‘kind of small bird’
+BKL	__it__tariktík__/it__	‘woodpecker sp.’
+
+NOTE: Probably onomatopoetic. With root *-tik ‘ticking sound’.
+
+286.	*táru ‘beeswax’
+Yami	__it__taro__/it__	‘candle, wax’
+SblBt	__it__tálo__/it__	‘beeswax’
+HAN	__it__táru__/it__	‘beeswax produced by the bee known as __it__putyúkan__/it__’
+MSK	__it__taro__/it__	‘beeswax’
+BM	__it__tayu__/it__	‘beeswax’
+
+287.	*tarús ‘to understand, grasp something intellectually’
+ILK	__it__tarús__/it__	‘to go straight to without delay’
+	__it__i-tarus-án__/it__	‘to guess, arrive at, get to the true meaning; come upon; comprehend’
+IBL	__it__teshosh-an__/it__	‘to be able to understand, follow s.t. (as lecture, sermon)’
+PGS	__it__talós__/it__	‘to understand, interpret’
+AA	__it__taloh__/it__	‘to understand something; meaning’
+TAG	__it__talós__/it__	‘comprehended; perfectly understood; known; informed’
+
+NOTE: Possibly identical to PWMP *tarus ‘continue doing something, proceed without stopping’. The two meanings are combined in some dictionaries, as Rubino (2000) for Ilokano, but separated in others, as in Ayta Abellen. Given its rather distinct semantics, which have so far not been found in any language outside the Philippines, I posit this entry as independent from PWMP *tarus.
+
+288.	*tebúg	‘mud puddle, wallow for wild pig or carabao’
+AgtaE	__it__tabóg__/it__	‘wallowing hole for wild pigs’
+DgtC	__it__tebug__/it__	‘wild pig wallow’; t<om>bug ‘to go and wallow (of wild pigs)
+HLG	__it__mag-tubúg__/it__	‘to wallow in a mud hole, as a carabao’
+TIR	__it__tebug__/it__	‘a stagnant pool of water; to make a pool to hold water’
+TBL	__it__tebug__/it__	‘a stagnant pool of water, carabao wallow’
+
+289.	*tel(e)tég ‘to tap down, pound down lightly’
+ILK	__it__telteg-én__/it__	‘to thump, knock, strike’
+BON	__it__teltég__/it__	‘a small mallet used for tightening the weave in basketry’
+IFG	__it__toltóg__/it__	‘act of knocking, lightly tapping on s.t. in such a way that the noise produced can easily be heard’
+IfgBt	__it__toltóg__/it__	‘a pounding stone, used to pound small stone wedges into a stone toltóg wall or flagstone’
+HLG	__it__mag-tultúg__/it__	‘to strike, to beat, to pound with considerable force’
+AKL	__it__túetog__/it__	‘to pound, hit, knock’
+CEB	__it__tultúg__/it__	‘to knock off the embers or ashes’
+WRY	__it__tultóg__/it__	‘the act of beating up with a piece of rod; the act of pounding or hammering down something’
+
+290.	*tepés ‘to suck out the contents of s.t., as juice from sugarcane’
+ITB	__it__atpes-an__/it__	‘to suck well the juice of foodstuff in the mouth’
+SblBt	__it__tepéh__/it__	‘to suck juice from sugarcane’
+CEB	__it__tupús__/it__	‘to suck on s.t. in the mouth to eat it or get the juice out’
+MAR	__it__tepes__/it__	‘to suck (as a child at the breast)’
+MSK	__it__tupus__/it__	‘to chew (as sugarcane in order to get the juice)’
+BKD	tepes	‘sugarcane pith (after sucking out juice)’
+TTB	__it__tǝpǝs__/it__	‘to suck out contents (as flying foxes do with the flesh of fruits)’
+
+NOTE: This word appears to compete with PAN *sepsep (which also has reflexes in Philippine languages) in the meaning ‘to suck’. However, *sepsep appears to have referred to sipping liquid from an open container, as soup from a bowl, or sucking liquid through a straw. By contrast, *tepes seems to have referred to sucking more solid contents out of something, as an egg from its shell or flesh from a fruit. The earlier comparison of Maranao __it__tepes__/it__ with Malay __it__tǝpas__/it__ ‘full up’ and Balinese __it__tepes__/it__ ‘squeeze, press, pinch’ is now abandoned, as the semantic fit is far better in the present comparison.
+
+291.	*tíbaw ‘to visit traps to see what has been caught’
+AA	__it__tibaw__/it__	‘to check on (e.g. a trap)’
+SblBt	__it__tíbaw__/it__	‘to visit’
+CEB	__it__tíbaw__/it__	‘to visit, usually to see how s.t. is; inspect a trap to see if there has been a catch’
+MSK	__it__tibaw__/it__	‘to check (as traps to see if anything has been caught); to verify’
+
+292.	*tiŋil ‘to seek to collect a debt’ (dbl. *siŋir)
+KLY	__it__siŋil__/it__	‘to ask for the payment of a debt in payment or in kind’
+CEB	__it__tiŋíl__/it__	‘ask for payment; exact payment for what one has done’
+WBM	__it__tiŋil__/it__	‘to collect a debt’
+
+293.	*tipéd ‘to economize, be frugal’
+ILK	__it__ag-tipéd__/it__	‘to economize, be frugal’
+	__it__tipd-én__/it__	‘to conserve, use economically’
+TAG	__it__tipíd__/it__	‘conservation, avoiding waste; way of saving money, time, etc.; thrift’
+MAR	__it__tiped__/it__	‘pay in full’; tiped-an ‘pay in full, liquidate financial obligation’
+
+NOTE: If they do not reflect a doublet, Casiguran Dumagat __it__tipíd__/it__ ‘to leave some to spare’, Bikol __it__ma-tipíd__/it__ ‘thrifty, parsimonious’, Aklanon __it__ma-tipíd__/it__ ‘to save, be thrifty with’, and Agutaynen __it__ma-tipid__/it__ ‘thrifty’ may be Tagalog loans, but the comparative evidence for last-syllable schwa suggests that this is not the case for Ilokano.
+
+294.	*tub(e)liŋ ‘to arrange in rows’
+SblBt	__it__toblíŋ__/it__	‘to plant in rows’
+MSK	__it__tobliŋ__/it__	‘to arrange in a row; put in a line’
+
+295.	*tul(e)dék ‘mark made with fingertip’
+ILK	__it__tuldék__/it__	‘accent written over a letter; period (punctuation); point’
+TAG	__it__tuldík__/it__	‘accent; a mark to indicate special stress’
+BKL	__it__mag-tuldók__/it__	‘to prick, stick’
+	__it__ma-tuldók__/it__	‘get pricked; get stuck (as by a pin)’
+PLW	__it__tuldek__/it__	‘mark of your fingertip; a spot or mark made by the fingertip; spotted or marked; a period (at end of sentence), or other punctuation mark’
+
+NOTE: Also TAG __it__tuldók__/it__ ‘period; full stop; a dot’. Since this word is surely older than the introduction of literacy to the Philippines, the references to punctuation marks must be secondary developments from an original sense which was most likely something like ‘mark made with fingertip; make a mark with the fingertip’, where the fingertip was dipped in paint or another marking agent to dab small amounts onto the skin or another surface.
+
+296.	*tugun ‘advice, instruction’
+KLY	__it__tugun__/it__	‘advice; command; to give advice’
+IBL	togon	‘to advise s.o. with the idea of controlling him, or correcting a fault’
+WRY	__it__túgon__/it__	‘instruction; advice; message’
+
+NOTE: Also Itbayaten __it__toyon__/it__ ‘idea of message’. Apparently distinct from PPH *tugen ‘to deliver, send s.t. to s.o.’.
+
+297.	*tultul	‘to hit, strike hard’
+ITB	__it__toxtox__/it__	‘idea of pounding’
+	__it__to-toxtox__/it__	‘wooden beater (for making bark cloth)’
+IBT	__it__tohtoh__/it__	‘someone pounds something’
+BON	__it__toltól__/it__	‘to peck, as one chicken pecking another’
+KLY	__it__tultul__/it__	‘to strike s.t. with an instrument (as rice with pestle); to peck’
+IBL	__it__toltol__/it__	‘to peck on s.t repeatedly (as chicken in eating)’
+
+298.	*tup(e)rá ‘saliva, spit’
+ILK	__it__tuprá__/it__	‘saliva, spit’
+	__it__ag-tuprá__/it__	‘to spit’
+WRY	__it__tuprá__/it__	‘saliva, sputum; the act of spitting’
+
+NOTE: Although this comparison is currently limited to these two languages, it is without fault, and a number of similar, but non-corresponding forms, appear in other languages of northern Luzon (McFarland 1977: Map 2).
+
+299.	*tustús ‘crisp, of fried food’
+ILK	__it__tustús__/it__	‘crust of rice that sticks to the bottom of the pot’
+BKL	__it__tustós__/it__	‘referring to well-fried or crisply fried food’
+
+300.	*túyuq ‘to repent, regret one’s actions, turn against oneself’
+KLY	__it__tuyu__/it__	‘to change mind about s.t. and stop doing it; to repent; for a person to be sorry about s.t. he has done’
+IFG	__it__(tu)túyu__/it__	‘contrition, regret, repentance, self-condemnation’
+WRY	__it__tuyóɁ__/it__	‘a feeling of discontentment or dissatisfaction; an ill feeling’
+MSK	__it__tóyoɁ__/it__	‘to commit suicide’
+
+301.	*udip	‘to mend, as mats, baskets, etc.’
+ILK	__it__údip/udíp-en__/it__	‘to mend, patch (a basket)’
+DgtC	__it__óhep__/it__	‘to repair or patch a hole in a roof’
+AGU	__it__mag-orip__/it__	‘to repair woven material, such as nipa palm shingles on a roof, a mat, or a basket’
+MAR	__it__orip__/it__	‘to reweave, patch up, repair a mat’
+
+NOTE: Possibly a metaphorical extension of PAN *qudip ‘life, alive’, with irregular *q- > Ø, as in *qudaŋ ‘shrimp, lobster’ > __it__oraŋ__/it__ ‘small saltwater shrimp found close to the beach’. If so, this is a semantic innovation, and a highly distinctive one, as reflexes of *qudip are widespread in Austronesian languages, but are not known to refer to mending anywhere outside the Philippines.
+
+302.	*ulit ‘to disobey, fail to follow orders’
+DgtC	__it__ulit__/it__	‘to disobey and try to do again something that has been forbidden’
+AA	__it__olit__/it__	‘hardheaded’
+SblBt	__it__ólit__/it__	‘hardheaded’
+	__it__maɁólit ka__/it__	‘said to one who doesn't quickly obey’
+BKD	__it__ulit__/it__	‘to irritate, provoke someone to anger; to frustrate someone’
+
+NOTE: Connected with reflexes of PWMP *ulit ‘repeat’ in some sources, presumably because one who disobeys requires repeated requests or warnings before complying. Also TAG __it__kúlit__/it__ ‘stubborn; obstinate; insistent; persistent’, __it__kulít__/it__ ‘continuously stubborn’.
+
+303.	*umaw	‘mute, dumb’ (dbl. *umel)
+PLW	__it__umew__/it__	‘mute, dumb’
+TBL	__it__umew__/it__	‘mute, dumb’
+MAR	__it__omaw__/it__	‘simple-minded, innocent person, dullard’
+TSG	__it__umaw__/it__	‘dumb, unable to speak’
+
+NOTE: Mapun __it__umaw__/it__ ‘mute, dumb’ is assumed to be a Tausug loan.
+
+304.	*úŋut ‘coconut shell drinking cup or dipper’
+ILK	__it__úŋot__/it__	‘scoop, made of a coconut shell’
+	__it__sa-ŋa-úŋot__/it__	‘one coconut scoopful’
+DgtC	__it__uŋót__/it__	‘hollow coconut shell used for a drinking container’
+BON	__it__óŋot__/it__	‘a coconut shell bowl; a piece of coconut shell’
+IBL	__it__oŋot__/it__	‘bowl made from a half coconut shell (today the __it__oŋot__/it__ bowl is mainly used ceremonially in rituals)’
+AA	__it__oŋót__/it__	‘the fruit, meat, or juice of the coconut’
+SblBt	__it__óŋot__/it__	‘coconut’
+KPG	__it__úŋut__/it__	‘coconut’
+	__it__uŋút-an__/it__	‘coconut grove, coconut plantation’
+HAN	__it__úŋut__/it__	‘three-fourths of an empty coconut shell, used as a water dipper and drinking cup’
+AGU	__it__oŋot__/it__	‘drinking cup or dipper made from a coconut shell’
+
+305.	*urag-1 ‘sexual indulgence, orgy’
+BKL	__it__ma-úrag__/it__	‘virile’
+	__it__urág-on__/it__	‘lascivious, licentious; hot (sexually)’
+TbwC	__it__urag__/it__	‘honeymoon’
+BtkP	__it__úrag__/it__	‘semen’
+PLW	__it__urag__/it__	‘lewd demeanor, playing at making love, acting sensuously, flirting’
+HAN	__it__pa-Ɂúrag__/it__	‘adultery’
+MSB	__it__úrag__/it__	‘lascivious, lewd, obscene, licentious, erotic’
+	__it__urág-on__/it__	‘flirt’
+CEB	__it__úlag__/it__	‘for animals to copulate; be in heat, crave intercourse’
+
+NOTE: Possibly a Central Philippine innovation that has been borrowed into Hanunóo and various languages of Palawan and the Calamian islands. However, the semantic variation in these forms weighs against a borrowing interpretation.
+
+306.	*urag-2	‘hyperactive, restless’
+DgtC	__it__uhag__/it__	‘mischievous, restless’
+AGU	__it__olag__/it__	‘somehone who jumps around a lot (as a child who can’t sit still)’
+
+NOTE: Possibly identical to *urag-1, the former applying to adults and the latter to children.
+
+307.	*uR(e)bún ‘baby animal’
+ILK	__it__urbón__/it__	‘young (of animals)’
+DgtC	__it__ógbun__/it__	‘baby bird’
+AA	__it__oybon__/it__	‘young animal (refers to cow, carabao or horse)’
+SblBt	__it__oybón__/it__	‘young animal, or even a child’
+BKL	__it__ugbón__/it__	‘offspring (of animals)’
+HAN	__it__ugbún__/it__	‘puppy’
+
+308.	*uyágak ‘to cry out in pain’
+KNK	__it__uyágak__/it__	‘to cry, shout, scream (for pain)’
+CEB	__it__uyágak__/it__	‘for a chicken to squawk in pain; for a child to cry upon being punished’
+
+NOTE: Also Cebuano __it__iyágak__/it__ ‘for a chicken to squawk in pain; for a child to cry upon being punished’. With root *-gak ‘raucous, throaty sound’.
+
+309.	*wadwad ‘to display, put in clear view’
+ITB	__it__ma-wadwad__/it__	‘to be conspicuous, apparent, distinct’
+CEB	__it__i-wadwád__/it__	‘to take s.t. out of a container to display it’
+
+NOTE: Apparenly distinct from PPH *wadwad ‘to distribute, spread out’.
+
+310.	*wasák	‘to break down (of order or structure)’
+IBT	__it__wasak__/it__	‘someone uncoils, unwinds bandage or rope’
+ILK	__it__ag-wasák-wasák__/it__	‘to speak extravagantly and out of order with no constraint; to intrude, trespass’
+TAG	__it__wásak__/it__	‘ruin; destruction; very great damage’
+	__it__wasák__/it__	‘completely destroyed, ruined’
+	__it__i-wasák__/it__	‘to destroy; to demolish’
+BKL	__it__mag-wasák__/it__	‘to dissipate; to scatter or strew’
+AKL	__it__wasák__/it__	‘to break open and scatter; cracked, split open (and with the contents out); shattered’
+MSK	__it__wasak__/it__	‘to shatter, to destroy (as a house)’
+
+311.	*yabyáb/yapyáp ‘to winnow by fanning’
+(a)
+IFG	__it__yabyáb__/it__	‘a fan; the act of fanning; draft, breeze, winnow’
+MSK	__it__yabyab__/it__	‘to winnow’
+(b)
+KNK	__it__yapyáp__/it__	‘to fan; to winnow; the first fanning’
+BKL	__it__mag-yapyáp__/it__	‘to fan someone with a hand fan’
+	__it__paŋ-yapyáp__/it__	‘a hand fan’
+WBM	__it__yapyap__/it__	‘the final process in winnowing to remove the last of the chaff’
+
+312.	*yadyád ‘to grate or shred foodstuffs’
+SblBt	__it__yadyád__/it__	‘to shred coconut’
+	__it__yadyad-án__/it__	‘a shredder’
+BKL	__it__mag-yadyád__/it__	‘to grate (sweet potato, squash)’
+	__it__yadyad-án__/it__	‘a grater’
+
+313.	*yakál ‘the Philippine mahogony: __it__Shorea__/it__ or __it__Hopea__/it__ sp.’
+ILK	__it__yakál__/it__	‘species of durable hardwood: __it__Hopea__/it__ sp.’
+BON	__it__yakál__/it__	‘a tall softwood tree, the mahogany: __it__Hopea__/it__ sp.’
+TAG	__it__yakál__/it__	‘a tree producing lumber of the first group: __it__Hopea flagata__/it__’
+AKL	__it__yakál__/it__	‘a hardwood tree: __it__Shorea gisok__/it__ or __it__Shorea balangeran__/it__’
+WRY	__it__yakál__/it__	‘a species of hardwood, the __it__yacal__/it__ tree: __it__Hopea__/it__ sp.’
+TSG	__it__yakal__/it__	‘a tree: __it__Shorea giso__/it__’
+
+NOTE: This comparison, one of perhaps two dozen secure instances of PPH *y-, was first identified by David Zorc (p.c.), who drew my attention to my previous neglect of this section of the PPH lexicon.
+
+314.	*yamyám ‘to talk excessively, or in a rapid, meaningless stream’
+IfgBt	__it__yamyám__/it__	‘for excessive talking to tire the mouth’
+BKL	__it__yamyám__/it__	‘blah-blah, incessant talk or chatter’
+	__it__mag-yamyám__/it__	to talk incessantly, esp. when annoyed or angry’
+CEB	__it__yamyám__/it__	‘to utter, articulate words rapidly and not for the purpose of communicating; mumble, mutter’
+WBM	__it__yamyam__/it__	‘to say “I told you so”’
+BKD	__it__yamyam__/it__	‘to mumble words (not for the purpose of communicating)’
+
+315.	*yawyaw ‘move the mouth in eating’
+ILK	__it__yawyáw__/it__	‘colloquial term for eating’
+BON	__it__yawyáw__/it__	‘to eat’
+IBL	__it__yawyaw__/it__	‘expression used to call someone to come and eat, i.e. Let’s eat!’
+WBM	__it__yewyew__/it__	‘to move the jaw back and forth as a sign of anger’
+MSK	__it__yawyaw__/it__	‘to murmer, to grumble’
+
+316.	*yegyég/yugyúg ‘to shake, as a tree to bring down the fruit’
+(a)
+ILK	__it__ag-yegyég__/it__	‘to tremble, shake, shiver, quake, shudder’
+ISG	__it__yagyág__/it__	‘earthquake’
+	__it__maŋ-yagyág__/it__	‘to quake, said of the earth’
+PGS	__it__yegyég__/it__	‘tremor, earthquake’
+AA	__it__yegyeg__/it__	‘to shake up and down (especially tree branches) for a short time’
+BKL	__it__mag-yugyóg__/it__	‘to shake (as a tree to bring down the fruits); to jog, to agitate’
+AKL	__it__yúgyug__/it__	‘to shake (usually by the shoulders)’
+CEB	__it__yugyúg__/it__	‘to shake back and forth or up and down in short, quick movements (as in rocking a hammock so a baby will soon sleep)’
+(b)
+ILK	__it__yugyug-en__/it__	‘to beat eggs; to shake, sway (of a tree)’
+PGS	__it__i-yogyóg__/it__	‘to shake’
+TAG	__it__y<um>ugyóg__/it__	‘to shake up and down (esp. branches of trees)’
+
+NOTE: A variant of this comparison was first suggested to me by David Zorc.
+
+317.	*yekyek-1 ‘armpit’
+BON	__it__yekyek__/it__	‘armpit’
+BKL	__it__yukyók__/it__	‘armpit’
+
+NOTE: Also Ifugaw __it__yoyók__/it__ ‘armpit’.
+
+318.	*yekyek-2 ‘coughing fit’
+ILK	__it__yekyek-én__/it__	‘to choke, suffocate, smother, stifle (through coughing or sickness); to constantly cough’
+WBM	__it__yekyek__/it__	‘a choking cough’
+BKD	__it__yekyek__/it__	‘heavy and prolonged cough’
+
+NOTE: Also Binukid __it__ayekɁek__/it__ ‘heavy and prolonged cough’.
+
+319.	*yukús ‘to stoop, bend down’
+ILK	__it__yúkos__/it__	‘stooping’
+IFG	__it__yúku(h)__/it__	‘to bend something as deeply as possible’
+TAG	__it__yukós__/it__	‘bent (as a branch of a tree laden with fruit)’
+
+320.	*yukyúk ‘to stab’
+ILK	__it__yukyók__/it__	‘stab’
+	__it__yukyuk-an__/it__	‘to stab’
+SblBt	__it__yokyok__/it__	‘to stab’
+CEB	__it__yukyúk__/it__	‘to stab and jiggle around (as in killing a pig as quickly as possible)’
+
+321.	*yuŋyuŋ ‘to hang the head, look downward’
+BON	__it__yoŋyóŋ__/it__	‘bend over to look at s.t. on the ground’
+	__it__yoŋóyoŋ__/it__	‘to hang down, as a branch laden with fruit; to walk with bowed head, as when one is sad’
+IfgBt	__it__yuŋyuŋ__/it__	‘for a person to bow down the head’
+RBL	__it__yuŋyuŋ__/it__	‘someone or something droops the head’
+
+
+REFERENCES
+
+Abuyen, Tomas A. 2000.	__it__Diksyunaryo Waray-Waray-English-Tagalog.__/it__	Quezon CityL
+Kalayaan Press.
+Awed, Silin A., Lillian B. Underwood, and Vivian M. van Wynen.	2004.	__it__Tboli-English__/it__
+Manila: Summer Institute of Linguistics.	dictionary.
+Ballard, Lee.	2011.	__it__Ibaloy dictionary.__/it__	Asheville, North Carolina: Biltmore Press.
+Benton, Richard A.	1971.	__it__Pangasinan dictionary.__/it__	PALI Language Texts: Philippines.
+Honolulu: University of Hawai’i Press.
+Blust, Robert.	1987.	Lexical reconstruction and semantic reconstruction: the case of
+Austronesian “house” words.	__it__Diachronica__/it__	4: 79-106.
+Blust, Robert.	1991. The Greater Central Philippines hypothesis.	__it__Oceanic Linguistics__/it__
+30: 73-129.
+Blust, Robert.	1992.	On speech strata in Tiruray.	In Malcolm D. Ross, ed.,	__it__Papers in__/it__
+__it__Austronesian Linguistics__/it__	, No. 2: 1-52.	Canberra: Pacific Linguistics (PL A-82).
+Blust, Robert.	1998.	The position of the languages of Sabah. In Ma. Lourdes S. Bautista,
+ed.,	__it__Pagtanáw: Essays on language in honor of Teodoro A. Llamzon__/it__	: 29-52. Manila: Linguistic Society of the Philippines.
+Blust, Robert.	2000.	Chamorro historical phonology.	__it__Oceanic Linguistics__/it__	39: 83-122.
+Blust, Robert.	2019.	The resurrection of Proto-Philippines.	__it__Oceanic Linguistics__/it__	58:153-
+
+256.
+Blust, Robert.	2020.	Response to comments on “The resurrection of Proto-Philippines”.
+__it__Oceanic Linguistics__/it__	59.1-2: 450-479.
+Blust, Robert.	Under review.	__it__A dictionary of Austronesian monosyllabic roots__/it__
+__it__(submorphemes)__/it__	.	Ms. , 260pp.	Pacific Linguistics.
+Caabay, Marilyn A., Josenita L. Edep, Gail R. Hendrickson, and Melissa A. Melvin.
+2014.	__it__Agutaynen-English dictionary, with grammar sketch.__/it__	Manila: Linguistic
+Society of the Philippines.
+Conklin, Harold C.	1953.	__it__Hanunóo-English vocabulary.__/it__	University of California
+Publications in Linguistics, vol, 9:1-290.	Berkeley and Los Angeles: University
+of California Press.
+Dubois, Carl D.	1976.	__it__Sarangani Manobo: an introductory guide__/it__	.	Manila: Linguistic
+Society of the Philippines.
+Dunnebier, W.	1951.	__it__Bolaang Mongondowsch-Nederlandsch woordenboek__/it__	.	The
+Hague: Nijhoff.
+English, Leo James.	1986.	__it__Tagalog-English dictionary__/it__	.	Quezon City: Congregation of
+the Most Holy Redeemer.
+Elkins, Richard E.	1968.	__it__Manobo-English dictionary.__/it__	Oceanic Linguistics Special
+Publication No. 3.	Honolulu: University of Hawaii Press.
+Forman, Michael L.	1971.	__it__Kapampangan dictionary__/it__	.	PALI Language Texts:
+Philippines.	Honolulu: University of Hawaii Press.
+Hassan, Irene U., Seyimour A. Ashley and Mary L. Ashley.	1994.	Tausug-English
+dictionary: Kabtangan Iban Maana.	Jolo, Sulu: Notre Dame of Jolo College,
+Manila: Summer Institute of Linguistics.
+Headland, Thomas N. and Janet D. Headland.	1974.	__it__A Dumagat (Casiguran)-English__/it__
+dictionary.	Canberra: Pacific Linguistics (PL C-28).
+Hohulin, Richard M., E. Lou Hohulin, and Alberto K. Maddawat.	__it__Keley-i dictionary and__/it__
+Manila: Linguistic Society of the Philippines.	grammar sketch.
+Hung, Hsiao-chun, Mike T. Carson, Peter Bellwood, Fredeliza Z. Campos, Philip J.
+Piper, Eusebio Dizon, Mary Jane Louise A. Bolunia, Mark Oxenham, and Zhang
+Chi.	2011.	The first settlement of Remote Oceania: the Philippines to the
+Marianas.	85(329):909-926.	Antiquity
+Hung, Hsiao-chun, and Peter Bellwood.	To appear.	Archaeological correlations for the
+dispersal of the Malayo-Polynesian languages of Southeast Asia, Western
+Micronesia and Madagascar.	In	Alexander Adelaar & Antoinette Schapper
+(eds.),	__it__The Oxford Guide to the Malayo-Polynesian Languages of Asia and__/it__
+__it__Madagascar.__/it__	Oxford: Oxford University Press.
+Kimoto, Yukinori.	n.d.	__it__A documentation and description of the Arta language__/it__	.	Online
+resource.	Record identifier: HDL2196/00-0000-0000-000F-BF53-
+3@format=cmdi,
+Lambrecht, Frans Hubert.	1978.	__it__Ifugaw-English dictionary__/it__	.	Baguio City, Philippines:
+The Catholic Vicar Apostolic of the Mountain Province.
+Liao, Hsiu-chuan.	2020.	Comment on Blust (2019).	__it__Oceanic Linguistics__/it__	59.1-2:426-49.
+Lourandos, Harry.	1997.	__it__Continent of hunter-gatherers: New perspectives in Australian__/it__
+__it__prehistory.__/it__	Cambridge University Press.
+Macdonald, Charles J-H.	2011.	__it__Palawan-Tagalog-English dictionary__/it__	(preliminary
+edition).	Retrieved November 10, 2020 from
+.	https://philippines.sil.org/resources/works in progress/palawan
+McFarland, Curtis D.	1977.	__it__Northern Philippine linguistic geography__/it__	.	Study of
+Languages & Cultures of Asia & Africa Monograph Series No. 9.	Tokyo: Institute for the Study of Languages and Cultures of Asia and Africa.
+McKaughan, Howard P., and Batua A. Macaraya.	1967.	__it__A Maranao dictionary__/it__	.
+Honolulu: University of Hawaii Press.
+Maree, Judith Y.M., Orlando R. Tomas, and Russell D. Maree.	2012	__it__.__/it__	Ibatan to English
+__it__dictionary, with English, Filipino, Ilokano, Ivatan indices__/it__	.	Manila: Summer Institute of Linguistics.
+Miller, Helen, ed.	1992.	__it__Binukid dictionary.__/it__	Studies in Philippine Linguistics 9.2.
+Manila: Linguistic Society of the Philippines and Summer Institute of Linguistics.
+Minot, Harriet, Charlotte Houck, and Nida Quinsay.	1968.	__it__Dictionary of Botolan__/it__
+.	Sambal	Manila: Summer Institute of Linguistics.
+Mintz, Malcolm Warren, and José del Rosario Britanico.	1985.	__it__Bikol-English__/it__
+.	dictionary	Quezon City: New Day Publishers
+Motus, Cecile L.	1971.	__it__Hiligaynon dictionary.__/it__	PALI Language Texts: Philippines.
+Honolulu: University of Hawaii Press.
+Newell, Leonard E.	1993.	__it__Batad Ifugaw dictionary, with ethnographic notes__/it__	.	Manila:
+Linguistic Society of the Philippines.
+Newell, Leonard E.	2006.	__it__Romblomanon dictionary__/it__	.	Manila: Linguistic Society of the
+Philippines.
+Nickell, Tom, and Kristy Nickell.	1987.	__it__Eastern Agta dictionary.__/it__	Ms., 267pp.
+Pallesen, A. Kemp.	1985.	__it__Culture contact and language convergence__/it__	.	Manila:
+Linguistic Society of the Philippines.
+Popper, Karl.	1959 [1935].	__it__The logic of scientific discovery__/it__	.	Harper Torchbooks.	New
+York: Harper & Row (German original:	__it__Logik der Forschung__/it__	.	1935.	Vienna:
+Springer-Verlag).
+Pugach, Irina, Alexander Hübner, Hsiao-chun Hung, Matthias Meter, Mike T. Carson and
+Mark Stoneking.	2020.	Ancient DNA from Guam and the peopling of the
+Pacific.	PNAS 118.1:e2022112118.
+Rainbird, Paul.	2003.	__it__The archaeology of Micronesia.__/it__	Cambridge University Press.
+Rau, D. Victoria, Maa-Neu Dong, and Ann Hui-huan Chang, with Daniel E. Rau and
+Gerald A. Rau.	2012.	__it__Yami (Tao) dictionary__/it__	.	Taipei: National Taiwan
+University Press.
+Reid, Lawrence A.	1976.	__it__Bontok-English dictionary.__/it__	Canberra: Pacific Linguistics (PL
+C-36).
+Reid, Lawrence A.	1989.	Arta, another Philippine Negrito language.	__it__Oceanic__/it__
+__it__Linguistics__/it__	28:47-74.
+Ross, Malcolm D.	2020.	Comment on Blust (2019).	__it__Oceanic Linguistics__/it__	59.1-2:366-73.
+Rubino, Carl Ralph Galvez.	2000.	__it__Ilocano dictionary and grammar.__/it__	PALI Language
+Texts: Philippines.	Honolulu: University of Hawai‘i Press.
+Scebold, Robert A.	2003.	Central Tagbanwa: A Philippine language on the brink of
+extinction.	Manila: Linguistic Society of the Philippines.
+Schlegel, Stuart A.	1971.	__it__Tiruray-English lexicon__/it__	.	University of California Publications
+in Linguistics, 67.	Berkeley and Los Angeles: University of California Press.
+Schwarz, J. Alb. T.	1908.	__it__Tontemboansch-Nederlandsch woordenboek__/it__	.	Leiden: Brill.
+Smith, Alexander D.	2017.	The Western Malayo-Polynesian problem.	__it__Oceanic__/it__
+56:435-490.	Linguistics
+Steller, K.G.F. and W.E. Aebersold.	1959.	__it__Sangirees-Nederlands woordenboek met__/it__
+__it__Nederlands-Sangirees register.__/it__	The Hague: Martinus Nijhoff.
+Stone, Roger, ed. 2019.	__it__Ayta Abellen-English diksiyunaryo__/it__	.	Webonary.org.	SIL
+International.	Retrieved November 10, 2020 from
+[Roger	https://www.webonary.org/aytaabellen/overview/copyright/?lang=en
+Stone]
+Svelmoe, Gordon, and Thelma Svelmoe.	1990.	__it__Mansaka dictionary.__/it__	Language Data,
+Asia-Pacific Series, No. 16.	Dallas: Summer Institute of Linguistics, Inc.
+Tharp, James A. and Mateo C. Natividad.	1976.	__it__Itawis-English wordlist, with English-__/it__
+__it__Itawis finderlist__/it__	.	New Haven: Human Relations Area Files, Inc.
+Vanoverbergh, Morice.	1933	__it__.__/it__	A dictionary of Lepanto Igorot or Kankanay, as it is
+__it__spoken at Bauco.__/it__	Linguistische Bibliothek Anthropos, vol. 12.	Mödling bei
+Wien, St. Gabriel, Austria: Anthropos Institute.
+Vanoverbergh, Morice.	1972.	__it__Isneg-English vocabulary__/it__	.	Oceanic Linguistics Special
+Publication No. 11.	Honolulu: University Press of Hawaii.
+Warren, Charles.	1959.	__it__A vocabulary of the Batak of Palawan.__/it__	Chicago: Philippine
+Studies Program, Department of Anthropology, University of Chicago.
+Wolfenden, Elmer P.	2001.	__it__A Masbatenyo-English dictionary.__/it__	Manila: Linguistic
+Society of the Philippines.
+Wolff, John U.	1971.	__it__A dictionary of Cebuano Visayan.__/it__	Philippine Journal of
+Linguistics Special Monograph No. 4.	Manila: Linguistic Society of the
+Philippines.
+Yamada, Yukihiro.	1976.	__it__A preliminary dictionary of Itbayaten.__/it__	Typescript, 404pp.
+Yamada, Yukihiro.	2002.	__it__Itbayat-English dictionary.__/it__	Endangered Languages of the
+Pacific Rim Publication Series A3-006.	Kyoto: Nakanishi Printing Co., Ltd.
+Zorc, R. David.	1969.	__it__A study of the Aklanon dialect, vol. 2: Aklanon to English__/it__
+__it__dictionary__/it__	.	Kalibo, Aklan.
+Zorc, R. David.	1977.	__it__The Bisayan dialects of the Philippines: Subgrouping and__/it__
+__it__reconstruction__/it__	.	Canberra: Pacific Linguistics (PL C44).
+Zorc, R. David.	2020.	Comment on Blust (2019).	__it__Oceanic Linguistics__/it__	59.1-2:394-425.

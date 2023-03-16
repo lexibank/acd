@@ -13,7 +13,7 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.0",
+            "dc:created": "v1.1",
             "dc:title": "Repository"
         },
         {
@@ -54,7 +54,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 146642,
+            "dc:extent": 146733,
             "tableSchema": {
                 "columns": [
                     {
@@ -165,7 +165,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 1062,
+            "dc:extent": 1063,
             "tableSchema": {
                 "columns": [
                     {
@@ -261,7 +261,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 86494,
+            "dc:extent": 86502,
             "tableSchema": {
                 "columns": [
                     {
@@ -293,7 +293,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognateTable",
-            "dc:extent": 116662,
+            "dc:extent": 116753,
             "tableSchema": {
                 "columns": [
                     {
