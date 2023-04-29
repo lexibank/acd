@@ -1,0 +1,4 @@
+Language Name	Language ID	Word ID	Word form	Original Entry ID	Near Cognate concept	Cognate set
+Malay	326	9bb882fa7b13ce003b0e98116b9efaf4-1	linaŋ	31319#s-9393	calm, tranquil, of the surface of water	1
+Paiwan	370	492ce7c53bf55723317bd9579a398f0e-1	lilʸuŋ	27006#s-9392	calm, tranquil, of the surface of water	1
+Hanunóo	273	695de5e950b726754ac1818aac1f88cd-1	línuŋ	27006#s-9392	calm, tranquil, of the surface of water	1

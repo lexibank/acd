@@ -1,0 +1,5 @@
+Entry form	Entry ID	Language ID	Word Form	Gloss
+*labi	32925#s-11390	19418	labi	a large freshwater mud turtle
+*labi	32925#s-11390	1032	ləwawiʔ	softshell river turtle
+*labi	32925#s-11390	19771	ləweʔ	softshell river turtle
+*labi	32925#s-11390	290	labəy	softshell river turtle

@@ -1,0 +1,4 @@
+Entry form	Entry ID	Language ID	Word ID	Old word form	New word form	old gloss	New gloss
+*hemis	26328#s-2646	300	e549a200372db9f3fcfac9f384e4ac2d-1	mE	me		
+*becit	25253#s-818	299	3ae53881471c2f3ce35e78e3eab0d4b4-1			squirt out (as pus from a pimple)	Act of puncturing and deflating something (like balloon, tire, etc.)
+*pukaw	30405#s-7524	293	6013221752df892237d0fc99fd8a328f-1	m-puqaw	puqaw		

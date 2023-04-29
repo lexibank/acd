@@ -1,0 +1,2 @@
+Subentries ID	Parent Entry (reconstruciton) form	Parent Entry Gloss	Language name	Language ID	Word (reflex) form	Word ID (if moving words to populate the new parent level)	Previous entry ID (if moving words to populate the new parent level)
+27815	*hisep	sucking, soaking up, absorbing 	Amis	227	hicep	f140f22e66f22fbba840a5a0a194b02a-1	26364#s-2705

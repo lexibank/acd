@@ -1,0 +1,5 @@
+Language Name	Language ID	Word ID	Word form	Original Entry ID	Chance Gloss
+Malay	326	f2c6e9afb147ae53dacdf4f525c6e912-1	birat	25511#s-1231	scar
+Sasak	404	a3702e69a03c988c84cea345fe8ec1f5-1	biras	25509#s-1228	scar
+Arosi	485	828de69a2994bdb482cecf9d10c7f5f2-1	hira	25509#s-1229	scar
+Arosi	485	828de69a2994bdb482cecf9d10c7f5f2-1	hira	25511#s-1231	scar

@@ -1,0 +1,18 @@
+Entry ID	New Form (reconstruction)	New Gloss
+25893	*Cebuk	thud, pounding sound; to pound rice, dehusk by pounding
+25893#s-2053	*tebuk	to pound something, dehusk rice by pounding
+27815	*hisep	sucking, inhaling, soaking up, absorbing
+27815#s-4583	*hisep	sucking, inhaling, soaking up, absorbing
+27815#s-4584	*hisep-an	
+27815#s-4585	*maŋ-qisep	
+32925	*labi	
+32925#s-11390	*labi	
+31130	*huNah	
+31130#s-9110	*huNah	
+31130#s-9111	*h<um>uNah	
+31130#s-9112	*h<um>uNah	
+27764	*eŋkem	hold in the hand, enclose
+27764#s-4511	*eŋkem	hold in the hand, enclose
+26159		grab or hold with the hand or mouth; enclose
+26159#s-2439		grab or hold with the hand or mouth; enclose
+25060#s-540	*palisi	
