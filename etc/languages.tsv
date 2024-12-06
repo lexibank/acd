@@ -1,16 +1,16 @@
 ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect_Of	Is_Proto
 19579	abai1241	Abai Sembuak	PWMP					lobel2016			false
 19190	inab1237	Abaknon	PWMP	abx	Inabaknon	Philippines	[aka: Inabaknon]	jacobson1999			false
-429	tagb1258	Aborlan Tagbanwa	PWMP	tbw	Tagbanwa	Philippines		reid1971			false
+429	tagb1258	Aborlan Tagbanwa	PPH	tbw	Tagbanwa	Philippines		reid1971			false
 225	achi1257	Acehnese	PWMP	ace	Aceh	Indonesia (Sumatra)	[aka: Achinese]	kreemer1931			false
 464	adon1237	Adonara	PCMP	adr		Indonesia (Nusa Tenggara)		lebar1972			false
 19735	adze1240	Adzera	POC				[aka: Azera]	hooley1971			false
-465	cent2084	Agta (Central Cagayan)	PWMP	agt	Agta, Central Cagayan	Philippines	[aka: Central Cagayan Agta]	reid1971			false
-19194	dupa1235	Agta (Dupaningan)	PWMP	duo	Agta, Dupaninan	Philippines		robinson2011		465	false
-19181	dupa1235	Agta (Eastern)	PWMP	duo	Agta, Dupaninan	Philippines		nickellandnickell1987		465	false
-19189	agut1237	Agutaynen	PWMP	agn		Philippines		caabayetal2014			false
+465	cent2084	Agta (Central Cagayan)	PPH	agt	Agta, Central Cagayan	Philippines	[aka: Central Cagayan Agta]	reid1971			false
+19194	dupa1235	Agta (Dupaningan)	PPH	duo	Agta, Dupaninan	Philippines		robinson2011		465	false
+19181	dupa1235	Agta (Eastern)	PPH	duo	Agta, Dupaninan	Philippines		nickellandnickell1987		465	false
+19189	agut1237	Agutaynen	PPH	agn		Philippines		caabayetal2014			false
 466	andr1248	Ahus	POC	anx	Andra-Hus	Papua New Guinea		blust1975			false
-226	akla1240	Aklanon	PWMP	akl	Inakeanon	Philippines		zorc1969			false
+226	akla1240	Aklanon	PPH	akl	Inakeanon	Philippines		zorc1969			false
 468	bata1292	Alas	PWMP	btz	Batak Alas-Kluet	Indonesia (Sumatra)		akbarahmaddinandmardjo1985			false
 469	kapp1237	Ali	POC	ykm							false
 471	alun1238	Alune	PCMP	alp		Indonesia (Maluku)	[aka: Murnaten]	niggemeyer195152			false
@@ -40,7 +40,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 486	aros1241	Arosi (Eastern)	POC							485	false
 487	aros1241	Arosi (Southern)	POC							485	false
 488	aros1241	Arosi (Western)	POC							485	false
-489	arta1239	Arta	PWMP	atz		Philippines					false
+489	arta1239	Arta	PPH	atz		Philippines					false
 490	asss1237	As	PSHWNG	asz		Indonesia (Papua)		gracend			false
 18016	asil1242	Asilulu	PCMP	asl		Indonesia (Maluku)		collinsnd			false
 493	atay1247	Atayal	Form.	tay		Taiwan		egerod1980			false
@@ -50,21 +50,21 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 497	sqol1237	Atayal (Squliq)	Form.							493	false
 498	urip1239	Atchin	POC	upv	Uripiv-Wala-Rano-Atchin	Vanuatu		tryon1976			false
 231	uabm1237	Atoni	PCMP	aoz	Uab Meto	Indonesia (Nusa Tenggara)		blust1975b			false
-19637	pamp1244	Atta (Pamplona)	PWMP	att	Atta, Pamplona	Philippines	[aka: Atta, Pamplona]	reid1971			false
+19637	pamp1244	Atta (Pamplona)	PPH	att	Atta, Pamplona	Philippines	[aka: Atta, Pamplona]	reid1971			false
 234	wuvu1239	Aua	POC	wuv	Wuvulu-Aua	Papua New Guinea		blust1975			false
 19665	katb1237	Avava	POC								false
 19229	axam1237	Axamb	POC					tryon1976			false
-19698	aben1249	Ayta Abellan	PWMP								false
-19394	maga1263	Ayta Maganchi	PWMP				[aka: Ayta Mag-antsi]				false
+19698	aben1249	Ayta Abellan	PPH								false
+19394	maga1263	Ayta Maganchi	PPH				[aka: Ayta Mag-antsi]				false
 18939	ngaj1237	Ba'amang	PWMP	nij	Ngaju	Indonesia (Kalimantan)		hudson1967			false
 503	baba1268	Babatana	POC	baa		Solomon Islands		tryonandhackman1983			false
 19447	avas1237	Babatana (Avasö)	POC							503	false
 506	bada1261	Bada	PWMP	bhz		Indonesia (Sulawesi)					false
 19381	baet1237	Baetora	POC				[aka: Nasawa, Navenevene]	tryon1976			false
-507	obom1235	Bagobo	PWMP	obo	Manobo, Obo	Philippines					false
+507	obom1235	Bagobo	PPH	obo	Manobo, Obo	Philippines					false
 240	indo1316	Bahasa Indonesia	PWMP	ind	Indonesian	Indonesia (Java and Bali)		poerwadarminta1976			false
 19201	bala1314	Balaesang	PWMP	bls		Indonesia (Sulawesi)		himmelmann2001			false
-509	bala1310	Balangaw	PWMP	blw	Balangao	Philippines	[aka: Balangao]	reid1971			false
+509	bala1310	Balangaw	PPH	blw	Balangao	Philippines	[aka: Balangao]	reid1971			false
 510	bala1315	Balantak	PWMP	blz		Indonesia (Sulawesi)		vandenbergandbusenitz2012			false
 511	unea1237	Bali (Uneapa)	POC	bbn	Uneapa	Papua New Guinea	[aka: Uneapa Bali]	rossndb;satond			false
 235	bali1278	Balinese	PWMP	ban	Bali	Indonesia (Java and Bali)		barber1979			false
@@ -94,27 +94,27 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 528	biat1246	Beta	PWMP	dyk	Dayak, Land	Indonesia (Kalimantan)					false
 18961	buka1257	Bidayuh (Bukar-Sadong)	PWMP	sdo	Bidayuh, Bukar-Sadong	Malaysia (Sarawak)	[aka: Bidayuh, Sadong]	nais1988			false
 531	biga1238	Biga	PSHWNG	bhc		Indonesia (Papua)		gracend			false
-244	biko1240	Bikol	PWMP	bik		Philippines		mintzanddelrosariobritanico1985			false
-19568	biko1240	Bikol (Camarines Sur)	PWMP							244	false
-19504	biko1240	Bikol (East Miraya)	PWMP							244	false
-19567	biko1240	Bikol (Miraya dialects)	PWMP							244	false
-19755	cent2087	Bikol (Naga)	PWMP							244	false
-535	sara1326	Bilaan (Sarangani)	PWMP	bps	Blaan, Sarangani	Philippines		reid1971			false
+244	biko1240	Bikol	PPH	bik		Philippines		mintzanddelrosariobritanico1985			false
+19568	biko1240	Bikol (Camarines Sur)	PPH							244	false
+19504	biko1240	Bikol (East Miraya)	PPH							244	false
+19567	biko1240	Bikol (Miraya dialects)	PPH							244	false
+19755	cent2087	Bikol (Naga)	PPH							244	false
+535	sara1326	Bilaan (Sarangani)	PPH	bps	Blaan, Sarangani	Philippines		reid1971			false
 19745	bile1245	Bileki	POC								false
 19753	bili1252	Biliau	POC								false
 536	bilb1241	Bilibil	POC	brz	Bilbil	Papua New Guinea					false
 19741	bilu1244	Bilur	POC								false
 241	bima1247	Bimanese	PCMP	bhp	Bima	Indonesia (Nusa Tenggara)		sahidu1978;ismailetal1985			false
 242	bint1246	Bintulu	PWMP	bny	Bintulu 	Malaysia (Sarawak)		blust1971			false
-19012	binu1244	Binukid	PWMP	bkd		Philippines		postandgardner1992			false
+19012	binu1244	Binukid	PPH	bkd		Philippines		postandgardner1992			false
 540	bipi1237	Bipi	POC	biq		Papua New Guinea		blust1975			false
 18952	brun1245	Bisaya	PWMP	bsb	Bisaya, Brunei	Brunei	[aka: Bisaya Bukid, Bisaya Bukit]	blust1971			false
 542	brun1245	Bisaya (Limbang)	PWMP	bsb	Bisaya, Brunei	Brunei		blust1971		18952	false
 19540	lotu1250	Bisaya (Lotud)	PWMP					lobel2016		18952	false
 19560	saba1267	Bisaya (Sabah)	PWMP							18952	false
-19301	akla1240	Bisayan (Panay)	PWMP	aki	Inakeanon	Philippines	[aka: Panay Bisayan]				false
-19718	koro1310	Blaan	PWMP	bpr			[aka: Bilaan]	reid1971			false
-19011	koro1310	Blaan (Koronadal)	PWMP	bpr	Blaan, Koronadal	Philippines		reid1971			false
+19301	akla1240	Bisayan (Panay)	PPH	aki	Inakeanon	Philippines	[aka: Panay Bisayan]				false
+19718	koro1310	Blaan	PPH	bpr			[aka: Bilaan]	reid1971			false
+19011	koro1310	Blaan (Koronadal)	PPH	bpr	Blaan, Koronadal	Philippines		reid1971			false
 19452	blab1237	Blablanga	POC								false
 19727	ghay1237	Boanaki	POC								false
 544	boan1242	Boano	PWMP	bzn		Indonesia (Maluku)		himmelmann2001			false
@@ -127,7 +127,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19382	nama1268	Bonga	POC					tryon1976			false
 550	bong1289	Bonggi	PWMP	bdg		Malaysia (Sabah)	[aka: Banggi]	lobel2016			false
 552	bier1244	Bonkovia	POC	bnk	Bierebo	Vanuatu		tryon1976			false
-246	bont1247	Bontok	PWMP	bnc	Bontoc, Central	Philippines		reid1976			false
+246	bont1247	Bontok	PPH	bnc	Bontoc, Central	Philippines		reid1976			false
 19620	mapo1242	Buang	POC								false
 239	bugi1244	Buginese	PWMP	bug	Bugis	Indonesia (Sulawesi)		said1977			false
 19617	bugi1244	Buginese (dial.)	PWMP								false
@@ -156,16 +156,16 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 568	xara1244	Canala	POC	ane	Xârâcùù	New Caledonia		grace1975			false
 19410	nort3217	Cape Cumberland	POC				[aka: Tasmate, Hukua, Tasiriki, Valpei, Piamatsina]	tryon1976			false
 19270	caro1242	Carolinian	POC	cal		Northern Mariana Islands		jacksonandmarck1991			false
-569	casi1235	Casiguran Dumagat	PWMP	dgc	Agta, Casiguran Dumagat	Philippines		headlandandheadland1974			false
-252	cebu1242	Cebuano	PWMP	ceb		Philippines		wolff1972			false
-571	cebu1242	Cebuano (dialectal)	PWMP							252	false
-19388	boho1237	Cebuano (SE Bohol)	PWMP							252	false
+569	casi1235	Casiguran Dumagat	PPH	dgc	Agta, Casiguran Dumagat	Philippines		headlandandheadland1974			false
+252	cebu1242	Cebuano	PPH	ceb		Philippines		wolff1972			false
+571	cebu1242	Cebuano (dialectal)	PPH							252	false
+19388	boho1237	Cebuano (SE Bohol)	PPH							252	false
 19536	cemu1238	Cèmuhî	POC								false
 19700	cent2100	Central Dusun	PWMP								false
 376	cent2058	Central Maewo	POC	mwo	Maewo, Central	anuatu	[aka: Peterara, Sun̄wadaga]	tryon1976			false
 19391	cent2091	Central Palawan	PWMP								false
 19414	tial1241	Central Santo	POC				[aka: Matae, Navut]				false
-19173	cent2090	Central Tagbanwa	PWMP	tgt	Tagbanwa, Central	Philippines		scebold2003			false
+19173	cent2090	Central Tagbanwa	PPH	tgt	Tagbanwa, Central	Philippines		scebold2003			false
 572	west2650	Cham	PWMP	cja	Cham, Western	Cambodia					false
 19438	east2563	Cham (Eastern)	PWMP							572	false
 573	cham1312	Chamorro	PWMP	cha		Guam		toppingogoanddungca1975			false
@@ -223,7 +223,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19767	sega1243	Gaai	PWMP					smith2019a			false
 286	abad1241	Gabadi	POC	kbt	Abadi	Papua New Guinea		capell1943			false
 19720	gada1258	Gad'ang	PWMP								false
-268	gadd1244	Gaddang	PWMP	gad		Philippines		reid1971			false
+268	gadd1244	Gaddang	PPH	gad		Philippines		reid1971			false
 19231	alek1238	Gah	PCMP	gah	Alekano	Papua New Guinea		wallace1962			false
 19319	galo1243	Galoli	PCMP	gal		East Timor					false
 845	gana1277	Gana	PWMP	gnq		Malaysia (Sabah)	[aka: Minansut]				false
@@ -243,12 +243,12 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19737	haho1237	Hahon	POC								false
 19711	hako1237	Haku	POC								false
 19250	hali1244	Halia	POC	hla		Papua New Guinea					false
-273	hanu1241	Hanunóo	PWMP	hnn	Hanunoo	Philippines		conklin1953			false
+273	hanu1241	Hanunóo	PPH	hnn	Hanunoo	Philippines		conklin1953			false
 19734	haun1237	Haununu	POC								false
 620	hawa1245	Hawaiian	POC	haw		United States		pukuiandelbert1971			false
 405	sabu1255	Hawu	PCMP	hvn	Sabu	Indonesia (Nusa Tenggara)	[aka: Savu, Havu]	wijngaarden1896;foxnd;walker1982			false
 621	helo1243	Helong	PCMP	heg		Indonesia (Nusa Tenggara)					false
-623	hili1240	Hiligaynon	PWMP	hil		Philippines		motus1971			false
+623	hili1240	Hiligaynon	PPH	hil		Philippines		motus1971			false
 624	hitu1239	Hitu	PCMP	htu		Indonesia (Maluku)					false
 625	hiww1237	Hiw	POC	hiw		Vanuatu					false
 626	papo1239	Hoanya	Form.	ppu	Papora-Hoanya	Taiwan					false
@@ -260,31 +260,31 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19659	hula1239	Hula	POC								false
 630	iaai1238	Iaai	POC	iai		New Caledonia					false
 19582	whit1269	Iarkei	POC				[aka: Whitesands]				false
-19182	ibal1244	Ibaloy	PWMP	ibl	Ibaloi	Philippines	[aka: Ibaloi, Inibaloi]	ballard2011			false
+19182	ibal1244	Ibaloy	PPH	ibl	Ibaloi	Philippines	[aka: Ibaloi, Inibaloi]	ballard2011			false
 276	iban1264	Iban	PWMP	iba		Malaysia (Sarawak)		richards1981			false
 632	iban1264	Iban (Lemanak)	PWMP	iba	Iban	Malaysia (Sarawak)				276	false
-633	iban1267	Ibanag	PWMP	ibg		Philippines		mcfarland1977			false
-19385	ibat1238	Ibatan	PWMP				[aka: Babuyan]	mareeandtomas2012			false
+633	iban1267	Ibanag	PPH	ibg		Philippines		mcfarland1977			false
+19385	ibat1238	Ibatan	PPH				[aka: Babuyan]	mareeandtomas2012			false
 18943	idaa1241	Ida'an Begak	PWMP	dbj	Ida’an	Malaysia (Sabah)					false
 635	laka1255	Idate	PCMP	lka	Lakalei	East Timor					false
 19667	idun1242	Iduna	POC								false
-636	mayo1262	Ifugaw	PWMP	ifu	Ifugao, Mayoyao	Philippines	[aka: Ifugao]	lambrecht1978			false
-637	amga1235	Ifugaw (Amganad)	PWMP	ifa	Ifugao, Amganad	Philippines		reid1971		636	false
-18225	bata1298	Ifugaw (Batad)	PWMP					newell1993		636	false
-639	kele1259	Ifugaw (Bayninan)	PWMP	ify	Kallahan, Keley-i	Philippines		reid1971		636	false
-19772	kele1259	Ifugaw (Keley-i)	PWMP					hohulinhohulinandmaddawat2018		636	false
-279	ilok1237	Ilokano	PWMP	ilo	Ilocano	Philippines		rubino2000;carro1956			false
-642	ilon1239	Ilongot	PWMP	ilk		Philippines					false
-19613	ilon1239	Ilongot (Kakiduge:n)	PWMP					reid1971			false
-19340	atii1237	Inati	PWMP								false
+636	mayo1262	Ifugaw	PPH	ifu	Ifugao, Mayoyao	Philippines	[aka: Ifugao]	lambrecht1978			false
+637	amga1235	Ifugaw (Amganad)	PPH	ifa	Ifugao, Amganad	Philippines		reid1971		636	false
+18225	bata1298	Ifugaw (Batad)	PPH					newell1993		636	false
+639	kele1259	Ifugaw (Bayninan)	PPH	ify	Kallahan, Keley-i	Philippines		reid1971		636	false
+19772	kele1259	Ifugaw (Keley-i)	PPH					hohulinhohulinandmaddawat2018		636	false
+279	ilok1237	Ilokano	PPH	ilo	Ilocano	Philippines		rubino2000;carro1956			false
+642	ilon1239	Ilongot	PPH	ilk		Philippines					false
+19613	ilon1239	Ilongot (Kakiduge:n)	PPH					reid1971			false
+19340	atii1237	Inati	PPH								false
 645	irar1238	Irarutu	PSHWNG	irh		Indonesia (Papua)					false
-646	isin1239	Isinay	PWMP	inn	Isinai	Philippines	[aka: Isinai]				false
-647	isna1241	Isneg	PWMP	isd	Isnag	Philippines		vanoverbergh1972			false
-648	itaw1240	Itawis	PWMP	itv	Itawit	Philippines	[aka: Itawit]	tharpandnatividad1976			false
-282	ivat1242	Itbayaten	PWMP	ivv	Ivatan	Philippines		yamada1976			false
-18955	bino1237	Itneg (Binongan)	PWMP	itb	Itneg, Binongan	Philippines					false
-18956	ivat1242	Ivatan	PWMP	ivv		Philippines					false
-19549	ivat1242	Ivatan (Isamorong)	PWMP							18956	false
+646	isin1239	Isinay	PPH	inn	Isinai	Philippines	[aka: Isinai]				false
+647	isna1241	Isneg	PPH	isd	Isnag	Philippines		vanoverbergh1972			false
+648	itaw1240	Itawis	PPH	itv	Itawit	Philippines	[aka: Itawit]	tharpandnatividad1976			false
+282	ivat1242	Itbayaten	PPH	ivv	Ivatan	Philippines		yamada1976			false
+18955	bino1237	Itneg (Binongan)	PPH	itb	Itneg, Binongan	Philippines					false
+18956	ivat1242	Ivatan	PPH	ivv		Philippines					false
+19549	ivat1242	Ivatan (Isamorong)	PPH							18956	false
 284	jara1266	Jarai	PWMP	jra		Viet Nam		lafont1968			false
 285	java1254	Javanese	PWMP	jav		Indonesia (Java and Bali)		pigeaud1938;horne1974			false
 19683	java1254	Javanese (Krama)	PWMP							285	false
@@ -297,21 +297,21 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 666	kaid1239	Kaidipang	PWMP	kzp		Indonesia (Sulawesi)					false
 667	kair1263	Kairiru	POC	kxa		Papua New Guinea		wivell1981			false
 19377	iwal1237	Kaiwa	POC								false
-670	kala1388	Kalagan	PWMP	kqe		Philippines	[aka: Tagakaulu Kalagan]	reid1971			false
-18285	cala1258	Kalamian Tagbanwa	PWMP	tbk	Tagbanwa, Calamian	Philippines	[aka: Tagbanwa, Northern Tagbanwa]	reid1971;ruchnd			false
-672	lubu1243	Kalinga	PWMP	knb				reid1971			false
-673	lubu1243	Kalinga (Guinaang)	PWMP	knb	Kalinga, Lubuagan	Philippines		reid1971		672	false
-676	ahin1234	Kallahan (Kayapa)	PWMP	kak	Kallahan, Kayapa	Philippines		reid1971			false
+670	kala1388	Kalagan	PPH	kqe		Philippines	[aka: Tagakaulu Kalagan]	reid1971			false
+18285	cala1258	Kalamian Tagbanwa	PPH	tbk	Tagbanwa, Calamian	Philippines	[aka: Tagbanwa, Northern Tagbanwa]	reid1971;ruchnd			false
+672	lubu1243	Kalinga	PPH	knb				reid1971			false
+673	lubu1243	Kalinga (Guinaang)	PPH	knb	Kalinga, Lubuagan	Philippines		reid1971		672	false
+676	ahin1234	Kallahan (Kayapa)	PPH	kak	Kallahan, Kayapa	Philippines		reid1971			false
 288	kama1362	Kamarian	PCMP	kzx		Indonesia (Maluku)		ekris186465			false
 678	kamb1299	Kambera	PCMP	xbr		Indonesia (Nusa Tenggara)		onvlee1984			false
 679	kamb1299	Kambera (Mangili)	PCMP	xbr	Kambera	Indonesia (Nusa Tenggara)				678	false
 680	kana1286	Kanakanabu	Form.	xnb		Taiwan	[aka: Kanakanavu]	tsuchida1976			false
 681	kani1282	Kaniet	POC	ktk		Papua New Guinea					false
-289	kank1243	Kankanaey	PWMP	kne		Philippines		vanoverbergh1933			false
-19593	nort2877	Kankanaey (Northern)	PWMP					reid1971			false
+289	kank1243	Kankanaey	PPH	kne		Philippines		vanoverbergh1933			false
+19593	nort2877	Kankanaey (Northern)	PPH					reid1971			false
 290	kano1244	Kanowit	PWMP	kxn	Melanau, Kanowit-Tanjong	Malaysia (Sarawak)		ray1913			false
 18937	mala1480	Kantu'	PWMP	xdy	Malayic Dayak	Indonesia (Kalimantan)					false
-291	pamp1243	Kapampangan	PWMP	pam	Pampangan	Philippines		forman1971			false
+291	pamp1243	Kapampangan	PPH	pam	Pampangan	Philippines		forman1971			false
 292	kapi1249	Kapingamarangi	POC	kpg		Micronesia		lieberanddikepa1974			false
 687	ngaj1237	Kapuas	PWMP	nij	Ngaju	Indonesia (Kalimantan)					false
 19693	kara1486	Kara	POC								false
@@ -337,7 +337,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 762	kela1258	Kelabit (Long Napir)	PWMP	kzi	Kelabit	Indonesia (Kalimantan)		blust1971		299	false
 19768	kela1259	Kelai	PWMP					smith2019a			false
 19257	kele1258	Kele	POC	sbc		Papua New Guinea					false
-675	kele1259	Keley-i	PWMP	ify	Kallahan, Keley-i	Philippines	[aka: Keleyqiq Kallahan, Kallahan (Keleyqiq)]	reid1971;hohulinhohulinandmaddawat2018			false
+675	kele1259	Keley-i	PPH	ify	Kallahan, Keley-i	Philippines	[aka: Keleyqiq Kallahan, Kallahan (Keleyqiq)]	reid1971;hohulinhohulinandmaddawat2018			false
 699	kema1243	Kemak	PCMP	kem		East Timor					false
 700	kemb1249	Kembayan	PWMP	xem		Indonesia (Kalimantan)					false
 300	sebo1238	Kenyah	PWMP	sib				galvin1967			false
@@ -360,7 +360,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19025	zaza1245	Kilokaka	POC								false
 19599	kima1244	Kimaragang Dusun	PWMP				[aka: Dusun (Kimaragang)]				false
 19589	uppe1427	Kinabatangan	PWMP								false
-19566	kina1250	Kinaray-a	PWMP								false
+19566	kina1250	Kinaray-a	PPH								false
 18958	kipu1237	Kiput	PWMP	kyi	Kiput 	Malaysia (Sarawak)		blust1971			false
 704	kiss1246	Kis	POC	kis		Papua New Guinea					false
 302	kisa1266	Kisar	PCMP	kje		Indonesia (Maluku)		jonker1932			false
@@ -456,7 +456,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19632	maew1234	Maewo	POC								false
 772	mafe1237	Mafea	POC	mkv		Vanuatu					false
 773	mago1248	Magori	POC	zgr		Papua New Guinea					false
-19520	magu1243	Maguindanao	PWMP								false
+19520	magu1243	Maguindanao	PPH								false
 774	mail1248	Mailu	POC	mgu		Papua New Guinea					false
 325	maka1311	Makassarese	PWMP	mak	Makasar	Indonesia (Sulawesi)	[aka: Makasarese]	cense1979			false
 776	bent1237	Makassarese (Bantaeng)	PWMP							325	false
@@ -497,7 +497,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19636	mere1242	Malmariv	POC								false
 327	emba1238	Maloh	PWMP	emb	Embaloh	Indonesia (Kalimantan)		king1976			false
 808	emba1238	Maloh (Palin)	PWMP	emb	Embaloh	Indonesia (Kalimantan)				327	false
-809	mama1275	Mamanwa	PWMP	mmn		Philippines		reid1971			false
+809	mama1275	Mamanwa	PPH	mmn		Philippines		reid1971			false
 810	mamb1306	Mambai	PCMP	mgm	Mambae	East Timor	[aka: Mambae]				false
 811	sasa1249	Mamben	PWMP								false
 19578	mamu1255	Mamuju	PWMP								false
@@ -510,24 +510,24 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19347	mang1405	Manggarai (Pacar)	PCMP							816	false
 817	mang1405	Manggarai (West)	PCMP	mqy	Manggarai	Indonesia (Nusa Tenggara)				816	false
 19730	mang1403	Mangseng	POC								false
-19765	cama1250	Manide	PWMP								false
+19765	cama1250	Manide	PPH								false
 19759	mani1297	Manipa	PCMP					collins1983			false
-19484	agus1235	Manobo (Agusan)	PWMP								false
-821	diba1242	Manobo (Dibabawon)	PWMP	mbd	Manobo, Dibabawon	Philippines		reid1971			false
-822	ilia1236	Manobo (Ilianen)	PWMP	mbi	Manobo, Ilianen	Philippines		reid1971			false
-820	cota1241	Manobo (Kalamansig Cotabato)	PWMP	mta	Manobo, Cotabato	Philippines		reid1971			false
-823	sara1327	Manobo (Sarangani)	PWMP	mbs	Manobo, Sarangani	Philippines		reid1971			false
-824	mati1250	Manobo (Tigwa)	PWMP	mbt	Manobo, Matigsalug	Philippines		reid1971			false
-819	west2555	Manobo (Western Bukidnon)	PWMP	mbb	Manobo, Western Bukidnon	Philippines		elkins1968			false
+19484	agus1235	Manobo (Agusan)	PPH								false
+821	diba1242	Manobo (Dibabawon)	PPH	mbd	Manobo, Dibabawon	Philippines		reid1971			false
+822	ilia1236	Manobo (Ilianen)	PPH	mbi	Manobo, Ilianen	Philippines		reid1971			false
+820	cota1241	Manobo (Kalamansig Cotabato)	PPH	mta	Manobo, Cotabato	Philippines		reid1971			false
+823	sara1327	Manobo (Sarangani)	PPH	mbs	Manobo, Sarangani	Philippines		reid1971			false
+824	mati1250	Manobo (Tigwa)	PPH	mbt	Manobo, Matigsalug	Philippines		reid1971			false
+819	west2555	Manobo (Western Bukidnon)	PPH	mbb	Manobo, Western Bukidnon	Philippines		elkins1968			false
 818	atam1240	Manobo (Ata)	PWMP	atd	Manobo, Ata	Philippines					false
-825	mans1262	Mansaka	PWMP	msk		Philippines		svelmoeandsvelmoe1990			false
+825	mans1262	Mansaka	PPH	msk		Philippines		svelmoeandsvelmoe1990			false
 826	manu1258	Manusela	PCMP	wha		Indonesia (Maluku)					false
 330	maor1246	Maori	POC	mri		New Zealand		williams1971			false
 828	mapo1242	Mapos	POC	bzh	Buang, Mapos	Papua New Guinea					false
 19742	mapo1242	Mapos Buang	POC								false
 19365	lewo1242	Mapremo	POC								false
-19176	mapu1244	Mapun	PWMP	sjm		Philippines					false
-331	mara1404	Maranao	PWMP	mrw		Philippines		mckaughanandmacaraya1967			false
+19176	mapu1244	Mapun	PPH	sjm		Philippines					false
+331	mara1404	Maranao	PPH	mrw		Philippines		mckaughanandmacaraya1967			false
 19760	mara1397	Marau₁	PSHWNG				[aka: Marau]	anceaux1961			false
 830	mara1397	Marau₂	POC	mvr	Marau	Indonesia (Papua)	[aka: Marau]	tryonandhackman1983			false
 831	mari1426	Marino	POC	mrb		Vanuatu		tryon1976			false
@@ -536,7 +536,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 833	mars1254	Marshallese	POC	mah		Marshall Islands		aboetal1976			false
 19631	mars1254	Marshallese (Eastern)	POC							833	false
 19269	mars1254	Marshallese (Western)	POC	mah	Marshallese	Marshall Islands				833	false
-19186	masb1238	Masbatenyo	PWMP	msb		Philippines					false
+19186	masb1238	Masbatenyo	PPH	msb		Philippines					false
 834	masi1266	Masiwang	PCMP	bnf		Indonesia (Maluku)					false
 19226	mask1242	Maskelynes	POC	klv		Vanuatu					false
 19626	avok1244	Maxbaxo	POC								false
@@ -652,7 +652,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 364	biak1248	Numfor	PSHWNG	bhw	Biak	Indonesia (Papua)	[aka: Biak, Numfor-Biak]	vanhasseltandvanhasselt1947			false
 19761	nusa1245	Nusa Laut	PCMP								false
 19537	nyal1254	Nyelâyu	POC								false
-19555	cebu1242	Old Cebuano	PWMP								false
+19555	cebu1242	Old Cebuano	PPH								false
 660	kawi1241	Old Javanese	PWMP					zoetmulder1982			false
 906	onin1245	Onin	PCMP	oni		Indonesia (Papua)					false
 19666	ormu1248	Ormu	POC								false
@@ -671,12 +671,12 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 914	paku1239	Paku	PWMP	pku		Indonesia (Kalimantan)					false
 19473	pala1343	Pala	POC								false
 372	pala1344	Palauan	PWMP	pau		Palau		mcmanusandjosephs1977			false
-247	bata1301	Palawan Batak	PWMP	bya	Batak	Philippines		warren1959			false
+247	bata1301	Palawan Batak	PPH	bya	Batak	Philippines		warren1959			false
 19486	nucl1738	Palawano	PWMP								false
 918	palu1252	Palu'e	PCMP	ple	Palu’e	Indonesia (Nusa Tenggara)					false
 19283	nimo1246	Panatinani	POC	nmw	Nimoa	Papua New Guinea					false
 919	misi1243	Panayati	POC								false
-920	pang1290	Pangasinan	PWMP	pag		Philippines		benton1971			false
+920	pang1290	Pangasinan	PPH	pag		Philippines		benton1971			false
 19461	sout2856	Pango	POC								false
 19707	papa1265	Papapana	POC								false
 921	papi1254	Papitalai	POC	pat		Papua New Guinea					false
@@ -770,7 +770,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 954	remb1250	Rembong (Wue)	PCMP							391	false
 952	remb1250	Rembong (Wangka)	PCMP	reb	Rembong	Indonesia (Nusa Tenggara)				391	false
 953	remb1250	Rembong (Waru-Kia)	PCMP							391	false
-19485	remo1247	Remontado	PWMP				[aka: Sinauna]				false
+19485	remo1247	Remontado	PPH				[aka: Sinauna]				false
 390	renn1242	Rennellese	POC	mnv	Rennell-Belona	Solomon Islands		elbert1975			false
 19329	rere1240	Rerep	POC								false
 956	rade1240	Rhade	PWMP	rad	Rade	Viet Nam	[aka: Rade]	tharpanduonya1980			false
@@ -779,7 +779,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 958	nort2994	Roglai (Northern)	PWMP	rog	Roglai, Northern	Viet Nam	[aka: Roglai]				false
 19668	ronj1237	Roinji	POC								false
 392	roma1332	Roma	PCMP	rmm		Indonesia (Maluku)		jonker1932			false
-19354	romb1245	Romblomanon	PWMP				[aka: Bikol Romblomanon]				false
+19354	romb1245	Romblomanon	PPH				[aka: Bikol Romblomanon]				false
 960	roon1237	Ron	PSHWNG								false
 393	waim1251	Roro	POC	rro	Waima	Papua New Guinea		capell1943			false
 395	bilb1242	Rotinese	PCMP	bpz	Bilba	Indonesia (Nusa Tenggara)		jonker1908;fox1993a			false
@@ -812,10 +812,10 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19479	bala1311	Samal (Balangingi )	PWMP				[aka: Balangingi Samal]	reid1971			false
 19439	lagh1246	Samasodu	POC				[aka: Laghu]				false
 19397	boto1242	Sambal	PWMP	sbl				madulid2001			false
-546	boli1256	Sambal (Bolinaw)	PWMP	smk	Bolinao	Philippines	[aka: Bolinao]	mcfarland1977			false
-18976	boto1242	Sambal (Botolan)	PWMP	sbl	Sambal, Botolan	Philippines		reid1971		19397	false
-19716	boto1242	Sambal (Pinatubo)	PWMP					madulid2001		19397	false
-19395	tina1248	Sambal (Tina)	PWMP					elgincolingoschnickandelgincolin1988		19397	false
+546	boli1256	Sambal (Bolinaw)	PPH	smk	Bolinao	Philippines	[aka: Bolinao]	mcfarland1977			false
+18976	boto1242	Sambal (Botolan)	PPH	sbl	Sambal, Botolan	Philippines		reid1971		19397	false
+19716	boto1242	Sambal (Pinatubo)	PPH					madulid2001		19397	false
+19395	tina1248	Sambal (Tina)	PPH					elgincolingoschnickandelgincolin1988		19397	false
 983	maan1238	Samihim	PWMP	mhy	Ma’anyan	Indonesia (Kalimantan)					false
 401	samo1305	Samoan	POC	smo		Samoa		milner1966			false
 985	sang1337	Sangil	PWMP	snl		Philippines		reid1971			false
@@ -876,9 +876,9 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 1030	sout2869	Southwest Tanna	POC	nwi	Tanna, Southwest	Vanuatu	[aka: Imreang]				false
 19313	sowa1244	Sowa	POC	sww		Vanuatu					false
 1022	suau1242	Suau	POC	swp		Papua New Guinea	[aka: Suau (Daui), Daui Suau]				false
-421	cent2089	Subanen/Subanun	PWMP	syb	Subanen, Central	Philippines		churchill1913;reid1971			false
-19223	west2557	Subanon	PWMP	suc	Subanon, Western	Philippines		reid1971			false
-1025	cent2089	Subanun (Sindangan)	PWMP	syb	Subanen, Central	Philippines		reid1971		19223	false
+421	cent2089	Subanen/Subanun	PPH	syb	Subanen, Central	Philippines		churchill1913;reid1971			false
+19223	west2557	Subanon	PPH	suc	Subanon, Western	Philippines		reid1971			false
+1025	cent2089	Subanun (Sindangan)	PPH	syb	Subanen, Central	Philippines		reid1971		19223	false
 1026	sude1239	Sudest	POC	tgo		Papua New Guinea					false
 19368	sula1248	Sula	PCMP				[aka: Fagudu, Sula (Fagudu)]				false
 1027	sumb1241	Sumbawanese	PWMP	smw	Sumbawa	Indonesia (Nusa Tenggara)	[aka: Sumbawa]				false
@@ -894,7 +894,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 1032	lawa1257	Taboyan	PWMP	lbx	Lawangan	Indonesia (Kalimantan)		hudson1967			false
 1033	lund1271	Tabun	PWMP	lnd	  Lundayeh	Indonesia (Kalimantan)		ray1913			false
 18947	taee1237	Tae'	PWMP	rob	Tae’	Indonesia (Sulawesi)		vanderveen1940			false
-423	taga1270	Tagalog	PWMP	tgl		Philippines		panganiban1966;english1986			false
+423	taga1270	Tagalog	PPH	tgl		Philippines		panganiban1966;english1986			false
 1040	tahi1242	Tahitian	POC	tah		French Polynesia					false
 19217	taji1246	Tajio	PWMP	tdj		Indonesia (Sulawesi)		himmelmann2001			false
 1041	taki1248	Takia	POC	tbc		Papua New Guinea		blust1975			false
@@ -920,9 +920,9 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19448	tasm1246	Tasmate	POC					tryon1976			false
 19558	tata1257	Tatana	PWMP								false
 19252	taut1234	Tau’t Batu	PWMP								false
-18831	taus1251	Tausug	PWMP	tsg		Philippines		hassanashleyandashley1994			false
+18831	taus1251	Tausug	PPH	tsg		Philippines		hassanashleyandashley1994			false
 1056	tawa1275	Tawala	POC	tbo		Papua New Guinea		capell1943;ezard1985			false
-19175	cala1258	Tboli	PWMP	tbk		Philippines	[aka: Tagabili]	awedunderwoodandvanwynen2004			false
+19175	cala1258	Tboli	PPH	tbk		Philippines	[aka: Tagabili]	awedunderwoodandvanwynen2004			false
 18959	telu1263	Teluti	PCMP	tlt		Indonesia (Maluku)		wallace1962			false
 19709	teni1244	Tenis	POC								false
 1059	teop1238	Teop	POC	tio		Papua New Guinea					false
@@ -943,7 +943,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19635	semb1240	Tingalan (East)	PWMP								false
 19488	semb1240	Tingalan (West)	PWMP				[aka: Tinggalan, Tingalan]				false
 1068	tinp1237	Tinputz	POC	tpz		Papua New Guinea		hostetlerandcarolyn1975			false
-433	tiru1241	Tiruray	PWMP	tiy		Philippines		schlegel1971			false
+433	tiru1241	Tiruray	PPH	tiy		Philippines		schlegel1971			false
 1070	tita1241	Titan	POC	ttv		Papua New Guinea					false
 19518	toak1237	Toak	POC								false
 427	bata1289	Toba Batak	PWMP	bbc	Batak Toba	Indonesia (Sumatra)		warneck1977			false
@@ -995,7 +995,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19356	ulit1238	Ulithian	POC								false
 19170	umaa1242	Uma	PWMP	ppk		Indonesia (Sulawesi)	[aka: Uma (Toraja), Toraja Uma]	esser1964			false
 1097	reja1241	Uma Baloi	PWMP								false
-19393	umir1236	Umiray Dumaget	PWMP								false
+19393	umir1236	Umiray Dumaget	PPH								false
 19401	urav1235	Ura	POC					tryon1976			false
 19227	urip1239	Uripiv	POC	upv	Uripiv-Wala-Rano-Atchin	Vanuatu		tryon1976			false
 19687	urua1242	Uruava	POC								false
@@ -1029,7 +1029,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 1110	wala1266	Wala	POC	lgl		Solomon Islands					false
 1111	wamp1247	Wampar	POC	lbq		Papua New Guinea					false
 1112	wand1267	Wandamen	PSHWNG	wad		Indonesia (Papua)		anceaux1961			false
-19275	wara1300	Waray-Waray	PWMP	war		Philippines		abuyen2000			false
+19275	wara1300	Waray-Waray	PPH	war		Philippines		abuyen2000			false
 439	waro1242	Waropen	PSHWNG	wrp		Indonesia (Papua)		held1942;anceaux1961			false
 1114	watu1247	Watubela	PCMP	wah		Indonesia (Maluku)		collinsnda			false
 1115	watu1246	Watut	POC			Papua New Guinea		holzknecht1989			false
@@ -1049,14 +1049,14 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19316	wusi1237	Wusi-Valui	POC					tryon1976			false
 445	wuvu1240	Wuvulu	POC					blust1975			false
 1128	yabe1254	Yabem	POC	jae		Papua New Guinea					false
-1129	yaka1277	Yakan	PWMP	yka		Philippines		behrens2002			false
+1129	yaka1277	Yakan	PPH	yka		Philippines		behrens2002			false
 1130	yamd1240	Yamdena	PCMP	jmd		Indonesia (Maluku)		drabbe1932b			false
 1131	yami1254	Yami	PWMP	tao		Taiwan		rauetal2012;tsuchidayamadaandmoriguchi1987			false
 1132	yami1254	Yami (Imorod)	PWMP							1131	false
 18242	yami1254	Yami (Iranomilek)	PWMP							1131	false
 19311	yami1254	Yami (Iraralay)	PWMP							1131	false
 1134	yape1248	Yapese	POC	yap		Micronesia		jensen1977			false
-19274	yoga1237	Yogad	PWMP					mcfarland1977;davisandmesa2000			false
+19274	yoga1237	Yogad	PPH					mcfarland1977;davisandmesa2000			false
 1135	toba1266	Yotefa	POC								false
 19007	zaba1237	Zabana	POC	kji		Solomon Islands	[aka: Kia]	tryonandhackman1983			false
 20001	east2712	Proto-Eastern Malayo-Polynesian	PEMP						PEMP		true
