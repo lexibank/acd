@@ -238,7 +238,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 615	gane1237	Gimán	PSHWNG	gzn	Gane	Indonesia (Maluku)	[aka: Gani]	wallace1962			false
 270	gitu1237	Gitua	POC	ggt		Papua New Guinea		lincoln1977			false
 617	sasa1249	Gondang	PWMP								false
-272	goro1259	Gorontalo	PWMP	gor		Indonesia (Sulawesi)		pateda1977			false
+272	goro1259	Gorontalo	PPH	gor		Indonesia (Sulawesi)		pateda1977			false
 19663	guma1254	Gumawana	POC								false
 19737	haho1237	Hahon	POC								false
 19711	hako1237	Haku	POC								false
@@ -294,7 +294,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19541	coas1294	Kadazan (Papar)	PWMP								false
 287	coas1294	Kadazan Dusun	PWMP	kzj	Kadazan, Coastal	Malaysia (Sabah)	[aka: Dusun (Kadazan), Kadazan]	antonissen1958			false
 665	kahu1241	Kahua	POC	agw		Solomon Islands					false
-666	kaid1239	Kaidipang	PWMP	kzp		Indonesia (Sulawesi)					false
+666	kaid1239	Kaidipang	PPH	kzp		Indonesia (Sulawesi)					false
 667	kair1263	Kairiru	POC	kxa		Papua New Guinea		wivell1981			false
 19377	iwal1237	Kaiwa	POC								false
 670	kala1388	Kalagan	PPH	kqe		Philippines	[aka: Tagakaulu Kalagan]	reid1971			false
@@ -431,7 +431,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 18938	lioo1240	Li'o	PCMP	ljl	Li’o	Indonesia (Nusa Tenggara)		vandierendoncknd			false
 19506	lana1236	Lobu Lanas	PWMP								false
 19583	tamp1254	Lobu Tampios	PWMP								false
-19712	lola1250	Lolak	PWMP								false
+19712	lola1250	Lolak	PPH								false
 19771	long1405	Long Gelat Modang	PWMP								false
 19584	east2485	Penan (Long Lamai)	PWMP							18658	false
 745	long1395	Longgu	POC	lgu		Solomon Islands					false
@@ -519,7 +519,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 823	sara1327	Manobo (Sarangani)	PPH	mbs	Manobo, Sarangani	Philippines		reid1971			false
 824	mati1250	Manobo (Tigwa)	PPH	mbt	Manobo, Matigsalug	Philippines		reid1971			false
 819	west2555	Manobo (Western Bukidnon)	PPH	mbb	Manobo, Western Bukidnon	Philippines		elkins1968			false
-818	atam1240	Manobo (Ata)	PWMP	atd	Manobo, Ata	Philippines					false
+818	atam1240	Manobo (Ata)	PPH	atd	Manobo, Ata	Philippines					false
 825	mans1262	Mansaka	PPH	msk		Philippines		svelmoeandsvelmoe1990			false
 826	manu1258	Manusela	PCMP	wha		Indonesia (Maluku)					false
 330	maor1246	Maori	POC	mri		New Zealand		williams1971			false
@@ -570,11 +570,11 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 850	moda1244	Modang (Long Glat)	PWMP	mxd	Modang	Indonesia (Kalimantan)	[aka: Long Glat Modang]				false
 341	moke1242	Moken	PWMP	mwt		Myanmar		larish1999			false
 342	moki1238	Mokilese	POC	mkj		Micronesia		harrisonandalbert1977			false
-19512	molb1237	Molbog	PWMP								false
+19512	molb1237	Molbog	PPH								false
 19480	moli1247	Moli	POC								false
 18975	moli1248	Molima	POC	mox		Papua New Guinea		chowningndb			false
 854	mond1265	Mondropolon	POC	npn		Papua New Guinea					false
-245	mong1342	Mongondow	PWMP	mog		Indonesia (Sulawesi)	[aka: Bolaang Mongondow]	dunnebier1951			false
+245	mong1342	Mongondow	PPH	mog		Indonesia (Sulawesi)	[aka: Bolaang Mongondow]	dunnebier1951			false
 19034	mono1273	Mono-Alu	POC	mte	Mono	Solomon Islands	[aka: Mono, Alu]	wheeler1926			false
 857	morm1235	Moor	PSHWNG				[aka: Mor]	kamholz2011			false
 858	more1257	Morella	PCMP								false
@@ -672,7 +672,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19473	pala1343	Pala	POC								false
 372	pala1344	Palauan	PWMP	pau		Palau		mcmanusandjosephs1977			false
 247	bata1301	Palawan Batak	PPH	bya	Batak	Philippines		warren1959			false
-19486	nucl1738	Palawano	PWMP								false
+19486	nucl1738	Palawano	PPH								false
 918	palu1252	Palu'e	PCMP	ple	Palu’e	Indonesia (Nusa Tenggara)					false
 19283	nimo1246	Panatinani	POC	nmw	Nimoa	Papua New Guinea					false
 919	misi1243	Panayati	POC								false
@@ -705,7 +705,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19733	lala1268	Pokau	POC				[aka: Nara, Lala]	capell1943			false
 934	pomm1237	Pom	PSHWNG	pmo		Indonesia (Papua)					false
 19729	pona1250	Ponam	POC								false
-19570	pono1240	Ponosakan	PWMP	pns		Sulawesi					false
+19570	pono1240	Ponosakan	PPH	pns		Sulawesi					false
 936	tuka1249	Popalia	PWMP								false
 19355	gaoo1237	Poro	POC								false
 19407	port1285	Port Sandwich	POC								false
@@ -733,8 +733,8 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19074		Proto-Central-Eastern Malayo-Polynesian	PCEMP						PCEMP		true
 19075		Proto-Chamic	PWMP								true
 19585	east2493	Proto-East Formosan	Form.								true
-19449		Proto-East Gorontalic	PWMP					usup1981			true
-19078	goro1273	Proto-Gorontalic	PWMP					usup1981			true
+19449		Proto-East Gorontalic	PPH					usup1981			true
+19078	goro1273	Proto-Gorontalic	PPH					usup1981			true
 19296	lamp1241	Proto-Lampungic	PWMP								true
 19137		Proto-Malayo-Javanic	PMP								true
 19081	mala1545	Proto-Malayo-Polynesian	PMP						PMP		true
