@@ -364,7 +364,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 18958	kipu1237	Kiput	PWMP	kyi	Kiput 	Malaysia (Sarawak)		blust1971			false
 704	kiss1246	Kis	POC	kis		Papua New Guinea					false
 302	kisa1266	Kisar	PCMP	kje		Indonesia (Maluku)		jonker1932			false
-19774	gian1241	Klata	PWMP					zorc2019			false
+19774	gian1241	Klata	PPH					zorc2019			false
 706	kodi1247	Kodi	PCMP	kod		Indonesia (Nusa Tenggara)					false
 19218	koko1269	Kokota	POC	kkk		Solomon Islands					false
 19383	kola1285	Kola	PCMP								false
@@ -526,7 +526,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 828	mapo1242	Mapos	POC	bzh	Buang, Mapos	Papua New Guinea					false
 19742	mapo1242	Mapos Buang	POC								false
 19365	lewo1242	Mapremo	POC								false
-19176	mapu1244	Mapun	PPH	sjm		Philippines					false
+19176	mapu1244	Mapun	PWMP	sjm		Philippines					false
 331	mara1404	Maranao	PPH	mrw		Philippines		mckaughanandmacaraya1967			false
 19760	mara1397	Marau₁	PSHWNG				[aka: Marau]	anceaux1961			false
 830	mara1397	Marau₂	POC	mvr	Marau	Indonesia (Papua)	[aka: Marau]	tryonandhackman1983			false
@@ -739,7 +739,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19137		Proto-Malayo-Javanic	PMP								true
 19081	mala1545	Proto-Malayo-Polynesian	PMP						PMP		true
 19079	micr1243	Proto-Micronesian	POC					benderetal2003;benderetal2003a			true
-19080	mina1272	Proto-Minahasan	PWMP					sneddon1978			true
+19080	mina1272	Proto-Minahasan	PPH					sneddon1978			true
 19204	moke1241	Proto-Moken-Moklen	PWMP								true
 19497	nort3195	Proto-North-Central Vanuatu	POC								true
 19082	ocea1241	Proto-Oceanic	POC						POC		true
@@ -748,7 +748,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19085	puyu1239	Proto-Puyuma	Form.								true
 19086	ruka1240	Proto-Rukai	Form.					li1977			true
 19586		Proto-Sama-Bajaw	PWMP								true
-19089	sang1335	Proto-Sangiric	PWMP					sneddon1984			true
+19089	sang1335	Proto-Sangiric	PPH					sneddon1984			true
 19429	sira1267	Proto-Siraya	Form.					adelaar2013			true
 19577		Proto-South Aru	PCMP								true
 19130		Proto-South Formosan	Form.								true
@@ -811,7 +811,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 981	cent2092	Samal	PWMP	sml	Sama, Central	Philippines		reid1971			false
 19479	bala1311	Samal (Balangingi )	PWMP				[aka: Balangingi Samal]	reid1971			false
 19439	lagh1246	Samasodu	POC				[aka: Laghu]				false
-19397	boto1242	Sambal	PWMP	sbl				madulid2001			false
+19397	boto1242	Sambal	PPH	sbl				madulid2001			false
 546	boli1256	Sambal (Bolinaw)	PPH	smk	Bolinao	Philippines	[aka: Bolinao]	mcfarland1977			false
 18976	boto1242	Sambal (Botolan)	PPH	sbl	Sambal, Botolan	Philippines		reid1971		19397	false
 19716	boto1242	Sambal (Pinatubo)	PPH					madulid2001		19397	false
@@ -819,7 +819,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 983	maan1238	Samihim	PWMP	mhy	Ma’anyan	Indonesia (Kalimantan)					false
 401	samo1305	Samoan	POC	smo		Samoa		milner1966			false
 985	sang1337	Sangil	PWMP	snl		Philippines		reid1971			false
-402	sang1336	Sangir	PWMP	sxn		Indonesia (Sulawesi)		stellerandaebersold1959			false
+402	sang1336	Sangir	PPH	sxn		Indonesia (Sulawesi)		stellerandaebersold1959			false
 987	sang1336	Sangir (Siau)	PWMP	sxn	Sangir	Indonesia (Sulawesi)				402	false
 988	sang1336	Sangir (Tamako)	PWMP	sxn	Sangir	Indonesia (Sulawesi)				402	false
 989	owaa1237	Santa Ana	POC	stn	Owa	Solomon Islands					false
@@ -900,7 +900,7 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 1041	taki1248	Takia	POC	tbc		Papua New Guinea		blust1975			false
 19333	taku1257	Takuu	POC								false
 19562	tala1287	Talantang Dusun	PWMP				[aka: Dusun (Talantang)]				false
-19277	tala1285	Talaud	PWMP	tld		Indonesia (Sulawesi)		sneddon1984			false
+19277	tala1285	Talaud	PPH	tld		Indonesia (Sulawesi)		sneddon1984			false
 1042	tali1259	Talise	POC	tlr		Solomon Islands		tryonandhackman1983			false
 19713	talu1239	Talur	PCMP					taber1993			false
 19625	malo1243	Tamambo	POC					tryon1976			false
@@ -960,14 +960,14 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 1074	tali1259	Tolo	POC	tlr	Talise	Solomon Islands					false
 1075	tolo1255	Tolomako	POC	tlm		Vanuatu					false
 19188	tomb1244	Tombonuwo	PWMP	txa	Tombonuo	Malaysia (Sabah)					false
-1076	tomb1243	Tombulu	PWMP	tom		Indonesia (Sulawesi)					false
-1077	tond1251	Tondano	PWMP	tdn		Indonesia (Sulawesi)		sneddon1978			false
+1076	tomb1243	Tombulu	PPH	tom		Indonesia (Sulawesi)					false
+1077	tond1251	Tondano	PPH	tdn		Indonesia (Sulawesi)		sneddon1978			false
 1078	tond1251	Tondano (Kakas)	PWMP	tdn	Tondano	Indonesia (Sulawesi)				1077	false
 19323	tong1322	Tonga	POC			Vanuatu		tryon1976			false
 434	tong1325	Tongan	POC	ton		Tonga		churchward1959			false
 1080	tons1239	Tonsawang	PWMP	tnw		Indonesia (Sulawesi)					false
-1081	tons1240	Tonsea	PWMP	txs		Indonesia (Sulawesi)		sneddon1978			false
-19052	tont1239	Tontemboan	PWMP	tnt		Indonesia (Sulawesi)		schwarz1908			false
+1081	tons1240	Tonsea	PPH	txs		Indonesia (Sulawesi)		sneddon1978			false
+19052	tont1239	Tontemboan	PPH	tnt		Indonesia (Sulawesi)		schwarz1908			false
 19197	toab1237	Toqabaqita	POC	mlu	To’abaita	Solomon Islands					false
 19527	rata1244	Toratán	PWMP	rth	Ratahan	Indonesia (Sulawesi)	[aka: Ratahan]				false
 19624	tora1259	Torau	POC								false
@@ -1049,10 +1049,10 @@ ID	Glottocode	Name	Group	ISO639P3code	ISOname	Location	Alias	Source	Abbr	Dialect
 19316	wusi1237	Wusi-Valui	POC					tryon1976			false
 445	wuvu1240	Wuvulu	POC					blust1975			false
 1128	yabe1254	Yabem	POC	jae		Papua New Guinea					false
-1129	yaka1277	Yakan	PPH	yka		Philippines		behrens2002			false
+1129	yaka1277	Yakan	PWMP	yka		Philippines		behrens2002			false
 1130	yamd1240	Yamdena	PCMP	jmd		Indonesia (Maluku)		drabbe1932b			false
-1131	yami1254	Yami	PWMP	tao		Taiwan		rauetal2012;tsuchidayamadaandmoriguchi1987			false
-1132	yami1254	Yami (Imorod)	PWMP							1131	false
+1131	yami1254	Yami	PPH	tao		Taiwan		rauetal2012;tsuchidayamadaandmoriguchi1987			false
+1132	yami1254	Yami (Imorod)	PPH							1131	false
 18242	yami1254	Yami (Iranomilek)	PWMP							1131	false
 19311	yami1254	Yami (Iraralay)	PWMP							1131	false
 1134	yape1248	Yapese	POC	yap		Micronesia		jensen1977			false
