@@ -1,5 +1,5 @@
 {
-    "title": "CLDF dataset derived from Blust's \"Austronesian Comparative Dictionary\"",
+    "title": "Austronesian Comparative Dictionary",
     "access_right": "open",
     "keywords": [
         "cldf:Wordlist",
@@ -7,10 +7,13 @@
     ],
     "creators": [
         {
-            "name": "Robert Bust"
+            "name": "Robert Blust"
         },
         {
             "name": "Stephen Trussel"
+        },
+        {
+            "name": "Robert Forkel"
         },
         {
             "name": "Alexander D. Smith"

@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 import json
 
 
@@ -12,6 +12,7 @@ setup(
     license=metadata.get('license', ''),
     url=metadata.get('url', ''),
     py_modules=['lexibank_acd'],
+    packages=find_packages(where='.'),
     include_package_data=True,
     zip_safe=False,
     entry_points={
@@ -23,6 +24,7 @@ setup(
         ]
     },
     install_requires=[
+        'pycldf>=1.40',
         'cldfviz>=0.7',
         'clldutils>=3.11',
         'pylexibank>=3.2.0',

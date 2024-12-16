@@ -1,37 +1,36 @@
 {
     "@context": "http://www.w3.org/ns/csvw",
     "aboutUrl": null,
-    "dc:bibliographicCitation": "Robert Blust and Stephen Trussel 2020. The Austronesian Comparative Dictionary. Web edition",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Wordlist",
     "dc:isVersionOf": null,
     "dc:license": "https://creativecommons.org/licenses/by/4.0/",
     "dc:related": null,
     "dc:source": "sources.bib",
-    "dc:title": "CLDF dataset derived from Blust's \"Austronesian Comparative Dictionary\"",
+    "dc:title": "Austronesian Comparative Dictionary",
     "dcat:accessURL": "https://github.com/lexibank/acd",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.1",
+            "dc:created": "v1.2-31-g73a584a",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.7",
+            "dc:created": "v5.1",
             "dc:title": "Glottolog"
         },
         {
             "rdf:about": "https://github.com/concepticon/concepticon-data",
             "rdf:type": "prov:Entity",
-            "dc:created": "v3.0.0",
+            "dc:created": "v3.2.0",
             "dc:title": "Concepticon"
         },
         {
             "rdf:about": "https://github.com/cldf-clts/clts",
             "rdf:type": "prov:Entity",
-            "dc:created": "v2.2.0",
+            "dc:created": "v2.3.0",
             "dc:title": "CLTS"
         }
     ],
@@ -42,7 +41,7 @@
         },
         {
             "dc:title": "python",
-            "dc:description": "3.10.6"
+            "dc:description": "3.12.3"
         },
         {
             "dc:title": "python-packages",
@@ -125,12 +124,17 @@
                         "name": "Profile"
                     },
                     {
-                        "datatype": "boolean",
-                        "name": "is_root"
+                        "dc:conformsTo": "CLDF Markdown",
+                        "dc:description": "Description of the meaning of the word (possibly in language-specific terms).",
+                        "dc:format": "text/markdown",
+                        "datatype": "string",
+                        "propertyUrl": "http://clld.org/v1.0/terms.rdf#description",
+                        "name": "Description"
                     },
                     {
+                        "dc:description": "For a form that differs from the expected reflex in some way this flag asserts that a copying mistake has not occurred.",
                         "datatype": "boolean",
-                        "name": "is_proto"
+                        "name": "Sic"
                     }
                 ],
                 "foreignKeys": [
@@ -165,7 +169,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 1063,
+            "dc:extent": 1064,
             "tableSchema": {
                 "columns": [
                     {
@@ -223,34 +227,53 @@
                         "name": "Family"
                     },
                     {
+                        "dc:description": "Abbreviation for the (proto-)language name.",
                         "datatype": "string",
-                        "name": "ISOname"
+                        "name": "Abbr"
                     },
                     {
-                        "datatype": "string",
+                        "dc:description": "Etymological dictionaries often operate with an assumed internal classification. This column lists such groups.",
+                        "datatype": {
+                            "dc:description": "Each language is assigned to one of the nine reconstruction levels (or Form. or PAN).",
+                            "base": "string",
+                            "format": "PAN|Form.|PMP|PWMP|PPH|PCEMP|PCMP|PEMP|PSHWNG|POC"
+                        },
                         "name": "Group"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Location"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Alias"
-                    },
-                    {
+                        "dc:description": "Etymological (or comparative) dictionaries typically compare lexical data from many source dictionaries.",
                         "datatype": "string",
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
                         "separator": ";",
                         "name": "Source"
                     },
                     {
+                        "dc:description": "Specifies whether a language is a proto-language (and thus its forms reconstructed proto-forms).",
                         "datatype": "boolean",
-                        "name": "is_proto"
+                        "name": "Is_Proto"
+                    },
+                    {
+                        "dc:description": "For proto-languages that correspond to ACD reconstruction levels, a description of their extent is provided.",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "name": "Description"
                     },
                     {
                         "datatype": "string",
                         "name": "Dialect_Of"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Dialect_Of"
+                        ],
+                        "reference": {
+                            "resource": "languages.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
                     }
                 ],
                 "primaryKey": [
@@ -293,7 +316,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognateTable",
-            "dc:extent": 116753,
+            "dc:extent": 121682,
             "tableSchema": {
                 "columns": [
                     {
@@ -346,12 +369,34 @@
                         "name": "Alignment_Source"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Proto_Language"
+                        "dc:description": "Flag indicating that a process of metathesis is assumed, explaining the apparent irregularity of a cognate.",
+                        "datatype": "boolean",
+                        "name": "Metathesis"
                     },
                     {
+                        "dc:description": "Flag indicating that a process of assimilation is assumed, explaining the apparent irregularity of a cognate.",
+                        "datatype": "boolean",
+                        "name": "Assimilation"
+                    },
+                    {
+                        "dc:description": "A comment about the doublet status of the reconstruction.",
                         "datatype": "string",
-                        "name": "Reconstruction_ID"
+                        "name": "Doublet_Comment"
+                    },
+                    {
+                        "dc:description": "Identifier of a set of variants that are independently supported by the comparative evidence. Doubletting that cannot be traced in any clear way to borrowing is extremely common in AN languages (Blust 2011), and an effort has been made to cross-reference doublets in the ACD wherever possible.",
+                        "datatype": "string",
+                        "name": "Doublet_Set"
+                    },
+                    {
+                        "dc:description": "A comment about the disjunct status of the reconstruction.",
+                        "datatype": "string",
+                        "name": "Disjunct_Comment"
+                    },
+                    {
+                        "dc:description": "Identifier of a set of variants that are supported only by allowing the overlap of cognate sets; i.e. only one reconstruction in a set of disjuncts can be consistent with the evidence, but it is unclear which one. A distinction is drawn between doublets (variants that are independently supported by the comparative evidence), and \u201cdisjuncts\u201d (variants that are supported only by allowing the overlap of cognate sets). To illustrate, both Tagalog gum\u00ed \u2018beard\u2019 and Malay kumis \u2018moustache\u2019 show regular correspondences with Fijian kumi \u2018the chin or beard\u2019, but they do not correspond regularly with one another. Based on this evidence, it is impossible to posit doublets, since unambiguous support for both variants is lacking. However, since the Tagalog and Malay forms can each be compared with Fijian kumi, two comparisons can be proposed that overlap by including the Fijian form in both (like all Oceanic languages, Fijian has merged PMP *k and *g; in addition, it has lost final consonants) . The result is a pair of PMP disjuncts *gumi (based on Tagalog and Fijian) and *kumis (based on Malay and Fijian), either or both of which could be used to justify an independent doublet if additional comparative support is found.",
+                        "datatype": "string",
+                        "name": "Disjunct_Set"
                     }
                 ],
                 "foreignKeys": [
@@ -376,17 +421,6 @@
                                 "ID"
                             ]
                         }
-                    },
-                    {
-                        "columnReference": [
-                            "Reconstruction_ID"
-                        ],
-                        "reference": {
-                            "resource": "protoforms.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
                     }
                 ],
                 "primaryKey": [
@@ -396,53 +430,9 @@
             "url": "cognates.csv"
         },
         {
-            "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ContributionTable",
-            "dc:extent": 5,
-            "tableSchema": {
-                "columns": [
-                    {
-                        "datatype": {
-                            "base": "string",
-                            "format": "[a-zA-Z0-9_\\-]+"
-                        },
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
-                        "required": true,
-                        "name": "ID"
-                    },
-                    {
-                        "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
-                        "required": false,
-                        "name": "Name"
-                    },
-                    {
-                        "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
-                        "required": false,
-                        "name": "Description"
-                    },
-                    {
-                        "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#contributor",
-                        "required": false,
-                        "name": "Contributor"
-                    },
-                    {
-                        "datatype": "string",
-                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#citation",
-                        "required": false,
-                        "name": "Citation"
-                    }
-                ],
-                "primaryKey": [
-                    "ID"
-                ]
-            },
-            "url": "contributions.csv"
-        },
-        {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#CognatesetTable",
-            "dc:extent": 9377,
+            "dc:description": "Comparisons with regular sound correspondences and close semantics. If there are additional forms that are strikingly similar but irregular, or that show strong semantic divergence, these are are added in a note. Every attempt is made to keep the comparison proper free from problems.\n\nBecause many reconstructed morphemes contain smaller submorphemic sound-meaning associations of the type that Brandstetter (1916) called \u2018roots\u2019 (Wurzeln), these elements are listed as cognate sets, too. They are marked with a true value for the 'Is_Root' property of the linked, reconstructed form.\n\nThe roots listed here thus amount to a continuation of the data set presented in Blust 1988.",
+            "dc:extent": 10857,
             "tableSchema": {
                 "columns": [
                     {
@@ -468,29 +458,53 @@
                         "name": "Source"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Form"
+                        "dc:description": "A recognizable label for the cognateset, typically the reconstructed proto-form and the reconstructed meaning.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "name": "Name"
                     },
                     {
-                        "datatype": "string",
+                        "dc:description": "Links to the reconstructed proto-form in FormTable.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#formReference",
+                        "name": "Form_ID"
+                    },
+                    {
+                        "dc:conformsTo": "CLDF Markdown",
+                        "dc:format": "text/markdown",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
                         "name": "Comment"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Proto_Language"
+                        "dc:description": "Flag indicating (un)certainty of the reconstruction.",
+                        "datatype": "boolean",
+                        "name": "Doubt"
                     },
                     {
                         "datatype": "string",
-                        "name": "Contribution_ID"
+                        "name": "Etymon_ID"
+                    },
+                    {
+                        "datatype": "boolean",
+                        "name": "Is_Main_Entry"
                     }
                 ],
                 "foreignKeys": [
                     {
                         "columnReference": [
-                            "Contribution_ID"
+                            "Form_ID"
                         ],
                         "reference": {
-                            "resource": "contributions.csv",
+                            "resource": "forms.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Etymon_ID"
+                        ],
+                        "reference": {
+                            "resource": "etyma.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -504,37 +518,52 @@
             "url": "cognatesets.csv"
         },
         {
-            "dc:extent": 998,
+            "dc:description": "The ACD includes five additional categories of groups of forms, called 'near cognates', 'noise', 'roots', 'loans' and 'also'. These are marked with respective values in the 'Category' column.\n\n'Near cognates' are forms that are strikingly similar but irregular, and which cannot be included in a note to an established reconstruction. Stated differently, these are forms that appear to be historically related, but do not yet permit a reconstruction.\n\nThe 'noise' (in the information-theoretic sense of meaningless data that can be confused with a true signal) category lists chance resemblances. Given the number of languages being compared and the number of forms in many of the sources, forms that resemble one another in shape and meaning by chance will not be uncommon, and the decision as to whether a comparison that appears good is a product of chance must be based on criteria such as\n- how general the semantic category of the form is (e.g. phonologically corresponding forms meaning \u2018cut\u2019 are less diagnostic of relationship than phonologically corresponding forms for particular types of cutting),\n- how richly attested the form is (if it is found in just two witnesses the likelihood that it is a product of chance is greatly increased),\n- there is already a well-established reconstruction for the same meaning.\n\nThus, the search process that results in valid cognate sets inevitably turns up other material that is superficially appealing, but is questionable for various reasons. To simply dispose of this \u2018information refuse\u2019 would be unwise for two reasons. First, further searching might show that some of these questionable comparisons are more strongly supported than it initially appeared. Second, even if the material is not upgraded through further comparative work it is always possible that some future researcher with different standards of evaluation will stumble upon some of these comparisons and claim that they are valid, but were overlooked in the ACD. By including a module on \u2018Noise\u2019 we can show that we have considered and rejected various possibilities that might be entertained by others.\n\nBecause many reconstructed morphemes contain smaller submorphemic sound-meaning associations of the type that Brandstetter (1916) called \u2018roots\u2019 (Wurzeln), these elements are included in the 'roots' category. The roots listed here thus amount to a continuation of the data set presented in Blust 1988.\n\nRoots are not listed as regular cognate sets, because the reconstructions are not explicitly assigned to a proto-language.\n\nLoanwords are a perennial problem in historical linguistics. When they involve morphemes that are borrowed between related languages they can provoke questions about the regularity of sound correspondences. When they involve morphemes that are borrowed between unrelated languages they can give rise to invalid reconstructions. Dempwolff (1934-38) included a number of known loanwords among his 2,216 \u2018Proto-Austronesian\u2019 reconstructions in order to show that sound correspondences are often regular even with loanwords that are borrowed relatively early, but he marked these with an \u2018x\u2019, as with *xbazu \u2018shirt\u2019, which he knew to be a Persian loanword in many of the languages of western Indonesia, and (via Malay) in some of the languages of the Philippines. However, he overlooked a number of cases, such as *nanas \u2018pineapple\u2019 (an Amazonian cultigen that was introduced to insular Southeast Asia by the Portuguese). Since widely distributed loanwords can easily be confused with native forms it is useful to include them in the dictionary.\n\nA fairly careful (but inevitably imperfect) attempt has been made to identify and document loanwords with a distribution sufficient to justify a reconstruction on one of the nine levels of the ACD, if treated erroneously as native. While this has been done wherever the possibility of confusion with native forms seemed real, there is no reason to include obvious loans that would never be mistaken for native forms.\n\nThis issue is especially evident in the Philippines, where hundreds of Spanish loanwords from the colonial period that began late in the 16th century, are scattered from at least Ilokano in northern Luzon to the Bisayan languages of the central Philippines and some of the languages of Mindanao (as Subanon). Comparisons like Ilokano kamar\u00f3n \u2018prawn\u2019, Cebuano kamar\u00fan \u2018dish of shrimps, split and dipped in eggs, optionally mixed with ground meat\u2019 < Spanish camar\u00f3n \u2018shrimp\u2019, or Ilokano kal\u00e1bus \u2018jail, prison\u2019, Cebuano kalab\u00fas, kalab\u00fasu \u2018jail; to land in prison, in jail\u2019 < Spanish calabozo \u2018dungeon\u2019 seem inappropriate for inclusion in LOANS, but introduced plants have generally been admitted. Some of these, as \u2018tomato\u2019 may be widely known as New World plants that were introduced to the Philippines by the Spanish, but others, as \u2018chayote\u2019, may be less familiar. As already noted, Dempwolff (1938) posited \u2018Uraustronesisch\u2019 *nanas and *kenas as doublets for \u2018pineapple\u2019, completely overlooking the fact that this is an Amazonian plant that could hardly have been present in the Austronesian world before the advent of the colonial period. This example shows that errors in the semantic domain of plant names can sometimes escape detection by scholars who are otherwise known for their careful, meticulous work, and for this reason all borrowed cognate sets involving plant names are documented as loanwords to avoid any possible misinterpretation.\n\nThe last category, 'also', groups forms related to a particular cognate set. These forms typically show some kind of irregularity with respect to the proposed reconstruction, but provide context to evaluate the validity of the cognate set.",
+            "dc:extent": 2364,
             "tableSchema": {
                 "columns": [
                     {
-                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "name": "ID"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Gloss"
+                        "dc:description": "The title of a table of related forms; typically hints at the type of relation between the forms or between the group of forms and an etymon.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "name": "Name"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Dempwolff_Etymology"
+                        "dc:conformsTo": "CLDF Markdown",
+                        "dc:format": "text/markdown",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "name": "Description"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Contribution_ID"
+                        "dc:description": "An optional category for groups of forms such as \"loans\".",
+                        "name": "Category"
                     },
                     {
-                        "datatype": "string",
+                        "dc:conformsTo": "CLDF Markdown",
+                        "dc:format": "text/markdown",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
                         "name": "Comment"
+                    },
+                    {
+                        "dc:description": "Links to an etymon, if the group of lexemes is related to one.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#cognatesetReference",
+                        "name": "Cognateset_ID"
+                    },
+                    {
+                        "dc:description": "A corresponding (unsupported) reconstruction posited in Dempwolff 1938.",
+                        "name": "Dempwolff_Etymology"
                     }
                 ],
                 "foreignKeys": [
                     {
                         "columnReference": [
-                            "Contribution_ID"
+                            "Cognateset_ID"
                         ],
                         "reference": {
-                            "resource": "contributions.csv",
+                            "resource": "cognatesets.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -545,7 +574,65 @@
                     "ID"
                 ]
             },
-            "url": "loansets.csv"
+            "url": "cf.csv"
+        },
+        {
+            "dc:description": "Membership of forms in a \"cf\" group is mediated through this association table unless more meaningful alternatives are available, like BorrowingTable for loans.",
+            "dc:extent": 7344,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "name": "ID"
+                    },
+                    {
+                        "name": "Cfset_ID"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#formReference",
+                        "name": "Form_ID"
+                    },
+                    {
+                        "dc:conformsTo": "CLDF Markdown",
+                        "dc:format": "text/markdown",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
+                        "name": "Comment"
+                    },
+                    {
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "separator": ";",
+                        "name": "Source"
+                    }
+                ],
+                "foreignKeys": [
+                    {
+                        "columnReference": [
+                            "Form_ID"
+                        ],
+                        "reference": {
+                            "resource": "forms.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    },
+                    {
+                        "columnReference": [
+                            "Cfset_ID"
+                        ],
+                        "reference": {
+                            "resource": "cf.csv",
+                            "columnReference": [
+                                "ID"
+                            ]
+                        }
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "cfitems.csv"
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#BorrowingTable",
@@ -589,8 +676,8 @@
                         "name": "Source"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Loanset_ID"
+                        "dc:description": "Link to a set description.",
+                        "name": "Cfset_ID"
                     }
                 ],
                 "foreignKeys": [
@@ -618,10 +705,10 @@
                     },
                     {
                         "columnReference": [
-                            "Loanset_ID"
+                            "Cfset_ID"
                         ],
                         "reference": {
-                            "resource": "loansets.csv",
+                            "resource": "cf.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -635,96 +722,126 @@
             "url": "borrowings.csv"
         },
         {
-            "dc:extent": 24884,
+            "dc:extent": 8161,
             "tableSchema": {
                 "columns": [
                     {
-                        "datatype": "string",
+                        "dc:description": "A numeric identifier for the etymon. For etyma present in the legacy online version of ACD this number will match the cognate set number assigned then.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
                         "name": "ID"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Cognateset_ID"
+                        "dc:description": "The core reconstruction uniting the cognate sets of the etymon.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "name": "Name"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Form_ID"
+                        "datatype": {
+                            "base": "string",
+                            "format": "a|b|c|C|d|e|g|h|i|j|k|l|m|n|N|\u00f1|\u014b|o|p|q|r|R|s|S|t|u|w|y|z"
+                        },
+                        "name": "Initial"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Subset"
+                        "dc:description": "The reconstructed meaning of the etymon.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "name": "Description"
                     },
                     {
-                        "datatype": "string",
-                        "name": "Proto_Language"
-                    },
-                    {
-                        "datatype": "string",
+                        "dc:conformsTo": "CLDF Markdown",
+                        "dc:description": "Some notes are several lines, while others are a page or more. Notes are used for a variety of purposes. Among the most common are to report other forms that show a likely historical connection with those cited in the main comparison, but which exhibit irregularities other than the usual sporadic assimilation or metathesis, and so raise more serious questions about comparability, as in entry (2) above; to discuss details of the reconstructed gloss; and to note the occurrence of monosyllabic \u201croots\u201d or submorphemic sound-meaning correlations in reconstructed morphemes.",
+                        "dc:format": "text/markdown",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#comment",
                         "name": "Comment"
                     },
                     {
-                        "datatype": "boolean",
-                        "name": "Inferred"
+                        "dc:description": "Sources mentioned in the comment describing the etymon.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "separator": ";",
+                        "name": "Source"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "etyma.csv"
+        },
+        {
+            "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#TreeTable",
+            "dc:extent": 1,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "name": "ID"
+                    },
+                    {
+                        "dc:description": "Name of tree as used in the tree file, i.e. the tree label in a Nexus file or the 1-based index of the tree in a newick file",
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "name": "Name"
+                    },
+                    {
+                        "dc:description": "Describe the method that was used to create the tree, etc.",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    },
+                    {
+                        "dc:description": "Whether the tree is rooted (Yes) or unrooted (No) (or no info is available (null))",
+                        "datatype": {
+                            "base": "boolean",
+                            "format": "Yes|No"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#treeIsRooted",
+                        "required": false,
+                        "name": "Tree_Is_Rooted"
+                    },
+                    {
+                        "dc:description": "Whether the tree is a summary (or consensus) tree, i.e. can be analysed in isolation, or whether it is a sample, resulting from a method that creates multiple trees",
+                        "datatype": {
+                            "base": "string",
+                            "format": "summary|sample"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#treeType",
+                        "required": false,
+                        "name": "Tree_Type"
+                    },
+                    {
+                        "dc:description": "The unit used to measure evolutionary time in phylogenetic trees.",
+                        "datatype": {
+                            "base": "string",
+                            "format": "change|substitutions|years|centuries|millennia"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#treeBranchLengthUnit",
+                        "required": false,
+                        "name": "Tree_Branch_Length_Unit"
+                    },
+                    {
+                        "dc:description": "References a file containing a Newick representation of the tree, labeled with identifiers as described in the LanguageTable (the [Media_Type](https://cldf.clld.org/v1.0/terms.html#mediaType) column of this table should provide enough information to chose the appropriate tool to read the newick)",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#mediaReference",
+                        "name": "Media_ID"
                     },
                     {
                         "datatype": "string",
-                        "name": "Doublet_Comment"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Disjunct_Comment"
-                    },
-                    {
-                        "dc:description": "variants that are independently supported by the comparative evidence",
-                        "separator": " ",
-                        "name": "Doublets"
-                    },
-                    {
-                        "dc:description": "",
-                        "separator": " ",
-                        "name": "Disjuncts"
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#source",
+                        "required": false,
+                        "separator": ";",
+                        "name": "Source"
                     }
                 ],
                 "foreignKeys": [
                     {
                         "columnReference": [
-                            "Form_ID"
+                            "Media_ID"
                         ],
                         "reference": {
-                            "resource": "forms.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
-                    {
-                        "columnReference": [
-                            "Cognateset_ID"
-                        ],
-                        "reference": {
-                            "resource": "cognatesets.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
-                    {
-                        "columnReference": [
-                            "Doublets"
-                        ],
-                        "reference": {
-                            "resource": "protoforms.csv",
-                            "columnReference": [
-                                "ID"
-                            ]
-                        }
-                    },
-                    {
-                        "columnReference": [
-                            "Disjuncts"
-                        ],
-                        "reference": {
-                            "resource": "protoforms.csv",
+                            "resource": "media.csv",
                             "columnReference": [
                                 "ID"
                             ]
@@ -735,7 +852,61 @@
                     "ID"
                 ]
             },
-            "url": "protoforms.csv"
+            "url": "trees.csv"
+        },
+        {
+            "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
+            "dc:extent": 1,
+            "tableSchema": {
+                "columns": [
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[a-zA-Z0-9_\\-]+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#id",
+                        "required": true,
+                        "name": "ID"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#name",
+                        "required": false,
+                        "name": "Name"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
+                        "required": false,
+                        "name": "Description"
+                    },
+                    {
+                        "datatype": {
+                            "base": "string",
+                            "format": "[^/]+/.+"
+                        },
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#mediaType",
+                        "required": true,
+                        "name": "Media_Type"
+                    },
+                    {
+                        "datatype": "anyURI",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#downloadUrl",
+                        "required": false,
+                        "name": "Download_URL"
+                    },
+                    {
+                        "datatype": "string",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#pathInZip",
+                        "required": false,
+                        "name": "Path_In_Zip"
+                    }
+                ],
+                "primaryKey": [
+                    "ID"
+                ]
+            },
+            "url": "media.csv"
         }
     ]
 }

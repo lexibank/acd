@@ -181,11 +181,13 @@ def parse(d):
         refs.update([r for r, _ in s.iter_refs()])
         for f in s.forms:
             if f.language in [
+                # FIXME: log these!?
                 'Mb(T)', 'LgW', 'TYPE', 'LgL', 'LgS', 'SB', 'KADAYAN', '(??) *', 'SUB(S)', 'MOO',
             ]:
                 continue
             assert f.language in forms_by_lang, f.language
             if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
+                # FIXME: log these!
                 #print('{}: {} {}'.format(f.language, f.form, f.gloss.plain))
                 # Rembong: bunit peel the stalks of vegetables
                 # Bungku: wita earth, land
@@ -203,6 +205,7 @@ def parse(d):
             if f.language in [
                 'PPn', 'Batangan'
             ]:
+                # FIXME: log these!
                 continue
             if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
                 #print('{}: {} {}'.format(f.language, f.form, near.gloss))
@@ -222,6 +225,7 @@ def parse(d):
             if f.language in [
                 'RHB', 'TND', 'LON', 'MUR',
             ]:
+                # FIXME: log these!
                 continue
             if (f.form, f.gloss.plain) not in forms_by_lang[f.language]:
                 pass

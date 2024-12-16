@@ -1,0 +1,14 @@
+TY - JOUR
+T1 - Proto-Philippine Addenda: Theory, Method and Data
+A1 - Blust, Robert
+JF - Oceanic Linguistics
+VL - 61
+IS - 1
+SP - 322
+EP - 404
+PY - 2022
+PB - University of Hawai'i Press
+SN - 1527-9421
+UR - https://muse.jhu.edu/pub/5/article/858611
+N1 - Volume 61, Number 1, June 2022
+ER -

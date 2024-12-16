@@ -209,9 +209,9 @@
 <ellipse fill="none" stroke="#000000" cx="679.957" cy="-545.6217" rx="3.2" ry="3.2"/>
 </g>
 <!-- CognatesetTable -->
-<g id="node14" class="node">
+<g id="node16" class="node">
 <title>CognatesetTable</title>
-<g id="a_node14"><a xlink:href="../../tables/CognatesetTable.html" xlink:title="CognatesetTable" target="_top">
+<g id="a_node16"><a xlink:href="../../tables/CognatesetTable.html" xlink:title="CognatesetTable" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="481,-177.253 481,-304.253 620,-304.253 620,-177.253 481,-177.253"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="481.5,-280.753 481.5,-303.753 620.5,-303.753 620.5,-280.753 481.5,-280.753"/>
 <polygon fill="none" stroke="#000000" points="481.5,-280.753 481.5,-303.753 620.5,-303.753 620.5,-280.753 481.5,-280.753"/>
@@ -592,19 +592,48 @@
 </a>
 </g>
 </g>
-<!-- CognatesetTable&#45;&gt;etyma.csv -->
-<g id="edge12" class="edge">
-<title>CognatesetTable:w&#45;&gt;etyma.csv:e</title>
-<path fill="none" stroke="#000000" d="M467.1752,-223.6813C424.5817,-210.136 436.5438,-134.753 382,-134.753"/>
-<polygon fill="#000000" stroke="#000000" points="473.5824,-224.6079 480.9847,-229.3159 477.5412,-225.1804 481.5,-225.753 481.5,-225.753 481.5,-225.753 477.5412,-225.1804 482.0153,-222.19 473.5824,-224.6079 473.5824,-224.6079"/>
-<ellipse fill="none" stroke="#000000" cx="470.4153" cy="-224.1499" rx="3.2" ry="3.2"/>
+<!-- LanguageTable_SourceTable -->
+<g id="node14" class="node">
+<title>LanguageTable_SourceTable</title>
+<g id="a_node14"><a xlink:href="../../tables/LanguageTable_SourceTable.html" xlink:title="LanguageTable_SourceTable" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="696,-829.253 696,-934.253 904,-934.253 904,-829.253 696,-829.253"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="696,-910.753 696,-933.753 904,-933.753 904,-910.753 696,-910.753"/>
+<polygon fill="none" stroke="#000000" points="696,-910.753 696,-933.753 904,-933.753 904,-910.753 696,-910.753"/>
+<text text-anchor="start" x="701" y="-919.353" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">LanguageTable_SourceTable</text>
+<text text-anchor="start" x="869.5219" y="-918.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="696,-888.753 696,-910.753 904,-910.753 904,-888.753 696,-888.753"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="701" y="-905.753"/>
+<text text-anchor="start" x="725" y="-895.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">LanguageTable_cldf_id</text>
+<polygon fill="none" stroke="#000000" points="696,-866.753 696,-888.753 904,-888.753 904,-866.753 696,-866.753"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="701" y="-883.753"/>
+<text text-anchor="start" x="725" y="-873.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SourceTable_id</text>
+<polygon fill="none" stroke="#000000" points="696,-847.753 696,-866.753 904,-866.753 904,-847.753 696,-847.753"/>
+<text text-anchor="start" x="699" y="-853.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="696,-828.753 696,-847.753 779,-847.753 779,-828.753 696,-828.753"/>
+<polygon fill="none" stroke="#000000" points="696,-828.753 696,-847.753 779,-847.753 779,-828.753 696,-828.753"/>
+<text text-anchor="start" x="699" y="-834.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="779,-828.753 779,-847.753 860,-847.753 860,-828.753 779,-828.753"/>
+<polygon fill="none" stroke="#000000" points="779,-828.753 779,-847.753 860,-847.753 860,-828.753 779,-828.753"/>
+<text text-anchor="start" x="812.3807" y="-834.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">481 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="860,-828.753 860,-847.753 904,-847.753 904,-828.753 860,-828.753"/>
+<polygon fill="none" stroke="#000000" points="860,-828.753 860,-847.753 904,-847.753 904,-828.753 860,-828.753"/>
+<text text-anchor="start" x="894.8862" y="-834.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+</a>
 </g>
-<!-- CognatesetTable&#45;&gt;FormTable -->
-<g id="edge11" class="edge">
-<title>CognatesetTable:w&#45;&gt;FormTable:e</title>
-<path fill="none" stroke="#000000" d="M469.7639,-256.4438C428.9847,-324.8339 464.4892,-773.753 410,-773.753"/>
-<polygon fill="#000000" stroke="#000000" points="475.0709,-252.5139 483.6424,-250.6461 478.2854,-250.1335 481.5,-247.753 481.5,-247.753 481.5,-247.753 478.2854,-250.1335 479.3576,-244.8599 475.0709,-252.5139 475.0709,-252.5139"/>
-<ellipse fill="none" stroke="#000000" cx="472.4992" cy="-254.4183" rx="3.2" ry="3.2"/>
+</g>
+<!-- LanguageTable_SourceTable&#45;&gt;SourceTable -->
+<g id="edge26" class="edge">
+<title>LanguageTable_SourceTable:w&#45;&gt;SourceTable:e</title>
+<path fill="none" stroke="#000000" d="M681.5143,-876.0384C604.9285,-855.8805 703.7692,-664.753 606.5,-664.753"/>
+<polygon fill="#000000" stroke="#000000" points="688.0555,-876.8126 695.5768,-881.328 692.0277,-877.2828 696,-877.753 696,-877.753 696,-877.753 692.0277,-877.2828 696.4232,-874.1779 688.0555,-876.8126 688.0555,-876.8126"/>
+<ellipse fill="none" stroke="#000000" cx="684.8776" cy="-876.4365" rx="3.2" ry="3.2"/>
+</g>
+<!-- LanguageTable_SourceTable&#45;&gt;LanguageTable -->
+<g id="edge25" class="edge">
+<title>LanguageTable_SourceTable:w&#45;&gt;LanguageTable:e</title>
+<path fill="none" stroke="#000000" d="M681.2766,-899.6956C456.0307,-897.9247 395.9872,-855.753 163.5,-855.753"/>
+<polygon fill="#000000" stroke="#000000" points="688.0001,-899.7217 695.9859,-903.353 692,-899.7374 696,-899.753 696,-899.753 696,-899.753 692,-899.7374 696.0141,-896.153 688.0001,-899.7217 688.0001,-899.7217"/>
+<ellipse fill="none" stroke="#000000" cx="684.8001" cy="-899.7093" rx="3.2" ry="3.2"/>
 </g>
 <!-- TreeTable_SourceTable -->
 <g id="node15" class="node">
@@ -649,48 +678,19 @@
 <polygon fill="#000000" stroke="#000000" points="704.0227,-1003.1509 711.7291,-1007.3428 708.0113,-1003.4519 712,-1003.753 712,-1003.753 712,-1003.753 708.0113,-1003.4519 712.2709,-1000.1632 704.0227,-1003.1509 704.0227,-1003.1509"/>
 <ellipse fill="none" stroke="#000000" cx="700.8318" cy="-1002.9101" rx="3.2" ry="3.2"/>
 </g>
-<!-- LanguageTable_SourceTable -->
-<g id="node16" class="node">
-<title>LanguageTable_SourceTable</title>
-<g id="a_node16"><a xlink:href="../../tables/LanguageTable_SourceTable.html" xlink:title="LanguageTable_SourceTable" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="696,-829.253 696,-934.253 904,-934.253 904,-829.253 696,-829.253"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="696,-910.753 696,-933.753 904,-933.753 904,-910.753 696,-910.753"/>
-<polygon fill="none" stroke="#000000" points="696,-910.753 696,-933.753 904,-933.753 904,-910.753 696,-910.753"/>
-<text text-anchor="start" x="701" y="-919.353" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">LanguageTable_SourceTable</text>
-<text text-anchor="start" x="869.5219" y="-918.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="696,-888.753 696,-910.753 904,-910.753 904,-888.753 696,-888.753"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="701" y="-905.753"/>
-<text text-anchor="start" x="725" y="-895.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">LanguageTable_cldf_id</text>
-<polygon fill="none" stroke="#000000" points="696,-866.753 696,-888.753 904,-888.753 904,-866.753 696,-866.753"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="701" y="-883.753"/>
-<text text-anchor="start" x="725" y="-873.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SourceTable_id</text>
-<polygon fill="none" stroke="#000000" points="696,-847.753 696,-866.753 904,-866.753 904,-847.753 696,-847.753"/>
-<text text-anchor="start" x="699" y="-853.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="696,-828.753 696,-847.753 779,-847.753 779,-828.753 696,-828.753"/>
-<polygon fill="none" stroke="#000000" points="696,-828.753 696,-847.753 779,-847.753 779,-828.753 696,-828.753"/>
-<text text-anchor="start" x="699" y="-834.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
-<polygon fill="#ffffff" stroke="transparent" points="779,-828.753 779,-847.753 860,-847.753 860,-828.753 779,-828.753"/>
-<polygon fill="none" stroke="#000000" points="779,-828.753 779,-847.753 860,-847.753 860,-828.753 779,-828.753"/>
-<text text-anchor="start" x="812.3807" y="-834.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">481 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="860,-828.753 860,-847.753 904,-847.753 904,-828.753 860,-828.753"/>
-<polygon fill="none" stroke="#000000" points="860,-828.753 860,-847.753 904,-847.753 904,-828.753 860,-828.753"/>
-<text text-anchor="start" x="894.8862" y="-834.853" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-</a>
+<!-- CognatesetTable&#45;&gt;etyma.csv -->
+<g id="edge12" class="edge">
+<title>CognatesetTable:w&#45;&gt;etyma.csv:e</title>
+<path fill="none" stroke="#000000" d="M467.1752,-223.6813C424.5817,-210.136 436.5438,-134.753 382,-134.753"/>
+<polygon fill="#000000" stroke="#000000" points="473.5824,-224.6079 480.9847,-229.3159 477.5412,-225.1804 481.5,-225.753 481.5,-225.753 481.5,-225.753 477.5412,-225.1804 482.0153,-222.19 473.5824,-224.6079 473.5824,-224.6079"/>
+<ellipse fill="none" stroke="#000000" cx="470.4153" cy="-224.1499" rx="3.2" ry="3.2"/>
 </g>
-</g>
-<!-- LanguageTable_SourceTable&#45;&gt;SourceTable -->
-<g id="edge26" class="edge">
-<title>LanguageTable_SourceTable:w&#45;&gt;SourceTable:e</title>
-<path fill="none" stroke="#000000" d="M681.5143,-876.0384C604.9285,-855.8805 703.7692,-664.753 606.5,-664.753"/>
-<polygon fill="#000000" stroke="#000000" points="688.0555,-876.8126 695.5768,-881.328 692.0277,-877.2828 696,-877.753 696,-877.753 696,-877.753 692.0277,-877.2828 696.4232,-874.1779 688.0555,-876.8126 688.0555,-876.8126"/>
-<ellipse fill="none" stroke="#000000" cx="684.8776" cy="-876.4365" rx="3.2" ry="3.2"/>
-</g>
-<!-- LanguageTable_SourceTable&#45;&gt;LanguageTable -->
-<g id="edge25" class="edge">
-<title>LanguageTable_SourceTable:w&#45;&gt;LanguageTable:e</title>
-<path fill="none" stroke="#000000" d="M681.2766,-899.6956C456.0307,-897.9247 395.9872,-855.753 163.5,-855.753"/>
-<polygon fill="#000000" stroke="#000000" points="688.0001,-899.7217 695.9859,-903.353 692,-899.7374 696,-899.753 696,-899.753 696,-899.753 692,-899.7374 696.0141,-896.153 688.0001,-899.7217 688.0001,-899.7217"/>
-<ellipse fill="none" stroke="#000000" cx="684.8001" cy="-899.7093" rx="3.2" ry="3.2"/>
+<!-- CognatesetTable&#45;&gt;FormTable -->
+<g id="edge11" class="edge">
+<title>CognatesetTable:w&#45;&gt;FormTable:e</title>
+<path fill="none" stroke="#000000" d="M469.7639,-256.4438C428.9847,-324.8339 464.4892,-773.753 410,-773.753"/>
+<polygon fill="#000000" stroke="#000000" points="475.0709,-252.5139 483.6424,-250.6461 478.2854,-250.1335 481.5,-247.753 481.5,-247.753 481.5,-247.753 478.2854,-250.1335 479.3576,-244.8599 475.0709,-252.5139 475.0709,-252.5139"/>
+<ellipse fill="none" stroke="#000000" cx="472.4992" cy="-254.4183" rx="3.2" ry="3.2"/>
 </g>
 <!-- BorrowingTable_SourceTable -->
 <g id="node17" class="node">
