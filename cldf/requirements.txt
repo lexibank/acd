@@ -40,11 +40,11 @@ openpyxl==3.1.5
 packaging==24.2
 pluggy==1.5.0
 pybtex==0.24.0
--e git+https://github.com/cldf/pycldf@45a1578d54dbe28426b1b0ad96ec81bd9c0f5cb3#egg=pycldf
+pycldf==1.40.3
 pyclts==3.2.0
 pyconcepticon==3.1.0
 pycountry==24.6.1
--e git+https://github.com/lexibank/pyetymdict@0b7e3ae18c1fdfca29c182a84d794060fcb27b95#egg=pyetymdict
+pyetymdict==1.0.0
 pyglottolog==3.14.0
 pylatexenc==2.10
 pylexibank==3.5.0

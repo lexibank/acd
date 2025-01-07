@@ -19,10 +19,10 @@ This dataset is licensed under a CC-BY-4.0 license
 
 - [ABOUT.md](ABOUT.md) provides the introduction to the legacy online version of the ACD at 
   https://trussel2.com/ACD/ formatted as markdown document.
-- [VALIDATION.md](VALIDATION.md) describes how our dataset was validated, in particular with respect
-  to completeness and correctness of the conversion from the legacy HTML pages.
 - [USAGE.md](USAGE.md) describes tools and techniques which help with using the highly relational
   data of the ACD.
+- [VALIDATION.md](VALIDATION.md) describes how our dataset was validated, in particular with respect
+  to completeness and correctness of the conversion from the legacy HTML pages.
 
 
 

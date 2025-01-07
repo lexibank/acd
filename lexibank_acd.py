@@ -8,7 +8,6 @@ import unicodedata
 import attr
 import newick
 import pylexibank
-from clldutils.misc import data_url
 from clldutils.markup import MarkdownLink
 from pycldf import Dataset as CLDFDataset
 from pycldf.ext.markdown import CLDFMarkdownLink
@@ -500,23 +499,7 @@ class Dataset(BaseDataset):
         varieties = Varieties(args.writer)
 
         # Add the classification tree
-        t = newick.loads(TREE.newick)[0]
-        t.rename(**varieties.abbr2id)
-        args.writer.objects['MediaTable'].append(dict(
-            ID='tree',
-            Name='Newick tree',
-            Description='The tree structure of the reconstruction levels in ACD',
-            Media_Type='text/x-nh',
-            Download_URL=data_url(t.newick, 'text/x-nh'),
-        ))
-        args.writer.objects['TreeTable'].append(dict(
-            ID='tree',
-            Name='1',
-            Description='The tree structure of the reconstruction levels in ACD',
-            Tree_Is_Rooted='Yes',
-            Tree_Type='summary',
-            Media_ID='tree',
-        ))
+        self.add_tree(args.writer, TREE.newick, names=varieties.abbr2id)
 
         # Add parameters
         meanings = {}  # We copy the meaning descriptions to forms.
@@ -762,5 +745,3 @@ class Dataset(BaseDataset):
                 'Each language is assigned to one of the nine reconstruction levels (or Form. '
                 'or PAN).',
         })
-        cldf.add_component('TreeTable')
-        cldf.add_component('MediaTable')

@@ -12,7 +12,7 @@
         {
             "rdf:about": "https://github.com/lexibank/acd",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.2-31-g73a584a",
+            "dc:created": "v1.2-33-gbc277b3",
             "dc:title": "Repository"
         },
         {
@@ -128,13 +128,18 @@
                         "dc:description": "Description of the meaning of the word (possibly in language-specific terms).",
                         "dc:format": "text/markdown",
                         "datatype": "string",
-                        "propertyUrl": "http://clld.org/v1.0/terms.rdf#description",
+                        "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#description",
                         "name": "Description"
                     },
                     {
                         "dc:description": "For a form that differs from the expected reflex in some way this flag asserts that a copying mistake has not occurred.",
                         "datatype": "boolean",
                         "name": "Sic"
+                    },
+                    {
+                        "dc:description": "In particular reconstructions, i.e. proto-forms in etymological dictionaries, are often marked as being somewhat doubtful (typically displayed as proto-form prefixed with a '?' or similar).",
+                        "datatype": "boolean",
+                        "name": "Doubt"
                     }
                 ],
                 "foreignKeys": [
